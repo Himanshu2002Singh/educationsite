@@ -1,0 +1,138 @@
+import React from 'react';
+import { GraduationCap, BookOpen, Briefcase } from 'lucide-react';
+
+const TuitionFeesSection = () => {
+  const tuitionFees = [
+    {
+      icon: <GraduationCap className="w-10 h-10 text-blue-600" />,
+      degree: "Undergraduate",
+      fee: "£15,000 – £30,000",
+      description: "Per year for Bachelor's programs",
+      color: "bg-blue-50 border-blue-200"
+    },
+    {
+      icon: <BookOpen className="w-10 h-10 text-purple-600" />,
+      degree: "Master's",
+      fee: "£15,000 – £40,000",
+      description: "Per year for postgraduate programs",
+      color: "bg-purple-50 border-purple-200"
+    },
+    {
+      icon: <Briefcase className="w-10 h-10 text-green-600" />,
+      degree: "MBA",
+      fee: "£25,000 – £45,000+",
+      description: "Per year for business programs",
+      color: "bg-green-50 border-green-200"
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-british-navy mb-4 font-serif">
+            Cost of Studying in the UK
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Understand the investment in your UK education
+          </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
+            Average Annual Tuition Fees
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {tuitionFees.map((item, index) => (
+              <div
+                key={index}
+                className={`${item.color} border-2 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white text-center`}
+              >
+                <div className="flex justify-center mb-4">
+                  <div className="p-4 bg-white rounded-full shadow-md">
+                    {item.icon}
+                  </div>
+                </div>
+
+                <div className="bg-british-navy text-black px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
+                  {item.degree}
+                </div>
+
+                <div className="text-3xl font-bold text-gray-800 mb-2">
+                  {item.fee}
+                </div>
+
+                <p className="text-gray-600 text-sm">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Updated 3-Column Info Section */}
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 border border-gray-200 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* What's Included */}
+            <div>
+              <h4 className="text-xl font-bold text-gray-800 mb-4"> What's Included</h4>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Tuition and academic fees
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Access to university facilities
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Student support services
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Library and online resources
+                </li>
+              </ul>
+            </div>
+
+            {/* Additional Costs */}
+            <div>
+              <h4 className="text-xl font-bold text-gray-800 mb-4">Additional Costs</h4>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                  Application fees (£20–£75)
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                  Visa application fees
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                  Health insurance surcharge
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                  Books and materials
+                </li>
+              </ul>
+            </div>
+
+            {/* Good News Card */}
+            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border-2 border-yellow-200 text-center shadow-lg hover:shadow-xl transition-all duration-300">
+              <h4 className="text-xl font-bold text-gray-800 mb-2">🏆 Good News!</h4>
+              <p className="text-gray-700">
+                Scholarships up to <span className="font-bold text-orange-600">50%</span> are available for eligible students.
+                Reduce your tuition costs significantly with merit-based and need-based scholarships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TuitionFeesSection;
