@@ -6,8 +6,8 @@ const FounderDiaries: React.FC = () => {
   const slides = [
     {
       id: 1,
-      title: "Highlight an inspiring\nor important message\nfrom the company's\nleader.",
-      description: "Add a short note from your CEO or president that will help\nfoster a connection between the company's leadership and\nthe audience or possible recruits.",
+      title: "Message from Arvind Falor",
+      description: "At EduKonnect, we simplify the global education journey with honest guidance and a student-first approach. Backed by a passionate and experienced team, we’re committed to delivering real results. We look forward to the opportunity to serve you.",
       name: "John Doe, CEO"
     },
     {
@@ -29,8 +29,8 @@ const FounderDiaries: React.FC = () => {
   return (
     <div className="w-full bg-gradient-to-br from-white via-slate-100 to-white py-12 md:py-16  rounded-3xl shadow-lg max-w-8xl mx-auto">
       <div className="relative max-w-6xl mx-auto overflow-hidden px-4">
-        <h2 className="text-4xl font-bold text-[#2C2C2C] mb-12 text-center drop-shadow-md">
-            Founder Diaries
+        <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#2C2C2C] mb-12 text-center">
+             Meet our Founders 
             </h2>
         <div className="relative h-[900px] sm:h-[620px] md:h-[550px]">
             

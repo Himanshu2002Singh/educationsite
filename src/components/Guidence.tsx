@@ -26,8 +26,8 @@ const industryCards = [
 const GuidingValues = () => {
   return (
     <section className="w-full bg-white py-16 px-6 sm:px-12">
-       <h2 className="text-4xl font-bold text-center text-[#2C2C2C] mb-10 drop-shadow-md">
-         Our Guiding  Values
+       <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center text-[#2C2C2C] mb-10 drop-shadow-md">
+        Core values
         </h2>  
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         

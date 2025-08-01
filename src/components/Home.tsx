@@ -9,14 +9,18 @@ import FounderDiaries from './FounderDiaries'
 import GuidingValues from './Guidence'
 import AutoCarousel from './Country'
 import FAQSection from './Faq'
-import Footer from './Footer'
+import CountryFlagSlider from './CountryFlegs'
+
 
 function Home() {
   return (
     <div>
          <Hero />
     <Stats />
+    <CountryFlagSlider/>
     {/* <About /> */}
+    <AutoCarousel/>
+
     <Features />
     
     <Programs />
@@ -24,7 +28,7 @@ function Home() {
     <LeadCaptureForm/>
     <FounderDiaries/>
     <GuidingValues/>
-    <AutoCarousel/>
+    
     <FAQSection/>
       {/* <Contact /> */}
    

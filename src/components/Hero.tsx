@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import rating from '../../assets/rating.gif'; // Ensure this exists
-import studentImage from '../../hero.jpg'; // Ensure this exists
+// import rating from '../../assets/rating.gif'; // Ensure this exists
+// import studentImage from '../../hero.jpg'; // Ensure this exists
 
 import img1 from "../../assets/CommunityStudentsIamge.webp";
 
@@ -11,46 +11,46 @@ import PopupFormWithRotatingFlags from './PopupFormWithRotatingFlags'; // Adjust
 
 const Hero: React.FC = () => {
   const [studentCount, setStudentCount] = useState(0);
-  const [countryCount, setCountryCount] = useState(0);
-  const badgeVariants = {
-    hover: { scale: 1.05, transition: { duration: 0.3 } },
-    tap: { scale: 0.95 }
-  };
+  // const [countryCount, setCountryCount] = useState(0);
+  // const badgeVariants = {
+  //   hover: { scale: 1.05, transition: { duration: 0.3 } },
+  //   tap: { scale: 0.95 }
+  // };
 
   const [showForm, setShowForm] = useState(false);
   
   
   // Count animation effects
-  useEffect(() => {
-    const studentInterval = setInterval(() => {
-      setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
-    }, 10);
-    const countryInterval = setInterval(() => {
-      setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
-    }, 50);
-    return () => {
-      clearInterval(studentInterval);
-      clearInterval(countryInterval);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const studentInterval = setInterval(() => {
+  //     setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
+  //   }, 10);
+  //   const countryInterval = setInterval(() => {
+  //     setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
+  //   }, 50);
+  //   return () => {
+  //     clearInterval(studentInterval);
+  //     clearInterval(countryInterval);
+  //   };
+  // }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2, delayChildren: 0.3 } },
   };
 
-  useEffect(() => {
-    const studentInterval = setInterval(() => {
-      setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
-    }, 10);
-    const countryInterval = setInterval(() => {
-      setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
-    }, 50);
-    return () => {
-      clearInterval(studentInterval);
-      clearInterval(countryInterval);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const studentInterval = setInterval(() => {
+  //     setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
+  //   }, 10);
+  //   const countryInterval = setInterval(() => {
+  //     setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
+  //   }, 50);
+  //   return () => {
+  //     clearInterval(studentInterval);
+  //     clearInterval(countryInterval);
+  //   };
+  // }, []);
 
  
   const itemVariants = {
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
   const userImages = [img1];
 
   return (
-    <section id="hero" className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-gradient-to-r from-[#e6f7ea] to-[#f0f7f4]">
+    <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-r from-[#e6f7ea] to-[#f0f7f4]">
       <div className="container mx-auto px-6 lg:px-12">
         <motion.div
           variants={containerVariants}
@@ -77,12 +77,12 @@ const Hero: React.FC = () => {
         >
           {/* Left Column */}
           <div>
-            <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0D0D0D] leading-tight">
-              Study Abroad doesn't have to feel <span className="text-[#2d6a4f]">like a hassle</span>
+            <motion.h1 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0D0D] leading-tight">
+             Study Abroad can be simpler  <span className="text-[#2d6a4f]">than you think</span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="mt-6 text-lg md:text-xl text-[#2C2C2C] max-w-xl">
-              We live by the promise & building this legacy over 24+ years.
+              Simplifying Global education with trusted guidance for over 24 years
             </motion.p>
 
             <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -128,65 +128,27 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Column - Image with Badges */}
-          <div className="relative w-full h-full flex justify-center items-center">
-            <motion.div 
-              className="relative"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              <motion.img
-                src={studentImage} // Replace with your image path
-                alt="Student with Flags"
-                className="w-full max-w-md rounded-xl shadow-xl relative z-1 shadow-[#8DC63F]"
-              />
-              <motion.div 
-                className="absolute inset-0 bg-[#8DC63F] blur-md opacity-30 rounded-xl -z-10"
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 0.3 }}
-                transition={{ delay: 0.8, duration: 0.5 }}
-              />
-            </motion.div>
+         {/* Right Column - Stats Cards (Desktop Only) */}
+<div className="hidden md:grid grid-cols-2 gap-4">
+  {[
+    { title: "10,000+", subtitle: "Students" },
+    { title: "24+", subtitle: "Years of Experience" },
+    { title: "25+", subtitle: "Countries" },
+    { title: "4.8/5", subtitle: "Rating" },
+    { title: "95%", subtitle: "Visa Success" },
+    { title: "800+", subtitle: "University Representation" },
+  ].map((card, index) => (
+    <motion.div
+      key={index}
+      variants={itemVariants}
+      className="bg-white border-2 border-[#8DC63F] rounded-lg p-5 shadow-lg flex flex-col items-center justify-center text-center hover:scale-105 transition-transform duration-300"
+    >
+      <h3 className="text-2xl font-bold text-[#2d6a4f]">{card.title}</h3>
+      <p className="text-sm text-gray-700 mt-1">{card.subtitle}</p>
+    </motion.div>
+  ))}
+</div>
 
-            {/* Trust Badges - Responsive Positioning */}
-            <div className="absolute md:top-4 md:left-5 top-2 -left-5 shadow-lg shadow-[#8DC63F]/30">
-              <img src={rating} alt="Trust Badge" className="w-30 h-28 md:w-44 md:h-30  rounded-lg border-2 border-[#8DC63F] shadow-lg" />
-            </div>
-
-            <div className="absolute md:top-6 md:right-5 top-3 -right-4">
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 0.6 }}
-                whileHover="hover"
-                variants={badgeVariants}
-                className="bg-white shadow-lg w-40 h-45 md:w-46 md:h-42 rounded-lg p-2 md:p-4 text-center text-xs md:text-sm border-2 border-[#8DC63F] shadow-[#8DC63F]/30"
-              >
-                <div className="text-[#2d6a4f] font-semibold text-sm md:text-md">🎓 {studentCount.toLocaleString()}+</div>
-                <p className="text-[10px] md:text-xs text-[#333]">trust us</p>
-              </motion.div>
-            </div>
-
-            <div className="absolute md:bottom-5 md:left-12 -bottom-3 left-8">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.4, duration: 0.6 }}
-                whileHover="hover"
-                variants={badgeVariants}
-                className="bg-white shadow-lg w-40 h-25 md:w-46 md:h-22 rounded-lg p-2 md:p-4 text-center text-xs md:text-sm border-2 border-[#C1272D] shadow-[#C1272D]/30"
-              >
-                <motion.p 
-                  className="font-bold text-sm md:text-lg text-[#2d6a4f]"
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 1, repeat: Infinity }}
-                >
-                  {countryCount}+
-                </motion.p>
-                <p className="text-[10px] md:text-xs text-[#333]">Countries</p>
-              </motion.div>
-            </div>
-          </div>
         </motion.div>
       </div>
 

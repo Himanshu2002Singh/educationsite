@@ -92,7 +92,7 @@ const CoursesIntakeSection = () => {
         ) : (
           <>
             {/* Timeline Scroll */}
-            <div className="overflow-hidden mb-10">
+            {/* <div className="overflow-hidden mb-10">
               <div className="flex animate-marquee whitespace-nowrap space-x-8">
                 {["September Intake", "January Intake", "May Intake"].map((month, i) => (
                   <span
@@ -104,7 +104,7 @@ const CoursesIntakeSection = () => {
                 ))}
                
               </div>
-            </div>
+            </div> */}
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {intakes.map((intake, i) => (

@@ -30,7 +30,7 @@ const TuitionFeesSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-british-navy mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-british-navy mb-4 font-serif">
             Cost of Studying in the UK
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -49,17 +49,17 @@ const TuitionFeesSection = () => {
                 key={index}
                 className={`${item.color} border-2 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white text-center`}
               >
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-white rounded-full shadow-md">
+                <div className="flex justify-center mb-2">
+                  <div className="p-2 bg-white rounded-full shadow-md">
                     {item.icon}
                   </div>
                 </div>
 
-                <div className="bg-british-navy text-black px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
+                <div className="bg-british-navy text-black px-4 py-1 rounded-full text-sm font-bold mb-1 inline-block">
                   {item.degree}
                 </div>
 
-                <div className="text-3xl font-bold text-gray-800 mb-2">
+                <div className="text-1xl font-bold text-gray-800 mb-1">
                   {item.fee}
                 </div>
 

@@ -20,12 +20,14 @@ const Footer: React.FC = () => {
     {
       title: "Study Destinations",
       items: [
-        { name: "USA", href: "#" },
         { name: "UK", href: "#" },
+        { name: "USA", href: "#" },
         { name: "Canada", href: "#" },
+        { name: "Ireland", href: "#" },
+        { name: "Germany", href: "#" },
         { name: "Australia", href: "#" },
         { name: "New Zealand", href: "#" },
-        { name: "Germany", href: "#" }
+        { name: "UAE", href: "#" }
       ]
     }
   ];
@@ -99,7 +101,7 @@ const Footer: React.FC = () => {
                 whileHover={{ x: 5 }}
               >
                 <MapPin className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
-                <span className="ml-3 text-gray-200 text-lg">123 Education Street, Academic Plaza, New Delhi, India</span>
+                <span className="ml-3 text-gray-200 text-lg">Borivali (W) : 9th Floor, Express Tower, L.T. Rd, Mumbai, 400092</span>
               </motion.li>
               <motion.li 
                 className="flex items-start"

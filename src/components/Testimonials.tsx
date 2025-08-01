@@ -98,7 +98,7 @@ const Testimonials: React.FC = () => {
     <div className="py-16 bg-[#0D0D0D] text-white rounded-3xl shadow-lg max-w-8xl mx-auto">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Testmonial</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Success stories</h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
             Hear from students who have successfully navigated their educational journey with our guidance.
           </p>
@@ -119,14 +119,18 @@ const Testimonials: React.FC = () => {
                         alt={testimonial.name}
                         className="w-full h-full object-cover"
                       />
+                      
                     </div>
+                     <p className="text-white font-bold text-lg -mt-3 ">{testimonial.name}</p>
+                        <p className="text-white/80 -mt-5 ">{testimonial.country} - {testimonial.university}</p>
                     <div className="flex-1">
+                      
                       <div className="text-white/80 text-3xl font-serif">"</div>
                       <p className="text-white text-lg md:text-xl italic mb-6">
                         {testimonial.quote}
                       </p>
-                      <div className="text-white font-bold text-lg">{testimonial.name}</div>
-                      <div className="text-white/80">{testimonial.country} - {testimonial.university}</div>
+                     
+                     
                     </div>
                   </div>
                 </div>

@@ -20,7 +20,7 @@ import img14 from "../../assets/IMG_7949.png";
 
 const AutoCarousel: React.FC = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 5,
@@ -39,8 +39,8 @@ const AutoCarousel: React.FC = () => {
         settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 568,
-        settings: { slidesToShow: 1 },
+        breakpoint: 480,
+        settings: { slidesToShow: 2 },
       },
     ],
   };
@@ -51,22 +51,21 @@ const AutoCarousel: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-gradient-to-br from-[#E6F5E1] via-slate-100 to-white py-12 md:py-16 rounded-3xl shadow-lg">
+    <div className="w-full white py-12 md:py-16 rounded-3xl shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-[#2C2C2C] mb-10 drop-shadow-md">
-          Global University Partners
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2C2C2C] mb-10">
+          Where our Students got Admit from?
         </h2>
-      
 
         <div className="relative">
           <Slider {...settings}>
             {logos.map((logo, index) => (
-              <div key={index} className="px-3">
-                <div className="w-[200px] h-[150px] mx-auto bg-white rounded-xl shadow-[0_4px_16px_rgba(192,246,16,0.5)] flex items-center justify-center p-3 transition-transform duration-300 hover:scale-105">
+              <div key={index} className="px-2">
+                <div className="w-full h-[120px] flex items-center justify-center overflow-hidden gap-4">
                   <img
                     src={logo}
                     alt={`Logo ${index + 1}`}
-                    className="object-contain w-full h-full"
+                    className="object-contain h-full w-auto gap-4"
                   />
                 </div>
               </div>
