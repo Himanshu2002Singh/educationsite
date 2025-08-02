@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import student1 from '../../assets/students1.png'; // Replace with your paths
-import student2 from '../../assets/studen2.png';
-import student3 from '../../assets/students1.png';
 
-const studentCards = [
-  { name: 'Nigeria', flag: '🇳🇬', image: student1 },
-  { name: 'UK', flag: '🇬🇧', image: student2 },
-  { name: 'Canada', flag: '🇨🇦', image: student3 },
+const countries = [
+  { name: "USA", code: "us" },
+  { name: "UK", code: "gb" },
+  { name: "UAE", code: "ae" },
+  { name: "Singapore", code: "sg" },
+  { name: "New Zealand", code: "nz" },
+  { name: "Italy", code: "it" },
+  { name: "France", code: "fr" },
+  { name: "Canada", code: "ca" },
+  { name: "Australia", code: "au" },
 ];
 
 export default function LeadCaptureForm() {
@@ -14,7 +17,7 @@ export default function LeadCaptureForm() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % studentCards.length);
+      setActiveIndex((prev) => (prev + 1) % countries.length);
     }, 2000);
     return () => clearInterval(interval);
   }, []);
@@ -56,41 +59,47 @@ export default function LeadCaptureForm() {
           </div>
         </div>
 
-        {/* Right: 3D-style Student Card Rotation */}
+        {/* Right: Rotating Country Card */}
         <div className="relative w-full h-[360px] flex items-center justify-center">
-          {studentCards.map((card, index) => {
+          {countries.map((country, index) => {
             const isActive = index === activeIndex;
             const zIndex = isActive ? 50 : 10;
             const scale = isActive ? 'scale-100' : 'scale-90';
             const opacity = isActive ? 'opacity-100' : 'opacity-0';
             return (
-              <div
-                key={index}
-                className={`absolute transition-all duration-700 transform ${scale} ${opacity}`}
-                style={{
-                  zIndex,
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  margin: 'auto',
-                  width: '260px',
-                  height: '340px',
-                }}
-              >
-                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white flex flex-col items-center justify-between h-full">
-                  <img
-                    src={card.image}
-                    alt={card.name}
-                    className="w-full h-56 object-cover"
-                  />
-                  <div className="p-4 text-center">
-                    <h3 className="text-lg font-semibold text-gray-800">
-                      {card.flag} {card.name}
-                    </h3>
-                  </div>
-                </div>
-              </div>
+             <div
+  key={index}
+  className={`absolute transition-all duration-700 transform ${scale} ${opacity}`}
+  style={{
+    zIndex,
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    margin: 'auto',
+    width: '260px',
+    height: '340px',
+    perspective: '1000px',
+  }}
+>
+  <div
+    className={`rounded-3xl bg-white border-4 border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] transition-all duration-500 transform hover:-rotate-1 hover:scale-[1.03] flex flex-col items-center justify-between h-full`}
+  >
+    <div className="p-4">
+      <img
+        src={`https://flagcdn.com/w320/${country.code}.png`}
+        alt={country.name}
+        className="rounded-xl shadow-md border border-gray-300 w-full h-48 object-cover"
+      />
+    </div>
+    <div className="p-4 text-center">
+      <h3 className="text-lg font-semibold text-gray-800 tracking-wide">
+        {country.name}
+      </h3>
+    </div>
+  </div>
+</div>
+
             );
           })}
         </div>

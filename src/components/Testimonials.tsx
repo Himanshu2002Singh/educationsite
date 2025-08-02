@@ -97,13 +97,13 @@ const Testimonials: React.FC = () => {
     <div className="py-16 bg-[#0D0D0D] text-white rounded-3xl shadow-lg max-w-8xl mx-auto">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Success Stories</h2>
           <p className="text-lg max-w-2xl mx-auto">
             Hear from students who have successfully navigated their educational journey with our guidance.
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-5xl mx-auto">
           <div className="overflow-hidden relative rounded-2xl shadow-xl bg-gradient-to-r from-emerald-500 to-teal-700">
             <div
               className="transition-transform duration-500 ease-in-out flex"

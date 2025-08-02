@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '../../edukoinnect.png';
+import logo from '../../assets/1.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
+  // At top
+const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,65 +107,73 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="mt-4 flex flex-col items-center space-y-4 md:hidden bg-white p-4 rounded-lg shadow-lg"
-          >
-            {navItems.map((item) =>
-              item.dropdown ? (
-                <div key={item.id} className="w-full">
-                  <button
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="w-full flex justify-between items-center text-[#2d6a4f] py-2 px-4 hover:text-[#e76f51]"
-                  >
-                    {item.name}
-                    <ChevronDown className="w-4 h-4" />
-                  </button>
-                  <AnimatePresence>
-                    {dropdownOpen &&
-                      item.dropdown.map((subItem, i) => (
-                        <motion.div
-                          key={i}
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          className="pl-6 text-sm py-1 text-left w-full"
-                        >
-                          <Link
-                            to={subItem.href}
-                            onClick={() => {
-                              setMenuOpen(false);
-                              setDropdownOpen(false);
-                            }}
-                            className="text-[#2d6a4f] hover:text-[#e76f51] block"
-                          >
-                            {subItem.name}
-                          </Link>
-                        </motion.div>
-                      ))}
-                  </AnimatePresence>
-                </div>
-              ) : (
-                <Link
-                  key={item.id}
-                  to={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-[#2d6a4f] hover:text-[#e76f51] transition-colors"
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
-            <button className="bg-[#8DC63F] text-white px-4 py-2 rounded-md hover:bg-[#C1272D] transition-colors w-full">
-              Free Consultation
+   <AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="mt-4 flex flex-col items-start space-y-2 md:hidden bg-white p-4 rounded-lg shadow-lg"
+    >
+      {navItems.map((item, index) =>
+        item.dropdown ? (
+          <div key={item.id} className="w-full">
+            <button
+              onClick={() =>
+                setOpenDropdownIndex(openDropdownIndex === index ? null : index)
+              }
+              className="w-full flex justify-between items-center text-[#2d6a4f] py-2 px-4 rounded hover:text-[#e76f51]"
+            >
+              {item.name}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  openDropdownIndex === index ? 'rotate-180' : ''
+                }`}
+              />
             </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <AnimatePresence>
+              {openDropdownIndex === index &&
+                item.dropdown.map((subItem, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="pl-6 py-1 w-full"
+                  >
+                    <Link
+                      to={subItem.href}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        setOpenDropdownIndex(null);
+                      }}
+                      className="text-sm text-[#2d6a4f] hover:text-[#e76f51] block"
+                    >
+                      {subItem.name}
+                    </Link>
+                  </motion.div>
+                ))}
+            </AnimatePresence>
+          </div>
+        ) : (
+          <Link
+            key={item.id}
+            to={item.href}
+            onClick={() => setMenuOpen(false)}
+            className="text-[#2d6a4f] hover:text-[#e76f51] transition-colors px-4 py-2 w-full"
+          >
+            {item.name}
+          </Link>
+        )
+      )}
+      <button className="bg-[#8DC63F] text-white px-4 py-2 rounded-md hover:bg-[#C1272D] transition-colors w-full mt-2">
+        Free Consultation
+      </button>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </motion.nav>
   );
 };

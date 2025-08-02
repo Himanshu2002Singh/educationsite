@@ -1,70 +1,63 @@
 import React from 'react';
-import { FaEye, FaHeart, FaBalanceScale } from 'react-icons/fa'; // Updated icons
-import industryImg from '../../assets/v5-casual-life.webp'; // Replace with actual image path
+import { FaUserGraduate, FaHandshake, FaShieldAlt, FaBullseye, FaHeart, FaStar } from 'react-icons/fa';
 
-const industryCards = [
+const coreValues = [
   {
-    icon: <FaEye className="text-2xl text-green-500" />,
-    title: 'Transparency',
-    description: 'Every step of our process is clear, open, and built around your best interests, not commission figures.',
-    linkText: '',
+    id: 1,
+    icon: <FaUserGraduate className="text-blue-600 text-3xl" />,
+    title: 'Student First',
+    description: 'We prioritize the needs, goals, and well-being of every student in all that we do.',
   },
   {
-    icon: <FaHeart className="text-2xl text-pink-600" />,
-    title: 'Connecting to Dreams',
-    description: 'We take your dreams seriously and are committed to making them a reality.',
-    linkText: '',
+    id: 2,
+    icon: <FaHandshake className="text-green-600 text-3xl" />,
+    title: 'Right Guidance',
+    description: 'Our advice is honest, personalized, and grounded in decades of experience.',
   },
   {
-    icon: <FaBalanceScale className="text-2xl text-red-500" />,
-    title: 'Ethical',
-    description: 'We are passionate and driven by ethics. We highly value students’ dreams and see this as a growth opportunity for the young generations.',
-    linkText: '',
+    id: 3,
+    icon: <FaShieldAlt className="text-purple-600 text-3xl" />,
+    title: 'Trust',
+    description: 'We build lasting relationships through transparency, consistency, and care.',
+  },
+  {
+    id: 4,
+    icon: <FaBullseye className="text-red-600 text-3xl" />,
+    title: 'Commitment',
+    description: 'We are fully dedicated to helping each student succeed—start to finish.',
+  },
+  {
+    id: 5,
+    icon: <FaHeart className="text-pink-600 text-3xl" />,
+    title: 'Empathy',
+    description: 'We understand every student’s journey is unique, and we support them with compassion.',
+  },
+  {
+    id: 6,
+    icon: <FaStar className="text-yellow-500 text-3xl" />,
+    title: 'Excellence',
+    description: 'We uphold high standards in every service we provide, ensuring quality at every step.',
   },
 ];
 
-const GuidingValues = () => {
+const GuidingValue = () => {
   return (
-    <section className="w-full bg-white py-16 px-6 sm:px-12">
-       <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center text-[#2C2C2C] mb-10 drop-shadow-md">
-        Core values
-        </h2>  
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        
-        
-        {/* Left: Cards */}
-        <div className="md:w-1/2 w-full grid grid-cols-1 gap-8 ">
-          {industryCards.map((card, idx) => (
-            <div
-              key={idx}
-              className="relative bg-gradient-to-br from-[#f5f6ff]/70 to-[#fefeff]/80 rounded-2xl p-6 shadow-[0_8px_20px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.2)] transition-transform hover:-translate-y-1 border-2 border-transparent"
-              style={{
-                borderImage: 'linear-gradient(to right,rgb(46, 246, 11), #fff, #EF4444) 5 rounded-2xl',
-              }}
-            >
-              <div className="w-12 h-12 mb-4 flex items-center justify-center rounded-2xl bg-white shadow-inner">
-                {card.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">{card.title}</h3>
-              <p className="text-sm text-gray-600 mb-3">{card.description}</p>
-              <a href="#" className="text-indigo-600 font-medium hover:underline">
-                {card.linkText} →
-              </a>
-            </div>
-          ))}
-        </div>
-
-        {/* Right: Illustration */}
-        <div className="md:w-1/2 w-full flex justify-center">
-          <img
-            src={industryImg}
-            alt="Guiding Values Illustration"
-            className="w-full max-w-md object-contain drop-shadow-xl"
-          />
-        </div>
+    <section className="bg-gray-50 py-12 px-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Our Core Values</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {coreValues.map((value) => (
+          <div
+            key={value.id}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-start gap-4"
+          >
+            <div className="bg-gray-100 p-3 rounded-full">{value.icon}</div>
+            <h3 className="text-xl font-semibold text-gray-800">{value.title}</h3>
+            <p className="text-gray-600 text-sm">{value.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default GuidingValues;
+export default GuidingValue;

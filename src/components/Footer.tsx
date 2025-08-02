@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {  Facebook, Twitter, Instagram, Linkedin, MapPin, Mail, Phone } from 'lucide-react';
 import { Link } from './Link';
-import logo from '../../edukoinnect.png'
+import logo from '../../assets/2.png'
 
 const Footer: React.FC = () => {
 
@@ -70,27 +70,48 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Links Sections */}
-          {footerLinks.map((section, index) => (
-            <div key={index}>
-              <h3 className="text-xl font-semibold mb-6">{section.title}</h3>
-              <ul className="space-y-3">
-                {section.items.map((item, itemIndex) => (
-                  <motion.li 
-                    key={itemIndex}
-                    whileHover={{ x: 5 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    <Link
-                      href={item.href} 
-                      className="text-gray-200 hover:text-white text-lg transition-colors"
-                    >
-                      {item.name}
-                    </Link>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
-          ))}
+       {footerLinks.map((section, index) => (
+  <div key={index}>
+    <h3 className="text-xl font-semibold mb-6">{section.title}</h3>
+
+    {section.title === "Study Destinations" ? (
+      <div className="grid grid-cols-2 gap-4">
+        {section.items.map((item, itemIndex) => (
+          <motion.div 
+            key={itemIndex}
+            whileHover={{ x: 5 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+          >
+            <Link
+              href={item.href} 
+              className="text-gray-200 hover:text-white text-lg transition-colors block"
+            >
+              {item.name}
+            </Link>
+          </motion.div>
+        ))}
+      </div>
+    ) : (
+      <ul className="space-y-3">
+        {section.items.map((item, itemIndex) => (
+          <motion.li 
+            key={itemIndex}
+            whileHover={{ x: 5 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+          >
+            <Link
+              href={item.href} 
+              className="text-gray-200 hover:text-white text-lg transition-colors"
+            >
+              {item.name}
+            </Link>
+          </motion.li>
+        ))}
+      </ul>
+    )}
+  </div>
+))}
+
           
           {/* Contact Info */}
           <div>
@@ -132,7 +153,7 @@ const Footer: React.FC = () => {
           <p className="text-gray-200 text-center md:text-left text-lg">
             &copy; {new Date().getFullYear()} EduKonnect. All rights reserved.
           </p>
-
+           
            <p className="text-gray-200 text-center md:text-left text-sm">
              Designe & Developement by <a href="www.trustingbrains.com" className="text-white hover:underline">Trusting Brains</a> 
           </p>

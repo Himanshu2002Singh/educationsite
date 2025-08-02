@@ -2,20 +2,24 @@ import React, { useState } from 'react';
 
 const FounderDiaries: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     {
       id: 1,
       title: "Message from Arvind Falor",
-      description: "At EduKonnect, we simplify the global education journey with honest guidance and a student-first approach. Backed by a passionate and experienced team, we’re committed to delivering real results. We look forward to the opportunity to serve you.",
-      name: "John Doe, CEO"
+      description:
+        "At EduKonnect, we simplify the global education journey with honest guidance and a student-first approach. Backed by a passionate and experienced team, we’re committed to delivering real results. We look forward to the opportunity to serve you.",
+      name: "Arvind Falor",
+      role: "Co-Founder",
     },
     {
       id: 2,
-      title: "Another inspiring\nmessage from our\ncompany's\nleadership.",
-      description: "Additional insights from our leadership team about our\nvision and values that connect with our audience.",
-      name: "Jane Smith, President"
-    }
+      title: "Message from Dr. Meena Falor",
+      description:
+        "Helping students achieve their dreams has always been close to my heart. At EduKonnect, I’m committed to offering guidance with care, clarity, and a genuine focus on what’s best for each student.",
+      name: "Dr. Meena Falor",
+      role: "Co-Founder",
+    },
   ];
 
   const nextSlide = () => {
@@ -27,79 +31,76 @@ const FounderDiaries: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-white via-slate-100 to-white py-12 md:py-16  rounded-3xl shadow-lg max-w-8xl mx-auto">
-      <div className="relative max-w-6xl mx-auto overflow-hidden px-4">
-        <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#2C2C2C] mb-12 text-center">
-             Meet our Founders 
-            </h2>
-        <div className="relative h-[900px] sm:h-[620px] md:h-[550px]">
-            
+    <div className='bg-gradient-to-br from-white via-slate-50 to-white'>
+    <section className="w-full  md:py-20 rounded-3xl max-w-7xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+        Meet our Founders
+      </h2>
+
+      <div className="relative h-[600px] sm:h-[500px] md:h-[460px] px-4">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
           >
-            <div className="flex flex-col items-center text-center md:flex-row bg-[#E6F5E1] text-white p-5 md:p-10 font-sans justify-center items-center gap-9 md:gap-16 rounded-xl h-full">
-              {/* Image Section */}
-              <div className="flex-1 flex justify-center w-full max-w-[280px]">
-                <div className="bg-[#d1f7d5] rounded-3xl overflow-hidden text-center w-full max-w-[280px] shadow-md">
-                  <div className="pt-[100%] relative bg-[#c1e8c4]">
-                    <div className="absolute inset-0 flex justify-center items-center text-[#5a8f69] text-2xl">
-                      CEO Photo
-                    </div>
-                  </div>
-                  <div className="py-4 text-base text-[#333] bg-[#d1f7d5] font-semibold">
-                    {slide.name}
-                  </div>
-                </div>
+            <div className="flex flex-col md:flex-row items-center justify-center h-full gap-10 bg-[#ecfdf5] rounded-2xl p-6 md:p-10 shadow-xl border border-green-100">
+              {/* Photo Circle */}
+              <div className="w-48 h-48 rounded-full bg-[#d1f7d5] flex items-center justify-center text-[#5a8f69] text-xl font-semibold shadow-inner">
+                {slide.name.split(' ')[0]}'s Photo
               </div>
 
-              {/* Text Section */}
-              <div className="flex-1 md:pl-8 text-center md:text-left">
-                <h1 className="text-3xl md:text-[42px] font-medium mb-6 leading-tight text-[#2C2C2C] whitespace-pre-line">
+              {/* Message Section */}
+              <div className="text-center md:text-left max-w-2xl">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#2C2C2C] mb-4">
                   {slide.title}
-                </h1>
-                <p className="text-lg text-[#2C2C2C] leading-relaxed whitespace-pre-line">
+                </h3>
+                <p className="text-gray-700 text-lg leading-relaxed mb-4 whitespace-pre-line">
                   {slide.description}
                 </p>
+                <div className="text-[#5a8f69] font-medium text-base">
+                  {slide.name} — {slide.role}
+                </div>
               </div>
             </div>
           </div>
         ))}
-      </div>
 
-      {/* Navigation Arrows */}
-      <button 
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 z-10 transition-all"
-        aria-label="Previous slide"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button 
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 z-10 transition-all"
-        aria-label="Next slide"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+        {/* Arrows */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-white shadow-md hover:scale-110 transition rounded-full p-2 z-10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
 
-      {/* Dots Indicator */}
-      <div className="flex justify-center mt-4 gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-[#5a8f69]' : 'bg-gray-300'}`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+        <button
+          onClick={nextSlide}
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-white shadow-md hover:scale-110 transition rounded-full p-2 z-10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Dots */}
+        <div className="flex justify-center mt-6 gap-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3.5 h-3.5 rounded-full transition ${
+                index === currentSlide ? 'bg-[#5a8f69]' : 'bg-gray-300'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
     </div>
   );
 };

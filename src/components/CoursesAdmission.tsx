@@ -23,9 +23,10 @@ const AdmissionsSection = () => {
   ];
 
   return (
-    <section className="px-4 py-10 max-w-7xl mx-auto">
+    <div className="bg-gradient-to-br from-lime-50 via-white to-emerald-100">
+    <section className="px-4 py-10 max-w-7xl mx-auto ">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold font-bold mb-2 text-gray-800">Admissions Open</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">Admissions Open</h2>
         <p className="text-lg text-gray-600">
           Crafted for Global Success | Apply with Confidence
         </p>
@@ -52,6 +53,7 @@ const AdmissionsSection = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

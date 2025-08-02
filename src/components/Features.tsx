@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import experince from '../../assets/25experinxe-removebg-preview.png'; // Ensure this exists
-import education from '../../assets/education-removebg-preview.png'; // Ensure this exists
+import experince from '../../assets/experience/1.png'; // Ensure this exists
+import education from '../../assets/experience/2.png'; // Ensure this exists
 
-import mentornship from '../../assets/mentorship-removebg-preview.png'; // Ensure this exists
-import vis from '../../assets/confirmed-concept.png'; // Ensure this exists
+import mentornship from '../../assets/experience/3.png'; // Ensure this exists
+import vis from '../../assets/experience/4.png'; // Ensure this exists
 
 
 
@@ -40,7 +40,7 @@ const Features: React.FC = () => {
     <section className="py-16 bg-[#0D0D0D] text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-4xl font-serif mb-2 text-white">Our <span className="text-[#8DC63F]">Experience</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">Our <span className="text-[#8DC63F]">Experience</span></h2>
           <div className="w-16 h-1 bg-[#8DC63F] mx-auto mt-3 mb-5"></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
