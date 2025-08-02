@@ -10,6 +10,7 @@ import GuidingValues from './Guidence'
 import AutoCarousel from './Country'
 import FAQSection from './Faq'
 import CountryFlagSlider from './CountryFlegs'
+import AdmissionsSection from './CoursesAdmission'
 
 
 function Home() {
@@ -20,9 +21,10 @@ function Home() {
     <CountryFlagSlider/>
     {/* <About /> */}
     <AutoCarousel/>
-
-    <Features />
     
+    
+    <AdmissionsSection/>
+    <Features />
     <Programs />
     <Testimonials />
     <LeadCaptureForm/>
