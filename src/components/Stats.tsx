@@ -53,7 +53,7 @@ const StatItem: React.FC<StatItemProps> = ({ value, label, suffix = '', delay = 
 
 const Stats: React.FC = () => {
   return (
-   <section className="py-16 bg-white">
+   <section className="py-16 bg-white lg:hidden">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
       <StatItem value={10000} label="Students" suffix="+" delay={0} />

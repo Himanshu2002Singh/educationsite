@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
           {/* Links Sections */}
        {footerLinks.map((section, index) => (
   <div key={index}>
-    <h3 className="text-xl font-semibold mb-6">{section.title}</h3>
+    <h3 className="text-xl font-semibold mb-6 text-white">{section.title}</h3>
 
     {section.title === "Study Destinations" ? (
       <div className="grid grid-cols-2 gap-4">
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
           
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">Contact Info</h3>
             <ul className="space-y-4">
               <motion.li 
                 className="flex items-start"

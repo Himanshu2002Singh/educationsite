@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 // import rating from '../../assets/rating.gif'; // Ensure this exists
@@ -21,18 +21,18 @@ const Hero: React.FC = () => {
   
   
   // Count animation effects
-  // useEffect(() => {
-  //   const studentInterval = setInterval(() => {
-  //     setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
-  //   }, 10);
-  //   const countryInterval = setInterval(() => {
-  //     setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
-  //   }, 50);
-  //   return () => {
-  //     clearInterval(studentInterval);
-  //     clearInterval(countryInterval);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const studentInterval = setInterval(() => {
+      setStudentCount(prev => prev >= 10000 ? 10000 : prev + 100);
+    }, 10);
+    const countryInterval = setInterval(() => {
+      setCountryCount(prev => prev >= 25 ? 25 : prev + 1);
+    }, 50);
+    return () => {
+      clearInterval(studentInterval);
+      clearInterval(countryInterval);
+    };
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
