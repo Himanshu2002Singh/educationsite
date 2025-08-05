@@ -63,17 +63,18 @@ const StudySteps = () => {
 
         {/* Step Content */}
         <div className="md:w-3/4 space-y-6">
-          <img
-            src={stepImage}
-            alt="Step Illustration"
-            className="w-full max-h-72 object-contain mx-auto"
-          />
           <h3 className="text-xl font-bold text-[#231F20]">
             {steps[activeIndex].title}
           </h3>
           <p className="text-[#231F20] text-base">
             {steps[activeIndex].content}
           </p>
+
+          <img
+            src={stepImage}
+            alt="Step Illustration"
+            className="w-full max-h-72 object-contain mx-auto"
+          />
         </div>
       </div>
     </section>

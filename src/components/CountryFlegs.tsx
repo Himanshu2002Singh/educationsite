@@ -17,7 +17,7 @@ const countries = [
 
 const CountryFlagSlider: React.FC = () => {
   const settings = {
-    dots: true,
+    dots: false, // ✅ Removed dots
     infinite: true,
     speed: 600,
     slidesToShow: 5,
@@ -42,22 +42,22 @@ const CountryFlagSlider: React.FC = () => {
   };
 
   return (
-    <div className="w-full py-12 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="w-full py-12 bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite]">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-        Country flags
+        Student Placements Across the Globe
       </h2>
 
       <div className="max-w-6xl mx-auto px-4">
         <Slider {...settings}>
           {countries.map((country, index) => (
             <div key={index} className="px-4">
-              <div className="flex flex-col items-center justify-center gap-3">
+              <div className="bg-whitesmoke rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center transition-transform hover:scale-105 duration-300">
                 <img
                   src={`https://flagcdn.com/w320/${country.code}.png`}
                   alt={country.name}
-                  className="w-[150px] h-[100px] object-contain rounded-lg shadow-md transition-transform hover:scale-105"
+                  className="w-[150px] h-[100px] object-contain rounded-lg"
                 />
-                <span className="text-lg font-semibold text-gray-700">
+                <span className="mt-3 text-lg font-semibold text-gray-700">
                   {country.name}
                 </span>
               </div>
@@ -65,23 +65,6 @@ const CountryFlagSlider: React.FC = () => {
           ))}
         </Slider>
       </div>
-
-      {/* Dot customization */}
-      <style>
-        {`
-          .slick-dots {
-            bottom: -25px;
-          }
-          .slick-dots li button:before {
-            font-size: 10px;
-            color: #888;
-          }
-          .slick-dots li.slick-active button:before {
-            color: #2563eb;
-            font-size: 12px;
-          }
-        `}
-      </style>
     </div>
   );
 };

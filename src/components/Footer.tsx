@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#2d6a4f] text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-6 lg:px-12 py-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

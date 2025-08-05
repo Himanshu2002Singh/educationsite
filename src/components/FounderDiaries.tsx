@@ -31,7 +31,7 @@ const FounderDiaries: React.FC = () => {
   };
 
   return (
-    <div className='bg-gradient-to-br from-white via-slate-50 to-white'>
+    <div className='bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite]'>
     <section className="w-full  md:py-20 rounded-3xl max-w-7xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
         Meet our Founders
@@ -47,20 +47,20 @@ const FounderDiaries: React.FC = () => {
           >
             <div className="flex flex-col md:flex-row items-center justify-center h-full gap-10 bg-[#ecfdf5] rounded-2xl p-6 md:p-10 shadow-xl border border-green-100">
               {/* Photo Circle */}
-              <div className="w-48 h-48 rounded-full bg-[#d1f7d5] flex items-center justify-center text-[#5a8f69] text-xl font-semibold shadow-inner">
+              <div className="w-48 h-48 rounded-full bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite] flex items-center justify-center text-[#5a8f69] text-xl font-semibold shadow-inner">
                 {slide.name.split(' ')[0]}'s Photo
               </div>
 
               {/* Message Section */}
               <div className="text-center md:text-left max-w-2xl">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#2C2C2C] mb-4">
+                <h5 className="text-2xl md:text-2xl font-bold text-[#2C2C2C] mb-4">
                   {slide.title}
-                </h3>
+                </h5>
                 <p className="text-gray-700 text-lg leading-relaxed mb-4 whitespace-pre-line">
-                  {slide.description}
+                 " {slide.description}"
                 </p>
                 <div className="text-[#5a8f69] font-medium text-base">
-                  {slide.name} — {slide.role}
+                 {slide.role}
                 </div>
               </div>
             </div>

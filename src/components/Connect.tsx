@@ -23,16 +23,24 @@ export default function LeadCaptureForm() {
   }, []);
 
   return (
-    <section className="py-16 relative overflow-hidden bg-gradient-to-br from-lime-50 via-white to-emerald-100">
+    <section className="py-16 relative overflow-hidden bg-white">
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-10 gap-12">
 
         {/* Left Form Section */}
         <div className="z-10 relative">
-          <h2 className="text-4xl font-bold text-[#2C2C2C] mb-10 text-center drop-shadow-md">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#2C2C2C] text-center">
             Take the First Step
           </h2>
           <div className="bg-white border-[6px] border-black rounded-3xl p-6 md:p-8 max-w-md mx-auto shadow-xl">
             <form className="space-y-4">
+               <div>
+                <label className="block text-gray-800 mb-1 text-sm">Name</label>
+                <input
+                  type="name"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-400"
+                  placeholder="Enter your name"
+                />
+              </div>
               <div>
                 <label className="block text-gray-800 mb-1 text-sm">Email ID</label>
                 <input
@@ -49,18 +57,19 @@ export default function LeadCaptureForm() {
                   placeholder="Enter your phone number"
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2"
-              >
-                Connect with us
-              </button>
+             <button
+  type="submit"
+  className="rounded-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6"
+>
+  Connect with us
+</button>
+
             </form>
           </div>
         </div>
 
         {/* Right: Rotating Country Card */}
-        <div className="relative w-full h-[360px] flex items-center justify-center">
+      <div className="hidden sm:flex relative w-full h-[360px] items-center justify-center">
           {countries.map((country, index) => {
             const isActive = index === activeIndex;
             const zIndex = isActive ? 50 : 10;

@@ -12,25 +12,25 @@ const features = [
   {
     id: 1,
     title: "",
-    subtitle: "24+ Year of Experience",
+    subtitle: "24+ Years",
     image: experince // Replace with your image path
   },
   {
     id: 2,
-    title: "Tech-Driven Transparency",
-    subtitle: "Full visibility at every step",
+    title: "",
+    subtitle: "Tech-Driven Transparency",
     image: education // Replace with your image path
   },
   {
     id: 3,
-    title: "1.1 Personalized Mentorship",
-    subtitle: "Tailored Guidance for every student ",
+    title: "",
+    subtitle: "1:1 Personalized Mentorship & Tailored Guidance ",
     image: mentornship // Replace with your image path
   },
   {
     id: 4,
     title: "",
-    subtitle: "98% Visa Success Rate",
+    subtitle: "Higher Visa Success Than Industry Average",
     image: vis // Replace with your image path
   }
 ];
@@ -40,8 +40,8 @@ const Features: React.FC = () => {
     <section className="py-16 bg-[#0D0D0D] text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">Our <span className="text-[#8DC63F]">Experience</span></h2>
-          <div className="w-16 h-1 bg-[#8DC63F] mx-auto mt-3 mb-1"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-white">Our <span className="text-[#8DC63F]">Experience</span></h2>
+          <div className="w-16 h-1 bg-[#8DC63F] mx-auto mt-0 mb-1"></div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
           {features.map((feature, index) => (

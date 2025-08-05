@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const testimonials = [
+const testimonialData = [
   {
     id: 1,
     name: 'Shreenidhi Shetty',
     country: '🇬🇧 UK',
     university: 'Kingston University — MSc Data Science',
-    quote: 'I am beyond grateful to Edukonnect, their unwavering support and expertise made my dream of studying abroad come true. From day one, they were genuinely invested in my journey. The team went above and beyond, guiding me through the complex process of selecting the right university, ensuring I felt confident and informed at every stage. They truly took the time to understand my strengths and goals, offering personalized guidance that made all the difference. When it came to the visa process, they made what felt like an intimidating task surprisingly smooth. I highly recommend Edukonnect to anyone looking for a professional and genuinely caring consultancy.',
+    quote: 'I am beyond grateful to Edukonnect, their unwavering support and expertise made my dream of studying abroad come true. From day one, they were genuinely invested in my journey. The team went above and beyond, guiding me through the complex process of selecting the right university, ensuring I felt confident and informed at every stage. They truly took the time to understand my strengths and goals, offering personalized guidance that made all the difference.',
     image: 'https://drive.google.com/uc?export=view&id=1rhJ25LEzJBsZ_csApGV9pr3QJXkPNeGW'
   },
   {
@@ -84,76 +84,64 @@ const testimonials = [
 ];
 
 const Testimonials: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slidesPerView = window.innerWidth < 768 ? 1 : 3;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
+      setCurrentSlide((prev) => (prev + 1) % Math.ceil(testimonialData.length / slidesPerView));
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slidesPerView]);
+
+  const getVisibleTestimonials = () => {
+    const start = currentSlide * slidesPerView;
+    return testimonialData.slice(start, start + slidesPerView);
+  };
 
   return (
-    <div className="py-16 bg-[#0D0D0D] text-white rounded-3xl shadow-lg max-w-8xl mx-auto">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Success Stories</h2>
-          <p className="text-lg max-w-2xl mx-auto">
-            Hear from students who have successfully navigated their educational journey with our guidance.
-          </p>
-        </div>
+    <div className="py-16 bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite] shadow-lg ] px-4">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Student Testimonials</h2>
+        <p className="text-lg text-gray-600">
+          Read what our students say about their experience.
+        </p>
+      </div>
 
-        <div className="relative max-w-5xl mx-auto">
-          <div className="overflow-hidden relative rounded-2xl shadow-xl bg-gradient-to-r from-emerald-500 to-teal-700">
-            <div
-              className="transition-transform duration-500 ease-in-out flex"
-              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-            >
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="w-full flex-shrink-0 p-4 md:p-6">
-                  <div className="flex flex-col gap-4">
-                    {/* Header Section: Image + Name/University */}
-                    <div className="flex flex-col items-center gap-2 text-center">
-                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-white/30 shadow-lg">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <p className="text-white font-semibold text-lg">{testimonial.name}</p>
-                        <p className="text-white/80 text-sm">{testimonial.country} — {testimonial.university}</p>
-                      </div>
-                    </div>
-
-                    {/* Testimonial Section */}
-                    <div className="-mt-3">
-                      <div className="text-white/80 text-3xl font-serif">"</div>
-                      <p className="text-white text-lg md:text-xl italic">
-                        {testimonial.quote}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      <div className="flex flex-wrap justify-center gap-6 transition-all duration-500 ease-in-out">
+        {getVisibleTestimonials().map((item, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-md p-6 w-full sm:w-72 md:w-80 transition-transform transform hover:scale-105"
+          >
+            <div className="flex items-center mb-4">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-12 h-12 rounded-full mr-3"
+              />
+              <div>
+                <h4 className="font-semibold text-gray-800 text-sm">{item.name}</h4>
+                <p className="text-gray-500 text-xs">{item.university}</p>
+                <p className="text-gray-500 text-xs">{item.country}</p>
+              </div>
             </div>
-
-            {/* Navigation dots */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === activeIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                ></button>
-              ))}
-            </div>
+            <p className="text-gray-600 text-sm">{item.quote}</p>
           </div>
-        </div>
+        ))}
+      </div>
+
+      {/* Dots */}
+      <div className="flex justify-center space-x-2 mt-6">
+        {Array.from({ length: Math.ceil(testimonialData.length / slidesPerView) }).map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full ${
+              index === currentSlide ? 'bg-emerald-600 scale-125' : 'bg-gray-400'
+            }`}
+          />
+        ))}
       </div>
     </div>
   );

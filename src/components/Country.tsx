@@ -20,7 +20,7 @@ import img14 from "../../assets/IMG_7949.png";
 
 const AutoCarousel: React.FC = () => {
   const settings = {
-    dots: false,
+    dots: false, // ✅ Dots removed
     infinite: true,
     speed: 800,
     slidesToShow: 5,
@@ -51,45 +51,35 @@ const AutoCarousel: React.FC = () => {
   ];
 
   return (
-    <div className="w-full white py-12 md:py-16 ">
+    <div className="w-full py-12 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2C2C2C] mb-10">
-          Where our Students got Admit from?
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2C2C2C] mb-12">
+          Where our Students got admit from
         </h2>
 
-        <div className="relative pt-10">
+        <div className="relative">
           <Slider {...settings}>
             {logos.map((logo, index) => (
-              <div key={index} className="px-2">
-                <div className="w-full h-[120px] flex items-center justify-center overflow-hidden gap-4 ">
+              <div key={index} className="px-4">
+                <div className="bg-white rounded-xl p-4 h-[120px] flex items-center justify-center shadow-md transition-transform hover:scale-105 duration-300">
                   <img
                     src={logo}
                     alt={`Logo ${index + 1}`}
-                    className="object-contain h-full w-auto gap-4"
+                    className="object-contain h-full w-auto"
                   />
                 </div>
               </div>
             ))}
           </Slider>
         </div>
-      </div>
 
-      {/* Dots Custom Styling */}
-      <style>
-        {`
-          .slick-dots {
-            bottom: -30px;
-          }
-          .slick-dots li button:before {
-            font-size: 10px;
-            color: #a3a3a3;
-          }
-          .slick-dots li.slick-active button:before {
-            color: #22c55e;
-            font-size: 12px;
-          }
-        `}
-      </style>
+        {/* ...and many more */}
+        <div className="mt-10 text-center">
+          <p className="text-lg font-semibold text-gray-600 italic">
+            ...and many more prestigious universities across the globe
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

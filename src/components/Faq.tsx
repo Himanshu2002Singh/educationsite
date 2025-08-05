@@ -47,19 +47,22 @@ const faqs = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   const toggleAnswer = (event: React.MouseEvent, index: number) => {
     event.stopPropagation();
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, 4);
+
   return (
     <div className="p-6 md:p-10 rounded-3xl shadow-lg max-w-8xl mx-auto mt-6">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-        EduKonnect - Study Abroad FAQs
+        Study Abroad FAQs
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
-        {faqs.map((faq, index) => (
+        {visibleFaqs.map((faq, index) => (
           <div
             key={index}
             className="bg-[#8DC63F] rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
@@ -91,6 +94,18 @@ export default function FAQSection() {
           </div>
         ))}
       </div>
+
+      {/* Read More Button */}
+      {!showAll && (
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAll(true)}
+            className="inline-block bg-[#C1272D] hover:bg-[#a62024] text-white font-medium py-2 px-6 rounded-full transition duration-300"
+          >
+            Read more
+          </button>
+        </div>
+      )}
     </div>
   );
 }
