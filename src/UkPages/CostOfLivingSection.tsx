@@ -77,25 +77,32 @@ const CostOfLivingSection = () => {
           </div>
 
           {/* Cost Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-            {['london', 'outside'].map((key) => {
+          <div className="mb-10">
+            {(() => {
+              const key = activeTab;
               const data = costBreakdown[key];
-              const isActive = activeTab === key;
-              const accentColor = key === 'london' ? '#C1272D' : '#8DC63F';
+              const accentColor = key === 'london' ? '#8DC63F' : '#2B6CB0'; // red for london, blue for outside
 
               return (
                 <div
                   key={key}
-                  className={`bg-[#F9F9F9]/70 backdrop-blur-sm rounded-xl p-8 border-2 transition-all duration-300 ${
-                    isActive ? `border-[${accentColor}] shadow-xl` : 'border-gray-200'
-                  }`}
+                  className="max-w-xl mx-auto bg-[#F9F9F9]/70 backdrop-blur-sm rounded-xl p-8 border-2 transition-all duration-300 border-[var(--accent)] shadow-xl"
+                  style={{ ['--accent' as any]: accentColor }}
                 >
                   <div className="text-center mb-6">
                     <div className="flex items-center justify-center mb-4">
-                      <MapPin className={`w-8 h-8 mr-2 text-[${accentColor}]`} />
+                      <MapPin className="w-8 h-8 mr-2" style={{ color: accentColor }} />
                     </div>
-                    <div className={`bg-[${accentColor}] bg-opacity-10 border rounded-lg p-4`}>
-                      <p className={`text-3xl font-bold text-[${accentColor}] mb-1`}>£{data.total}</p>
+                    <div
+                      className="bg-opacity-10 border rounded-lg p-4"
+                      style={{
+                        backgroundColor: accentColor + '1A',
+                        borderColor: accentColor,
+                      }}
+                    >
+                      <p className="text-3xl font-bold mb-1" style={{ color: accentColor }}>
+                        £{data.total}
+                      </p>
                       <p className="text-lg text-gray-700">₹{data.totalINR.toLocaleString()} per year</p>
                     </div>
                   </div>
@@ -126,16 +133,31 @@ const CostOfLivingSection = () => {
                   </div>
                 </div>
               );
-            })}
+            })()}
           </div>
 
           {/* Key Insights */}
           <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-200">
             <h4 className="text-xl font-bold text-[#2C2C2C] mb-4 text-center">Key Insights</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <InsightItem icon={<Calculator className="w-6 h-6 text-[#8DC63F]" />} title="Save £3,123/year" description="By choosing cities outside London" color="#8DC63F" />
-              <InsightItem icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />} title="Earn £8,000/year" description="Through part-time work (20hrs/week)" color="#C1272D" />
-              <InsightItem icon={<Home className="w-6 h-6 text-[#2C2C2C]" />} title="Quality Education" description="Same standard everywhere in UK" color="#2C2C2C" />
+              <InsightItem
+                icon={<Calculator className="w-6 h-6 text-[#8DC63F]" />}
+                title="Save £3,123/year"
+                description="By choosing cities outside London"
+                color="#8DC63F"
+              />
+              <InsightItem
+                icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />}
+                title="Earn £8,000/year"
+                description="Through part-time work (20hrs/week)"
+                color="#C1272D"
+              />
+              <InsightItem
+                icon={<Home className="w-6 h-6 text-[#2C2C2C]" />}
+                title="Quality Education"
+                description="Same standard everywhere in UK"
+                color="#2C2C2C"
+              />
             </div>
           </div>
 
@@ -153,7 +175,10 @@ const CostOfLivingSection = () => {
 
 const InsightItem = ({ icon, title, description, color }: any) => (
   <div className="text-center">
-    <div className={`bg-[${color}] bg-opacity-20 rounded-full p-3 w-12 h-12 mx-auto mb-3 flex items-center justify-center`}>
+    <div
+      className="rounded-full p-3 w-12 h-12 mx-auto mb-3 flex items-center justify-center"
+      style={{ backgroundColor: `${color}20` }}
+    >
       {icon}
     </div>
     <h5 className="font-bold text-[#2C2C2C] mb-2">{title}</h5>

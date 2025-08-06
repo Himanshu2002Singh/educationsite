@@ -1,6 +1,5 @@
 import React from 'react';
 import { Clock, GraduationCap, Briefcase, BookOpen } from 'lucide-react';
-import Marquee from 'react-fast-marquee';
 
 const DegreeDurationSection = () => {
   const programs = [
@@ -59,19 +58,19 @@ const DegreeDurationSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-british-navy mb-4 font-serif">
-             Program Duration & Course Structure
+            Program Duration & Course Structure
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Study smart with the UK's flexible, time-efficient degrees
           </p>
         </div>
 
-        {/* Marquee View for All Screens */}
-        <Marquee pauseOnHover speed={50} gradient={false} className="mb-12">
+        {/* Static Cards in Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {programs.map((program, index) => (
             <div
               key={index}
-              className={`mx-4 min-w-[280px] md:min-w-[320px] ${program.color} border-2 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 bg-white`}
+              className={`min-w-[280px] ${program.color} border-2 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 bg-white`}
             >
               <div className="flex justify-center mb-3">{program.icon}</div>
               <div className="text-center">
@@ -84,7 +83,7 @@ const DegreeDurationSection = () => {
               </div>
             </div>
           ))}
-        </Marquee>
+        </div>
 
         <div className="text-center">
           <button className="bg-[#8DC63F] hover:bg-[#7cb532] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">

@@ -30,6 +30,7 @@ const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(null);
       dropdown: [
         { name: 'UK', href: '/uk' },
         { name: 'Canada', href: '/canada' },
+        { name: 'New Zealand', href: '/newzealand' },
       ],
     },
     { id: 4, name: 'Latest Blogs', href: '/blogs' },
