@@ -6,8 +6,6 @@ import {
   Briefcase,
   MapPin,
   Users,
-  School,
-  BookOpen,
 } from "lucide-react";
 import nzGirl from "../../assets/students1.png"; // Replace with actual image path
 
@@ -52,11 +50,11 @@ const points = [
 
 const StudyNZSection = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="bg-white py-12 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
             <img
               src="https://flagcdn.com/w40/nz.png"
               alt="New Zealand Flag"
@@ -82,17 +80,17 @@ const StudyNZSection = () => {
             ))}
           </div>
 
-          <button className="mt-6 bg-[#8DC63F] hover:bg-[#7cb532] text-white font-semibold py-3 px-6 rounded-full transition">
+          <button className="mt-6 w-full sm:w-auto bg-[#8DC63F] hover:bg-[#7cb532] text-white font-semibold py-3 px-6 rounded-full transition">
             Talk to a NZ Expert
           </button>
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:justify-end">
           <img
             src={nzGirl}
             alt="Student with NZ Flag"
-            className="max-w-sm w-full rounded-2xl shadow-md"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-2xl shadow-md"
           />
         </div>
       </div>

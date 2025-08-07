@@ -89,15 +89,17 @@ const UniversitiesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 md:px-10">
-       
-        {/* New Zealand Cities Section */}
-        <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-[#2C2C2C] mb-6">Top Cities in New Zealand for Education</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <section className="py-14 bg-[#F9F9F9]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+
+        {/* NZ Cities Section */}
+        <div className="text-center mb-10">
+          <h3 className="text-2xl sm:text-3xl font-bold text-[#2C2C2C] mb-6">
+            Top Cities in New Zealand for Education
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {nzCities.map((city, idx) => (
-              <div key={idx} className="bg-white rounded-xl p-6 shadow-md">
+              <div key={idx} className="bg-white rounded-xl p-5 shadow-sm text-left">
                 <div className="flex items-center text-[#8DC63F] mb-2">
                   <MapPin className="w-5 h-5 mr-2" />
                   <h4 className="text-lg font-semibold text-[#2C2C2C]">{city.name}</h4>
@@ -110,26 +112,43 @@ const UniversitiesSection = () => {
 
         {/* NZ University Table */}
         <div className="mt-14">
-          <h3 className="text-3xl font-bold text-center text-[#2C2C2C] mb-6">Top New Zealand Universities (QS 2025)</h3>
-          <div className="overflow-auto max-w-4xl mx-auto rounded-xl border border-gray-200 shadow-sm">
-            <table className="min-w-full divide-y divide-gray-200 text-sm text-left">
-              <thead className="bg-[#8DC63F] text-white">
-                <tr>
-                  <th className="px-6 py-3 font-semibold">University</th>
-                  <th className="px-6 py-3 font-semibold">Location</th>
-                  <th className="px-6 py-3 font-semibold">QS World Ranking</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {nzUniversityTable.map((uni, i) => (
-                  <tr key={i}>
-                    <td className="px-6 py-4">{uni.university}</td>
-                    <td className="px-6 py-4">{uni.location}</td>
-                    <td className="px-6 py-4">{uni.rank}</td>
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-[#2C2C2C] mb-6">
+            Top New Zealand Universities (QS 2025)
+          </h3>
+
+          {/* Mobile Card View */}
+          <div className="block sm:hidden space-y-4">
+            {nzUniversityTable.map((uni, i) => (
+              <div key={i} className="bg-white p-4 rounded-xl border shadow-sm">
+                <h4 className="font-semibold text-[#2C2C2C]">{uni.university}</h4>
+                <p className="text-sm text-gray-600"><strong>Location:</strong> {uni.location}</p>
+                <p className="text-sm text-gray-600"><strong>Ranking:</strong> {uni.rank}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Table View */}
+          <div className="hidden sm:block mt-6">
+            <div className="min-w-[600px] w-full max-w-4xl mx-auto rounded-xl border border-gray-200 shadow-sm">
+              <table className="w-full text-sm text-left">
+                <thead className="bg-[#8DC63F] text-white">
+                  <tr>
+                    <th className="px-6 py-3 font-semibold">University</th>
+                    <th className="px-6 py-3 font-semibold">Location</th>
+                    <th className="px-6 py-3 font-semibold">QS World Ranking</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {nzUniversityTable.map((uni, i) => (
+                    <tr key={i}>
+                      <td className="px-6 py-4">{uni.university}</td>
+                      <td className="px-6 py-4">{uni.location}</td>
+                      <td className="px-6 py-4">{uni.rank}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
