@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
           </p>
            
            <p className="text-gray-200 text-center md:text-left text-sm">
-             Designe & Developement by <a href="www.trustingbrains.com" className="text-white hover:underline">Trusting Brains</a> 
+             Design & Development by <a href="www.trustingbrains.com" className="text-white hover:underline">Trusting Brains</a> 
           </p>
           
         </motion.div>
