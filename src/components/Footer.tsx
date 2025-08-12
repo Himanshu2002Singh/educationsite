@@ -46,12 +46,12 @@ const Footer: React.FC = () => {
           <div>
             <motion.div 
               whileHover={{ scale: 1.02 }}
-              className="flex items-center mb-6"
+              className="flex items-center mb-1"
             >
               <img src={logo} alt="EduKonnect Logo" className="h-20 w-auto mr-3" />
               
             </motion.div>
-            <p className="mb-6 text-gray-200 text-lg leading-relaxed">
+            <p className="mb-5 text-gray-200 text-lg leading-relaxed">
               Your trusted partner for global education opportunities. We connect ambitious students with prestigious universities worldwide.
             </p>
             <div className="flex space-x-5">
