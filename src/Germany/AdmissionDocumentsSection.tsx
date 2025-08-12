@@ -32,35 +32,34 @@ const AdmissionDocumentsSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Left side - heading and description */}
-          <div className="lg:w-1/3 border-l-4 border-[#4C51BF] pl-6">
-            <h2 className="text-4xl font-extrabold text-[#1E293B] mb-4 font-serif leading-tight">
-              Admission Documents<br />for Studying in Germany
-            </h2>
-            <p className="text-lg text-[#475569] leading-relaxed">
-              Required documents to apply for studies in Germany. Ensure you gather all necessary paperwork early to avoid delays in your application process.
-            </p>
-          </div>
+      <div className="container mx-auto px-6 max-w-7xl">
+        {/* Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-4xl font-extrabold text-[#1E293B] mb-4 font-serif leading-tight">
+            Admission Documents for Studying in Germany
+          </h2>
+          <p className="text-lg text-[#475569] leading-relaxed">
+            Gather all the required documents early to avoid delays in your Germany study application process.
+          </p>
+        </div>
 
-          {/* Right side - list of documents */}
-          <ul className="lg:w-2/3 flex flex-col gap-5">
-            {documents.map((doc, index) => {
-              const colorClass = colorClasses[index];
-              return (
-                <li
-                  key={index}
-                  className={`flex items-center gap-4 p-4 rounded-xl ${colorClass} bg-opacity-30 hover:bg-opacity-50 transition cursor-default`}
-                >
-                  <div className="bg-white rounded-full p-3 shadow-md flex items-center justify-center">
-                    <FileText className={`w-7 h-7 ${colorClass.split(' ')[1]}`} />
-                  </div>
-                  <span className="text-lg font-semibold">{doc}</span>
-                </li>
-              );
-            })}
-          </ul>
+        {/* Grid Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {documents.map((doc, index) => {
+            const colorClass = colorClasses[index % colorClasses.length];
+            const [bgColor, textColor] = colorClass.split(' ');
+            return (
+              <div
+                key={index}
+                className={`rounded-xl shadow-md p-6 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg ${bgColor} bg-opacity-40`}
+              >
+                <div className="bg-white rounded-full p-4 shadow-md flex items-center justify-center mb-4">
+                  <FileText className={`w-8 h-8 ${textColor}`} />
+                </div>
+                <span className={`text-lg font-semibold ${textColor}`}>{doc}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

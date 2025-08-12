@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const UniversitySection: React.FC = () => {
-  const statueImage = "/images/statue.png";
+  const [view, setView] = useState<"public" | "private">("public");
 
   const publicUniversities = [
     { name: "Technical University of Munich", logo: "../../assets/Technical University of Munich.png" },
@@ -30,143 +33,81 @@ const UniversitySection: React.FC = () => {
     { name: "Munich Business School", logo: "/images/munich-business.png" },
   ];
 
-  const renderCircleLayout = (universities: { name: string; logo: string }[]) => {
-    const radius = 42; // slightly bigger radius to avoid overlap
-    const center = 50;
-    return universities.map((uni, index) => {
-      const angle = (index / universities.length) * 2 * Math.PI - Math.PI / 2;
-      const x = center + radius * Math.cos(angle);
-      const y = center + radius * Math.sin(angle);
-      return (
-        <div
-          key={uni.name}
-          className="uni-item"
-          style={{ top: `${y}%`, left: `${x}%` }}
-        >
-          <img src={uni.logo} alt={uni.name} className="uni-logo" />
-          <p className="uni-name">{uni.name}</p>
-        </div>
-      );
-    });
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      { breakpoint: 1280, settings: { slidesToShow: 3 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } }
+    ]
   };
 
-  const renderGridLayout = (universities: { name: string; logo: string }[]) => (
-    <div className="uni-grid">
+  const renderCarousel = (universities: { name: string; logo: string }[]) => (
+    <Slider {...sliderSettings}>
       {universities.map((uni) => (
-        <div key={uni.name} className="grid-item">
-          <img src={uni.logo} alt={uni.name} className="uni-logo" />
-          <p className="uni-name">{uni.name}</p>
+        <div key={uni.name} className="p-3">
+          <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center p-6 border border-green-100 h-[250px] sm:h-[300px] md:h-[300px]">
+            <div className="flex items-center justify-center w-24 h-24 rounded-full bg-green-50 border border-green-300 overflow-hidden">
+              <img
+                src={uni.logo}
+                alt={uni.name}
+                className="max-w-[80%] max-h-[80%] object-contain"
+              />
+            </div>
+            <p className="mt-4 text-green-900 font-semibold text-sm sm:text-base">
+              {uni.name}
+            </p>
+          </div>
         </div>
       ))}
-    </div>
+    </Slider>
   );
 
   return (
-    <div className="section-container">
-      <h2 className="section-title">Top German Universities You Should Know</h2>
-      <p className="section-subtitle">
-        Brief: Top universities with QS ranking & their popular courses
+    <div className="py-12 px-4 sm:px-8 bg-green-50">
+      <h2 className="text-2xl sm:text-3xl font-bold text-green-900 text-center mb-2">
+        Top German Universities You Should Know
+      </h2>
+      <p className="text-green-700 text-center mb-6 text-sm sm:text-base">
+        Click a button to explore public or private universities in Germany
       </p>
 
-      <h3 className="list-title">Top Public Universities in Germany</h3>
-      <div className="circle-layout">
-        <img src={statueImage} alt="Statue" className="statue" />
-        {renderCircleLayout(publicUniversities)}
+      {/* Toggle Buttons */}
+      <div className="flex justify-center gap-3 mb-8 flex-wrap">
+        <button
+          onClick={() => setView("public")}
+          className={`px-5 py-2 rounded-lg font-semibold border transition-all ${
+            view === "public"
+              ? "bg-green-600 text-white border-green-600"
+              : "bg-green-100 text-green-900 border-green-300 hover:bg-green-200"
+          }`}
+        >
+          Public Universities
+        </button>
+        <button
+          onClick={() => setView("private")}
+          className={`px-5 py-2 rounded-lg font-semibold border transition-all ${
+            view === "private"
+              ? "bg-green-600 text-white border-green-600"
+              : "bg-green-100 text-green-900 border-green-300 hover:bg-green-200"
+          }`}
+        >
+          Private Universities
+        </button>
       </div>
-      <div className="mobile-layout">{renderGridLayout(publicUniversities)}</div>
 
-      <h3 className="list-title">Top Private Universities in Germany</h3>
-      <div className="circle-layout">
-        <img src={statueImage} alt="Statue" className="statue" />
-        {renderCircleLayout(privateUniversities)}
+      {/* Carousel */}
+      <div className="pb-8"> {/* extra space for dots */}
+        {view === "public"
+          ? renderCarousel(publicUniversities)
+          : renderCarousel(privateUniversities)}
       </div>
-      <div className="mobile-layout">{renderGridLayout(privateUniversities)}</div>
-
-      <style jsx>{`
-        .section-container {
-          text-align: center;
-          padding: 40px 20px;
-          font-family: Arial, sans-serif;
-        }
-        .section-title {
-          font-size: 28px;
-          font-weight: bold;
-          margin-bottom: 8px;
-        }
-        .section-subtitle {
-          font-size: 16px;
-          color: #555;
-          margin-bottom: 40px;
-        }
-        .list-title {
-          font-size: 22px;
-          margin: 40px 0 20px;
-        }
-        .circle-layout {
-          position: relative;
-          width: 650px;
-          height: 650px;
-          margin: 0 auto 60px;
-        }
-        .statue {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 200px;
-          z-index: 1;
-        }
-        .uni-item {
-          position: absolute;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 130px; /* wider to prevent text wrapping weirdly */
-        }
-        .uni-logo {
-          width: 90px;
-          height: 90px;
-          border-radius: 50%;
-          object-fit: cover;
-          border: 3px solid #e91e63;
-          background-color: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-          margin-bottom: 8px;
-        }
-        .uni-name {
-          font-size: 12px;
-          font-weight: 500;
-          color: #333;
-          text-align: center;
-          line-height: 1.3;
-          max-width: 120px;
-        }
-        /* Mobile Layout Hidden by Default */
-        .mobile-layout {
-          display: none;
-        }
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-          .circle-layout {
-            display: none;
-          }
-          .mobile-layout {
-            display: block;
-          }
-          .uni-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-          }
-          .grid-item {
-            text-align: center;
-          }
-        }
-      `}</style>
     </div>
   );
 };
