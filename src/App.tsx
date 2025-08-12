@@ -6,6 +6,12 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Ukpage from './UkPages/Ukpage';
 import Footer from './components/Footer';
+import Newzealand from './NewZealand/Newzealand';
+import Germany from './Germany/Germany';
+// In your main entry file (e.g. App.tsx or main.tsx)
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -44,6 +50,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/uk" element={<Ukpage/>} />
+      <Route path="/newzealand" element={<Newzealand/>} />
+      <Route path="/germany" element={<Germany/>} />
     </Routes>
 
     <Footer />

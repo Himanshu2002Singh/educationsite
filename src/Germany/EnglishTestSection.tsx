@@ -8,17 +8,16 @@ import {
   ChevronUp,
   Send
 } from 'lucide-react';
-import ukMap from '../../assets/ukimage.png'; // make sure this is the map image
+import germanyMap from '../../assets/germanyimage.jpg'; // replace with your Germany map image
 
 const EnglishTestSection = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   const acceptedTests = [
-    { name: 'IELTS Academic', note: 'UKVI-approved test centers required', popular: true },
-    { name: 'PTE Academic', note: 'Widely accepted', popular: true },
-    { name: 'TOEFL iBT', note: 'Traditional choice', popular: true },
-    { name: 'Duolingo English Test', note: 'Select universities only', popular: false },
-    { name: 'Other SELTs', note: 'UKVI approved', popular: false },
+    { name: 'IELTS', note: 'Min. 6.0, 6.5, or 7.0 depending on institution/program', popular: true },
+    { name: 'TOEFL (iBT)', note: 'Min. score 72–94', popular: true },
+    { name: 'Cambridge English', note: 'FCE, CAE, or CPE accepted', popular: false },
+    { name: 'Evidence of English Instruction', note: 'May waive test requirement', popular: false }
   ];
 
   const toggleSection = (section: string) => {
@@ -28,9 +27,9 @@ const EnglishTestSection = () => {
   return (
     <section
       className="py-12 sm:py-20 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: `url(${ukMap})` }}
+      style={{ backgroundImage: `url(${germanyMap})` }}
     >
-      <div className="absolute inset-0 bg-white/80 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 bg-white/50 backdrop-blur-[0.5px]" />
       <div className="relative container mx-auto px-4 sm:px-6 z-10">
         {/* Heading */}
         <div className="text-center mb-8 sm:mb-12">
@@ -38,7 +37,7 @@ const EnglishTestSection = () => {
             English Language Requirements
           </h2>
           <p className="text-base sm:text-xl text-gray-700 max-w-3xl mx-auto">
-            Understand eligibility, accepted tests, and waiver options
+            Display minimum test scores, accepted exams, waiver options, and pre-sessional programs for studying in Germany.
           </p>
         </div>
 
@@ -53,12 +52,12 @@ const EnglishTestSection = () => {
               <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Minimum Requirement</h3>
             </div>
             <div className="bg-[#8DC63F] text-white p-3 sm:p-4 rounded-lg mb-3 sm:mb-4">
-              <p className="font-bold text-base sm:text-lg mb-1 sm:mb-2">IELTS 5.5–6.5 overall</p>
-              <p className="text-xs sm:text-sm opacity-90">5.5 in each band (CEFR B2)</p>
+              <p className="font-bold text-base sm:text-lg mb-1 sm:mb-2">IELTS 6.0–7.0 overall</p>
+              <p className="text-xs sm:text-sm opacity-90">Or TOEFL iBT 72–94, depending on institution/program</p>
             </div>
             <div className="flex items-center text-xs sm:text-sm text-gray-700">
               <Info className="w-4 h-4 mr-2" />
-              <span>As per UKVI requirements</span>
+              <span>Requirements may vary by institution</span>
             </div>
           </div>
 
@@ -104,14 +103,14 @@ const EnglishTestSection = () => {
             </div>
 
             <div className="space-y-3 sm:space-y-4">
-              {/* IELTS Waiver */}
+              {/* Waiver Option */}
               <div className="border border-gray-200 rounded-lg">
                 <button
                   onClick={() => toggleSection('waiver')}
                   className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
                   <span className="font-semibold text-sm sm:text-base text-gray-800">
-                    🎓 IELTS Waiver Eligibility
+                    🎓 English as Medium of Instruction
                   </span>
                   {expandedSection === 'waiver' ? (
                     <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
@@ -121,8 +120,7 @@ const EnglishTestSection = () => {
                 </button>
                 {expandedSection === 'waiver' && (
                   <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
-                    Many universities waive the English language requirement based on Year 12
-                    English scores and medium of instruction.
+                    If your previous education was conducted in English, you might be exempt from providing a test score.
                   </div>
                 )}
               </div>
@@ -144,8 +142,7 @@ const EnglishTestSection = () => {
                 </button>
                 {expandedSection === 'presessional' && (
                   <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
-                    Offered to students who don't meet minimum IELTS scores. Conducted before
-                    course commencement to improve English proficiency.
+                    Universities may offer pre-sessional English programs for students who don’t meet minimum language requirements.
                   </div>
                 )}
               </div>
