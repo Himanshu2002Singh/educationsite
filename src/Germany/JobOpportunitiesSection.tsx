@@ -3,99 +3,79 @@ import { Briefcase, CheckCircle, UserCheck } from 'lucide-react';
 
 const infoItems = [
   {
-    icon: <UserCheck className="w-7 h-7 text-[#4C51BF]" />,
+    icon: <UserCheck className="w-8 h-8 text-[#4C51BF]" />,
     title: 'Eligibility Requirements',
     points: [
-      'Successful completion of a university degree from a recognized German university',
+      'Completion of a degree from a recognized German university',
       'Valid national passport',
-      'Proof of successful completion of studies (degree certificate or official confirmation)',
+      'Proof of graduation (degree certificate or confirmation)',
       'Valid health insurance coverage',
-      'Demonstration of sufficient financial resources to support yourself during the visa period',
+      'Proof of sufficient financial resources',
     ],
   },
   {
-    icon: <Briefcase className="w-7 h-7 text-[#2563EB]" />,
+    icon: <Briefcase className="w-8 h-8 text-[#2563EB]" />,
     title: 'Types of Post-Study Work Visas',
     points: [
-      'Job-Seeker Visa: Stay 18 months to look for a job related to your field of study. Does not authorize immediate work.',
-      "Residence Permit for Employment: Stay & work tied to your job; must update if you change jobs.",
-      'EU Blue Card: For highly skilled with a job offer meeting salary requirements; pathway to permanent residency.',
+      'Job-Seeker Visa: 18 months to find a job in your field.',
+      'Residence Permit for Employment: Linked to your job role.',
+      'EU Blue Card: For highly skilled professionals meeting salary criteria.',
     ],
   },
   {
-    icon: <CheckCircle className="w-7 h-7 text-[#10B981]" />,
+    icon: <CheckCircle className="w-8 h-8 text-[#10B981]" />,
     title: 'Key Benefits',
     points: [
       'Stay in Germany up to 18 months post-study',
-      'Time to find employment in your field and gain experience',
+      'Time to find relevant employment',
       'Pathway to permanent residency via EU Blue Card',
-      'Work in any field while searching for relevant jobs',
+      'Work in any field while job hunting',
     ],
   },
 ];
 
 const JobOpportunitiesSection = () => {
   return (
-    <section className="py-16 bg-white max-w-7xl mx-auto px-6 sm:px-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-        {/* Left Text Content */}
-        <div className="space-y-8 max-w-xl mx-auto lg:mx-0">
-          <h2 className="text-4xl font-serif font-extrabold text-[#1E293B] leading-tight">
+    <section className="py-16 bg-[#F9FAFB]">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Section Heading */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <h2 className="text-4xl font-serif font-extrabold text-[#1E293B] leading-tight mb-4">
             Job Opportunities & Work Permit After Studying in Germany
           </h2>
-
           <p className="text-lg text-[#475569] leading-relaxed tracking-wide">
-            Studying in Germany can open doors to fantastic job opportunities. After completing your studies, you can stay in Germany for up to 18 months to look for a job related to your field of study. This is a great chance to gain practical experience and build your professional network.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-[#334155] mt-8">
-            Job Opportunities
-          </h3>
-          <ul className="list-disc list-inside space-y-3 text-[#475569] text-base tracking-wide">
-            <li>STEM fields (science, technology, engineering, and mathematics)</li>
-            <li>Automotive and manufacturing</li>
-            <li>IT and data analytics</li>
-          </ul>
-
-          <p className="text-lg text-[#475569] leading-relaxed tracking-wide mt-8">
-            Germany offers a post-study work visa that allows international graduates to stay in the country for up to 18 months after completing their studies. This visa is designed to give graduates time to find employment in their field of study and gain practical experience in the German job market.
+            Germany provides excellent post-study work opportunities for international graduates, allowing them to gain professional experience and build their careers.
           </p>
         </div>
 
-        {/* Right Timeline Style */}
-        <div className="relative max-w-md mx-auto lg:mx-0">
-          {/* Vertical gradient line */}
-          {/* Hide line on smaller screens to avoid overlap */}
-          <div
-            className="hidden lg:block absolute top-10 left-10 h-full w-1 rounded-full"
-            style={{
-              background:
-                'linear-gradient(to bottom, #4C51BF, #7F9CF5, #4C51BF)',
-            }}
-          />
-
-          <div className="space-y-14">
-            {infoItems.map(({ icon, title, points }, idx) => (
-              <div
-                key={idx}
-                className="relative pl-20 py-6 bg-[#F9FAFB] rounded-2xl border border-[#E0E7FF] hover:border-[#4C51BF] transition-colors duration-300 cursor-default"
-              >
-                {/* Icon container */}
-                <div className="absolute top-6 left-6 w-14 h-14 rounded-full bg-white border-2 border-[#4C51BF] flex items-center justify-center shadow-sm">
-                  {icon}
-                </div>
-
-                <h4 className="text-xl font-bold text-[#1E293B] mb-4">{title}</h4>
-                <ul className="list-disc list-inside space-y-2 text-[#475569]">
-                  {points.map((point, i) => (
-                    <li key={i} className="text-sm leading-relaxed tracking-wide">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {infoItems.map(({ icon, title, points }, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8 flex flex-col"
+            >
+              {/* Icon */}
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#EEF2FF] mb-6">
+                {icon}
               </div>
-            ))}
-          </div>
+
+              {/* Title */}
+              <h4 className="text-xl font-bold text-[#1E293B] mb-4">
+                {title}
+              </h4>
+
+              {/* Points */}
+              <ul className="space-y-2 text-[#475569] text-sm leading-relaxed tracking-wide flex-1">
+                {points.map((point, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-[#4C51BF] mt-1">•</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
