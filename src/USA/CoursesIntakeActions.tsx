@@ -1,51 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import {
-  TrendingUp, Database, Cog, Heart, Palette,
-  Calendar, Snowflake, Leaf, Sun
+  Briefcase, Database, Cog, Heart, Microscope,
+  Calendar, Sun, Leaf, Snowflake, BarChart
 } from 'lucide-react';
 
-const CoursesIntakeSection = () => {
+const CoursesUsaIntakeSection = () => {
   const [activeTab, setActiveTab] = useState('courses');
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
 
+  // 📚 Popular Courses in USA
   const courses = [
-    { icon: <Database className="w-8 h-8 text-[#8DC63F]" />, title: "IT & Computer Science", subjects: "Programming, Systems, Networks" },
-    { icon: <Cog className="w-8 h-8 text-[#C1272D]" />, title: "Artificial Intelligence", subjects: "AI, ML, Deep Learning" },
-    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Civil Engineering", subjects: "Structural, Transportation, Geotechnical" },
-    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Bachelor of Information Technology", subjects: "IT Management, Databases" },
-    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Bachelor of Design (Digital)", subjects: "UI/UX, Digital Art" },
-    { icon: <TrendingUp className="w-8 h-8 text-green-600" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
-    { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
-    { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
-    { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },
-    { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Master of Information Technology", subjects: "Advanced IT, Security" },
-    { icon: <TrendingUp className="w-8 h-8 text-amber-600" />, title: "Master of Business Administration (MBA)", subjects: "Leadership, Finance, HR" },
+    { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Computer Science & IT", subjects: "Software Engineering, AI, Cybersecurity" },
+    { icon: <Cog className="w-8 h-8 text-red-500" />, title: "Engineering", subjects: "Mechanical, Civil, Electrical" },
+    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business & Management", subjects: "MBA, Marketing, Finance" },
+    { icon: <BarChart className="w-8 h-8 text-yellow-600" />, title: "Data Science & Analytics", subjects: "Big Data, Machine Learning, Statistics" },
+    { icon: <Heart className="w-8 h-8 text-pink-500" />, title: "Health & Life Sciences", subjects: "Medicine, Nursing, Public Health" },
+    { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Biotechnology", subjects: "Genetics, Bioinformatics" },
+    { icon: <BarChart className="w-8 h-8 text-amber-600" />, title: "Finance / Financial Analytics", subjects: "Investment Banking, Analytics" },
+    { icon: <Briefcase className="w-8 h-8 text-indigo-500" />, title: "Top MBA", subjects: "Executive MBA, MBA in Finance" },
   ];
 
+  // 📅 Major Intakes in USA
   const intakes = [
     {
-      icon: <Sun className="w-8 h-8 text-[#8DC63F]" />,
-      title: "February Intake",
-      subtitle: "(Primary)",
-      description: "Most universities in New Zealand offer February as the primary intake."
+      icon: <Sun className="w-8 h-8 text-orange-500" />,
+      title: "Fall Intake",
+      subtitle: "September – December",
+      description: "Most popular intake with 90% program availability. Application: Dec – Mar."
     },
     {
-      icon: <Leaf className="w-8 h-8 text-[#2C2C2C]" />,
-      title: "July Intake",
-      subtitle: "(Secondary)",
-      description: "July is the second most common intake across institutions."
+      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      title: "Spring Intake",
+      subtitle: "January – May",
+      description: "Secondary option with moderate availability. Application: July – Oct."
     },
     {
-      icon: <Snowflake className="w-8 h-8 text-[#C1272D]" />,
-      title: "November / Rolling",
-      subtitle: "(Special)",
-      description: "Some institutions offer November or rolling admissions for select postgraduate or diploma programs."
+      icon: <Snowflake className="w-8 h-8 text-blue-500" />,
+      title: "Summer Intake",
+      subtitle: "May – August",
+      description: "Short semester, limited programs (ideal for bridge courses). Application: Jan – Mar."
     }
   ];
 
   const dynamicFacts = [
-    "Sports Management", "Architecture", "Nursing", "Design Studies",
-    "Economics", "Computer Science", "Health Care"
+    "Fall intake offers the widest range of programs in the USA",
+    "Spring intake has less competition and smaller class sizes",
+    "Summer intake is ideal for internships and short courses",
+    "Business, Engineering, and Computer Science are top USA picks",
+    "USA degrees are highly valued worldwide"
   ];
 
   useEffect(() => {
@@ -60,10 +62,10 @@ const CoursesIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Courses & Intakes
+            Popular Courses & Intakes – USA
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Find your dream program across 1000s of specializations in the UK
+            Explore top courses and intake timelines for studying in the USA
           </p>
         </div>
 
@@ -73,8 +75,8 @@ const CoursesIntakeSection = () => {
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'courses'
-                ? 'bg-[#8DC63F] text-white'
-                : 'text-[#2C2C2C] hover:text-[#8DC63F]'
+                ? 'bg-blue-600 text-white'
+                : 'text-[#2C2C2C] hover:text-blue-600'
             }`}
           >
             Courses in Demand
@@ -83,8 +85,8 @@ const CoursesIntakeSection = () => {
             onClick={() => setActiveTab('intakes')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
-                ? 'bg-[#C1272D] text-white'
-                : 'text-[#2C2C2C] hover:text-[#C1272D]'
+                ? 'bg-green-600 text-white'
+                : 'text-[#2C2C2C] hover:text-green-600'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />
@@ -131,4 +133,4 @@ const CoursesIntakeSection = () => {
   );
 };
 
-export default CoursesIntakeSection;   
+export default CoursesUsaIntakeSection;

@@ -11,6 +11,9 @@ import Germany from './Germany/Germany';
 // In your main entry file (e.g. App.tsx or main.tsx)
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Uae from './UAE/Uae';
+import USA from './USA/USA';
+import Ireland from './IreLand/Ireland';
 
 
 
@@ -52,6 +55,10 @@ function App() {
       <Route path="/uk" element={<Ukpage/>} />
       <Route path="/newzealand" element={<Newzealand/>} />
       <Route path="/germany" element={<Germany/>} />
+      <Route path="/uae" element={<Uae/>} />
+      <Route path="/usa" element={<USA/>} />
+      <Route path="/ireland" element={<Ireland />} />
+      {/* Add other routes as needed */}
     </Routes>
 
     <Footer />

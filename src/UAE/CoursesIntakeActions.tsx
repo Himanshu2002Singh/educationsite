@@ -1,51 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import {
   TrendingUp, Database, Cog, Heart, Palette,
-  Calendar, Snowflake, Leaf, Sun
+  Calendar, Sun, Leaf, Snowflake, Briefcase
 } from 'lucide-react';
 
-const CoursesIntakeSection = () => {
+const CoursesUaeIntakeSection = () => {
   const [activeTab, setActiveTab] = useState('courses');
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
 
+  // 📚 Popular Courses in UAE
   const courses = [
-    { icon: <Database className="w-8 h-8 text-[#8DC63F]" />, title: "IT & Computer Science", subjects: "Programming, Systems, Networks" },
-    { icon: <Cog className="w-8 h-8 text-[#C1272D]" />, title: "Artificial Intelligence", subjects: "AI, ML, Deep Learning" },
-    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Civil Engineering", subjects: "Structural, Transportation, Geotechnical" },
-    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Bachelor of Information Technology", subjects: "IT Management, Databases" },
-    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Bachelor of Design (Digital)", subjects: "UI/UX, Digital Art" },
-    { icon: <TrendingUp className="w-8 h-8 text-green-600" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
-    { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
-    { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
-    { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },
-    { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Master of Information Technology", subjects: "Advanced IT, Security" },
-    { icon: <TrendingUp className="w-8 h-8 text-amber-600" />, title: "Master of Business Administration (MBA)", subjects: "Leadership, Finance, HR" },
+    { icon: <Briefcase className="w-8 h-8 text-[#8DC63F]" />, title: "Business Administration & Management", subjects: "Leadership, Marketing, HR" },
+    { icon: <Database className="w-8 h-8 text-[#C1272D]" />, title: "Computer Science & Artificial Intelligence", subjects: "AI, Machine Learning, Software Development" },
+    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Engineering", subjects: "Mechanical, Civil, Electrical, Aerospace" },
+    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Data Science & Cybersecurity", subjects: "Analytics, Big Data, Ethical Hacking" },
+    { icon: <Briefcase className="w-8 h-8 text-pink-500" />, title: "Finance & Accounting", subjects: "Corporate Finance, Taxation, Auditing" },
+    { icon: <Palette className="w-8 h-8 text-green-600" />, title: "Architecture & Interior Design", subjects: "Urban Design, Space Planning" },
+    { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Tourism & Hospitality Management", subjects: "Event Management, Hotel Operations" },
+    { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Media & Communication", subjects: "Journalism, PR, Digital Media" },
   ];
 
+  // 📅 University Intakes in Dubai
   const intakes = [
     {
       icon: <Sun className="w-8 h-8 text-[#8DC63F]" />,
-      title: "February Intake",
-      subtitle: "(Primary)",
-      description: "Most universities in New Zealand offer February as the primary intake."
+      title: "Fall Intake",
+      subtitle: "September",
+      description: "Primary intake with the widest choice of programs and scholarships. Application Period: April – August."
     },
     {
       icon: <Leaf className="w-8 h-8 text-[#2C2C2C]" />,
-      title: "July Intake",
-      subtitle: "(Secondary)",
-      description: "July is the second most common intake across institutions."
+      title: "Spring Intake",
+      subtitle: "January",
+      description: "Second major intake for students who missed Fall. Application Period: September – December."
     },
     {
       icon: <Snowflake className="w-8 h-8 text-[#C1272D]" />,
-      title: "November / Rolling",
-      subtitle: "(Special)",
-      description: "Some institutions offer November or rolling admissions for select postgraduate or diploma programs."
+      title: "Summer Intake (Limited)",
+      subtitle: "May / June",
+      description: "Available at select universities (Amity, DMU, Middlesex) for specific programs. Application Period: February – April."
     }
   ];
 
   const dynamicFacts = [
-    "Sports Management", "Architecture", "Nursing", "Design Studies",
-    "Economics", "Computer Science", "Health Care"
+    "Business graduates are in high demand in UAE",
+    "AI and Data Science offer top-paying roles",
+    "Hospitality jobs booming with Dubai Expo legacy",
+    "Architecture careers growing in urban development",
+    "Cybersecurity specialists are highly sought after"
   ];
 
   useEffect(() => {
@@ -60,10 +62,10 @@ const CoursesIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Courses & Intakes
+            Popular Courses & Intakes – UAE
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Find your dream program across 1000s of specializations in the UK
+            These programs are in high demand due to UAE job market trends
           </p>
         </div>
 
@@ -131,4 +133,4 @@ const CoursesIntakeSection = () => {
   );
 };
 
-export default CoursesIntakeSection;   
+export default CoursesUaeIntakeSection;

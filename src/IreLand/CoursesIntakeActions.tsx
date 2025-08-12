@@ -1,51 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import {
-  TrendingUp, Database, Cog, Heart, Palette,
-  Calendar, Snowflake, Leaf, Sun
+  Briefcase, Database, Cog, Heart, Microscope,
+  Calendar, Sun, Leaf, Snowflake, BarChart
 } from 'lucide-react';
 
-const CoursesIntakeSection = () => {
+const CoursesIrelandIntakeSection = () => {
   const [activeTab, setActiveTab] = useState('courses');
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
 
+  // 📚 Popular Courses in Ireland
   const courses = [
-    { icon: <Database className="w-8 h-8 text-[#8DC63F]" />, title: "IT & Computer Science", subjects: "Programming, Systems, Networks" },
-    { icon: <Cog className="w-8 h-8 text-[#C1272D]" />, title: "Artificial Intelligence", subjects: "AI, ML, Deep Learning" },
-    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Civil Engineering", subjects: "Structural, Transportation, Geotechnical" },
-    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Bachelor of Information Technology", subjects: "IT Management, Databases" },
-    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Bachelor of Design (Digital)", subjects: "UI/UX, Digital Art" },
-    { icon: <TrendingUp className="w-8 h-8 text-green-600" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
-    { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
-    { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
-    { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },
-    { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Master of Information Technology", subjects: "Advanced IT, Security" },
-    { icon: <TrendingUp className="w-8 h-8 text-amber-600" />, title: "Master of Business Administration (MBA)", subjects: "Leadership, Finance, HR" },
+    { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Engineering & Technology", subjects: "Software Engineering, Data Science, AI, Cyber Security, Mechanical, Electrical, Computer Science" },
+    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business & Finance", subjects: "International Business, Finance, Accounting, Management, Marketing, HR, Entrepreneurship" },
+    { icon: <Heart className="w-8 h-8 text-pink-500" />, title: "Healthcare & Medicine", subjects: "Nursing, Pharmacy, Physiotherapy, Occupational Therapy" },
+    { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Science & Humanities", subjects: "Biological Sciences, Chemistry, Physics, Environmental Science, Psychology, Sociology, Languages" },
+    { icon: <BarChart className="w-8 h-8 text-yellow-600" />, title: "Other Popular Courses", subjects: "Hospitality, Tourism, Digital Media, Game Dev, Animation, International Relations, Law" },
   ];
 
+  // 📅 Major Intakes in Ireland
   const intakes = [
     {
-      icon: <Sun className="w-8 h-8 text-[#8DC63F]" />,
-      title: "February Intake",
-      subtitle: "(Primary)",
-      description: "Most universities in New Zealand offer February as the primary intake."
+      icon: <Sun className="w-8 h-8 text-orange-500" />,
+      title: "September Intake (Major)",
+      description: "Maximum course options and highest student enrolments."
     },
     {
-      icon: <Leaf className="w-8 h-8 text-[#2C2C2C]" />,
-      title: "July Intake",
-      subtitle: "(Secondary)",
-      description: "July is the second most common intake across institutions."
+      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      title: "January Intake (Minor)",
+      description: "Wide course availability across multiple fields."
     },
     {
-      icon: <Snowflake className="w-8 h-8 text-[#C1272D]" />,
-      title: "November / Rolling",
-      subtitle: "(Special)",
-      description: "Some institutions offer November or rolling admissions for select postgraduate or diploma programs."
+      icon: <Snowflake className="w-8 h-8 text-blue-500" />,
+      title: "May Intake (Limited)",
+      description: "Available for select programs, mainly in business and tech."
     }
   ];
 
   const dynamicFacts = [
-    "Sports Management", "Architecture", "Nursing", "Design Studies",
-    "Economics", "Computer Science", "Health Care"
+    "September intake is the largest for Irish universities",
+    "January intake offers flexibility for mid-year starts",
+    "May intake is niche but great for short programs",
+    "Engineering, Business, and Healthcare are top Ireland picks",
+    "Ireland degrees are globally recognized, especially in tech"
   ];
 
   useEffect(() => {
@@ -60,10 +56,10 @@ const CoursesIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Courses & Intakes
+            Popular Courses & Intakes – Ireland
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Find your dream program across 1000s of specializations in the UK
+            Explore top courses and intake timelines for studying in Ireland
           </p>
         </div>
 
@@ -73,8 +69,8 @@ const CoursesIntakeSection = () => {
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'courses'
-                ? 'bg-[#8DC63F] text-white'
-                : 'text-[#2C2C2C] hover:text-[#8DC63F]'
+                ? 'bg-blue-600 text-white'
+                : 'text-[#2C2C2C] hover:text-blue-600'
             }`}
           >
             Courses in Demand
@@ -83,8 +79,8 @@ const CoursesIntakeSection = () => {
             onClick={() => setActiveTab('intakes')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
-                ? 'bg-[#C1272D] text-white'
-                : 'text-[#2C2C2C] hover:text-[#C1272D]'
+                ? 'bg-green-600 text-white'
+                : 'text-[#2C2C2C] hover:text-green-600'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />
@@ -118,9 +114,6 @@ const CoursesIntakeSection = () => {
               >
                 <div className="flex justify-center mb-4">{intake.icon}</div>
                 <h3 className="text-lg sm:text-xl font-bold text-[#2C2C2C] mb-1">{intake.title}</h3>
-                {intake.subtitle && (
-                  <p className="text-sm text-gray-500 mb-2 font-medium">{intake.subtitle}</p>
-                )}
                 <p className="text-gray-600 text-sm">{intake.description}</p>
               </div>
             ))}
@@ -131,4 +124,4 @@ const CoursesIntakeSection = () => {
   );
 };
 
-export default CoursesIntakeSection;   
+export default CoursesIrelandIntakeSection;

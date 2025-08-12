@@ -32,6 +32,11 @@ const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(null);
         { name: 'Canada', href: '/canada' },
         { name: 'New Zealand', href: '/newzealand' },
         { name: 'Germany', href: '/germany' },
+        { name: 'UAE', href: '/uae' },
+        { name: 'USA', href: '/usa' },
+        { name: 'Ireland', href: '/ireland' },
+        { name: 'Australia', href: '/australia' },
+        
         
       ],
     },
