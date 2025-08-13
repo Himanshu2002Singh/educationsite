@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Clock, Calendar, GraduationCap, Briefcase, Info } from 'lucide-react';
 
-const WorkingRightsSectionAustralia = () => {
+const WorkingRightsSectionCanada = () => {
   const [activeTab, setActiveTab] = useState<'studying' | 'postStudy'>('studying');
 
   const studyWorkRights = [
     {
-      level: "Student Visa Holders (Subclass 500)",
-      studyLimit: "Up to 48 hours per fortnight during study periods",
-      holidayLimit: "Unlimited hours during official university breaks/holidays",
+      level: "International Students in Canada",
+      studyLimit: "Up to 24 hours/week during academic sessions",
+      holidayLimit: "Full-time (up to 40 hours/week) during scheduled breaks",
       color: "from-[#F0FFF4] to-white border-[#CDEFD4]"
     }
   ];
@@ -18,10 +18,10 @@ const WorkingRightsSectionAustralia = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Working Rights in Australia for International Students
+            Working Rights in Canada for International Students
           </h2>
           <p className="text-xl text-[#2C2C2C] max-w-3xl mx-auto">
-            Understand your work permissions during and after your studies in Australia.
+            International students in Canada can work part-time while studying to gain experience and help cover living expenses.
           </p>
         </div>
 
@@ -64,14 +64,14 @@ const WorkingRightsSectionAustralia = () => {
                     <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
                       <div className="flex items-center">
                         <Clock className="w-6 h-6 text-[#8DC63F] mr-3" />
-                        <span className="text-[#2C2C2C] font-medium">During Study Periods</span>
+                        <span className="text-[#2C2C2C] font-medium">During Academic Sessions</span>
                       </div>
                       <span className="text-[#2C2C2C] font-bold text-lg">{item.studyLimit}</span>
                     </div>
                     <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
                       <div className="flex items-center">
                         <Calendar className="w-6 h-6 text-[#C1272D] mr-3" />
-                        <span className="text-[#2C2C2C] font-medium">During Holidays/Breaks</span>
+                        <span className="text-[#2C2C2C] font-medium">During Scheduled Breaks</span>
                       </div>
                       <span className="text-[#C1272D] font-bold text-lg">{item.holidayLimit}</span>
                     </div>
@@ -86,7 +86,7 @@ const WorkingRightsSectionAustralia = () => {
                 <span className="font-semibold text-[#C1272D]">Important Note</span>
               </div>
               <p className="text-[#2C2C2C] text-sm">
-                Students can work part-time while studying up to 48 hours per fortnight and full-time during official university breaks. Ensure compliance with visa conditions to maintain legal status.
+                Students can work off-campus up to 24 hours per week during academic sessions and full-time during scheduled breaks, as per Canadian immigration rules.
               </p>
             </div>
           </div>
@@ -99,34 +99,16 @@ const WorkingRightsSectionAustralia = () => {
                   <div className="bg-[#E5F8E0] p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">
                     <GraduationCap className="w-8 h-8 text-[#8DC63F]" />
                   </div>
-                  <h4 className="text-xl font-bold text-[#2C2C2C] mt-4">Bachelor's & Master's Graduates</h4>
+                  <h4 className="text-xl font-bold text-[#2C2C2C] mt-4">Post-Graduation Work Permit (PGWP)</h4>
                 </div>
                 <div className="bg-[#F0FFF4] border border-[#CDEFD4] p-6 rounded-lg text-center">
-                  <p className="text-3xl font-bold text-[#8DC63F] mb-2">2–4 Years</p>
-                  <p className="text-[#2C2C2C]">Post-Study Work Visa (Temporary Graduate Visa - Subclass 485)</p>
+                  <p className="text-3xl font-bold text-[#8DC63F] mb-2">Up to 3 Years</p>
+                  <p className="text-[#2C2C2C]">Duration depends on the length of the study program</p>
                 </div>
                 <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
-                  <li>Work in any sector</li>
-                  <li>Switch between employers</li>
-                  <li>Gain valuable Australian work experience</li>
-                </ul>
-              </div>
-
-              <div className="border-2 border-[#D6D6F0] bg-white rounded-xl p-6 shadow-lg hover:shadow-xl">
-                <div className="text-center mb-4">
-                  <div className="bg-[#EDEBFF] p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">
-                    <GraduationCap className="w-8 h-8 text-[#726EFF]" />
-                  </div>
-                  <h4 className="text-xl font-bold text-[#2C2C2C] mt-4">PhD Graduates</h4>
-                </div>
-                <div className="bg-[#F9F9FF] border border-[#D6D6F0] p-6 rounded-lg text-center">
-                  <p className="text-3xl font-bold text-[#726EFF] mb-2">4 Years</p>
-                  <p className="text-[#2C2C2C]">Post-Study Work Visa (Temporary Graduate Visa - Subclass 485)</p>
-                </div>
-                <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
-                  <li>Extended career opportunities</li>
-                  <li>Research and academic roles</li>
-                  <li>Industry leadership positions</li>
+                  <li>Work for any employer</li>
+                  <li>No job offer required to apply</li>
+                  <li>Gain Canadian work experience for PR pathways</li>
                 </ul>
               </div>
             </div>
@@ -137,4 +119,4 @@ const WorkingRightsSectionAustralia = () => {
   );
 };
 
-export default WorkingRightsSectionAustralia;
+export default WorkingRightsSectionCanada;

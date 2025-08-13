@@ -13,34 +13,41 @@ import {
 } from 'lucide-react';
 import { BiIdCard } from 'react-icons/bi';
 
-const DocumentsVisaSectionIreland = () => {
+const DocumentsVisaSectionCanada = () => {
   const [activeTab, setActiveTab] = useState('documents');
   const [expandedStep, setExpandedStep] = useState<number | null>(null);
 
   const documents = [
-    { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport", tooltip: "Valid passport – must be valid for the entire study period" },
-    { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Academic Transcripts", tooltip: "Class X, XII, Bachelor's marksheets or transcripts" },
-    { icon: <FileText className="w-6 h-6 text-[#C1272D]" />, label: "Statement of Purpose (SOP)", tooltip: "Tailored for your course and career goals" },
-    { icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, label: "Resume/CV", tooltip: "Highlight academic and work achievements" },
-    { icon: <User className="w-6 h-6 text-[#C1272D]" />, label: "Letters of Recommendation (LORs)", tooltip: "2 academic + 1 professional (if applicable)" },
-    { icon: <FileCheck className="w-6 h-6 text-[#8DC63F]" />, label: "English Proficiency Test Scores", tooltip: "IELTS, TOEFL, or equivalent" },
-    { icon: <Briefcase className="w-6 h-6 text-[#C1272D]" />, label: "Work Experience", tooltip: "If applicable – with official letters" },
-    { icon: <Image className="w-6 h-6 text-[#8DC63F]" />, label: "Portfolio", tooltip: "Mandatory for Art, Architecture & Design courses" },
-    { icon: <Award className="w-6 h-6 text-[#C1272D]" />, label: "Extracurriculars", tooltip: "State/National achievements, certifications" },
+    { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Academic Transcripts", tooltip: "Marksheets from 10th, 12th, and/or bachelor's degree" },
+    { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport", tooltip: "Valid for the entire study duration" },
+    { icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, label: "English Language Test Scores", tooltip: "IELTS / TOEFL / PTE – varies by institution & program" },
+    { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Statement of Purpose (SOP)", tooltip: "Explains study goals, background, and career plans" },
+    { icon: <User className="w-6 h-6 text-[#C1272D]" />, label: "Letters of Recommendation (LORs)", tooltip: "1–2 letters from teachers, professors, or employers" },
+    { icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, label: "Resume / CV", tooltip: "Academic & work experience summary (for PG programs)" },
+    { icon: <Image className="w-6 h-6 text-[#C1272D]" />, label: "Portfolio", tooltip: "For design, architecture, animation, etc. (if applicable)" },
+    { icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, label: "Work Experience Documents", tooltip: "Required for MBA/PG diploma applicants with job history" },
+    { icon: <Award className="w-6 h-6 text-[#C1272D]" />, label: "Backlog Summary", tooltip: "Required to determine the number of backlogs" },
   ];
 
   const visaSteps = [
-    { step: 1, title: "Get your Letter of Admission", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Receive an official offer from an Irish institution" },
-    { step: 2, title: "Show Financial Proof", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "6 months old funds, no large recent deposits" },
-    { step: 3, title: "PCC & Medical Insurance", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Obtain Police Clearance Certificate and arrange health coverage" },
-    { step: 4, title: "Submit your Visa Application", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Apply online via the Irish Naturalisation and Immigration Service" },
-    { step: 5, title: "Attend Biometrics", icon: <User className="w-6 h-6 text-[#8DC63F]" />, description: "Provide fingerprints and photographs" },
-    { step: 6, title: "Get Decision", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Visa decision typically within 2–3 weeks" },
+    { step: 1, title: "Apply to a DLI and get LOA", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Receive Letter of Acceptance (LOA) from a Designated Learning Institution (DLI)" },
+    { step: 2, title: "Obtain Provincial Attestation Letter (PAL)", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "Required for most provinces except Quebec" },
+    { step: 3, title: "If applying to Quebec: Get CAQ", icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, description: "Certificat d’acceptation du Québec (CAQ) is mandatory before visa application" },
+    { step: 4, title: "Pay Tuition Fee", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Pay at least 1 year of tuition and get official payment receipt" },
+    { step: 5, title: "Open GIC Account & Transfer Funds", icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, description: "CAD 20,635 for living expenses" },
+    { step: 6, title: "Gather Required Documents", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Passport, LOA, PAL/CAQ, GIC, tuition receipt, IELTS/PTE, SOP, etc." },
+    { step: 7, title: "Medical Exam (if applicable)", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Done through an IRCC-approved panel physician" },
+    { step: 8, title: "Apply for Study Permit", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Submit IMM 1294 form via IRCC portal, upload documents, pay CAD 150" },
+    { step: 9, title: "Give Biometrics", icon: <User className="w-6 h-6 text-[#8DC63F]" />, description: "At nearest Visa Application Centre (VAC), Biometric Fee: CAD 85" },
+    { step: 10, title: "Visa Processing & Approval", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Processing time varies from days to a few weeks" },
+    { step: 11, title: "Receive Port of Entry (POE) Letter", icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, description: "Letter to present at Canadian airport" },
+    { step: 12, title: "Travel to Canada", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "Carry original docs: LOA, PAL/CAQ, GIC, tuition receipt, POE Letter" },
+    { step: 13, title: "Get Study Permit at Border", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Issued by a Canada Border Services Officer on arrival" },
   ];
 
   const fundsRequired = [
-    "Tuition Fee (1 year to be paid)",
-    "Living Expenses: €10,000 – €12,000 per year",
+    "Tuition Fee: Minimum 1 year paid",
+    "Living Expenses: CAD 20,635 for a year",
   ];
 
   return (
@@ -48,10 +55,10 @@ const DocumentsVisaSectionIreland = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-            Admission Documents & Visa Process – Ireland
+            Admission Documents & Visa Process – Canada
           </h2>
           <p className="text-xl max-w-3xl mx-auto">
-            All required documentation for applying to Irish universities and securing your student visa.
+            All required documentation for applying to Canadian universities and securing your student visa.
           </p>
         </div>
 
@@ -91,8 +98,7 @@ const DocumentsVisaSectionIreland = () => {
 
         {activeTab === 'visa' && (
           <div>
-            {/* Visa Steps */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {visaSteps.map((step, idx) => (
                 <div key={idx} className="border-2 border-[#E0E0E0] rounded-xl overflow-hidden">
                   <button
@@ -104,9 +110,7 @@ const DocumentsVisaSectionIreland = () => {
                         {step.step}
                       </div>
                       <div className="mr-4">{step.icon}</div>
-                      <div>
-                        <h4 className="text-lg font-bold">{step.title}</h4>
-                      </div>
+                      <h4 className="text-lg font-bold">{step.title}</h4>
                     </div>
                   </button>
                   {expandedStep === idx && (
@@ -116,7 +120,6 @@ const DocumentsVisaSectionIreland = () => {
               ))}
             </div>
 
-            {/* Funds Required */}
             <div className="mt-10">
               <h3 className="text-2xl font-bold mb-4">🧾 Funds Required</h3>
               <ul className="list-disc pl-5 space-y-2 text-[#555]">
@@ -138,4 +141,4 @@ const DocumentsVisaSectionIreland = () => {
   );
 };
 
-export default DocumentsVisaSectionIreland;
+export default DocumentsVisaSectionCanada;

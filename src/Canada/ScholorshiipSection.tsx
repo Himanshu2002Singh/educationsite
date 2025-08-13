@@ -7,49 +7,63 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const ScholarshipsSectionAustralia = () => {
+const ScholarshipsSectionCanada = () => {
   const popularScholarships = [
     {
-      name: 'Australia Awards Scholarships',
-      type: 'Government Funded',
-      amount: 'Full tuition, travel, living allowance',
+      name: 'Vanier Canada Graduate Scholarship',
+      type: 'PhD',
+      amount: 'Generous funding for doctoral studies',
       icon: <Flag className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'Available to citizens of eligible developing countries.',
+      description: 'Awarded to world-class doctoral students who demonstrate leadership skills and a high standard of scholarly achievement.',
     },
     {
-      name: 'Destination Australia Scholarships',
-      type: 'Government Funded',
-      amount: 'Up to AUD 15,000/year',
+      name: 'Canada Graduate Scholarship – Master’s (CGS-M)',
+      type: 'Master’s',
+      amount: 'Up to CAD 17,500 for 12 months',
       icon: <Award className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'For students studying in regional Australia.',
+      description: 'Supports high-calibre scholars in eligible master’s or doctoral programs in Canada.',
     },
     {
-      name: 'University Scholarships',
-      type: 'University Funded',
-      amount: 'Partial to full tuition fee waivers',
+      name: 'Ontario Graduate Scholarship (OGS)',
+      type: 'Master’s/PhD',
+      amount: 'CAD 5,000 per term',
       icon: <GraduationCap className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'Awarded based on academic merit and/or financial need.',
+      description: 'Merit-based scholarship for graduate students in Ontario.',
     },
     {
-      name: 'Research Training Program (RTP)',
-      type: 'Research Funding',
-      amount: 'Tuition + stipend for living expenses',
+      name: 'Lester B. Pearson Scholarship (U of T)',
+      type: 'Undergraduate',
+      amount: 'Full tuition, books, and living allowance',
       icon: <Users className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'For PhD and research Master’s students.',
+      description: 'Awarded to outstanding international students at the University of Toronto.',
     },
     {
-      name: 'International Merit Scholarships',
-      type: 'University Funded',
-      amount: '10%–50% of tuition fees',
+      name: 'UBC International Scholars Program',
+      type: 'Undergraduate',
+      amount: 'Full-ride scholarship',
       icon: <Award className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'For high academic achievers.',
+      description: 'Recognizes international students with exceptional academic achievement and leadership skills.',
     },
     {
-      name: 'Faculty/Departmental Awards',
-      type: 'Course-specific',
+      name: 'York Global Leader of Tomorrow Award',
+      type: 'Undergraduate',
+      amount: 'CAD 20,000/year',
+      icon: <GraduationCap className="w-7 h-7 text-[#8DC63F]" />,
+      description: 'For high-achieving international students applying to York University.',
+    },
+    {
+      name: 'Study in Canada Scholarships (SICS)',
+      type: 'UG/PG/PhD (Short-term)',
+      amount: 'Varies',
+      icon: <Award className="w-7 h-7 text-[#8DC63F]" />,
+      description: 'Short-term exchange scholarships for students from post-secondary institutions worldwide.',
+    },
+    {
+      name: 'Canada-ASEAN SEED Scholarship',
+      type: 'UG/PG (Short-term)',
       amount: 'Varies',
       icon: <GraduationCap className="w-7 h-7 text-[#8DC63F]" />,
-      description: 'Based on grades or field of study.',
+      description: 'Supports students from ASEAN countries for study or research in Canada.',
     },
   ];
 
@@ -57,10 +71,10 @@ const ScholarshipsSectionAustralia = () => {
     <section className="bg-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 text-center">
-          Scholarships for International Students in Australia
+          Scholarships for International Students in Canada
         </h2>
         <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
-          Australia offers a variety of scholarships to support international students, including government-funded, university-specific, and research-based awards. These scholarships cover tuition, living expenses, and more.
+          Canada offers a variety of scholarships to support international students, ranging from government-funded to university-specific awards, covering tuition, living expenses, and more.
         </p>
 
         <Swiper
@@ -103,4 +117,4 @@ const ScholarshipsSectionAustralia = () => {
   );
 };
 
-export default ScholarshipsSectionAustralia;
+export default ScholarshipsSectionCanada;

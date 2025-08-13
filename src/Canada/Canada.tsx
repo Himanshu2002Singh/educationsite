@@ -1,15 +1,13 @@
-
-
-import DocumentsVisaSectionIreland from './StudentVisa'
-import ScholarshipsSectionAustralia from './ScholorshiipSection'
-import JobProspectsSectionAustralia from './JobPropects'
-import AustraliaAdmissionProcessSection from './AdmissionProcess'
-import WorkingRightsSectionAustralia from './WorkingRightsSection'
 import StudyCanadaSection from './hero'
 import CanadaUniversitiesSection from './UniversityList'
 import CoursesCanadaIntakeSection from './CoursesIntakeActions'
 import EnglishTestSectionCanada from './EnglishTestSection'
 import TuitionLivingCanadaSection from './TuitionFees'
+import BestCitiesCanada from './CostOfLiving'
+import ScholarshipsSectionCanada from './ScholorshiipSection'
+import DocumentsVisaSectionCanada from './StudentVisa'
+import WorkingRightsSectionCanada from './WorkingRightsSection'
+import JobProspectsSectionCanada from './JobPropects'
 
 
 function Canada() {
@@ -21,15 +19,15 @@ function Canada() {
       {/* <DegreeDurationIrelandSection/> */}
       <EnglishTestSectionCanada />
       <TuitionLivingCanadaSection />
-     
-      <ScholarshipsSectionAustralia/>
-      <AustraliaAdmissionProcessSection/>
-      <WorkingRightsSectionAustralia/>
+       <BestCitiesCanada/>
+      <ScholarshipsSectionCanada/>
+      {/* <AustraliaAdmissionProcessSection/> */}
+      <WorkingRightsSectionCanada/>
       {/* <UAEAdmissionProcessSection /> */}
      
-      <DocumentsVisaSectionIreland/>
+      <DocumentsVisaSectionCanada/>
        {/* <LifestyleFactsSectionIreland/> */}
-      <JobProspectsSectionAustralia />
+      <JobProspectsSectionCanada />
 
       {/* Add more sections as needed */}
       

@@ -48,7 +48,7 @@ const DocumentsVisaSectionIreland = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-            Admission Documents & Visa Process – Ireland
+            Admission Documents & Visa Process – Australia
           </h2>
           <p className="text-xl max-w-3xl mx-auto">
             All required documentation for applying to Irish universities and securing your student visa.
