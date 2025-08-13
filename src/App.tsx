@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Uae from './UAE/Uae';
 import USA from './USA/USA';
 import Ireland from './IreLand/Ireland';
+import Australia from './Austrila/Austrila';
 
 
 
@@ -58,6 +59,7 @@ function App() {
       <Route path="/uae" element={<Uae/>} />
       <Route path="/usa" element={<USA/>} />
       <Route path="/ireland" element={<Ireland />} />
+       <Route path="/australia" element={<Australia/>} />
       {/* Add other routes as needed */}
     </Routes>
 
