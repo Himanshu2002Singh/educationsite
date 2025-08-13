@@ -15,6 +15,7 @@ import Uae from './UAE/Uae';
 import USA from './USA/USA';
 import Ireland from './IreLand/Ireland';
 import Australia from './Austrila/Austrila';
+import Canada from './Canada/Canada';
 
 
 
@@ -60,6 +61,7 @@ function App() {
       <Route path="/usa" element={<USA/>} />
       <Route path="/ireland" element={<Ireland />} />
        <Route path="/australia" element={<Australia/>} />
+       <Route path="/canada" element={<Canada/>} />
       {/* Add other routes as needed */}
     </Routes>
 
