@@ -23,39 +23,41 @@ const AdmissionsSection = () => {
   ];
 
   return (
-    <div className="bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite]">
-      <section className="px-4 py-10 max-w-7xl mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Admissions Open
-          </h2>
-        </div>
+    <section className="bg-white py-12">
+      <div className="text-center mb-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
+          Admissions <span className="text-green-500">Open</span>
+        </h2>
+        <div className="w-16 h-[3px] bg-green-500 mx-auto mt-3"></div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 bg-[#f5f5f5] text-black w-full max-w-sm"
-            >
-              <div className="flex flex-col items-center p-4">
-                <span className="text-xs font-semibold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full mb-2 shadow-sm">
-                  EduConnect
-                </span>
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-40 object-contain"
-                />
-              </div>
-              <div className="p-5 text-center">
-                <h3 className="font-bold text-xl mb-2">{card.title}</h3>
-                <p className="text-sm text-gray-700">{card.subtitle}</p>
-              </div>
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="bg-green-50 border border-green-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+          >
+            {/* Image with "Fall 2025" label */}
+            <div className="relative">
+              <img
+                src={card.image}
+                alt={card.title}
+                className="w-full h-auto object-cover"
+              />
+              {/* <span className="absolute top-3 left-3 bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded">
+                Fall 2025
+              </span> */}
             </div>
-          ))}
-        </div>
-      </section>
-    </div>
+
+            {/* Text content */}
+            <div className="p-5">
+              <h3 className="font-bold text-lg mb-2 text-black">{card.title}</h3>
+              <p className="text-gray-600 text-sm text-black">{card.subtitle}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

@@ -3,70 +3,71 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import flag images from your assets
+import usa from "../../assets/fleg1.png";
+import uk from "../../assets/flegs2.png";
+import uae from "../../assets/3.png";
+import singapore from "../../assets/4.png";
+import newzealand from "../../assets/5.png";
+import italy from "../../assets/6.png";
+import france from "../../assets/7.png";
+import canada from "../../assets/8.png";
+import australia from "../../assets/9.png";
+
 const countries = [
-  { name: "USA", code: "us" },
-  { name: "UK", code: "gb" },
-  { name: "UAE", code: "ae" },
-  { name: "Singapore", code: "sg" },
-  { name: "New Zealand", code: "nz" },
-  { name: "Italy", code: "it" },
-  { name: "France", code: "fr" },
-  { name: "Canada", code: "ca" },
-  { name: "Australia", code: "au" },
+  { name: "USA", img: usa },
+  { name: "UK", img: uk },
+  { name: "UAE", img: uae },
+  { name: "Singapore", img: singapore },
+  { name: "New Zealand", img: newzealand },
+  { name: "Italy", img: italy },
+  { name: "France", img: france },
+  { name: "Canada", img: canada },
+  { name: "Australia", img: australia },
 ];
 
-const CountryFlagSlider: React.FC = () => {
+export default function GlobalStudyDestinations() {
   const settings = {
-    dots: false, // ✅ Removed dots
     infinite: true,
-    speed: 600,
+    speed: 800,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 4 } },
+      { breakpoint: 768, settings: { slidesToShow: 3 } },
+      { breakpoint: 480, settings: { slidesToShow: 2 } },
     ],
   };
 
   return (
-    <div className="w-full py-12 bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite]">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-        Student Placements Across the Globe
-      </h2>
+    <section className="py-10 bg-white">
+      {/* Title */}
+      <div className="text-center mb-6">
+        <h2 className="text-2xl md:text-4xl   font-bold text-gray-800">
+          Global Study <span className="text-green-500">Destinations</span>
+        </h2>
+        <div className="w-16 h-[3px] bg-green-500 mx-auto mt-3"></div>
+      </div>
 
-      <div className="max-w-6xl mx-auto px-4">
+      {/* Slider */}
+      <div className="px-4 max-w-7xl mx-auto">
         <Slider {...settings}>
-          {countries.map((country, index) => (
-            <div key={index} className="px-4">
-              <div className="bg-whitesmoke rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center transition-transform hover:scale-105 duration-300">
+          {countries.map((country, idx) => (
+            <div key={idx} className="px-2">
+              <div className="border-2 border-green-500 rounded-md overflow-hidden hover:scale-90 transition-transform duration-300 flex flex-col items-center p-2">
                 <img
-                  src={`https://flagcdn.com/w320/${country.code}.png`}
+                  src={country.img}
                   alt={country.name}
-                  className="w-[150px] h-[100px] object-contain rounded-lg"
+                  className="h-auto w-auto object-contain" // same height for all
                 />
-                <span className="mt-3 text-lg font-semibold text-gray-700">
-                  {country.name}
-                </span>
               </div>
             </div>
           ))}
         </Slider>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default CountryFlagSlider;
+}

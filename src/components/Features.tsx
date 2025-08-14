@@ -1,49 +1,54 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import experince from '../../assets/experience/1.png'; // Ensure this exists
-import education from '../../assets/experience/3.png'; // Ensure this exists
 
-import mentornship from '../../assets/experience/2.png'; // Ensure this exists
-import vis from '../../assets/experience/4.png'; // Ensure this exists
-
-
+import experince from '../../assets/experience/1.png';
+import education from '../../assets/experience/3.png';
+import mentornship from '../../assets/experience/2.png';
+import vis from '../../assets/experience/4.png';
+import { desc } from 'framer-motion/client';
 
 const features = [
   {
     id: 1,
-    title: "",
-    subtitle: "24+ Years",
-    image: experince // Replace with your image path
+    title: "24+ Years ",
+    desc: "of Experience",
+    image: experince
   },
   {
     id: 2,
-    title: "",
-    subtitle: "Tech-Driven Transparency",
-    image: education // Replace with your image path
+    title: "Tech-Driven ",
+    desc: "Transparency",
+    image: education
   },
   {
     id: 3,
-    title: "",
-    subtitle: "1:1 Personalized Mentorship & Tailored Guidance ",
-    image: mentornship // Replace with your image path
+    title: "1:1 Personalized Mentorship & Tailored Guidance",
+    desc: "",
+    image: mentornship
   },
   {
     id: 4,
-    title: "",
-    subtitle: "Higher Visa Success Than Industry Average",
-    image: vis // Replace with your image path
+    title: "Visa Success that Sets Us Apart",
+    desc: "",
+    image: vis
   }
 ];
 
-const Features: React.FC = () => {
+const Features = () => {
   return (
-    <section className="py-16 bg-[#0D0D0D] text-white">
-      <div className="container mx-auto px-6">
+    <section className="py-16 bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-white">Our <span className="text-[#8DC63F]">Experience</span></h2>
-          <div className="w-16 h-1 bg-[#8DC63F] mx-auto mt-0 mb-1"></div>
+          <h2 className="text-2xl md:text-4xl font-bold text-white">
+            Our <span className="text-[#8DC63F]">Experience</span>
+          </h2>
+          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2"></div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.id}
@@ -52,21 +57,21 @@ const Features: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="flex flex-col items-center"
+              className="bg-white rounded-lg shadow-md flex flex-col items-center p-6 text-center min-h-[180px]"
             >
-              <div className="w-44 h-23 mb-2">
-                <img 
-                  src={feature.image} 
-                  alt={feature.subtitle}
-                  className="w-full h-20 object-contain"
-                />
-              </div>
-              {/* <h3 className="text-3xl font-bold text-[#8DC63F] mb-2">{feature.title}</h3> */}
-              <p className="text-lg">{feature.title}</p>
-              <p className="text-lg">{feature.subtitle}</p>
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="w-14 h-14 object-contain mb-4"
+              />
+              <p className="text-black text-base font-bold">{feature.title}</p>
+              <p className="text-base text-black mt-1 font-bold">
+                {feature.desc}
+              </p>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

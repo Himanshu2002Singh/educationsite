@@ -9,8 +9,9 @@ import FounderDiaries from './FounderDiaries'
 import GuidingValues from './Guidence'
 import AutoCarousel from './Country'
 import FAQSection from './Faq'
-import CountryFlagSlider from './CountryFlegs'
+
 import AdmissionsSection from './CoursesAdmission'
+import GlobalStudyDestinations from './CountryFlegs'
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
     <div>
          <Hero />
     <Stats />
-    <CountryFlagSlider/>
+    <GlobalStudyDestinations/>
     {/* <About /> */}
     <AutoCarousel/>
     
