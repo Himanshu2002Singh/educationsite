@@ -131,14 +131,14 @@ const Testimonials = () => {
       </div>
 
       {/* Dots */}
-      <div className="flex justify-center space-x-2 mt-6">
+      <div className="flex justify-center space-x-2 md:mt-6 mt-8">
         {Array.from({
           length: Math.ceil(testimonialData.length / slidesPerView),
         }).map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${
+            className={`md:w-3 md:h-3 w-2 h-2 rounded-full ${
               index === currentSlide
                 ? "bg-emerald-600 scale-125"
                 : "bg-gray-400"

@@ -24,7 +24,7 @@ export default function FAQSection() {
       </h2>
 
       {/* FAQ List */}
-      <div className="max-w-3xl mx-auto space-y-2">
+      <div className="max-w-3xl mx-auto space-y-2 p-5">
         {visibleFaqs.map((faq, index) => (
           <div
             key={index}
@@ -36,7 +36,7 @@ export default function FAQSection() {
             >
               <span className="font-medium text-gray-800">{faq.question}</span>
               <ChevronDown
-                className={`w-5 h-5 text-gray-600 transition-transform ${
+                className={`w-4 h-4 md:w-5 md:h-5  text-gray-600 transition-transform ${
                   openIndex === index ? "rotate-180" : ""
                 }`}
               />

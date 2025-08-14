@@ -29,12 +29,12 @@ const FounderDiaries: React.FC = () => {
 
   return (
     <section className="py-10 bg-gray-50">
-      <h2 className="text-2xl font-bold text-center mb-8 text-black">
+       <h2 className="text-2xl md:text-4xl font-bold text-center text-black mb-8">
         Meet our <span className="text-green-600">Founders</span>
         <div className="w-14 h-1 bg-green-500 mx-auto mt-1"></div>
       </h2>
 
-      <div className="max-w-4xl mx-auto relative ">
+      <div className="max-w-4xl mx-auto relative p-6">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -42,7 +42,7 @@ const FounderDiaries: React.FC = () => {
               index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
             }`}
           >
-            <div className="flex items-center gap-5 bg-[#EAF7E8] border border-purple-400 rounded-md p-5 shadow-sm">
+            <div className="flex items-center gap-5 bg-[#EAF7E8] border border-2px border-gray-40 rounded-md p-5 shadow-sm">
               {/* Image */}
               <img
                 src={slide.img}

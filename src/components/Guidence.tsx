@@ -45,7 +45,7 @@ const GuidingValue = () => {
     <section className="bg-white py-12 px-6">
       <h2 className="text-2xl md:text-4xl font-bold text-center  text-gray-800">Our Core <span className="text-green-600"> Values </span></h2>
        <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
-      <div className="bg-gray-50 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {coreValues.map((value) => (
           <div
             key={value.id}

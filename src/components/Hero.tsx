@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative -pt-15 pb-20 md:py-36 bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite] overflow-hidden"
+      className="relative  pb-20 py-12  bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite] overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         {/* Floating Graduation Cap */}
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
                 className="w-15 h-15 rounded-full border-2 border-white shadow-md object-cover"
               />
             </div>
-            <p className="text-md md:text-lg text-[#0d0d0d] font-semibold">
+            <p className="text-md md:text-lg text-[#0d0d0d] font-semibold mb:12 md:mb-20 ">
               {studentCount.toLocaleString()}+ students have trusted us with their dreams
             </p>
           </motion.div>

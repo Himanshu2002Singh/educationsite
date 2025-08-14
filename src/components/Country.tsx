@@ -76,7 +76,7 @@ const AutoCarousel: React.FC = () => {
         {/* ...and many more */}
         <div className="mt-10 text-center">
           <p className="text-lg font-semibold text-gray-600 italic">
-            ...and many more prestigious universities across the globe
+            ...and many more 
           </p>
         </div>
       </div>
