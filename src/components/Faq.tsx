@@ -19,8 +19,8 @@ export default function FAQSection() {
     <section className="py-10 bg-white">
       {/* Title */}
       <h2 className="text-2xl md:text-4xl font-bold text-center text-black mb-8">
-        Study Abroad <span className="text-green-600">FAQs</span>
-        <div className="w-14 h-1 bg-green-500 mx-auto mt-1"></div>
+        Study Abroad <span className="text-[#8cc63f]">FAQs</span>
+        <div className="w-14 h-1 bg-[#8cc63f] mx-auto mt-1"></div>
       </h2>
 
       {/* FAQ List */}
@@ -35,8 +35,9 @@ export default function FAQSection() {
               className="w-full flex justify-between items-center px-4 py-3 text-left"
             >
               <span className="font-medium text-gray-800">{faq.question}</span>
+
               <ChevronDown
-                className={`w-4 h-4 md:w-5 md:h-5  text-gray-600 transition-transform ${
+                className={`w-[40px] h-[20px] text-right  text-gray-600 transition-transform ${
                   openIndex === index ? "rotate-180" : ""
                 }`}
               />
@@ -50,7 +51,7 @@ export default function FAQSection() {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="px-4 pb-4 text-sm text-gray-700 border-t border-[#C6E5B0]">
+                  <div className="px-4 pb-4 pt-4 text-left text-sm text-gray-700 border-t border-[#C6E5B0]">
                     {faq.answer}
                   </div>
                 </motion.div>

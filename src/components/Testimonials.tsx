@@ -58,12 +58,12 @@ const testimonialData = [
                                   university: 'Troy University — Computer and Information Sciences', 
                                   quote: 'I wanted to take a moment to express my sincere appreciation to Edukonnect. They guided me through every step from university shortlist, to applications, visa interview preparation with patience and expertise. Thanks to their support, I am now on my way to studying in the US and achieving my dreams.', 
                                  },
-                                  { id: 10,
-                                     name: 'Sayal Jogale',
-                                      country: '🇨🇦 Canada',
-                                       university: 'Niagara University — MBA',
-                                        quote: 'The staff were very helpful and ensured a very smooth process during admission as well as visa process. I got into my dream university, the entire process was very smooth and hassle free. I will highly recommend Edukonnect for anyone planning to study abroad.', 
-                                         } 
+                                  // { id: 10,
+                                  //    name: 'Sayal Jogale',
+                                  //     country: '🇨🇦 Canada',
+                                  //      university: 'Niagara University — MBA',
+                                  //       quote: 'The staff were very helpful and ensured a very smooth process during admission as well as visa process. I got into my dream university, the entire process was very smooth and hassle free. I will highly recommend Edukonnect for anyone planning to study abroad.', 
+                                  //        } 
                                         ];
   
  
@@ -91,7 +91,7 @@ const Testimonials = () => {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
-          Student <span className="text-green-600">Testimonials</span>
+          Student <span className="text-[#8cc63f]">Testimonials</span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2"></div>
         <p className="text-lg text-gray-600">

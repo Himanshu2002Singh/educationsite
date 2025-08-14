@@ -52,21 +52,21 @@ const StudySteps = () => {
     <section className="py-12 px-4 md:px-20 bg-white">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-center  text-[#231F20]">
-        Your Step-by-Step Journey to <span className="text-green-600">Studying Abroad</span>
+        Your Step-by-Step Journey to <span className="text-[#8cc63f]">Studying Abroad</span>
       </h2>
       
        <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-12"></div>
-      <div className="flex flex-col md:flex-row gap-10 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
         {/* Step Buttons */}
-        <div className="md:w-1/4 flex flex-col gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-col gap-4 md:w-1/4">
           {steps.map((step, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`w-full py-3 rounded-md font-semibold text-left px-5 transition ${
                 activeIndex === index
-                  ? "bg-green-600 text-white"
-                  : "bg-red-600 text-black hover:bg-green-500"
+                  ? "bg-[#8cc63f] text-white"
+                  : "bg-[#be1e2d] text-white hover:bg-[#8cc63f]"
               }`}
             >
               Step {index + 1}
@@ -75,7 +75,7 @@ const StudySteps = () => {
         </div>
 
         {/* Step Content */}
-        <div className="md:w-3/4 flex flex-col justify-between">
+        <div className="md:w-3/4 flex flex-col justify-between bg-gray-50 p-6">
           <div>
             <h3 className="text-lg md:text-xl font-bold text-[#231F20] mb-3">
               {steps[activeIndex].title}
@@ -89,7 +89,7 @@ const StudySteps = () => {
             <img
               src={steps[activeIndex].image}
               alt={steps[activeIndex].title}
-              className="w-full max-h-72 object-contain"
+              className="w-full max-h-48 object-contain"
             />
           </div>
         </div>

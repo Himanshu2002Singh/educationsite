@@ -18,7 +18,7 @@ const TuitionFeesSectionUSA = () => {
       color: "bg-purple-50 border-purple-200"
     },
     {
-      icon: <Briefcase className="w-10 h-10 text-green-600" />,
+      icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA",
       fee: "$30,000 – $120,000/year",
       description: "Public: $30k–$70k | Private: $60k–$100k | Top-ranked: $70k–$120k",

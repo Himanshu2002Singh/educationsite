@@ -18,7 +18,7 @@ const UAEAdmissionProcessSection = () => {
       bg: "bg-purple-50",
     },
     {
-      icon: <FileUp className="w-8 h-8 text-green-600" />,
+      icon: <FileUp className="w-8 h-8 text-[#8cc63f]" />,
       title: "Upload Required Documents",
       description:
         "Scan and submit your academic transcripts, identification documents, and other required paperwork.",

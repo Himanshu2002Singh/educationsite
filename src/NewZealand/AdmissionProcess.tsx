@@ -18,7 +18,7 @@ const AdmissionProcessSection = () => {
       bg: "bg-purple-50",
     },
     {
-      icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+      icon: <CheckCircle className="w-8 h-8 text-[#8cc63f]" />,
       title: "Receive Offer of Place",
       description:
         "Receive conditional or unconditional offer from the institution.",

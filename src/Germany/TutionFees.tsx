@@ -11,7 +11,7 @@ const TuitionFeesSection = () => {
       color: "bg-blue-50 border-blue-200"
     },
     {
-      icon: <GraduationCap className="w-10 h-10 text-green-600" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#8cc63f]" />,
       degree: "Private Universities",
       fee: "€5,000 – €20,000 / semester",
       description: "Charged for bachelor's and master's programs",

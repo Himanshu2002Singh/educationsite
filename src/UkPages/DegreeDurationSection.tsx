@@ -15,7 +15,7 @@ const DegreeDurationSection = () => {
       type: "Bachelor's with Sandwich Year",
       duration: "4 years",
       subtitle: "(1 year of internship after 2nd year)",
-      icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />,
+      icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-[#8cc63f]" />,
       color: "bg-green-50 border-green-200",
       description: "Includes practical work experience"
     },

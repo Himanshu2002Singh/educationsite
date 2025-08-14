@@ -10,7 +10,7 @@ const CoursesCanadaIntakeSection = () => {
 
   // 📚 Popular Programs in Canada
   const courses = [
-    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business Administration & Management", subjects: "International Business, Marketing, HR, Entrepreneurship" },
+    { icon: <Briefcase className="w-8 h-8 text-[#8cc63f]" />, title: "Business Administration & Management", subjects: "International Business, Marketing, HR, Entrepreneurship" },
     { icon: <Cog className="w-8 h-8 text-gray-700" />, title: "Supply Chain & Logistics", subjects: "Procurement, Warehousing, Transportation" },
     { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Computer Science & IT", subjects: "Software Engineering, Cybersecurity, Networking" },
     { icon: <Cog className="w-8 h-8 text-orange-600" />, title: "Engineering", subjects: "Civil, Mechanical, Electrical, Automotive" },
@@ -25,7 +25,7 @@ const CoursesCanadaIntakeSection = () => {
   // 📅 Canadian University Intakes
   const intakes = [
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-[#8cc63f]" />,
       title: "Fall Intake (September)",
       description: "Most popular, wide range of programs"
     },
@@ -85,7 +85,7 @@ const CoursesCanadaIntakeSection = () => {
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
                 ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-green-600'
+                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

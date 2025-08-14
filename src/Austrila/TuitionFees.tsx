@@ -7,7 +7,7 @@ const TuitionLivingAustraliaSection = () => {
   // Tuition Fees for Australia
   const tuitionFees = [
     {
-      icon: <GraduationCap className="w-10 h-10 text-green-600" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#8cc63f]" />,
       degree: "Bachelor’s Degree",
       fee: "AUD 20,000 – 45,000/year",
       description: "Tuition fees vary by program and university.",

@@ -54,9 +54,9 @@ const AutoCarousel: React.FC = () => {
     <div className="w-full py-12 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800 text-center">
-         <span className="text-green-500"> Universities </span> our Students got Admissions from
+         <span className="text-[#8cc63f]"> Universities </span> our Students got Admissions from
         </h2>
-          <div className="w-16 h-[3px] bg-green-500 mx-auto mt-3 mb-8"></div>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3 mb-8"></div>
         <div className="relative">
           <Slider {...settings}>
             {logos.map((logo, index) => (

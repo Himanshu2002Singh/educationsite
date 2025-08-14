@@ -18,7 +18,7 @@ const TuitionFeesSectionUAE = () => {
       color: "bg-purple-50 border-purple-200"
     },
     {
-      icon: <Briefcase className="w-10 h-10 text-green-600" />,
+      icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA / Executive Programs",
       fee: "AED 65,000 – AED 150,000",
       description: "Per year tuition fee range for MBA and executive programs",

@@ -7,7 +7,7 @@ const TuitionLivingCanadaSection = () => {
   // Tuition Fees for Canada
   const tuitionFees = [
     {
-      icon: <GraduationCap className="w-10 h-10 text-green-600" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#8cc63f]" />,
       degree: "Diploma / PG Diploma / Certificate",
       fee: "CAD 16,000 – CAD 20,000/year",
       description: "Costs vary depending on province and institution.",

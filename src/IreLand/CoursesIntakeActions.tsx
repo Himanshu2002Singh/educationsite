@@ -11,7 +11,7 @@ const CoursesIrelandIntakeSection = () => {
   // 📚 Popular Courses in Ireland
   const courses = [
     { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Engineering & Technology", subjects: "Software Engineering, Data Science, AI, Cyber Security, Mechanical, Electrical, Computer Science" },
-    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business & Finance", subjects: "International Business, Finance, Accounting, Management, Marketing, HR, Entrepreneurship" },
+    { icon: <Briefcase className="w-8 h-8 text-[#8cc63f]" />, title: "Business & Finance", subjects: "International Business, Finance, Accounting, Management, Marketing, HR, Entrepreneurship" },
     { icon: <Heart className="w-8 h-8 text-pink-500" />, title: "Healthcare & Medicine", subjects: "Nursing, Pharmacy, Physiotherapy, Occupational Therapy" },
     { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Science & Humanities", subjects: "Biological Sciences, Chemistry, Physics, Environmental Science, Psychology, Sociology, Languages" },
     { icon: <BarChart className="w-8 h-8 text-yellow-600" />, title: "Other Popular Courses", subjects: "Hospitality, Tourism, Digital Media, Game Dev, Animation, International Relations, Law" },
@@ -25,7 +25,7 @@ const CoursesIrelandIntakeSection = () => {
       description: "Maximum course options and highest student enrolments."
     },
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-[#8cc63f]" />,
       title: "January Intake (Minor)",
       description: "Wide course availability across multiple fields."
     },
@@ -80,7 +80,7 @@ const CoursesIrelandIntakeSection = () => {
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
                 ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-green-600'
+                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

@@ -30,8 +30,8 @@ const FounderDiaries: React.FC = () => {
   return (
     <section className="py-10 bg-gray-50">
        <h2 className="text-2xl md:text-4xl font-bold text-center text-black mb-8">
-        Meet our <span className="text-green-600">Founders</span>
-        <div className="w-14 h-1 bg-green-500 mx-auto mt-1"></div>
+        Meet our <span className="text-[#8cc63f]">Founders</span>
+        <div className="w-14 h-1 bg-[#8cc63f] mx-auto mt-1"></div>
       </h2>
 
       <div className="max-w-4xl mx-auto relative p-6">
@@ -42,7 +42,7 @@ const FounderDiaries: React.FC = () => {
               index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
             }`}
           >
-            <div className="flex items-center gap-5 bg-[#EAF7E8] border border-2px border-gray-40 rounded-md p-5 shadow-sm">
+            <div className="flex md:flex-row flex-col items-center gap-5 bg-[#EAF7E8] border border-2px border-gray-40 rounded-md p-5 shadow-sm">
               {/* Image */}
               <img
                 src={slide.img}
@@ -51,8 +51,8 @@ const FounderDiaries: React.FC = () => {
               />
 
               {/* Text */}
-              <div>
-                <h4 className="font-bold text-gray-900">
+              <div className="text-center md:text-left">
+                <h4 className="font-bold text-gray-900 ">
                   Message from {slide.name}
                 </h4>
                 <p className="text-red-500 text-sm mb-2">{slide.role}</p>
@@ -72,13 +72,13 @@ const FounderDiaries: React.FC = () => {
         {/* Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-[-40px] top-1/2 -translate-y-1/2 text-gray-600 hover:text-black"
+          className=" absolute left-[30px] md:left-[-40px] top-1/2 -translate-y-1/2 text-gray-600 hover:text-black"
         >
           &#10094;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-[-40px] top-1/2 -translate-y-1/2 text-gray-600 hover:text-black"
+          className="absolute  right-[30px] md:right-[-40px] top-1/2 -translate-y-1/2 text-gray-600 hover:text-black"
         >
           &#10095;
         </button>

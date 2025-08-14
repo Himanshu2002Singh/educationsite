@@ -65,7 +65,7 @@ const EnglishTestSection = () => {
           <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
             <div className="flex items-center mb-4 sm:mb-6">
               <div className="p-2 sm:p-3 bg-green-100 rounded-full mr-3 sm:mr-4">
-                <Award className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
+                <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#8cc63f]" />
               </div>
               <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Accepted Tests</h3>
             </div>

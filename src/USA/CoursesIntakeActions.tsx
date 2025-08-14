@@ -12,7 +12,7 @@ const CoursesUsaIntakeSection = () => {
   const courses = [
     { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Computer Science & IT", subjects: "Software Engineering, AI, Cybersecurity" },
     { icon: <Cog className="w-8 h-8 text-red-500" />, title: "Engineering", subjects: "Mechanical, Civil, Electrical" },
-    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business & Management", subjects: "MBA, Marketing, Finance" },
+    { icon: <Briefcase className="w-8 h-8 text-[#8cc63f]" />, title: "Business & Management", subjects: "MBA, Marketing, Finance" },
     { icon: <BarChart className="w-8 h-8 text-yellow-600" />, title: "Data Science & Analytics", subjects: "Big Data, Machine Learning, Statistics" },
     { icon: <Heart className="w-8 h-8 text-pink-500" />, title: "Health & Life Sciences", subjects: "Medicine, Nursing, Public Health" },
     { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Biotechnology", subjects: "Genetics, Bioinformatics" },
@@ -29,7 +29,7 @@ const CoursesUsaIntakeSection = () => {
       description: "Most popular intake with 90% program availability. Application: Dec – Mar."
     },
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-[#8cc63f]" />,
       title: "Spring Intake",
       subtitle: "January – May",
       description: "Secondary option with moderate availability. Application: July – Oct."
@@ -86,7 +86,7 @@ const CoursesUsaIntakeSection = () => {
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
                 ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-green-600'
+                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

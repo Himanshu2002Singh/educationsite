@@ -18,7 +18,7 @@ const TuitionFeesSection = () => {
       color: "bg-purple-50 border-purple-200"
     },
     {
-      icon: <Briefcase className="w-10 h-10 text-green-600" />,
+      icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA",
       fee: "$31,000 – $50,000 NZD",
       description: "Per year for business programs",

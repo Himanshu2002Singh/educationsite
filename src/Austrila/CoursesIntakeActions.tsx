@@ -10,7 +10,7 @@ const CoursesAustraliaIntakeSection = () => {
 
   // 📚 Popular Programs in Australia
   const courses = [
-    { icon: <Briefcase className="w-8 h-8 text-green-600" />, title: "Business & Management", subjects: "International Business, Marketing, HR, Entrepreneurship" },
+    { icon: <Briefcase className="w-8 h-8 text-[#8cc63f]" />, title: "Business & Management", subjects: "International Business, Marketing, HR, Entrepreneurship" },
     { icon: <Database className="w-8 h-8 text-blue-600" />, title: "Information Technology", subjects: "Software Engineering, Cyber Security, Cloud Computing" },
     { icon: <Cog className="w-8 h-8 text-gray-700" />, title: "Engineering", subjects: "Civil, Mechanical, Electrical, Mining, Chemical" },
     { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Life Sciences", subjects: "Biology, Environmental Science, Biotechnology" },
@@ -28,7 +28,7 @@ const CoursesAustraliaIntakeSection = () => {
       description: "Late February / Early March - Late May / Early June"
     },
     {
-      icon: <Leaf className="w-8 h-8 text-green-600" />,
+      icon: <Leaf className="w-8 h-8 text-[#8cc63f]" />,
       title: "July Intake (Semester 2)",
       description: "Late July / Early August – October / November"
     },
@@ -83,7 +83,7 @@ const CoursesAustraliaIntakeSection = () => {
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
                 ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-green-600'
+                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

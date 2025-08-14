@@ -18,7 +18,7 @@ const TuitionFeesSection = () => {
       color: "bg-purple-50 border-purple-200"
     },
     {
-      icon: <Briefcase className="w-10 h-10 text-green-600" />,
+      icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA",
       fee: "£25,000 – £45,000+",
       description: "Per year for business programs",
@@ -79,19 +79,19 @@ const TuitionFeesSection = () => {
               <h4 className="text-xl font-bold text-gray-800 mb-4"> What's Included</h4>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#8cc63f] rounded-full mr-3"></span>
                   Tuition and academic fees
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#8cc63f] rounded-full mr-3"></span>
                   Access to university facilities
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#8cc63f] rounded-full mr-3"></span>
                   Student support services
                 </li>
                 <li className="flex items-center">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-[#8cc63f] rounded-full mr-3"></span>
                   Library and online resources
                 </li>
               </ul>

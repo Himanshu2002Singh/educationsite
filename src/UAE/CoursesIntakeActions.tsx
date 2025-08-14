@@ -15,7 +15,7 @@ const CoursesUaeIntakeSection = () => {
     { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Engineering", subjects: "Mechanical, Civil, Electrical, Aerospace" },
     { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Data Science & Cybersecurity", subjects: "Analytics, Big Data, Ethical Hacking" },
     { icon: <Briefcase className="w-8 h-8 text-pink-500" />, title: "Finance & Accounting", subjects: "Corporate Finance, Taxation, Auditing" },
-    { icon: <Palette className="w-8 h-8 text-green-600" />, title: "Architecture & Interior Design", subjects: "Urban Design, Space Planning" },
+    { icon: <Palette className="w-8 h-8 text-[#8cc63f]" />, title: "Architecture & Interior Design", subjects: "Urban Design, Space Planning" },
     { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Tourism & Hospitality Management", subjects: "Event Management, Hotel Operations" },
     { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Media & Communication", subjects: "Journalism, PR, Digital Media" },
   ];

@@ -15,7 +15,7 @@ const DegreeDurationUsaSection = () => {
       type: "Bachelor's Degrees",
       duration: "4 years (full-time)",
       subtitle: "120–130 credits | BA, BS, BEng",
-      icon: <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />,
+      icon: <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 text-[#8cc63f]" />,
       color: "bg-green-50 border-green-200",
       description: "Years 1–2: General education. Years 3–4: Major specialization. OPT up to 12 months (+24 months STEM)."
     },

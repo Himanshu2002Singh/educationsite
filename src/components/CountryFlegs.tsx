@@ -47,9 +47,9 @@ export default function GlobalStudyDestinations() {
       {/* Title */}
       <div className="text-center mb-6">
         <h2 className="text-2xl md:text-4xl   font-bold text-gray-800">
-          Global Study <span className="text-green-500">Destinations</span>
+          Global Study <span className="text-[#8cc63f]">Destinations</span>
         </h2>
-        <div className="w-16 h-[3px] bg-green-500 mx-auto mt-3"></div>
+        <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>
       </div>
 
       {/* Slider */}
@@ -57,7 +57,7 @@ export default function GlobalStudyDestinations() {
         <Slider {...settings}>
           {countries.map((country, idx) => (
             <div key={idx} className="px-2">
-              <div className="border-[1px] border-green-500 rounded-md overflow-hidden hover:scale-90 transition-transform duration-300 flex flex-col items-center">
+              <div className="rounded-md overflow-hidden hover:scale-90 transition-transform duration-300 flex flex-col items-center">
                 <img
                   src={country.img}
                   alt={country.name}

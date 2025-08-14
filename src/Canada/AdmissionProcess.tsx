@@ -16,7 +16,7 @@ const AustraliaAdmissionProcessSection = () => {
       bg: "bg-purple-50",
     },
     {
-      icon: <FileUp className="w-8 h-8 text-green-600" />,
+      icon: <FileUp className="w-8 h-8 text-[#8cc63f]" />,
       title: "Prepare Documents",
       description: "10th & 12th certificates, Bachelor's marksheets, SOP, resume, work experience (if applicable).",
       bg: "bg-green-50",

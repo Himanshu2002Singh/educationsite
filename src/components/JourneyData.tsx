@@ -89,7 +89,7 @@ export const journeySteps: JourneyStep[] = [
     title: 'Scholarships & Visa Assistance',
     description: 'Explore funding opportunities and navigate visa application processes with expert guidance.',
     color: 'text-white',
-    bgColor: 'bg-green-500',
+    bgColor: 'bg-[#8cc63f]',
     hoverColor: 'bg-green-600',
     icon: Award,
     details: [
@@ -158,7 +158,7 @@ export const journeySteps: JourneyStep[] = [
     title: 'Alumni Network',
     description: 'Connect with graduates for mentorship, career opportunities, and lifelong community.',
     color: 'text-white',
-    bgColor: 'bg-green-500',
+    bgColor: 'bg-[#8cc63f]',
     hoverColor: 'bg-green-600',
     icon: Users,
     details: [

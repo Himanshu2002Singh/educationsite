@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative  pb-20 py-12  bg-[linear-gradient(270deg,#e6f7ea,#f0f7f4,#d8f3dc)] bg-[length:400%_400%] animate-[gradient-x_10s_ease_infinite] overflow-hidden"
+      className="relative  pb-20 py-5  bg-[#e6f5e1] bg-[#e6f5e1] animate-[gradient-x_10s_ease_infinite] overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         {/* Floating Graduation Cap */}
@@ -76,15 +76,16 @@ const Hero: React.FC = () => {
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0D0D] leading-tight max-w-3xl p-8"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0D0D0D] leading-tight max-w-xl p-3 "
           >
-            Study Abroad can be simpler <span className="text-[#2d6a4f]">than you think</span>
+            Study Abroad can be simpler
+             <span className="text-[#2d6a4f]"> than you think</span>
           </motion.h1>
 
           <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6, delay: 0.2 } }}
-            className="mt-6 text-lg md:text-xl text-[#2C2C2C] max-w-xl"
+            className="mt-3 text-lg md:text-xl text-[#2C2C2C] max-w-xl"
           >
             Simplifying Global education with trusted guidance for over 24 years
           </motion.p>
@@ -92,13 +93,13 @@ const Hero: React.FC = () => {
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6, delay: 0.4 } }}
-            className="mt-8 flex flex-col sm:flex-row gap-4"
+            className="mt-5 md:mt-8 flex flex-col sm:flex-row gap-4"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowForm(true)}
-              className="bg-[#8DC63F] hover:bg-[#7cb532] text-white font-medium px-8 py-3 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#8DC63F]/50"
+              className="bg-[#8cc63f]  hover:bg-[#7cb532] text-white text-[14px] font-medium p-2 md:px-8 md:py-3 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#8DC63F]/50"
             >
               TAKE THE FIRST STEP
             </motion.button>
@@ -114,11 +115,15 @@ const Hero: React.FC = () => {
               <img
                 src={img1}
                 alt="Student"
-                className="w-15 h-15 rounded-full border-2 border-white shadow-md object-cover"
+                className="w-15 h-15 md:w-15 md:h-12 rounded-full border-2 border-white shadow-md object-cover"
               />
             </div>
-            <p className="text-md md:text-lg text-[#0d0d0d] font-semibold mb:12 md:mb-20 ">
+            <p className="text-sm md:text-lg text-[#0d0d0d] font-semibold mb:12 md:mb-0 text-left">
               {studentCount.toLocaleString()}+ students have trusted us with their dreams
+            </p>
+
+            <p className="md:pb-20">
+              
             </p>
           </motion.div>
         </motion.div>

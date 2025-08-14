@@ -14,7 +14,7 @@ const CoursesIntakeSection = () => {
     { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Civil Engineering", subjects: "Structural, Transportation, Geotechnical" },
     { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Bachelor of Information Technology", subjects: "IT Management, Databases" },
     { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Bachelor of Design (Digital)", subjects: "UI/UX, Digital Art" },
-    { icon: <TrendingUp className="w-8 h-8 text-green-600" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
+    { icon: <TrendingUp className="w-8 h-8 text-[#8cc63f]" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
     { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
     { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
     { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },

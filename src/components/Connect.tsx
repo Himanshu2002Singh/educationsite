@@ -26,7 +26,7 @@ export default function LeadCaptureForm() {
     <section className="py-12 bg-white">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-black text-center">
-        Take the <span className="text-green-600">First</span> Step
+        Take the <span className="text-[#8cc63f]">First</span> Step
       </h2>
       <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-8"></div>
 
@@ -52,7 +52,7 @@ export default function LeadCaptureForm() {
               />
               <button
                 type="submit"
-                className="w-full bg-black text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition"
+                className=" w-50 flex justify-center  bg-black text-[12px] text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition"
               >
                 CONNECT WITH US
               </button>
@@ -61,7 +61,7 @@ export default function LeadCaptureForm() {
         </div>
 
         {/* Right: Rotating Flag Card */}
-        <div className="w-full md:w-1/2 flex justify-center relative min-h-[240px]">
+        <div className="hidden sm:flex w-full md:w-1/2 flex justify-center relative min-h-[240px]">
           {countries.map((country, index) => {
             const isActive = index === activeIndex;
             return (

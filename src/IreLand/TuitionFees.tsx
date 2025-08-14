@@ -4,7 +4,7 @@ import { GraduationCap, BookOpen, Briefcase } from 'lucide-react';
 const TuitionFeesSectionIreland = () => {
   const tuitionFees = [
     {
-      icon: <GraduationCap className="w-10 h-10 text-green-600" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#8cc63f]" />,
       degree: "Undergraduate (UG)",
       fee: "Starts from €6,000/year",
       description: "Tuition fees vary by program and university.",

@@ -23,12 +23,12 @@ const AdmissionsSection = () => {
   ];
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-3">
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
-          Admissions <span className="text-green-500">Open</span>
+          Admissions <span className="text-[#8cc63f]">Open</span>
         </h2>
-        <div className="w-16 h-[3px] bg-green-500 mx-auto mt-3"></div>
+        <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">

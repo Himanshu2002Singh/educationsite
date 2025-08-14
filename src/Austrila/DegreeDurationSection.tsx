@@ -15,7 +15,7 @@ const DegreeDurationIrelandSection = () => {
       type: "Master’s Degrees",
       duration: "1 year",
       subtitle: "Taught or Research | MA, MSc, MBA",
-      icon: <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />,
+      icon: <BookOpen className="w-8 h-8 sm:w-10 sm:h-10 text-[#8cc63f]" />,
       color: "bg-green-50 border-green-200",
       description: "Intensive programs with coursework, research or a combination. Eligible for 2-year stay-back under Third Level Graduate Scheme."
     },
