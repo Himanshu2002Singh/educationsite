@@ -40,13 +40,13 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Paper Plane with Path */}
-        <motion.div
+        {/* <motion.div
           className="absolute top-24 right-20 md:top-28 md:right-36 text-[#2d6a4f]"
           animate={rotateAnimation}
         >
           <Send size={40} className="w-8 h-8 md:w-10 md:h-10" />
-        </motion.div>
-        <svg
+        </motion.div> */}
+        {/* <svg
           className="absolute top-28 right-16 md:top-32 md:right-32 w-24 h-24"
           viewBox="0 0 200 200"
         >
@@ -57,15 +57,15 @@ const Hero: React.FC = () => {
             strokeDasharray="5,5"
             fill="none"
           />
-        </svg>
+        </svg> */}
 
         {/* Globe Bottom Left */}
-        <motion.div
+        {/* <motion.div
           className="absolute bottom-16 left-6 md:bottom-20 md:left-12 text-[#2d6a4f]"
           animate={floatAnimation}
         >
           🌍
-        </motion.div>
+        </motion.div> */}
 
         {/* Text & Button */}
         <motion.div
