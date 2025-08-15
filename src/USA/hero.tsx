@@ -9,7 +9,7 @@ import {
   LifeBuoy,
   Globe,
 } from "lucide-react";
-import usaStudent from "../../assets/students1.png"; // Replace with actual USA student image
+import usaStudent from "../../assets/USA.png"; // Replace with actual USA student image
 
 const points = [
   {

@@ -9,7 +9,7 @@ import {
   MapPin,
   Building2,
 } from "lucide-react";
-import australiaStudent from "../../assets/studen2.png"; // Replace with actual Australia student image
+import australiaStudent from "../../assets/Australia.png"; // Replace with actual Australia student image
 
 const points = [
   {

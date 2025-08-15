@@ -11,7 +11,7 @@ import {
   BookOpen,
   Globe,
 } from "lucide-react";
-import ukGirl from "../../assets/Screenshot 2025-06-27 174351.png"; // Adjust path if needed
+import ukGirl from "../../assets/UK.png"; // Adjust path if needed
 
 const points = [
   {

@@ -7,7 +7,7 @@ import {
   MapPin,
   Users,
 } from "lucide-react";
-import nzGirl from "../../assets/students1.png"; // Replace with actual image path
+import nzGirl from "../../assets/New Zealand.png"; // Replace with actual image path
 
 const points = [
   {

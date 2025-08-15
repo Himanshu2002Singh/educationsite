@@ -8,7 +8,7 @@ import {
   Building,
   Shield,
 } from "lucide-react";
-import nzGirl from "../../assets/students1.png"; // Replace with actual image path
+import nzGirl from "../../assets/UAE.png"; // Replace with actual image path
 
 const points = [
   {

@@ -11,7 +11,7 @@ import {
   Clock,
   Landmark,
 } from "lucide-react";
-import germanyStudent from "../../assets/germany-student.jpg"; // Replace with your Germany image
+import germanyStudent from "../../assets/Germany.png"; // Replace with your Germany image
 
 const points = [
   {
