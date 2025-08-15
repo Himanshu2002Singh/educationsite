@@ -18,6 +18,7 @@ import Australia from './Austrila/Austrila';
 import Canada from './Canada/Canada';
 import ContactUs from './components/Contactus/Contactus';
 import TrendingBlog from './components/Blog/Blog';
+import Services from './Services/Services';
 
 
 
@@ -66,6 +67,8 @@ function App() {
        <Route path="/canada" element={<Canada/>} />
        <Route path="/contact" element={<ContactUs />} />  
        <Route path='/blogs' element={<TrendingBlog/>}/>
+       
+       <Route path='/services' element={<Services/>} />
       {/* Add other routes as needed */}
     </Routes>
 
