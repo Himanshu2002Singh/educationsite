@@ -27,7 +27,7 @@ export default function ExtraMile() {
   return (
     <section className="bg-black py-10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-xl md:text-4xl font-bold text-white text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-white text-center">
           We go the extra <span className="text-[#8cc63f]"> mile for you </span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>

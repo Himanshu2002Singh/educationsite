@@ -22,7 +22,15 @@ const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(null);
 
   const navItems = [
     { id: 1, name: 'About Us', href: '/' },
-    { id: 2, name: 'Services', href: '/services' },
+    { id: 2, name: 'Our Services', href: '/services',
+      dropdown: [
+         { name: 'Services', href: '/services' },
+        { name: 'Test Preparation', href: '/test-preparation' },
+       
+       
+      ], 
+
+    },
     {
       id: 3,
       name: 'Study Destinations',

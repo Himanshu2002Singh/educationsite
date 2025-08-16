@@ -95,7 +95,7 @@ export default function ServicesSteps() {
   return (
     <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-4">
-         <h2 className="text-xl md:text-4xl  text-center  font-bold text-gray-800">
+         <h2 className="text-2xl md:text-4xl  text-center  font-bold text-gray-800">
           Our 7-Step Services — With <span className="text-[#8cc63f] "> You at Every Stage</span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>

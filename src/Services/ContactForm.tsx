@@ -5,7 +5,7 @@ export default function FirstStepSection() {
         
         {/* Left Content */}
         <div>
-          <h2 className="text-xl md:text-4xl font-bold  text-gray-900">
+          <h2 className="text-2xl md:text-4xl font-bold  text-gray-900">
             Take your <span className="text-[#8cc63f]"> first step </span>
           </h2>
            <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>

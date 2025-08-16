@@ -40,7 +40,7 @@ export default function CompareTable() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-xl md:text-4xl font-bold text-black text-center ">
+        <h2 className="text-2xl md:text-4xl font-bold text-black text-center ">
           Don’t Settle for Less — <span className="text-[#8cc63f]">Compare for Yourself </span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>

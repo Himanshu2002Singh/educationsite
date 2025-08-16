@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
 
         {/* Paper Plane */}
         <motion.div
-          className="absolute top-24 right-24 md:top-16 md:right-96"
+          className="absolute top-32 right-28 md:top-16 md:right-96"
           animate={rotateAnimation}
         >
           <img src={Send} className="w-14 h-14 md:w-24 md:h-auto" />
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
 
         {/* Globe */}
         <motion.div
-          className="absolute -bottom-10 left-14 md:bottom-4 md:left-24"
+          className="absolute -bottom-20 left-14 md:bottom-4 md:left-24"
           animate={floatAnimation}
         >
           <img src={globa} alt="Globe" className="w-14 h-14 md:w-28 md:h-auto" />
@@ -126,7 +126,7 @@ const Hero: React.FC = () => {
                 className="w-full h-auto md:w-full md:h-full rounded-full border-2 border-white shadow-md object-cover"
               />
             </div>
-            <p className="text-base md:text-lg text-[#0d0d0d] font-semibold">
+            <p className="text-base text-left md:text-lg text-[#0d0d0d] font-semibold">
               {studentCount.toLocaleString()}+ students have trusted us with
               their dreams
             </p>
