@@ -1,17 +1,21 @@
 export default function FirstStepSection() {
   return (
     <section className="py-12 bg-white">
+          <div className="flex justify-center items-center">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center">
+            Take your <span className="text-[#8cc63f]"> first step </span>
+            </h2>
+          </div>
+
+           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         
         {/* Left Content */}
         <div>
-          <h2 className="text-2xl md:text-4xl font-bold  text-gray-900">
-            Take your <span className="text-[#8cc63f]"> first step </span>
-          </h2>
-           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
+          
 
           <div className="space-y-3 text-gray-700">
-            <p>Whether you’re a:</p>
+            <h3 className="text-black">Whether you’re a:</h3>
             <ul className="space-y-2">
               <li>✅ UG student (or a parent helping decide)</li>
               <li>✅ PG aspirant chasing bigger goals</li>

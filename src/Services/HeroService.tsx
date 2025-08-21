@@ -9,8 +9,8 @@ export default function HeroCounselling() {
         {/* Left Text */}
         <div className="text-center md:text-left space-y-4">
           {/* Main Heading */}
-          <h1 className="text-lg md:text-4xl font-bold text-gray-900 leading-tight">
-            From Counselling to Campus — We’re With You
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            From Counselling to Campus <p className="text-[#14532d]">We're With You</p>
           </h1>
           {/* Optional heading variants (comment/uncomment as needed) */}
           {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">Your Global Journey Starts Here</h1> */}
@@ -18,8 +18,8 @@ export default function HeroCounselling() {
           {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">Our Comprehensive Services</h1> */}
 
           {/* Subheading */}
-          <p className="text-gray-600 text-sm md:text-base">
-            Helping 10,000+ Students Succeed Abroad — Here’s How We Do It
+          <p className="text-black text-sm md:text-base">
+            Helping 10,000+ Students Succeed Abroad <p>Here’s How We Do It</p>
           </p>
           {/* Optional subheading variants */}
           {/* <p className="text-gray-600 text-sm md:text-base">10,000+ Students Made It. Here’s What Helped Them.</p> */}

@@ -40,32 +40,47 @@ export default function CompareTable() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-black text-center ">
-          Don’t Settle for Less — <span className="text-[#8cc63f]">Compare for Yourself </span>
+        <h2 className="text-2xl  md:text-4xl font-bold text-black text-center ">
+          Don’t Settle for Less —{" "}
+          <span className="text-[#8cc63f]">Compare for Yourself </span>
         </h2>
-         <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
-          Here’s how EduKonnect stands apart from the crowd, delivering not just services, but real outcomes.
+        <div className="w-16  h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+          Here’s how EduKonnect stands apart from the crowd, delivering not just
+          services, but real outcomes.
         </p>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="bg-[#8cc63f] text-white font-bold p-4 text-left w-1/2">EduKonnect</th>
-                <th className="bg-[#be1e2d] text-white font-bold p-4 text-left w-1/2">Other Consultants</th>
+                <th className="bg-gray-200 text-black font-bold p-4 text-left w-1/6">
+                  Aspect
+                </th>
+                <th className="bg-[#8cc63f] text-white font-bold p-4 text-left w-3/8">
+                  EduKonnect
+                </th>
+                <th className="bg-[#be1e2d] text-white font-bold p-4 text-left w-3/8">
+                  Other Consultants
+                </th>
               </tr>
             </thead>
             <tbody>
               {comparisons.map((item, i) => (
                 <tr key={i} className="border-b">
-                  <td className="bg-[green-50] text-green-900 p-4 align-top">
-                    <span className="block font-semibold">{item.aspect}</span>
-                    <span className="text-sm">{item.edu}</span>
+                  {/* Aspect Column */}
+                  <td className="bg-gray-50 text-gray-900 p-4 align-top font-semibold ">
+                    {item.aspect}
                   </td>
+
+                  {/* EduKonnect Column */}
+                  <td className="bg-green-20 text-green-900 p-4 align-top">
+                    {item.edu}
+                  </td>
+
+                  {/* Other Consultants Column */}
                   <td className="bg-red-50 text-red-900 p-4 align-top">
-                    <span className="block font-semibold">{item.aspect}</span>
-                    <span className="text-sm">{item.other}</span>
+                    {item.other}
                   </td>
                 </tr>
               ))}
