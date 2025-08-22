@@ -90,21 +90,22 @@ const TestCard: React.FC<TestCardProps> = ({
   duration,
   cta,
 }) => (
-  <div className="bg-white border border-gray-200 shadow-md rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl transition">
+  <div className=" text-black bg-white border border-gray-200 shadow-md rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl transition">
     <div>
       <div className="text-3xl mb-3">{icon}</div>
       <h3 className="text-xl font-semibold text-black">{title}</h3>
-      <p className="text-gray-600 text-sm mt-2">{summary}</p>
-      <p className="text-gray-700 text-sm mt-3">
+      <p className="text-black text-sm mt-2">{summary}</p>
+      <p className="text-black text-sm mt-3">
         <strong>Format:</strong> {format}
       </p>
-      <p className="text-gray-700 text-sm">
+      <p className="text-black text-sm">
         <strong>Course Duration:</strong> {duration}
       </p>
     </div>
-    <button className="mt-4 text-[#8cc63f] bg-[#be1e2d] font-semibold hover:text-green-900 rounded-lg px-2xl">
+    <button className="mt-4 bg-[#be1e2d] text-white font-semibold rounded-lg px-6 py-3 shadow-md hover:bg-red-800 transition w-fit">
       {cta}
     </button>
+
   </div>
 );
 
@@ -139,11 +140,12 @@ export default function PrepTabs() {
         </div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testCategories[activeTab].map((test, idx) => (
-            <TestCard key={idx} {...test} />
-          ))}
-        </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+  {testCategories[activeTab].map((test, idx) => (
+    <TestCard key={idx} {...test} />
+  ))}
+</div>
+
 
         {/* Overall CTA */}
         <div className="text-center mt-10">

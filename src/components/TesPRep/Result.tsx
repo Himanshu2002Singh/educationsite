@@ -68,7 +68,7 @@ export default function ResultShowcase() {
         >
           {students.map((student, idx) => (
             <SwiperSlide key={idx}>
-              <div className=" shadow-lg rounded-2xl p-6 border border-[#8cc63f] bg-[#f9f9f9]">
+              <div className=" shadow-lg rounded-2xl p-6 border border-[#8cc63f] bg-[#f9f9f9] ">
                 {/* Image */}
                 <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 ">
                   <img

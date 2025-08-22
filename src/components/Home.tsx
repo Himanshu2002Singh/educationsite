@@ -12,6 +12,7 @@ import FAQSection from './Faq'
 
 import AdmissionsSection from './CoursesAdmission'
 import GlobalStudyDestinations from './CountryFlegs'
+import HomePop from '../Popform/HomePop'
 
 
 function Home() {
@@ -34,6 +35,7 @@ function Home() {
     
     <FAQSection/>
       {/* <Contact /> */}
+      <HomePop/>
    
     </div>
   )
