@@ -60,9 +60,10 @@ const BestCitiesCanada = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold  mb-4 font-serif">
-            Best Cities for International Students in Canada
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
+            Best Cities for{" "}<span className="text-[#8cc63f]"> International Students</span> in Canada
           </h2>
+          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>
         </div>
 
         <Slider {...settings}>

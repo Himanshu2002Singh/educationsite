@@ -4,9 +4,10 @@ import { BarChart2, Activity, HeartPulse, Cpu } from 'lucide-react';
 const JobProspectsSectionCanada = () => {
   return (
     <section className="px-4 sm:px-6 py-12 md:px-20">
-      <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 text-center">
-        Job Opportunities & Work Permit After Studying in Canada
+      <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-3 text-center">
+      Job Opportunities & Work Permit After {" "}<span className="text-[#8cc63f]">Studying in </span>Canada
       </h2>
+      <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mb-3"></div>
 
       {/* Overview */}
       <div className="bg-[#F3F9F6] border border-[#8DC63F]/20 rounded-2xl p-4 sm:p-6 md:p-10 mb-12 shadow-sm">
@@ -75,7 +76,7 @@ const JobProspectsSectionCanada = () => {
 
       {/* Top Industries Icons */}
       <div className="mb-12">
-        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-center">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-center text-[#0D0D0D]">
           📌 Top Industries in Demand
         </h3>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">

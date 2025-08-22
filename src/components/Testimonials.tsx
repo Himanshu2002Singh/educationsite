@@ -91,9 +91,9 @@ const Testimonials = () => {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
-          Student <span className="text-[#8cc63f]">Testimonials</span>
+          Student {" "}<span className="text-[#8cc63f]">Testimonials</span>
         </h2>
-         <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2"></div>
+         <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>
         <p className="text-lg text-gray-600">
           Read what our students say about their experience.
         </p>

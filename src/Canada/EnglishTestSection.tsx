@@ -23,7 +23,7 @@ const EnglishTestSectionCanada = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
             English Language {" "}<span className="text-[#8cc63f]"> Requirements –</span> Canada
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>

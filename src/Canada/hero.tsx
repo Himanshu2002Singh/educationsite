@@ -68,7 +68,7 @@ const StudyCanadaSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl sm:text-4xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
+          <h2 className="text-2xl sm:text-4xl md:text-4xl font-bold text-[#0D0D0D] flex items-center">
             <img
               src="https://flagcdn.com/w40/ca.png"
               alt="Canada Flag"

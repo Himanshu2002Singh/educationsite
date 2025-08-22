@@ -17,9 +17,10 @@ const WorkingRightsSectionCanada = () => {
     <section className="py-16 bg-[#F0FFF4]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Working Rights in Canada for International Students
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
+            Working {" "}<span className="text-[#8cc63f]">Rights in Canada</span> for International Students
           </h2>
+          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mb-3"></div>
           <p className="text-xl text-[#2C2C2C] max-w-3xl mx-auto">
             International students in Canada can work part-time while studying to gain experience and help cover living expenses.
           </p>

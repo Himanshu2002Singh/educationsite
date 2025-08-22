@@ -68,9 +68,9 @@ export default function ResultShowcase() {
         >
           {students.map((student, idx) => (
             <SwiperSlide key={idx}>
-              <div className=" shadow-lg rounded-2xl p-6 border border-[#8cc63f]">
+              <div className=" shadow-lg rounded-2xl p-6 border border-[#8cc63f] bg-[#f9f9f9]">
                 {/* Image */}
-                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-[#8cc63f]">
+                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 ">
                   <img
                     src={student.image}
                     alt={student.name}
@@ -79,12 +79,12 @@ export default function ResultShowcase() {
                 </div>
 
                 {/* Score Badge */}
-                <div className="mt-4 bg-yellow-400 text-black font-bold rounded-full px-4 py-1 inline-block">
+                <div className="mt-4 bg-[#8cc63f] text-[#ffffff] font-bold rounded-lg px-4 py-1 inline-block">
                   {student.exam}: {student.score}
                 </div>
 
                 {/* Name */}
-                <h3 className="mt-3 font-semibold text-gray-800 text-lg">
+                <h3 className="mt-3 font-semibold text-black text-lg">
                   {student.name}
                 </h3>
               </div>

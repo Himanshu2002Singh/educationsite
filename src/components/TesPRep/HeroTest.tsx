@@ -10,13 +10,13 @@ export default function DreamScoreHero() {
           <img
             src={img3} // 👈 apni image ka path yaha daalein
             alt="Student studying"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover ml-[-150px]"
           />
-          <div className="absolute inset-0 bg-[#E6F5E1] opacity-30"></div>
+          <div className="absolute inset-0 bg-[#E6F5E1] opacity-0"></div>
         </div>
 
         {/* Right: Content */}
-        <div className="p-8 md:p-12 relative z-10 text-center md:text-left">
+        <div className="p-8 md:p-12 relative z-10 text-center md:text-left ml-[-150px]">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
             Your Dream Score, <br /> Delivered.
           </h1>

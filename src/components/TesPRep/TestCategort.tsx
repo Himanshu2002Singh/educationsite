@@ -102,7 +102,7 @@ const TestCard: React.FC<TestCardProps> = ({
         <strong>Course Duration:</strong> {duration}
       </p>
     </div>
-    <button className="mt-4 text-[#8cc63f]  font-semibold hover:text-green-900">
+    <button className="mt-4 text-[#8cc63f] bg-[#be1e2d] font-semibold hover:text-green-900 rounded-lg px-2xl">
       {cta}
     </button>
   </div>
@@ -112,7 +112,7 @@ export default function PrepTabs() {
   const [activeTab, setActiveTab] = useState("English Proficiency");
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-[#f9f9f9]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <h2 className="text-2xl md:text-4xl font-bold text-center text-black ">
@@ -122,7 +122,7 @@ export default function PrepTabs() {
          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3 mb-8"></div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-8 text-black">
           {Object.keys(testCategories).map((tab) => (
             <button
               key={tab}
