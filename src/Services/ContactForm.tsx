@@ -42,13 +42,13 @@ export default function FirstStepSection() {
               <select className="p-3 border rounded-lg">
                 <option value="+91">+91</option>
               </select>
-              <input type="text" placeholder="Mobile Number (10 Digits)" className="flex-1 p-3 border rounded-lg" />
+              <input type="text" placeholder="Phone  Number" className="flex-1 p-3 border rounded-lg" />
             </div>
             <select className="w-full p-3 border rounded-lg">
-              <option>Nearest Office</option>
+              <option>Country Destination</option>
             </select>
             <select className="w-full p-3 border rounded-lg">
-              <option>Preferred Study Destination</option>
+              <option>Preferred Intake</option>
             </select>
 
             <p className="text-xs text-gray-500">

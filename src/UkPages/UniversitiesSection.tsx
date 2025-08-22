@@ -70,9 +70,10 @@ const UniversitiesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-10">
         <div className="text-center mb-6 sm:mb-10">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 sm:mb-4">
-            Top UK Universities You Should Know
+            Top{" "}<span className="text-[#8cc63f]"> UK Universities</span> You Should Know
           </h2>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+            <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>
+          <p className="text-gray-600 max-w-xl mt-5 sm:max-w-3xl mx-auto text-sm sm:text-base">
             Discover your ideal university—whether elite or rising, all offer exceptional education & ROI.
           </p>
         </div>

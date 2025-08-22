@@ -57,9 +57,10 @@ const DegreeDurationSection = () => {
     <section className="py-12 sm:py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-british-navy mb-3 sm:mb-4 font-serif">
-            Program Duration & Course Structure
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 sm:mb-4">
+            Program {" "}<span className="text-[#8cc63f]"> Duration & Course</span> Structure
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>
           <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Study smart with the UK's flexible, time-efficient degrees
           </p>

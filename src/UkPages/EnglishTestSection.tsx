@@ -34,9 +34,10 @@ const EnglishTestSection = () => {
       <div className="relative container mx-auto px-4 sm:px-6 z-10">
         {/* Heading */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-3 sm:mb-4 font-serif">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C]  sm:mb-4 font-serif">
             English Language Requirements
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-base sm:text-xl text-gray-700 max-w-3xl mx-auto">
             Understand eligibility, accepted tests, and waiver options
           </p>

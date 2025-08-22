@@ -72,14 +72,16 @@ const StudyUKSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
             <img
               src="https://flagcdn.com/w40/gb.png"
               alt="UK Flag"
               className="w-8 h-5 mr-2"
             />
-            Study in the UK?
+            Study in the&nbsp;<span className="text-[#8cc63f]"> UK</span>&nbsp;?
+
           </h2>
+          {/* <div className="w-[55px] h-[3px] bg-[#8CC63F] ml-[260px] mt-5 mb-10"></div> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

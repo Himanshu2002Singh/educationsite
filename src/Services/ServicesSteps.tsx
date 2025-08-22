@@ -54,7 +54,7 @@ export default function ServicesSteps() {
           Our 7-Step Services —{" "}
           <span className="text-[#8cc63f]">With You at Every Stage</span>
         </h2>
-        <div className="w-16 h-[3px] bg-[#8CC63F] mx-auto mt-2 mb-10"></div>
+        <div className="w-1 h-[3px] bg-[#8CC63F] mx-auto mt-2 mb-10"></div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
