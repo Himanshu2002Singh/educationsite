@@ -60,9 +60,10 @@ const CoursesCanadaIntakeSection = () => {
     <section className="py-16 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Programs & Intakes – Canada
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+          {" "}<span className="text-[#8cc63f]">   Popular Programs </span>& Intakes – Canada
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Explore Canada’s most sought-after programs and intake schedules to plan your study path for maximum success.
           </p>

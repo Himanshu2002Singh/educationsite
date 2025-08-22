@@ -61,8 +61,8 @@ export default function ServicesSteps() {
           {steps.map((step) => (
             <div
               key={step.id}
-              className={`border border-[#8cc63f] rounded-xl shadow-md bg-[#f9f9f9] p-8 flex flex-col items-center text-center h-[400px] hover:shadow-lg transition 
-                ${step.id === 7 ? "sm:col-span-2 lg:col-span-3 flex justify-center mx-auto h-[400px] w-[390px]" : ""}`}
+              className={`border border-[#8cc63f] rounded-xl shadow-md bg-[#f9f9f9] p-8 flex flex-col items-center text-center md:h-[400px] sm:h-[320px] hover:shadow-lg transition 
+                ${step.id === 7 ? "sm:col-span-2 lg:col-span-3 flex justify-center mx-auto lg:h-[400px] lg:w-[390px] w-[348px] h-[360px]" : ""}`}
             >
               {/* Step Number */}
               <div className="bg-[#8cc63f] text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-lg mb-5 shadow-md">
@@ -91,7 +91,7 @@ export default function ServicesSteps() {
               {/* CTA Button */}
               <a
                 href="#"
-                className="bg-[#be1e2d] w-full p-4 flex items-center justify-center text-sm sm:text-base text-white rounded-lg hover:opacity-90 transition whitespace-nowrap text-center"
+                className="bg-[#be1e2d] w-full p-4 flex items-center justify-center text-sm sm:text-base text-white rounded-lg hover:opacity-90 transition whitespace-nowrap text-center "
               >
                 {step.cta}
               </a>

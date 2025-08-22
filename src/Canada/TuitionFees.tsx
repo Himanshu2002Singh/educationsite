@@ -44,9 +44,10 @@ const TuitionLivingCanadaSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Cost of Studying in Canada
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+          {" "}<span className="text-[#8cc63f]">Cost of </span>Studying in Canada
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Plan your Canadian education budget with a breakdown of tuition and living expenses.
           </p>

@@ -29,9 +29,10 @@ const CTASection = () => {
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-[#2C2C2C]">
-            Connect with Expert
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+            {" "}<span className="text-[#8cc63f]"> Connect</span> with Expert
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-[#2C2C2C] mb-2">15k+ students have already made the first step</p>
           <p className="text-lg text-[#2C2C2C] opacity-80">
             Get personalized guidance for your UK study abroad journey

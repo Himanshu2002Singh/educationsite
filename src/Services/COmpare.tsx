@@ -38,9 +38,9 @@ export default function CompareTable() {
   ];
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl  md:text-4xl font-bold text-black text-center ">
+    <section className="py-12 bg-white ">
+      <div className="max-w-6xl mx-auto px-4 ">
+        <h2 className="text-sm  md:text-4xl font-bold text-black text-center ">
           Don’t Settle for Less —{" "}
           <span className="text-[#8cc63f]">Compare for Yourself </span>
         </h2>
@@ -50,7 +50,7 @@ export default function CompareTable() {
           services, but real outcomes.
         </p>
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-scroll bg-gray-200 w-full custom-scroll" style={{ scrollbarGutter: "stable" }}>
           <table className="w-full border-collapse">
             <thead>
               <tr>

@@ -68,13 +68,13 @@ const StudyCanadaSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
+          <h2 className="text-2xl sm:text-4xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
             <img
               src="https://flagcdn.com/w40/ca.png"
               alt="Canada Flag"
               className="w-8 h-5 mr-2"
             />
-            Why Study in Canada?
+            Why Study in &nbsp;<span className="text-[#8cc63f]"> Canada </span>&nbsp;?
           </h2>
           <p className="text-gray-700 text-sm">
             Canada offers globally recognized degrees, affordable living costs, excellent post-graduation work opportunities, and a safe, diverse learning environment.

@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
 
         {/* Paper Plane */}
         <motion.div
-          className="absolute top-32 right-28 md:top-16 md:right-96"
+          className="absolute top-[38px] right-28 md:top-16 md:right-96"
           animate={rotateAnimation}
         >
           <img src={Send} className="w-14 h-14 md:w-24 md:h-auto" />
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D0D0D] leading-snug max-w-2xl px-3"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#0D0D0D] leading-snug max-w-2xl px-3"
           >
             Study Abroad can be simpler{" "}
             <span className="text-[#2d6a4f]">than you think</span>

@@ -23,9 +23,10 @@ const EnglishTestSectionCanada = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            English Language Requirements – Canada
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+            English Language {" "}<span className="text-[#8cc63f]"> Requirements –</span> Canada
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Understand accepted tests, score ranges, and waiver options for studying in Canada.
           </p>

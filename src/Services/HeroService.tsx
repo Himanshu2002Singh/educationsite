@@ -7,9 +7,9 @@ export default function HeroCounselling() {
       <div className="mx-auto max-w-7xl px-4 py-10 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
         {/* Left Text */}
-        <div className="text-center md:text-left space-y-4">
+        <div className="text-center md:text-left space-y-4 md:ml-[100px] ">
           {/* Main Heading */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             From Counselling to Campus <p className="text-[#14532d]">We're With You</p>
           </h1>
           {/* Optional heading variants (comment/uncomment as needed) */}
@@ -37,7 +37,7 @@ export default function HeroCounselling() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end md:mr-[100px]">
           <img
             src={hero}
             alt="Student with country flags"

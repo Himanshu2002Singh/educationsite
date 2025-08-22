@@ -44,12 +44,16 @@ export default function FirstStepSection() {
               </select>
               <input type="text" placeholder="Phone  Number" className="flex-1 p-3 border rounded-lg" />
             </div>
-            <select className="w-full p-3 border rounded-lg">
+            {/* <select className="w-full p-3 border rounded-lg">
               <option>Country Destination</option>
             </select>
-            <select className="w-full p-3 border rounded-lg">
+          
+            {/* <select className="w-full p-3 border rounded-lg">
               <option>Preferred Intake</option>
-            </select>
+            </select> */}
+              
+              <input type="text" placeholder="Country Destination" className="w-full p-3 border rounded-lg" />
+            <input type="email" placeholder="Preferred Intake" className="w-full p-3 border rounded-lg" />
 
             <p className="text-xs text-gray-500">
               By clicking, you agree to our{" "}

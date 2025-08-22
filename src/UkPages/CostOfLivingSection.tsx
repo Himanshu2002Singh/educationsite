@@ -52,9 +52,10 @@ const CostOfLivingSection = () => {
         <div className="container mx-auto px-6">
           {/* Title */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-              Cost of Living in the UK
+            <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
+              {" "}<span className="text-[#8cc63f]">Cost of </span>Living in the UK
             </h2>
+            <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Compare living expenses and make informed decisions about your study destination
             </p>
