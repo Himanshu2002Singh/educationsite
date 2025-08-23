@@ -17,7 +17,7 @@ export default function DreamScoreHero() {
 
         {/* Right: Content */}
         <div className="p-8 md:p-12 relative z-10 text-center md:text-left md:ml-[-150px]">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+          <h1 className="text-2xl md:text-4xl font-bold text-black leading-snug">
             Your Dream Score, <br /> Delivered.
           </h1>
           <p className="mt-4 text-gray-700 text-base md:text-lg">

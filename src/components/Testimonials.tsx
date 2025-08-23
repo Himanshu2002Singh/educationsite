@@ -90,7 +90,7 @@ const Testimonials = () => {
     <div className="py-16 bg-[#E6F7EA] px-4">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-4xl font-bold text-black">
           Student {" "}<span className="text-[#8cc63f]">Testimonials</span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>

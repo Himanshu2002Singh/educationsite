@@ -46,7 +46,7 @@ export default function GlobalStudyDestinations() {
     <section className="py-10 bg-gray-50">
       {/* Title */}
       <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-4xl   font-bold text-gray-800">
+        <h2 className="text-2xl md:text-4xl   font-bold text-black">
           Global Study <span className="text-[#8cc63f]">Destinations</span>
         </h2>
         <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>

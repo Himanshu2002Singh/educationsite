@@ -51,7 +51,7 @@ export default function ResultShowcase() {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl   font-bold text-gray-800">
+        <h2 className="text-2xl md:text-4xl   font-bold text-black">
           Coaching that is <span className="text-[#8cc63f]"> built for results </span>
         </h2>
          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3 mb-10"></div>

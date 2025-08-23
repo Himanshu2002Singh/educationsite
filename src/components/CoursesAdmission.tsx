@@ -25,7 +25,7 @@ const AdmissionsSection = () => {
   return (
     <section className="bg-white py-3">
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-4xl font-bold text-black">
           Admissions <span className="text-[#8cc63f]">Open</span>
         </h2>
         <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>

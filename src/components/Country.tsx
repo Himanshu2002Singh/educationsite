@@ -53,7 +53,7 @@ const AutoCarousel: React.FC = () => {
   return (
     <div className="w-full py-12 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl  font-bold text-gray-800 text-center">
+        <h2 className="text-2xl md:text-4xl  font-bold text-black text-center">
          <span className="text-[#8cc63f]"> Universities </span> our Students got Admissions from
         </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3 mb-8"></div>

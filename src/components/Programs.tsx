@@ -51,7 +51,7 @@ const StudySteps = () => {
   return (
     <section className="py-12 px-4 md:px-20 bg-white">
       {/* Heading */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center  text-[#231F20]">
+      <h2 className="text-2xl md:text-4xl font-bold text-center  text-black">
         Your Step-by-Step Journey to <span className="text-[#8cc63f]">Studying Abroad</span>
       </h2>
       
