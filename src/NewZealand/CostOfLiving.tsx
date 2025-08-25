@@ -39,9 +39,10 @@ const CostOfLivingSection = () => {
         <div className="container mx-auto px-4 sm:px-6">
           {/* Title */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif break-words">
-              Cost of Living in New Zealand
+            <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+              Cost of<span className="text-[#8cc63f]"> Living in </span>New Zealand
             </h2>
+            <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
             <p className="text-base sm:text-xl text-gray-700 max-w-3xl mx-auto break-words">
               Understand the estimated living expenses while studying in New Zealand
             </p>
