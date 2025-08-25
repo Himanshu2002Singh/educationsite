@@ -34,9 +34,10 @@ const UniversitiesSection = () => {
 
         {/* NZ Cities Section */}
         <div className="text-center mb-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-[#2C2C2C] mb-6">
-            Top Cities in New Zealand for Education
-          </h3>
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            <span className="text-[#8cc63f]">Top Cities</span> in New Zealand for Education
+          </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {nzCities.map((city, idx) => (
               <div

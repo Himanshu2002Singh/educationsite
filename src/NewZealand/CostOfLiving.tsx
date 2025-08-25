@@ -28,7 +28,7 @@ const CostOfLivingSection = () => {
 
   const key = 'newzealand';
   const data = costBreakdown[key];
-  const accentColor = '#2B6CB0';
+  const accentColor = '#8cc63f';
 
   return (
     <section
@@ -101,7 +101,7 @@ const CostOfLivingSection = () => {
                 icon={<Calculator className="w-6 h-6 text-[#2B6CB0]" />}
                 title="NZD $15–20K/year"
                 description="Typical student budget range"
-                color="#2B6CB0"
+                color="#8cc63f"
               />
               <InsightItem
                 icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />}
@@ -120,7 +120,7 @@ const CostOfLivingSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-10">
-            <button className="bg-[#2B6CB0] text-white px-6 py-4 w-full sm:w-auto rounded-full font-semibold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-[#8cc63f] text-white px-6 py-4 w-full sm:w-auto rounded-full font-semibold text-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Estimate My NZ Budget
             </button>
           </div>

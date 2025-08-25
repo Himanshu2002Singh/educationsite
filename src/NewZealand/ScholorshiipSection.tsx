@@ -81,9 +81,10 @@ const ScholarshipsSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 text-center">
-          Key New Zealand Scholarships
+        <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+          Key New Zealand<span className="text-[#8cc63f]"> Scholarships</span>
         </h2>
+        <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
         <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
           Discover top scholarships tailored for Indian and international students to ease your education costs while studying in New Zealand.
         </p>

@@ -53,7 +53,8 @@ const CanadaUniversitiesSection = () => {
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
               <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#00274D] via-[#0056A3] to-[#00274D] flex items-center justify-center mb-3 sm:mb-4">
+                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#6faa32] via-[#8cc63f] to-[#5a9628]
+                   flex items-center justify-center mb-3 sm:mb-4">
                   <span className="text-white text-lg font-bold">CA</span>
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">
@@ -66,7 +67,7 @@ const CanadaUniversitiesSection = () => {
 
         {/* CTA Button */}
         <div className="text-center mt-10 sm:mt-12">
-          <button className="bg-[#00274D] hover:bg-[#001f3a] text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-md">
+          <button className="bg-[#8cc63f] hover:bg-[#001f3a] text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-md">
             Find Your Canadian Institution Match
           </button>
         </div>

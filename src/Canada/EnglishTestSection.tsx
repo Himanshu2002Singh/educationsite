@@ -11,7 +11,7 @@ const EnglishTestSectionCanada = () => {
       country: "Canada",
       bgColor: "bg-[#f0f8ff]",
       borderColor: "border-blue-100",
-      accentColor: "#0077b6",
+      accentColor: "#8cc63f",
       exams: [
         { test: 'IELTS Academic', ug: 'Overall 6.5 (no band < 6.0)', pg: '6.5–7.0 (no band < 6.0/6.5)', max: '9.0' },
         { test: 'Diploma Programs', ug: 'Overall 6.0 (no band < 5.5)', pg: '-', max: '-' },

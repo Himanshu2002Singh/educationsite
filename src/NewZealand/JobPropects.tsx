@@ -4,9 +4,10 @@ import { Briefcase, BarChart2, Activity, HeartPulse, School, Cpu, Globe2 } from 
 const JobProspectsSection = () => {
   return (
     <section className="px-4 sm:px-6 py-12 md:px-20">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 text-[#2C2C2C]">
-        Job Prospects in New Zealand
+      <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+        <span className="text-[#8cc63f]">Job Prospects</span> in New Zealand
       </h2>
+      <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 
       <div className="bg-[#F3F9F6] border border-[#8DC63F]/20 rounded-2xl p-4 sm:p-6 md:p-10 mb-12 shadow-sm">
         <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-[#2C2C2C]">

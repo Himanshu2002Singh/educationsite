@@ -2,7 +2,6 @@ import React from 'react'
 import StudyNZSection from './hero'
 import UniversitiesSection from './UniversitiesSection'
 import CoursesIntakeSection from './CoursesIntakeActions'
-
 import EnglishTestSection from './EnglishTestSection'
 import TuitionFeesSection from './TuitionFees'
 import CostOfLivingSection from './CostOfLiving'

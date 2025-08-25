@@ -59,7 +59,7 @@ const TuitionLivingCanadaSection = () => {
             onClick={() => setActiveTab('tuition')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'tuition'
-                ? 'bg-green-600 text-white'
+                ? 'bg-[#8cc63f] text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-green-100'
             }`}
           >
@@ -69,7 +69,7 @@ const TuitionLivingCanadaSection = () => {
             onClick={() => setActiveTab('living')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'living'
-                ? 'bg-green-600 text-white'
+                ? 'bg-[#8cc63f] text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-green-100'
             }`}
           >
@@ -90,7 +90,7 @@ const TuitionLivingCanadaSection = () => {
                     {item.icon}
                   </div>
                 </div>
-                <div className="bg-green-700 text-white px-4 py-1 rounded-full text-sm font-bold mb-1 inline-block">
+                <div className="bg-[#8cc63f] text-white px-4 py-1 rounded-full text-sm font-bold mb-1 inline-block">
                   {item.degree}
                 </div>
                 <div className="text-lg font-bold text-gray-800 mb-1">

@@ -75,7 +75,7 @@ const CoursesCanadaIntakeSection = () => {
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'courses'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-[#8cc63f] text-white'
                 : 'text-[#2C2C2C] hover:text-blue-600'
             }`}
           >
