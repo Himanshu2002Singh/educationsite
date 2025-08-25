@@ -8,6 +8,7 @@ import Testimonials from '../Testimonials'
 import OfferBanner from './Banner'
 // import FAQSection from '../Faq'
 import SignUpForm from './SignupForm'
+import StudentTestimonialTest from './StudentTestimonialtest'
 
 function Test() {
   return (
@@ -17,7 +18,8 @@ function Test() {
     <PrepTabs/>
     <PuzzleApproach/>
     <TestPrepJourney/>
-    <Testimonials/>
+    {/* <Testimonials/> */}
+    <StudentTestimonialTest/>
     <OfferBanner/>
     <SignUpForm/>
     {/* <FAQSection/>
