@@ -57,9 +57,10 @@ const DegreeDurationUsaSection = () => {
     <section className="py-12 sm:py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-3 sm:mb-4 font-serif">
-            Program Duration & Course Structure – USA
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Program Duration & Course <span className="text-[#8cc63f]">Structure –</span> USA
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Flexible degree pathways in the U.S., with opportunities to work while studying.
           </p>
@@ -74,7 +75,7 @@ const DegreeDurationUsaSection = () => {
             >
               <div className="flex justify-center mb-3 sm:mb-4">{program.icon}</div>
               <div className="text-center">
-                <div className="bg-[#2C2C2C] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
+                <div className="bg-[#8cc63f] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
                   {program.type}
                 </div>
                 <div className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">
@@ -92,7 +93,7 @@ const DegreeDurationUsaSection = () => {
         </div>
 
         <div className="text-center">
-          <button className="bg-[#8DC63F] hover:bg-[#7cb532] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <button className="bg-[#8cc63f] hover:bg-[#7cb532] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             Check your eligibility
           </button>
         </div>

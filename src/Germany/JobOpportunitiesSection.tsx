@@ -40,9 +40,10 @@ const JobOpportunitiesSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-4xl font-serif font-extrabold text-[#1E293B] leading-tight mb-4">
-            Job Opportunities & Work Permit After Studying in Germany
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Job Opportunities & Work Permit<span className="text-[#8cc63f]"> After Studying</span> in Germany
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg text-[#475569] leading-relaxed tracking-wide">
             Germany provides excellent post-study work opportunities for international graduates, allowing them to gain professional experience and build their careers.
           </p>

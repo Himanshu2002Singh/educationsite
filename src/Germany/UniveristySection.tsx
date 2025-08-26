@@ -71,10 +71,12 @@ const UniversitySection: React.FC = () => {
 
   return (
     <div className="py-12 px-4 sm:px-8 bg-green-50">
-      <h2 className="text-2xl sm:text-3xl font-bold text-green-900 text-center mb-2">
-        Top German Universities You Should Know
+      <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+        <span className="text-[#8cc63f]">Top German </span>Universities You Should Know
       </h2>
-      <p className="text-green-700 text-center mb-6 text-sm sm:text-base">
+      
+      <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
+      <p className="text-black-700 text-center mb-6 text-sm sm:text-base">
         Click a button to explore public or private universities in Germany
       </p>
 
@@ -84,7 +86,7 @@ const UniversitySection: React.FC = () => {
           onClick={() => setView("public")}
           className={`px-5 py-2 rounded-lg font-semibold border transition-all ${
             view === "public"
-              ? "bg-green-600 text-white border-green-600"
+              ? "bg-[#8cc63f] text-white border-[#8cc63f]-600"
               : "bg-green-100 text-green-900 border-green-300 hover:bg-green-200"
           }`}
         >
@@ -94,7 +96,7 @@ const UniversitySection: React.FC = () => {
           onClick={() => setView("private")}
           className={`px-5 py-2 rounded-lg font-semibold border transition-all ${
             view === "private"
-              ? "bg-green-600 text-white border-green-600"
+              ? "bg-[#8cc63f] text-white border-green-600"
               : "bg-green-100 text-green-900 border-green-300 hover:bg-green-200"
           }`}
         >

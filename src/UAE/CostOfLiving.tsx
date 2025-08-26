@@ -26,7 +26,7 @@ const CostOfLivingSectionUAE = () => {
 
   const key = 'uae';
   const data = costBreakdown[key];
-  const accentColor = '#2B6CB0';
+  const accentColor = '#8cc63f';
 
   return (
     <section
@@ -37,9 +37,10 @@ const CostOfLivingSectionUAE = () => {
         <div className="container mx-auto px-4 sm:px-6">
           {/* Title */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif break-words">
-              Cost of Living in UAE
+            <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+              <span className="text-[#8cc63f]">Cost </span>of Living in UAE
             </h2>
+            <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
             <p className="text-base sm:text-xl text-gray-700 max-w-3xl mx-auto break-words">
               Understand the estimated living expenses while studying in the UAE
             </p>
@@ -117,7 +118,7 @@ const CostOfLivingSectionUAE = () => {
 
           {/* CTA */}
           <div className="text-center mt-10">
-            <button className="bg-[#2B6CB0] text-white px-6 py-4 w-full sm:w-auto rounded-full font-semibold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-[#8cc63f] text-white px-6 py-4 w-full sm:w-auto rounded-full font-semibold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Estimate My UAE Budget
             </button>
           </div>

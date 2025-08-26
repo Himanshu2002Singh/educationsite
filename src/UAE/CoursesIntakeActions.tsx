@@ -61,9 +61,10 @@ const CoursesUaeIntakeSection = () => {
     <section className="py-16 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Courses & Intakes – UAE
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+          <span className="text-[#8cc63f]"> Popular </span>Courses & Intakes – UAE
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             These programs are in high demand due to UAE job market trends
           </p>

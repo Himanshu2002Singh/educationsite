@@ -85,9 +85,10 @@ const USAUniversitiesSection = () => {
     <section className="py-10 sm:py-16 bg-[#F9F9F9]">
       <div className="container mx-auto px-4 sm:px-6 md:px-10">
         <div className="text-center mb-6 sm:mb-10">
-          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 sm:mb-4">
-            Top US Universities You Should Know 🎓
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Top <span className="text-[#8cc63f]">US Universities</span> You Should Know 🎓
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             Discover America’s top-ranked institutions shaping global leaders, innovators, and change-makers.
           </p>
@@ -98,7 +99,7 @@ const USAUniversitiesSection = () => {
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
               <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#0047AB] via-[#b0c4de] to-[#0047AB] p-1 mb-3 sm:mb-4">
+                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#8cc63f] via-[#b0c4de] to-[#8cc63f] p-1 mb-3 sm:mb-4">
                   <div className="bg-white rounded-full h-full w-full flex items-center justify-center">
                     <img
                       src={uni.logo}
@@ -117,7 +118,7 @@ const USAUniversitiesSection = () => {
 
         {/* CTA Button */}
         <div className="text-center mt-10 sm:mt-12">
-          <button className="bg-[#0047AB] hover:bg-[#003580] text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-md">
+          <button className="bg-[#8cc63f] hover:bg-[#003580] text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-md">
             Find Your US University Match
           </button>
         </div>

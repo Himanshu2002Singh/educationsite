@@ -35,9 +35,10 @@ const AdmissionDocumentsSection = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-4xl font-extrabold text-[#1E293B] mb-4 font-serif leading-tight">
-            Admission Documents for Studying in Germany
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            <span className="text-[#8cc63f]">Admission</span> Documents for Studying in Germany
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg text-[#475569] leading-relaxed">
             Gather all the required documents early to avoid delays in your Germany study application process.
           </p>

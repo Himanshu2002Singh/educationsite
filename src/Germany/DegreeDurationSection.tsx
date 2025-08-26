@@ -26,9 +26,10 @@ const DegreeDurationSection = () => {
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Heading */}
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-british-navy mb-3 sm:mb-4 font-serif">
-            Program Duration & Course Structure
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Program <span className="text-[#8cc63f]">Duration & Course </span>Structure
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Different degree types highlighting durations, structure, and study-work integration.
           </p>

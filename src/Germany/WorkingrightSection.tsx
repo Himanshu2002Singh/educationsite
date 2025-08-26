@@ -57,9 +57,10 @@ const WorkingRightsSection = () => {
   return (
     <section className="bg-white py-12 px-6 sm:px-10 md:px-16 max-w-7xl mx-auto font-sans">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] mb-3 text-center">
-        Working Rights in Germany
+      <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+        Working <span className="text-[#8cc63f]">Rights</span> in Germany
       </h2>
+      <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 
       {/* Paragraph */}
       <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">

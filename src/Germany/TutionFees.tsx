@@ -53,9 +53,10 @@ const TuitionFeesSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-british-navy mb-4 font-serif">
-            Tuition Fees & Additional Study Costs
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+             <span className="text-[#8cc63f]">Tuition </span>Fees & Additional Study Costs
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Studying in Germany can be an affordable option for international students, with relatively low tuition fees and living costs compared to other Western European countries.
           </p>

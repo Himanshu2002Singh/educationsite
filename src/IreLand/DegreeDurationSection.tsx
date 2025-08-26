@@ -57,9 +57,10 @@ const DegreeDurationIrelandSection = () => {
     <section className="py-12 sm:py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-3 sm:mb-4 font-serif">
-            Program Duration & Course Structure – Ireland
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Program <span className="text-[#8cc63f]">Duration & Course</span> Structure – Ireland
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Flexible pathways in Ireland with opportunities to work during and after your studies.
           </p>
@@ -74,7 +75,7 @@ const DegreeDurationIrelandSection = () => {
             >
               <div className="flex justify-center mb-3 sm:mb-4">{program.icon}</div>
               <div className="text-center">
-                <div className="bg-[#2C2C2C] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
+                <div className="bg-[#8cc63f] text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
                   {program.type}
                 </div>
                 <div className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">

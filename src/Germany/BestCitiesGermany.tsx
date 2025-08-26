@@ -57,9 +57,10 @@ const BestCitiesGermany = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-10 relative">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-4">
-            Best Cities for International Students in Germany
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Best Cities for <span className="text-[#8cc63f]">International Students</span> in Germany
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
             Discover the top cities in Germany that offer excellent education, vibrant culture, and great student life.
           </p>

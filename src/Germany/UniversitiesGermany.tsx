@@ -101,9 +101,10 @@ const UniversitiesGermany = () => {
     <section className="py-8 sm:py-16 bg-[#F9F9F9]">
       <div className="container mx-auto px-3 sm:px-6 md:px-10">
         <div className="text-center mb-6 sm:mb-10">
-          <h2 className="text-xl sm:text-4xl font-bold text-[#2C2C2C] mb-2 sm:mb-4 leading-snug">
-            Universities in Germany
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            <span className="text-[#8cc63f]">Universities</span> in Germany
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-gray-600 max-w-lg sm:max-w-3xl mx-auto text-sm sm:text-base px-2">
             Explore the three main categories of German higher education institutions.
           </p>

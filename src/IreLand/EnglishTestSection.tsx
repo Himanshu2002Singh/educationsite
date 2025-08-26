@@ -12,7 +12,7 @@ const EnglishTestSection = () => {
       country: "Ireland",
       bgColor: "bg-[#f0f8ff]",
       borderColor: "border-blue-100",
-      accentColor: "#0077b6",
+      accentColor: "#8cc63f",
       exams: [
         { test: 'IELTS Academic', ug: '6.0', pg: '6.5', max: '9.0' },
         { test: 'TOEFL iBT', ug: '79 – 80', pg: '88 – 90', max: '120' },
@@ -27,9 +27,10 @@ const EnglishTestSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            English Language Requirements Ireland
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+          <span className="text-[#8cc63f]">English Language</span>Requirements Ireland
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Understand accepted tests, score ranges, and waiver options for both countries.
           </p>

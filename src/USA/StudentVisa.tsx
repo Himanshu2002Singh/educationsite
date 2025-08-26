@@ -56,9 +56,10 @@ const DocumentsVisaSectionUSA = () => {
     <section className="py-16 bg-white text-[#2C2C2C]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 font-serif">
-             Documents Needed for US University Admissions
+          <h2 className="text-2xl md:text-4xl font-bold text-black">
+             Documents Needed for US University <span className="text-[#8cc63f]">Admissions</span> 
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl max-w-3xl mx-auto">
             From gathering transcripts to submitting applications – everything you need, step by step
           </p>
