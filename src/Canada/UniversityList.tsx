@@ -35,7 +35,7 @@ const CanadaUniversitiesSection = () => {
   };
 
   return (
-    <section className="py-10 sm:py-16 bg-[#F9F9F9]">
+    <section className="py-10 sm:py-16 bg-[#F9F9F9] max-w-7xl mx-auto">
       <div className="container mx-auto px-4 sm:px-6 md:px-10">
         <div className="text-center mb-6 sm:mb-10">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
@@ -44,7 +44,7 @@ const CanadaUniversitiesSection = () => {
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3 "></div>
           <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             Canada is home to some of the world’s leading universities and colleges, known for academic excellence, innovative research, and vibrant campus life. 
-            Whether in Toronto, Vancouver, Montreal, or other student-friendly cities, these institutions offer globally recognized programs.
+            {/* Whether in Toronto, Vancouver, Montreal, or other student-friendly cities, these institutions offer globally recognized programs. */}
           </p>
         </div>
 

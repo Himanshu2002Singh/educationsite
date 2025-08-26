@@ -14,15 +14,21 @@ import canadaStudent from "../../assets/Canada.png"; // Replace with actual Cana
 const points = [
   {
     icon: <GraduationCap className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Globally Recognized Education",
+    title: "Prestigious Universities",
     description:
-      "Top-ranked universities like the University of Toronto, UBC, McGill, University of Waterloo, University of Windsor, and Carleton University offer world-class programs.",
+      "Top-ranked universities like the University of Toronto, UBC, McGill, University of Waterloo, University of Windsor, and many more",
   },
   {
     icon: <School className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Affordable & High-Quality",
     description:
       "Compared to the UK or US, tuition and living costs are more reasonable, with excellent return on investment.",
+  },
+    {
+    icon: <MapPin className="w-6 h-6 text-[#2d6a4f]" />,
+    title: "Diverse Study Fields",
+    description:
+      "Programs available in Business, Engineering, IT, Life Sciences, Arts, and more.",
   },
   {
     icon: <LifeBuoy className="w-6 h-6 text-[#2d6a4f]" />,
@@ -32,39 +38,34 @@ const points = [
   },
   {
     icon: <Briefcase className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Post-Graduation Opportunities",
+    title: "Post-Graduation Work Permit",
     description:
       "The Post-Graduation Work Permit (PGWP) allows up to 3 years of work after studies, helping you gain valuable Canadian experience.",
   },
-  {
-    icon: <Globe className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Safe & Multicultural",
-    description:
-      "Canada ranks among the safest countries and offers a welcoming, multicultural environment with supportive campus communities.",
-  },
-  {
-    icon: <MapPin className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Diverse Study Fields",
-    description:
-      "Programs available in Business, Engineering, IT, Life Sciences, Arts, and more.",
-  },
+  // {
+  //   icon: <Globe className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Safe & Multicultural",
+  //   description:
+  //     "Canada ranks among the safest countries and offers a welcoming, multicultural environment with supportive campus communities.",
+  // },
+
   {
     icon: <Building2 className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Pathway to Permanent Residency",
     description:
       "Skilled work experience in Canada can help you qualify for permanent residency through programs like Express Entry.",
   },
-  {
-    icon: <Home className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Vibrant Student Cities",
-    description:
-      "Toronto, Vancouver, Montreal, and Ottawa rank among the world’s top student-friendly cities.",
-  },
+  // {
+  //   icon: <Home className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Vibrant Student Cities",
+  //   description:
+  //     "Toronto, Vancouver, Montreal, and Ottawa rank among the world’s top student-friendly cities.",
+  // },
 ];
 
 const StudyCanadaSection = () => {
   return (
-    <section className="bg-white py-12 px-4 sm:px-6 lg:px-12">
+    <section className="bg-white py-12 px-4 sm:px-6 lg:px-12 mx-7xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
@@ -74,11 +75,11 @@ const StudyCanadaSection = () => {
               alt="Canada Flag"
               className="w-8 h-5 mr-2"
             />
-            Why Study in &nbsp;<span className="text-[#8cc63f]"> Canada </span>&nbsp;?
+            Why Study in&nbsp;<span className="text-[#8cc63f]">Canada </span>&nbsp;?
           </h2>
-          <p className="text-gray-700 text-sm">
+          {/* <p className="text-gray-700 text-sm">
             Canada offers globally recognized degrees, affordable living costs, excellent post-graduation work opportunities, and a safe, diverse learning environment.
-          </p>
+          </p> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

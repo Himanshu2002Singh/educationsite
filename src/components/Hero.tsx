@@ -5,9 +5,11 @@ import img1 from "../../assets/CommunityStudentsIamge.webp";
 import GraduationCap from "../../assets/cap.png";
 import Send from "../../assets/arrow.png";
 import globa from "../../assets/globe.png";
+import HomePop from "../Popform/HomePop";
 
 const Hero: React.FC = () => {
   const [studentCount, setStudentCount] = useState(0);
+  const [showPopup, setShowPopup] = useState(false); // 🔹 popup state
 
   useEffect(() => {
     const studentInterval = setInterval(() => {
@@ -104,6 +106,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-[#8cc63f] hover:bg-[#7cb532] text-white text-sm md:text-base font-medium px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#8DC63F]/50"
+              onClick={() => setShowPopup(true)} // 🔹 open popup
             >
               TAKE THE FIRST STEP
             </motion.button>
@@ -133,6 +136,9 @@ const Hero: React.FC = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* ✅ Show Popup when button clicked */}
+      {showPopup && <HomePop onClose={() => setShowPopup(false)} />}
 
       {/* Background Wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden">

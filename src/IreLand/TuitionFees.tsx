@@ -30,9 +30,10 @@ const TuitionFeesSectionIreland = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4 font-serif">
-            Cost of Studying in Ireland
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            Cost of <span className="text-[#8cc63f]">Studying</span> in Ireland
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Plan your Ireland education budget with a breakdown of tuition and living expenses.
           </p>

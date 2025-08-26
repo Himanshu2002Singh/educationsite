@@ -70,8 +70,8 @@ const UAEUniversitiesSection = () => {
   };
 
   return (
-    <section className="py-10 sm:py-16 bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 sm:px-6 md:px-10">
+    <section className="py-10 sm:py-16 bg-[#F9F9F9]  max-w-7xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 md:px-5">
         <div className="text-center mb-6 sm:mb-10">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
             Top <span className="text-[#8cc63f]">Universities</span> in the UAE 🏫

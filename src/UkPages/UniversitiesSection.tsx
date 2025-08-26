@@ -73,13 +73,13 @@ const UniversitiesSection = () => {
             Top{" "}<span className="text-[#8cc63f]"> UK Universities</span> You Should Know
           </h2>
             <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mt-3"></div>
-          <p className="text-gray-600 max-w-xl mt-5 sm:max-w-3xl mx-auto text-sm sm:text-base">
+          {/* <p className="text-gray-600 max-w-xl mt-5 sm:max-w-3xl mx-auto text-sm sm:text-base mb-[-25px]">
             Discover your ideal university—whether elite or rising, all offer exceptional education & ROI.
-          </p>
+          </p> */}
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-2 sm:gap-4 mb-6 sm:mb-8 flex-wrap px-2">
+        {/* <div className="flex justify-center gap-2 sm:gap-4 mb-6 sm:mb-8 flex-wrap px-2">
           {[
             { key: 'elite', label: 'Elite Universities', icon: Trophy },
             { key: 'rising', label: 'Rising Angels', icon: TrendingUp },
@@ -98,9 +98,9 @@ const UniversitiesSection = () => {
               {label}
             </button>
           ))}
-        </div>
+        </div> */}
 
-        <p className="text-center text-gray-700 mb-6 sm:mb-8 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+        <p className="text-center text-gray-700 mb-6 sm:mb-8 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base ">
           {getDescription()}
         </p>
 

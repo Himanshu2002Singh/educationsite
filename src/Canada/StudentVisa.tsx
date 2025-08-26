@@ -19,7 +19,7 @@ const DocumentsVisaSectionCanada = () => {
 
   const documents = [
     { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Academic Transcripts", tooltip: "Marksheets from 10th, 12th, and/or bachelor's degree" },
-    { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport", tooltip: "Valid for the entire study duration" },
+    { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport", tooltip: "Valid for at least 6 months before application" },
     { icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, label: "English Language Test Scores", tooltip: "IELTS / TOEFL / PTE – varies by institution & program" },
     { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Statement of Purpose (SOP)", tooltip: "Explains study goals, background, and career plans" },
     { icon: <User className="w-6 h-6 text-[#C1272D]" />, label: "Letters of Recommendation (LORs)", tooltip: "1–2 letters from teachers, professors, or employers" },
@@ -34,7 +34,7 @@ const DocumentsVisaSectionCanada = () => {
     { step: 2, title: "Obtain Provincial Attestation Letter (PAL)", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "Required for most provinces except Quebec" },
     { step: 3, title: "If applying to Quebec: Get CAQ", icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, description: "Certificat d’acceptation du Québec (CAQ) is mandatory before visa application" },
     { step: 4, title: "Pay Tuition Fee", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Pay at least 1 year of tuition and get official payment receipt" },
-    { step: 5, title: "Open GIC Account & Transfer Funds", icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, description: "CAD 20,635 for living expenses" },
+    { step: 5, title: "Open GIC Account & Transfer Funds", icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, description: "CAD 22,895 for living expenses" },
     { step: 6, title: "Gather Required Documents", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Passport, LOA, PAL/CAQ, GIC, tuition receipt, IELTS/PTE, SOP, etc." },
     { step: 7, title: "Medical Exam (if applicable)", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Done through an IRCC-approved panel physician" },
     { step: 8, title: "Apply for Study Permit", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Submit IMM 1294 form via IRCC portal, upload documents, pay CAD 150" },
@@ -47,7 +47,7 @@ const DocumentsVisaSectionCanada = () => {
 
   const fundsRequired = [
     "Tuition Fee: Minimum 1 year paid",
-    "Living Expenses: CAD 20,635 for a year",
+    "Living Expenses: CAD 22,895 for a year",
   ];
 
   return (

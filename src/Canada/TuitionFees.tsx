@@ -10,21 +10,18 @@ const TuitionLivingCanadaSection = () => {
       icon: <GraduationCap className="w-10 h-10 text-[#8cc63f]" />,
       degree: "Diploma / PG Diploma / Certificate",
       fee: "CAD 16,000 – CAD 20,000/year",
-      description: "Costs vary depending on province and institution.",
       color: "bg-green-50 border-green-200"
     },
     {
       icon: <BookOpen className="w-10 h-10 text-orange-600" />,
       degree: "Bachelor’s Degree",
       fee: "CAD 18,000 – CAD 35,000/year",
-      description: "Programs in professional fields may cost more.",
       color: "bg-orange-50 border-orange-200"
     },
     {
       icon: <Briefcase className="w-10 h-10 text-blue-600" />,
       degree: "Master’s Degree",
       fee: "CAD 20,000 – CAD 35,000/year",
-      description: "Fees vary by specialization and university.",
       color: "bg-blue-50 border-blue-200"
     }
   ];
@@ -34,7 +31,7 @@ const TuitionLivingCanadaSection = () => {
     {
       icon: <Home className="w-10 h-10 text-purple-600" />,
       type: "Approx. Annual Living Expenses",
-      cost: "CAD 20,000",
+      cost: "CAD 22,895",
       description: "Includes accommodation, food, transportation, and personal expenses; varies by city and lifestyle.",
       color: "bg-purple-50 border-purple-200"
     }

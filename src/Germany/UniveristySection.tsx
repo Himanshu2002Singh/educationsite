@@ -70,7 +70,8 @@ const UniversitySection: React.FC = () => {
   );
 
   return (
-    <div className="py-12 px-4 sm:px-8 bg-green-50">
+    <div className=" bg-green-50 ">
+    <div className="py-12 px-15 sm:px-8  max-w-7xl mx-auto">
       <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
         <span className="text-[#8cc63f]">Top German </span>Universities You Should Know
       </h2>
@@ -110,6 +111,7 @@ const UniversitySection: React.FC = () => {
           ? renderCarousel(publicUniversities)
           : renderCarousel(privateUniversities)}
       </div>
+    </div>
     </div>
   );
 };

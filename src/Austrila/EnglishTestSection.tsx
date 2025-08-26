@@ -11,7 +11,7 @@ const EnglishTestSectionAustralia = () => {
       country: "Australia",
       bgColor: "bg-[#f0f8ff]",
       borderColor: "border-blue-100",
-      accentColor: "#0077b6",
+      accentColor: "#8cc63f",
       exams: [
         { test: 'IELTS Academic', ug: '6.0–6.5 (no band <6.0)', pg: '6.5–7.0 (no band <6.0)', max: '9.0' },
         { test: 'PTE Academic', ug: '50–58', pg: '58–65', max: '90' },
@@ -23,9 +23,10 @@ const EnglishTestSectionAustralia = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            English Language Requirements – Australia
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            English Language <span className="text-[#8cc63f]">Requirements –</span> Australia
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Understand accepted tests, score ranges, and waiver options for studying in Australia.
           </p>

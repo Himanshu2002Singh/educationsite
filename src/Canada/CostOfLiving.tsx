@@ -7,31 +7,31 @@ import "slick-carousel/slick/slick-theme.css";
 const cities = [
   {
     name: "Toronto",
-    description: "Business hub, diverse, home to UofT, York, Ryerson"
+
   },
   {
     name: "Vancouver",
-    description: "Tech-focused, scenic, UBC and SFU located here"
+  
   },
   {
     name: "Montreal",
-    description: "Affordable, cultural, home to McGill, Concordia"
+    
   },
   {
     name: "Ottawa",
-    description: "Safe and bilingual, University of Ottawa and Carleton University"
+
   },
   {
     name: "Calgary",
-    description: "Growing economy, low cost of living, University of Calgary"
+    
   },
   {
     name: "Winnipeg",
-    description: "PR-friendly, low tuition and living cost, UoM is located here"
+    
   },
   {
     name: "Regina",
-    description: "East PR policies, home to University of Regina and University of Jasie"
+    
   }
 ];
 

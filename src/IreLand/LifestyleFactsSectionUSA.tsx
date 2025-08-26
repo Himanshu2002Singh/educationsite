@@ -37,11 +37,12 @@ const LifestyleFactsSectionIreland = () => {
   };
 
   return (
-    <section className="py-12 px-4 bg-[#FFFFFF]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl font-bold text-[#2C2C2C] mb-10">
-          Ireland Lifestyle & Fun Facts
+    <section className="py-12 px-14 bg-[#FFFFFF]">
+      <div className="max-w-7xl mx-auto md:mx-14">
+        <h2 className="text-center text-2xl md:text-4xl font-bold text-black mb-3">
+          Ireland <span className="text-[#8cc63f]">Lifestyle</span> & Fun Facts
         </h2>
+        <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 
         <div className="relative">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

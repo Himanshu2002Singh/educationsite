@@ -54,26 +54,42 @@ const EnglishTestSectionCanada = () => {
 
                 {/* Desktop Table */}
                 <div className="hidden md:block">
-                  <table className="min-w-full border border-gray-300 text-center text-sm mx-auto">
-                    <thead style={{ backgroundColor: country.accentColor }} className="text-white">
-                      <tr>
-                        <th className="p-3 border">Test Name</th>
-                        <th className="p-3 border">Undergraduate (UG)</th>
-                        <th className="p-3 border">Postgraduate (PG)</th>
-                        <th className="p-3 border">Max Score</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-gray-800">
-                      {country.exams.map((exam, i) => (
-                        <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                          <td className="p-3 border">{exam.test}</td>
-                          <td className="p-3 border">{exam.ug}</td>
-                          <td className="p-3 border">{exam.pg}</td>
-                          <td className="p-3 border">{exam.max}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                    <table className="min-w-full border border-gray-300 text-left">
+                  <thead className="bg-[#8DC63F] text-white">
+                    <tr>
+                      <th className="p-3 border">Test Name</th>
+                      <th className="p-3 border">Undergraduate (UG)</th>
+                      <th className="p-3 border">Postgraduate (PG)</th>
+                      <th className="p-3 border">Max Score</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-800">
+                    <tr className="bg-white border-t">
+                      <td className="p-3 border">IELTS Academic</td>
+                      <td className="p-3 border">6.0 – 6.5</td>
+                      <td className="p-3 border">6.5 – 7.5</td>
+                      <td className="p-3 border">9.0</td>
+                    </tr>
+                    <tr className="bg-gray-50 border-t">
+                      <td className="p-3 border">TOEFL iBT</td>
+                      <td className="p-3 border">70 – 80</td>
+                      <td className="p-3 border">80 – 100</td>
+                      <td className="p-3 border">120</td>
+                    </tr>
+                    <tr className="bg-white border-t">
+                      <td className="p-3 border">PTE Academic</td>
+                      <td className="p-3 border">50 – 58</td>
+                      <td className="p-3 border">58 – 65+</td>
+                      <td className="p-3 border">90</td>
+                    </tr>
+                    <tr className="bg-gray-50 border-t">
+                      <td className="p-3 border">Duolingo English Test (DET)</td>
+                      <td className="p-3 border">95 – 105</td>
+                      <td className="p-3 border">110 – 120</td>
+                      <td className="p-3 border">160</td>
+                    </tr>
+                  </tbody>
+                </table>
                 </div>
 
                 {/* Mobile Cards */}
@@ -109,7 +125,7 @@ const EnglishTestSectionCanada = () => {
                 </p>
 
                 {/* Waiver Options */}
-                <div className="mt-6 text-center">
+                {/* <div className="mt-6 text-center">
                   <p className="font-semibold text-[#2C2C2C]">English Test Waiver Options:</p>
                   <ul className="list-disc pl-5 mt-2 text-sm inline-block text-left">
                     <li>Studied in an English-medium school for 3+ years</li>
@@ -117,7 +133,7 @@ const EnglishTestSectionCanada = () => {
                     <li>From a country on the English-proficient exemption list</li>
                     <li>Hold a prior UG or PG degree from an English-speaking country</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

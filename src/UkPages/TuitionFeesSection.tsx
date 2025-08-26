@@ -5,7 +5,7 @@ const TuitionFeesSection = () => {
   const tuitionFees = [
     {
       icon: <GraduationCap className="w-10 h-10 text-blue-600" />,
-      degree: "Undergraduate",
+      degree: "Bachelor's",
       fee: "£15,000 – £30,000",
       description: "Per year for Bachelor's programs",
       color: "bg-blue-50 border-blue-200"
@@ -14,14 +14,14 @@ const TuitionFeesSection = () => {
       icon: <BookOpen className="w-10 h-10 text-purple-600" />,
       degree: "Master's",
       fee: "£15,000 – £40,000",
-      description: "Per year for postgraduate programs",
+      description: "Per year for Master's programs",
       color: "bg-purple-50 border-purple-200"
     },
     {
       icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA",
       fee: "£25,000 – £45,000+",
-      description: "Per year for business programs",
+      description: "Per year for MBA/MiM programs",
       color: "bg-green-50 border-green-200"
     }
   ];
@@ -104,7 +104,7 @@ const TuitionFeesSection = () => {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                  Application fees (£20–£75)
+                  Application fees (if applicable)
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
@@ -112,7 +112,7 @@ const TuitionFeesSection = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                  Health insurance surcharge
+                  Immigration Healthcare Surcharge (IHS)
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>

@@ -78,7 +78,7 @@ const VisaInfoSection = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
             Germany Student <span className="text-[#8cc63f]">Visa Process </span>& Documents

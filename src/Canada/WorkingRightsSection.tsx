@@ -53,33 +53,34 @@ const WorkingRightsSectionCanada = () => {
 
         {/* Tab Content */}
         {activeTab === 'studying' ? (
-          <div className="space-y-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {studyWorkRights.map((item, index) => (
-                <div
-                  key={index}
-                  className={`bg-gradient-to-br ${item.color} border-2 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300`}
-                >
-                  <h4 className="text-xl font-bold text-[#2C2C2C] mb-6 text-center">{item.level}</h4>
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
-                      <div className="flex items-center">
-                        <Clock className="w-6 h-6 text-[#8DC63F] mr-3" />
-                        <span className="text-[#2C2C2C] font-medium">During Academic Sessions</span>
-                      </div>
-                      <span className="text-[#2C2C2C] font-bold text-lg">{item.studyLimit}</span>
+          <div className="space-y-10 ">
+          <div className="flex justify-center">
+            {studyWorkRights.map((item, index) => (
+              <div
+                key={index}
+                className={`bg-gradient-to-br ${item.color} border-2 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300`}
+              >
+                <h4 className="text-xl font-bold text-[#2C2C2C] mb-6 text-center">{item.level}</h4>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+                    <div className="flex items-center">
+                      <Clock className="w-6 h-6 text-[#8DC63F] mr-3" />
+                      <span className="text-[#2C2C2C] font-medium">During Academic Sessions</span>
                     </div>
-                    <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
-                      <div className="flex items-center">
-                        <Calendar className="w-6 h-6 text-[#C1272D] mr-3" />
-                        <span className="text-[#2C2C2C] font-medium">During Scheduled Breaks</span>
-                      </div>
-                      <span className="text-[#C1272D] font-bold text-lg">{item.holidayLimit}</span>
+                    <span className="text-[#2C2C2C] font-bold text-lg">{item.studyLimit}</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+                    <div className="flex items-center">
+                      <Calendar className="w-6 h-6 text-[#8DC63F] mr-3" />
+                      <span className="text-[#2C2C2C] font-medium">During Scheduled Breaks</span>
                     </div>
+                    <span className="text-black-700 font-bold text-lg ml-[30px]">{item.holidayLimit}</span>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+
 
             <div className="bg-[#FFF8E1] border border-[#FFE082] rounded-xl p-5 text-center shadow-sm">
               <div className="flex justify-center items-center mb-3">
@@ -94,7 +95,7 @@ const WorkingRightsSectionCanada = () => {
         ) : (
           <div className="space-y-12">
             {/* Post-study Work Rights */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex justify-center">
               <div className="border-2 border-[#CDEFD4] bg-white rounded-xl p-6 shadow-lg hover:shadow-xl">
                 <div className="text-center mb-4">
                   <div className="bg-[#E5F8E0] p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">

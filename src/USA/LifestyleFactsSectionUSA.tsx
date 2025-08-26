@@ -92,7 +92,7 @@ const LifestyleFactsSectionUSA = () => {
 
   return (
     <section className="py-12 px-4 bg-[#FFFFFF]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto container mx-auto px-4 sm:px-6 md:px-5">
         <h2 className="text-center text-2xl md:text-4xl font-bold text-black mb-3">
           USA Student <span className="text-[#8cc63f]">Life Fun</span> Facts
         </h2>

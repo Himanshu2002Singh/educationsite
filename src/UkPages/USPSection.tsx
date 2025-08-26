@@ -32,7 +32,7 @@ const points = [
   {
     icon: <School className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Prestigious Universities",
-    description: "Oxford, Cambridge, LSE, Imperial, and many more",
+    description: "UCL, KCL, Edinburgh, Manchester, and many more",
   },
   {
     icon: <FileText className="w-6 h-6 text-[#2d6a4f]" />,

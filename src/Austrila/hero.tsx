@@ -68,13 +68,13 @@ const StudyAustraliaSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2C2C2C] flex items-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
               src="https://flagcdn.com/w40/au.png"
               alt="Australia Flag"
               className="w-8 h-5 mr-2"
             />
-            Why Study in Australia?
+            Why Study &nbsp;<span className="text-[#8cc63f]">in Australia</span>&nbsp;?
           </h2>
           <p className="text-gray-700 text-sm">
             Australia offers world-class education, generous work rights, and a vibrant multicultural environment, making it one of the top choices for students worldwide.

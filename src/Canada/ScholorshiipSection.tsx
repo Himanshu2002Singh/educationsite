@@ -70,13 +70,13 @@ const ScholarshipsSectionCanada = () => {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3 text-center">
+        <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3 text-center ">
           {" "}<span className="text-[#8cc63f]">Scholarships</span> for International Students in Canada
         </h2>
-        <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mb-3"></div>
-        <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
+        <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mb-8"></div>
+        {/* <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
           Canada offers a variety of scholarships to support international students, ranging from government-funded to university-specific awards, covering tuition, living expenses, and more.
-        </p>
+        </p> */}
 
         <Swiper
           modules={[Pagination, Autoplay]}

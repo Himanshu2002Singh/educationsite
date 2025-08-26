@@ -30,7 +30,7 @@ const CostOfLivingSection = () => {
     },
     outside: {
       total: 10224,
-      totalINR: 1022400,
+      // totalINR: 1022400,
       items: [
         { icon: <Home className="w-5 h-5" />, category: 'Accommodation', cost: '£400-600/month' },
         { icon: <Utensils className="w-5 h-5" />, category: 'Food & Groceries', cost: '£150-250/month' },
@@ -104,7 +104,7 @@ const CostOfLivingSection = () => {
                       <p className="text-3xl font-bold mb-1" style={{ color: accentColor }}>
                         £{data.total}
                       </p>
-                      <p className="text-lg text-gray-700">₹{data.totalINR.toLocaleString()} per year</p>
+                      {/* <p className="text-lg text-gray-700">₹{data.totalINR.toLocaleString()} per year</p> */}
                     </div>
                   </div>
 
@@ -143,13 +143,13 @@ const CostOfLivingSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <InsightItem
                 icon={<Calculator className="w-6 h-6 text-[#8DC63F]" />}
-                title="Save £3,123/year"
+                title="Save £3,123*/year"
                 description="By choosing cities outside London"
                 color="#8DC63F"
               />
               <InsightItem
                 icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />}
-                title="Earn £8,000/year"
+                title="Earn £8,000*/year"
                 description="Through part-time work (20hrs/week)"
                 color="#C1272D"
               />

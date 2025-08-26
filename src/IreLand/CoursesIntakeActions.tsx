@@ -52,8 +52,8 @@ const CoursesIrelandIntakeSection = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-[#F9F9F9] ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-6 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
             <span className="text-[#8cc63f]">Popular </span>

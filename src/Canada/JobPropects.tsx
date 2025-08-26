@@ -3,7 +3,7 @@ import { BarChart2, Activity, HeartPulse, Cpu } from 'lucide-react';
 
 const JobProspectsSectionCanada = () => {
   return (
-    <section className="px-4 sm:px-6 py-12 md:px-20">
+    <section className="px-4 sm:px-6 py-12 md:px-5 max-w-7xl mx-auto">
       <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-3 text-center">
       Job Opportunities & Work Permit After {" "}<span className="text-[#8cc63f]">Studying in </span>Canada
       </h2>
@@ -19,7 +19,7 @@ const JobProspectsSectionCanada = () => {
         </p>
         <ul className="list-disc pl-5 text-[#444] text-sm sm:text-base leading-relaxed mb-4">
           <li>🎓 University graduates (Bachelor’s, Master’s, PhD) can still apply for up to 3 years of open work permit after graduation – no matter which subject you study.</li>
-          <li>🏫 College diploma or postgraduate certificate students must now choose programs in in-demand fields (like healthcare, engineering, IT, trades, early childhood education, cooking & culinary arts, etc.) to be eligible for the PGWP.</li>
+          <li>🏫 College diploma or postgraduate certificate students must now choose programs in fields which are in - demand (like healthcare, engineering, IT, trades, early childhood education, cooking & culinary arts, etc.) to be eligible for the PGWP.</li>
         </ul>
         <p className="text-[#444] text-sm sm:text-base leading-relaxed mb-2 font-semibold">
           🚀 Your Path to Success
@@ -30,7 +30,7 @@ const JobProspectsSectionCanada = () => {
           <li>Build a successful career in a country known for diversity, safety, and opportunity</li>
         </ul>
         <p className="text-[#2C2C2C] text-sm sm:text-base mt-4 font-medium">
-          ✅ Tip: We’ll help you choose PGWP-eligible programs and guide you every step of the way—from admission to your job search!
+          ✅ Tip: We’ll help you choose PGWP-eligible programs and guide you with every step of the way—from admission to your job search!
         </p>
       </div>
 

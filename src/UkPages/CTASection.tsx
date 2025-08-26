@@ -79,9 +79,9 @@ const CTASection = () => {
               </div>
 
               <div className="bg-[#C5E3DC] rounded-xl p-6 mt-8 text-[#2C2C2C]">
-                <h4 className="font-bold mb-2">🎯 Success Rate</h4>
-                <p className="text-2xl font-bold mb-1">95%</p>
-                <p className="text-sm opacity-80">of our students get their preferred university admission</p>
+                <h4 className="font-bold mb-2">🎯Visa Success Rate</h4>
+                <p className="text-2xl font-bold mb-1">100%</p>
+                {/* <p className="text-sm opacity-80">of our students get their preferred university admission</p> */}
               </div>
             </div>
 

@@ -25,21 +25,21 @@ const CoursesIntakeSection = () => {
   const intakes = [
     {
       icon: <Sun className="w-8 h-8 text-[#8DC63F]" />,
-      title: "February Intake",
-      subtitle: "(Primary)",
-      description: "Most universities in New Zealand offer February as the primary intake."
+      title: "September Intake ",
+      subtitle: "(Major)",
+      description: " Maximum course options and highest student enrolments."
     },
     {
       icon: <Leaf className="w-8 h-8 text-[#2C2C2C]" />,
-      title: "July Intake",
-      subtitle: "(Secondary)",
-      description: "July is the second most common intake across institutions."
+      title: " January Intake",
+      subtitle: "(Minor)",
+      description: "  Wide course availability across multiple fields."
     },
     {
       icon: <Snowflake className="w-8 h-8 text-[#C1272D]" />,
-      title: "November / Rolling",
-      subtitle: "(Special)",
-      description: "Some institutions offer November or rolling admissions for select postgraduate or diploma programs."
+      title: "May Intake",
+      subtitle: "(Mid)",
+      description: " Available at selected universities and courses."
     }
   ];
 

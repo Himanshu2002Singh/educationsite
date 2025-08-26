@@ -44,115 +44,102 @@ const EnglishTestSection = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-8 z-10 relative">
-          {/* Minimum Requirement */}
-          <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
-            <div className="flex items-center mb-4 sm:mb-6">
-              <div className="p-2 sm:p-3 bg-blue-100 rounded-full mr-3 sm:mr-4">
-                <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
-              </div>
-              <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Minimum Requirement</h3>
-            </div>
-            <div className="bg-[#8DC63F] text-white p-3 sm:p-4 rounded-lg mb-3 sm:mb-4">
-              <p className="font-bold text-base sm:text-lg mb-1 sm:mb-2">IELTS 5.5–6.5 overall</p>
-              <p className="text-xs sm:text-sm opacity-90">5.5 in each band (CEFR B2)</p>
-            </div>
-            <div className="flex items-center text-xs sm:text-sm text-gray-700">
-              <Info className="w-4 h-4 mr-2" />
-              <span>As per UKVI requirements</span>
-            </div>
-          </div>
+    <div className="w-full flex justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-8 z-10 max-w-5xl w-full">
 
-          {/* Accepted Tests */}
-          <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
-            <div className="flex items-center mb-4 sm:mb-6">
-              <div className="p-2 sm:p-3 bg-green-100 rounded-full mr-3 sm:mr-4">
-                <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#8cc63f]" />
-              </div>
-              <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Accepted Tests</h3>
-            </div>
-            <div className="space-y-2 sm:space-y-3">
-              {acceptedTests.map((test, index) => (
-                <div
-                  key={index}
-                  className={`p-3 rounded-lg border transition-all duration-200 ${
-                    test.popular ? 'bg-green-50 border-green-200' : 'bg-gray-50 border-gray-200'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-sm sm:text-base text-gray-800">{test.name}</p>
-                      <p className="text-xs sm:text-sm text-gray-600">{test.note}</p>
-                    </div>
-                    {test.popular && (
-                      <span className="bg-green-600 text-white px-2 py-1 rounded-full text-[10px] sm:text-xs font-bold">
-                        Popular
-                      </span>
-                    )}
-                  </div>
+            {/* Accepted Tests */}
+            <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-green-100 rounded-full mr-3 sm:mr-4">
+                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#8cc63f]" />
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Waivers & Alternatives */}
-          <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
-            <div className="flex items-center mb-4 sm:mb-6">
-              <div className="p-2 sm:p-3 bg-purple-100 rounded-full mr-3 sm:mr-4">
-                <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+                <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Accepted Tests</h3>
               </div>
-              <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Waivers & Alternatives</h3>
-            </div>
-
-            <div className="space-y-3 sm:space-y-4">
-              {/* IELTS Waiver */}
-              <div className="border border-gray-200 rounded-lg">
-                <button
-                  onClick={() => toggleSection('waiver')}
-                  className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                >
-                  <span className="font-semibold text-sm sm:text-base text-gray-800">
-                    🎓 IELTS Waiver Eligibility
-                  </span>
-                  {expandedSection === 'waiver' ? (
-                    <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
-                  )}
-                </button>
-                {expandedSection === 'waiver' && (
-                  <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
-                    Many universities waive the English language requirement based on Year 12
-                    English scores and medium of instruction.
+              <div className="space-y-2 sm:space-y-3">
+                {acceptedTests.map((test, index) => (
+                  <div
+                    key={index}
+                    className={`p-3 rounded-lg border transition-all duration-200 ${
+                      test.popular ? 'bg-green-50 border-green-200' : 'bg-gray-50 border-gray-200'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-sm sm:text-base text-gray-800">{test.name}</p>
+                        <p className="text-xs sm:text-sm text-gray-600">{test.note}</p>
+                      </div>
+                      {test.popular && (
+                        <span className="bg-green-600 text-white px-2 py-1 rounded-full text-[10px] sm:text-xs font-bold">
+                          Popular
+                        </span>
+                      )}
+                    </div>
                   </div>
-                )}
-              </div>
-
-              {/* Pre-Sessional English */}
-              <div className="border border-gray-200 rounded-lg">
-                <button
-                  onClick={() => toggleSection('presessional')}
-                  className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
-                >
-                  <span className="font-semibold text-sm sm:text-base text-gray-800">
-                    📚 Pre-Sessional English
-                  </span>
-                  {expandedSection === 'presessional' ? (
-                    <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
-                  )}
-                </button>
-                {expandedSection === 'presessional' && (
-                  <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
-                    Offered to students who don't meet minimum IELTS scores. Conducted before
-                    course commencement to improve English proficiency.
-                  </div>
-                )}
+                ))}
               </div>
             </div>
+
+            {/* Waivers & Alternatives */}
+            <div className="bg-white bg-opacity-90 rounded-xl p-5 sm:p-8 shadow-2xl border border-gray-200">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-purple-100 rounded-full mr-3 sm:mr-4">
+                  <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+                </div>
+                <h3 className="text-lg sm:text-2xl font-bold text-[#2C2C2C]">Waivers & Alternatives</h3>
+              </div>
+
+              <div className="space-y-3 sm:space-y-4">
+                {/* IELTS Waiver */}
+                <div className="border border-gray-200 rounded-lg">
+                  <button
+                    onClick={() => toggleSection('waiver')}
+                    className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="font-semibold text-sm sm:text-base text-gray-800">
+                      🎓 IELTS Waiver Eligibility
+                    </span>
+                    {expandedSection === 'waiver' ? (
+                      <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
+                    )}
+                  </button>
+                  {expandedSection === 'waiver' && (
+                    <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
+                      Many universities waive the English language requirement based on Year 12
+                      English scores and medium of instruction.
+                    </div>
+                  )}
+                </div>
+
+                {/* Pre-Sessional English */}
+                <div className="border border-gray-200 rounded-lg">
+                  <button
+                    onClick={() => toggleSection('presessional')}
+                    className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  >
+                    <span className="font-semibold text-sm sm:text-base text-gray-800">
+                      📚 Pre-Sessional English
+                    </span>
+                    {expandedSection === 'presessional' ? (
+                      <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
+                    )}
+                  </button>
+                  {expandedSection === 'presessional' && (
+                    <div className="px-3 sm:px-4 pb-3 sm:pb-4 text-xs sm:text-sm text-gray-600">
+                      Offered to students who don't meet minimum IELTS scores. Conducted before
+                      course commencement to improve English proficiency.
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
 
         {/* CTA Button */}
         <div className="text-center mt-8 sm:mt-12">

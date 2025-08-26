@@ -120,11 +120,11 @@ const WorkingRightsSection = () => {
                   <p className="text-3xl font-bold text-[#8DC63F] mb-2">2 Years</p>
                   <p className="text-[#2C2C2C]">Post-Study Work Visa</p>
                 </div>
-                <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
+                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
                   <li>Work in any job at any skill level</li>
                   <li>Switch between employers</li>
                   <li>Be self-employed</li>
-                </ul>
+                </ul> */}
               </div>
 
               {/* PhD */}
@@ -139,11 +139,11 @@ const WorkingRightsSection = () => {
                   <p className="text-3xl font-bold text-[#726EFF] mb-2">3 Years</p>
                   <p className="text-[#2C2C2C]">Post-Study Work Visa</p>
                 </div>
-                <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
+                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
                   <li>Extended work opportunities</li>
                   <li>Research and academic roles</li>
                   <li>Industry leadership positions</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
 

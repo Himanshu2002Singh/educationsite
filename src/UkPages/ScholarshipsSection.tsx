@@ -79,9 +79,9 @@ const ScholarshipsSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-[#2C2C2C] mb-2 text-center">Why Scholarships {" "}<span className="text-[#8cc63f]"> Matter ?</span></h2>
+        <h2 className="text-4xl font-bold text-[#2C2C2C] mb-2 text-center mt-[20px]"> {" "} <span className="text-[#8cc63f]">Scholarships </span>You Should Know</h2>
         <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
         <p className="text-lg text-[#2C2C2C] text-center mb-10 max-w-3xl mx-auto">
           Studying abroad is an investment — but scholarships can ease the financial burden by rewarding your achievements, supporting your background, or funding specific courses.
@@ -104,11 +104,11 @@ const ScholarshipsSection = () => {
         </div>
 
         {/* Slider Heading */}
-        <h3 className="text-2xl md:text-4xl text-center text-[#2C2C2C] mb-6">Popular {" "}<span className="text-[#8cc63f]"> Scholarships</span> You Should Know</h3>
-        <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
+        {/* <h3 className="text-2xl md:text-4xl text-center text-[#2C2C2C] mb-6">Popular {" "}<span className="text-[#8cc63f]"> Scholarships</span> You Should Know</h3> */}
+        {/* <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div> */}
 
         {/* Swiper Carousel */}
-        <Swiper
+        {/* <Swiper
           modules={[Pagination]}
           spaceBetween={20}
           slidesPerView={1.1}
@@ -138,7 +138,7 @@ const ScholarshipsSection = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </div>
     </section>
   );

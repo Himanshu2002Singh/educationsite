@@ -56,11 +56,12 @@ const CoursesAustraliaIntakeSection = () => {
 
   return (
     <section className="py-16 bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-5  max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            Popular Programs & Intakes – Australia
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
+            <span className="text-[#8cc63f]">Popular</span> Programs & Intakes – Australia
           </h2>
+          <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Discover Australia’s top study programs and university intake schedules to plan your academic journey effectively.
           </p>
@@ -72,8 +73,8 @@ const CoursesAustraliaIntakeSection = () => {
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'courses'
-                ? 'bg-blue-600 text-white'
-                : 'text-[#2C2C2C] hover:text-blue-600'
+                ? 'bg-[#8cc63f] text-white'
+                : 'text-[#8cc63f] hover:text-black'
             }`}
           >
             Courses in Demand
@@ -82,8 +83,8 @@ const CoursesAustraliaIntakeSection = () => {
             onClick={() => setActiveTab('intakes')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
-                ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
+                ? 'bg-[#8cc63f] text-white'
+                : 'text-[#8cc63f] hover:text-black'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

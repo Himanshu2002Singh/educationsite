@@ -34,13 +34,14 @@ const DocumentsVisaSection = () => {
   ];
 
   const visaSteps = [
-    { step: 1, title: "Get your CAS Letter", subtitle: "Confirmation of Acceptance for Study", icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, points: "50 points", description: "University issues CAS after accepting your application and receiving deposit" },
+    { step: 1, title: "Get your CAS Letter", subtitle: "Confirmation of Acceptance for Studies", icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, points: "50 points", description: "University issues CAS after accepting your application and receiving deposit" },
     { step: 2, title: "Show Financial Proof", subtitle: "28 days of maturity, no large recent deposits", icon: <DollarSign className="w-6 h-6 text-[#C1272D]" />, points: "10 points", description: "Demonstrate sufficient funds for tuition and living expenses" },
-    { step: 3, title: "Medical Examination", subtitle: "UK approved clinics only", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, points: "10 points", description: "Health check from approved medical centers" },
-    { step: 4, title: "Submit Tier 4 Visa Application", subtitle: "Online application with supporting documents", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, points: "", description: "Complete online form and upload required documents" },
-    { step: 5, title: "Pay Immigration Health Surcharge", subtitle: "Access to NHS services", icon: <DollarSign className="w-6 h-6 text-[#8DC63F]" />, points: "", description: "Annual fee for healthcare access during your stay" },
-    { step: 6, title: "Attend Biometrics", subtitle: "Fingerprints and photograph", icon: <Eye className="w-6 h-6 text-[#C1272D]" />, points: "", description: "Visit visa application center for biometric data" },
-    { step: 7, title: "Get Decision", subtitle: "Within 2-3 weeks", icon: <Mail className="w-6 h-6 text-[#8DC63F]" />, points: "", description: "Receive visa decision and passport with visa" }
+    { step: 3, title: "English Language requirement ", subtitle: "Any of the English language test or waiver eligibility", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, points: "10 points", description: "Health check from approved medical centers" },
+    { step: 4, title: "Medical Examination", subtitle: "UK approved clinics only", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Health check from approved medical centers" },
+    { step: 5, title: "Submit Tier 4 Visa Application", subtitle: "Online application with supporting documents", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, points: "", description: "Complete online form and upload required documents" },
+    { step: 6, title: "Pay Immigration Health Surcharge", subtitle: "Access to NHS services", icon: <DollarSign className="w-6 h-6 text-[#8DC63F]" />, points: "", description: "Annual fee for healthcare access during your stay" },
+    { step: 7, title: "Attend Biometrics", subtitle: "Fingerprints and photograph", icon: <Eye className="w-6 h-6 text-[#C1272D]" />, points: "", description: "Visit visa application center for biometric data" },
+    { step: 8, title: "Get Decision", subtitle: "Within 2-3 weeks", icon: <Mail className="w-6 h-6 text-[#8DC63F]" />, points: "", description: "Receive visa decision and passport with visa" }
   ];
 
   const fundingSources = [
@@ -102,7 +103,7 @@ const DocumentsVisaSection = () => {
                   className="w-full flex justify-between items-center p-4 bg-white hover:bg-[#F7F7F7]"
                   onClick={() => setExpandedStep(expandedStep === idx ? null : idx)}
                 >
-                  <div className="flex items-center">
+                  <div className="flex items-center text-left">
                     <div className="bg-[#8DC63F] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
                       {step.step}
                     </div>

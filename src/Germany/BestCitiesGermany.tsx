@@ -54,7 +54,7 @@ const BestCitiesGermany = () => {
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-br from-emerald-200/30 to-rose-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-tr from-indigo-200/30 to-emerald-200/30 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-10 relative">
+      <div className="container mx-auto px-4 sm:px-6 md:px-3 relative  max-w-7xl ">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">

@@ -55,7 +55,7 @@ const timelineData = [
 
 const WorkingRightsSection = () => {
   return (
-    <section className="bg-white py-12 px-6 sm:px-10 md:px-16 max-w-7xl mx-auto font-sans">
+    <section className="bg-white py-12 px-6 sm:px-10 md:px-5 max-w-7xl mx-auto font-sans">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
         Working <span className="text-[#8cc63f]">Rights</span> in Germany
