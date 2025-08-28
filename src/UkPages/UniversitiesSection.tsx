@@ -3,12 +3,14 @@ import { Trophy, TrendingUp, Star } from 'lucide-react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import img13 from '../../assets/logo_universities/Australia/adelaide-removebg-preview.png';
+
 
 const UniversitiesSection = () => {
   const [activeTab, setActiveTab] = useState('elite');
 
   const eliteUniversities = [
-    { name: "Imperial College London", rank: 2, logo: "./assets/eda25c36a6813a03a54ec84fe0d32686.jpg", courses: "Engineering, Medicine, Business" },
+    { name: "Imperial College London", rank: 2, courses: "Engineering, Medicine, Business" },
     { name: "University of Oxford", rank: 4, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/University_of_Oxford_coat_of_arms.svg/512px-University_of_Oxford_coat_of_arms.svg.png", courses: "Law, Philosophy, Medicine" },
     { name: "University of Cambridge", rank: 6, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/University_of_Cambridge_coat_of_arms.svg/512px-University_of_Cambridge_coat_of_arms.svg.png", courses: "Natural Sciences, Engineering, Law" },
     { name: "UCL", rank: 9, logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/UCL_logo.svg/512px-UCL_logo.svg.png", courses: "Medicine, Engineering, Arts" },
@@ -19,7 +21,7 @@ const UniversitiesSection = () => {
     { name: "University of Bath", rank: 148, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/University_of_Bath_logo.svg/512px-University_of_Bath_logo.svg.png", courses: "Engineering, Business, Architecture" },
     { name: "University of York", rank: 162, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/University_of_York_coat_of_arms.svg/512px-University_of_York_coat_of_arms.svg.png", courses: "Computer Science, Psychology, History" },
     { name: "Newcastle University", rank: 171, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Newcastle_University_logo.svg/512px-Newcastle_University_logo.svg.png", courses: "Medicine, Engineering, Business" },
-    { name: "University of Surrey", rank: 347, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/University_of_Surrey_logo.svg/512px-University_of_Surrey_logo.svg.png", courses: "Engineering, Business, Hospitality" },
+    { name: "University of Surrey", rank: 347, logo: "ht      tps://upload.wikimedia.org/wikipedia/en/thumb/1/1f/University_of_Surrey_logo.svg/512px-University_of_Surrey_logo.svg.png", courses: "Engineering, Business, Hospitality" },
   ];
 
   const underdogUniversities = [
@@ -52,7 +54,7 @@ const UniversitiesSection = () => {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 3,

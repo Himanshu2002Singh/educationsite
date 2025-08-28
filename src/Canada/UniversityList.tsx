@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CanadaUniversitiesSection = () => {
+const  CanadaUniversitiesSection = () => {
   const universities = [
     { name: "University of Toronto" },
     { name: "McGill University" },

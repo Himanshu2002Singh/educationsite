@@ -3,16 +3,26 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import img1 from '../../assets/logo_universities/Australia/melbourne (1).png';
+import img2 from '../../assets/logo_universities/Australia/ancora_imparo.png';
+import img3 from '../../assets/logo_universities/Australia/australian_national.png';
+import img4 from '../../assets/logo_universities/Australia/queensland.png';
+import img5 from '../../assets/logo_universities/Australia/sydney.png';
+import img6 from '../../assets/logo_universities/Australia/unsw.png';
+import img7 from '../../assets/logo_universities/Australia/western_australia.png';
+
+
+
 const AustraliaUniversitiesSection = () => {
   const universities = [
-    { name: "University of Melbourne" },
-    { name: "Australian National University (ANU)" },
-    { name: "University of Sydney" },
-    { name: "University of New South Wales (UNSW Sydney)" },
-    { name: "University of Queensland (UQ)" },
-    { name: "Monash University" },
-    { name: "University of Western Australia (UWA)" },
+    { name: "University of Melbourne", logo: img1 },
+    { name: "Australian National University (ANU)",logo: img3 },
     { name: "University of Adelaide" },
+    { name: "University of Sydney",logo: img5 },
+    { name: "University of New South Wales (UNSW Sydney)",logo: img6 },
+    { name: "University of Queensland (UQ)",logo: img4 },
+    { name: "Monash University" },
+    { name: "University of Western Australia (UWA)", logo:img7 },
     { name: "Macquarie University" },
     { name: "University of Technology Sydney (UTS)" },
     { name: "RMIT University" },
@@ -52,8 +62,12 @@ const AustraliaUniversitiesSection = () => {
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
               <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#5a9628] via-[#8cc63f] to-[#5a9628] flex items-center justify-center mb-3 sm:mb-4">
-                  <span className="text-white text-lg font-bold">AU</span>
+                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-white flex items-center justify-center mb-3 sm:mb-4 overflow-hidden">
+                  {uni.logo ? (
+                    <img src={uni.logo} alt={uni.name} className="h-full w-full object-contain" />
+                  ) : (
+                    <span className="text-black text-lg font-bold">AU</span>
+                  )}
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">
                   {uni.name}
