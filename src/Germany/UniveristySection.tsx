@@ -2,35 +2,65 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img1 from '../../assets/logo_universities/Germany/bonn.png';
+import img2 from '../../assets/logo_universities/Germany/heidelberg.png';
+import img3 from '../../assets/logo_universities/Germany/lmu.png';
+import img4 from '../../assets/logo_universities/Germany/medizinische.png';
+import img5 from '../../assets/logo_universities/Germany/tubingen.png';
 
 const UniversitySection: React.FC = () => {
   const [view, setView] = useState<"public" | "private">("public");
 
   const publicUniversities = [
-    { name: "Technical University of Munich", logo: "../../assets/Technical University of Munich.png" },
-    { name: "Ludwig Maximilian University of Munich", logo: "/images/lmu.png" },
-    { name: "University of Heidelberg", logo: "/images/heidelberg.png" },
-    { name: "University of Berlin", logo: "/images/berlin.png" },
-    { name: "Karlsruhe Institute of Technology", logo: "/images/kit.png" },
-    { name: "University of Göttingen", logo: "../../assets/goettingen.png" },
-    { name: "University of Freiburg", logo: "/images/freiburg.png" },
-    { name: "RWTH Aachen University", logo: "/images/rwth.png" },
-    { name: "University of Hamburg", logo: "/images/hamburg.png" },
-    { name: "University of Cologne", logo: "/images/cologne.png" },
+    // { name: "Technical University of Munich", logo: "../../assets/Technical University of Munich.png" },
+    // { name: "Ludwig Maximilian University of Munich", logo: "/images/lmu.png" },
+    // { name: "University of Heidelberg", logo: "/images/heidelberg.png" },
+    // { name: "University of Berlin", logo: "/images/berlin.png" },
+    // { name: "Karlsruhe Institute of Technology", logo: "/images/kit.png" },
+    // { name: "University of Göttingen", logo: "../../assets/goettingen.png" },
+    // { name: "University of Freiburg", logo: "/images/freiburg.png" },
+    // { name: "RWTH Aachen University", logo: "/images/rwth.png" },
+    // { name: "University of Hamburg", logo: "/images/hamburg.png" },
+    // { name: "University of Cologne", logo: "/images/cologne.png" },
+        {
+      name: "Universitat Bonn",
+      logo: img1,
+      courses: "Engineering, Science, Law, Medicine, Social Sciences, Business Management"
+    },
+    {
+      name: "Universitat Heidelberg",
+      logo: img2,
+      courses: "Engineering, Education, Science, Law"
+    },
+    {
+      name: "LMU",
+      logo: img3,
+      courses: "Engineering, Business, Medicine, Social Sciences"
+    }
+    ,  {
+      name: "Medizinische Hochschule Hannoer",
+      logo: img4,
+      courses: "Engineering, Business, Medicine, Social Sciences"
+    },
+      {
+      name: "Universitat Tubingen",
+      logo: img5,
+      courses: "Engineering, Business, Medicine, Social Sciences"
+    }
   ];
 
   const privateUniversities = [
-    { name: "Berlin School of Business and Innovation", logo: "/images/bsbi.png" },
-    { name: "SRH Berlin University of Applied Sciences", logo: "/images/srh-berlin.png" },
-    { name: "University of Europe for Applied Sciences", logo: "/images/ue.png" },
-    { name: "International University of Applied Sciences (IU)", logo: "/images/iu.png" },
-    { name: "Arden University", logo: "/images/arden.png" },
-    { name: "EU Business School", logo: "/images/eubs.png" },
-    { name: "GISMA Business School Hochschule", logo: "/images/gisma.png" },
-    { name: "Fresenius University of Applied Sciences", logo: "/images/fresenius.png" },
-    { name: "International School of Management", logo: "/images/ism.png" },
-    { name: "SRH Hochschule Heidelberg", logo: "/images/srh-heidelberg.png" },
-    { name: "Munich Business School", logo: "/images/munich-business.png" },
+    // { name: "Berlin School of Business and Innovation", logo: "/images/bsbi.png" },
+    // { name: "SRH Berlin University of Applied Sciences", logo: "/images/srh-berlin.png" },
+    // { name: "University of Europe for Applied Sciences", logo: "/images/ue.png" },
+    // { name: "International University of Applied Sciences (IU)", logo: "/images/iu.png" },
+    // { name: "Arden University", logo: "/images/arden.png" },
+    // { name: "EU Business School", logo: "/images/eubs.png" },
+    // { name: "GISMA Business School Hochschule", logo: "/images/gisma.png" },
+    // { name: "Fresenius University of Applied Sciences", logo: "/images/fresenius.png" },
+    // { name: "International School of Management", logo: "/images/ism.png" },
+    // { name: "SRH Hochschule Heidelberg", logo: "/images/srh-heidelberg.png" },
+    // { name: "Munich Business School", logo: "/images/munich-business.png" },
   ];
 
   const sliderSettings = {

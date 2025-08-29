@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import experince from '../../assets/1.png';
-import education from '../../assets/3.png';
-import mentornship from '../../assets/2.png';
-import vis from '../../assets/4.png';
+import experince from '../../assets/experience/1.png';
+import education from '../../assets/experience/2.png';
+import mentornship from '../../assets/experience/3.png';
+import vis from '../../assets/experience/4.png';
 import { desc } from 'framer-motion/client';
 
 const features = [

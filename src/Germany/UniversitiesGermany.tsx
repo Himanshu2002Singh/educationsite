@@ -3,62 +3,92 @@ import { Wrench, Briefcase, Music } from 'lucide-react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import img1 from '../../assets/logo_universities/Germany/bonn.png';
+import img2 from '../../assets/logo_universities/Germany/heidelberg.png';
+import img3 from '../../assets/logo_universities/Germany/lmu.png';
+import img4 from '../../assets/logo_universities/Germany/medizinische.png';
+import img5 from '../../assets/logo_universities/Germany/tubingen.png';
 const UniversitiesGermany = () => {
   const [activeTab, setActiveTab] = useState('technical');
 
   const technicalUniversities = [
-    {
-      name: "Technical University of Munich",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/TU_Muenchen_Logo.svg/512px-TU_Muenchen_Logo.svg.png",
+    // {
+    //   name: "Technical University of Munich",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/TU_Muenchen_Logo.svg/512px-TU_Muenchen_Logo.svg.png",
+    //   courses: "Engineering, Science, Law, Medicine, Social Sciences, Business Management"
+    // },
+    // {
+    //   name: "RWTH Aachen University",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/RWTH_Aachen_University_logo.svg/512px-RWTH_Aachen_University_logo.svg.png",
+    //   courses: "Engineering, Education, Science, Law"
+    // },
+    // {
+    //   name: "Technical University of Berlin",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/TU_Berlin_logo.svg/512px-TU_Berlin_logo.svg.png",
+    //   courses: "Engineering, Business, Medicine, Social Sciences"
+    // }
+
+        {
+      name: "Universitat Bonn",
+      logo: img1,
       courses: "Engineering, Science, Law, Medicine, Social Sciences, Business Management"
     },
     {
-      name: "RWTH Aachen University",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/RWTH_Aachen_University_logo.svg/512px-RWTH_Aachen_University_logo.svg.png",
+      name: "Universitat Heidelberg",
+      logo: img2,
       courses: "Engineering, Education, Science, Law"
     },
     {
-      name: "Technical University of Berlin",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/TU_Berlin_logo.svg/512px-TU_Berlin_logo.svg.png",
+      name: "LMU",
+      logo: img3,
+      courses: "Engineering, Business, Medicine, Social Sciences"
+    }
+    ,  {
+      name: "Medizinische Hochschule Hannoer",
+      logo: img4,
+      courses: "Engineering, Business, Medicine, Social Sciences"
+    },
+      {
+      name: "Universitat Tubingen",
+      logo: img5,
       courses: "Engineering, Business, Medicine, Social Sciences"
     }
   ];
 
   const appliedUniversities = [
-    {
-      name: "Berlin University of Applied Sciences",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hochschule_f%C3%BCr_Technik_und_Wirtschaft_Berlin_logo.svg/512px-Hochschule_f%C3%BCr_Technik_und_Wirtschaft_Berlin_logo.svg.png",
-      courses: "Engineering, Business, Computer Science"
-    },
-    {
-      name: "Munich University of Applied Sciences",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hochschule_Muenchen_Logo.svg/512px-Hochschule_Muenchen_Logo.svg.png",
-      courses: "Design, Business, Social Sciences"
-    },
-    {
-      name: "Cologne University of Applied Sciences",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/TH_K%C3%B6ln_logo.svg/512px-TH_K%C3%B6ln_logo.svg.png",
-      courses: "Engineering, Architecture, Media"
-    }
+    // {
+    //   name: "Berlin University of Applied Sciences",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hochschule_f%C3%BCr_Technik_und_Wirtschaft_Berlin_logo.svg/512px-Hochschule_f%C3%BCr_Technik_und_Wirtschaft_Berlin_logo.svg.png",
+    //   courses: "Engineering, Business, Computer Science"
+    // },
+    // {
+    //   name: "Munich University of Applied Sciences",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hochschule_Muenchen_Logo.svg/512px-Hochschule_Muenchen_Logo.svg.png",
+    //   courses: "Design, Business, Social Sciences"
+    // },
+    // {
+    //   name: "Cologne University of Applied Sciences",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/TH_K%C3%B6ln_logo.svg/512px-TH_K%C3%B6ln_logo.svg.png",
+    //   courses: "Engineering, Architecture, Media"
+    // }
   ];
 
   const artUniversities = [
-    {
-      name: "Berlin University of the Arts",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Universit%C3%A4t_der_K%C3%BCnste_Berlin_logo.svg/512px-Universit%C3%A4t_der_K%C3%BCnste_Berlin_logo.svg.png",
-      courses: "Music, Architecture, Dance, Drama"
-    },
-    {
-      name: "HFF Munich (University of Television and Film)",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hochschule_f%C3%BCrn_Fernsehen_und_Film_Muenchen_logo.svg/512px-Hochschule_f%C3%BCrn_Fernsehen_und_Film_Muenchen_logo.svg.png",
-      courses: "Directing, Cinematography, Screenwriting"
-    },
-    {
-      name: "Folkwang University of the Arts",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Folkwang_Universit%C3%A4t_der_K%C3%BCnste_logo.svg/512px-Folkwang_Universit%C3%A4t_der_K%C3%BCnste_logo.svg.png",
-      courses: "Music, Theater, Dance, Design"
-    }
+    // {
+    //   name: "Berlin University of the Arts",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Universit%C3%A4t_der_K%C3%BCnste_Berlin_logo.svg/512px-Universit%C3%A4t_der_K%C3%BCnste_Berlin_logo.svg.png",
+    //   courses: "Music, Architecture, Dance, Drama"
+    // },
+    // {
+    //   name: "HFF Munich (University of Television and Film)",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hochschule_f%C3%BCrn_Fernsehen_und_Film_Muenchen_logo.svg/512px-Hochschule_f%C3%BCrn_Fernsehen_und_Film_Muenchen_logo.svg.png",
+    //   courses: "Directing, Cinematography, Screenwriting"
+    // },
+    // {
+    //   name: "Folkwang University of the Arts",
+    //   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Folkwang_Universit%C3%A4t_der_K%C3%BCnste_logo.svg/512px-Folkwang_Universit%C3%A4t_der_K%C3%BCnste_logo.svg.png",
+    //   courses: "Music, Theater, Dance, Design"
+    // }
   ];
 
   const getUniversities = () => {

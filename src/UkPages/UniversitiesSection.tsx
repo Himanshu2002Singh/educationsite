@@ -3,18 +3,26 @@ import { Trophy, TrendingUp, Star } from 'lucide-react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import img13 from '../../assets/logo_universities/Australia/adelaide-removebg-preview.png';
+import img1 from '../../assets/logo_universities/UK/aberdeen.png';
+import img2 from '../../assets/logo_universities/UK/abertay.png';
+import img3 from '../../assets/logo_universities/UK/aberystwyth.png';
+import img4 from '../../assets/logo_universities/UK/bangor.png';
+import img5 from '../../assets/logo_universities/UK/boltonj.png';
 
 
 const UniversitiesSection = () => {
   const [activeTab, setActiveTab] = useState('elite');
 
   const eliteUniversities = [
-    { name: "Imperial College London", rank: 2, courses: "Engineering, Medicine, Business" },
-    { name: "University of Oxford", rank: 4, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/University_of_Oxford_coat_of_arms.svg/512px-University_of_Oxford_coat_of_arms.svg.png", courses: "Law, Philosophy, Medicine" },
-    { name: "University of Cambridge", rank: 6, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/University_of_Cambridge_coat_of_arms.svg/512px-University_of_Cambridge_coat_of_arms.svg.png", courses: "Natural Sciences, Engineering, Law" },
-    { name: "UCL", rank: 9, logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/UCL_logo.svg/512px-UCL_logo.svg.png", courses: "Medicine, Engineering, Arts" },
-    { name: "King’s College London", rank: 31, logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/King%27s_College_London_logo.svg/512px-King%27s_College_London_logo.svg.png", courses: "Medicine, Law, Business" },
+    // { name: "Imperial College London", rank: 2,logo: img5, courses: "Engineering, Medicine, Business" },
+    // { name: "University of Oxford", rank: 4, logo:img1, courses: "Law, Philosophy, Medicine" },
+    // { name: "University of Cambridge", rank: 6, logo:img2, courses: "Natural Sciences, Engineering, Law" },
+    // { name: "UCL", rank: 9, logo:img3, courses: "Medicine, Engineering, Arts" },
+    // { name: "King’s College London", rank: 31, logo: img4, courses: "Medicine, Law, Business" },
+      { name: "University of Bolton", rank: 2,logo: img5, courses: "Engineering, Medicine, Business" },
+    { name: "University of Aberdeen", rank: 4, logo:img1, courses: "Law, Philosophy, Medicine" },
+    { name: "Abertay University", rank: 6, logo:img2, courses: "Natural Sciences, Engineering, Law" },
+    { name: "Prifysgol Aberystwyth University", rank: 9, logo:img3, courses: "Medicine, Engineering, Arts" },
   ];
 
   const risingUniversities = [
