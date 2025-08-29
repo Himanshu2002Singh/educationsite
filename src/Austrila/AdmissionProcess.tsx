@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search, FileText, CheckCircle, ClipboardCheck, Globe, FileUp, Mail } from 'lucide-react';
-
+// 
 const AustraliaAdmissionProcessSection = () => {
   const steps = [
     {
