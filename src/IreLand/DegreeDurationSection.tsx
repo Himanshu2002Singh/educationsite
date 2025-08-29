@@ -27,30 +27,30 @@ const DegreeDurationIrelandSection = () => {
       color: "bg-red-50 border-red-200",
       description: "Advanced research projects with supervision. Funding often available through scholarships or assistantships."
     },
-    {
-      type: "Higher Diploma / Postgraduate Diploma",
-      duration: "1 year",
-      subtitle: "Level 8 or 9 qualification",
-      icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-purple-600" />,
-      color: "bg-purple-50 border-purple-200",
-      description: "Conversion courses or specialist qualifications. Ideal for career changes or upskilling."
-    },
-    {
-      type: "Work Placement / Internships",
-      duration: "Integrated into studies",
-      subtitle: "Part of many courses in Ireland",
-      icon: <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-orange-600" />,
-      color: "bg-orange-50 border-orange-200",
-      description: "Many degrees include a co-op or internship year, offering valuable work experience and industry links."
-    },
-    {
-      type: "Third Level Graduate Scheme",
-      duration: "1–2 years after graduation",
-      subtitle: "For non-EU/EEA students",
-      icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-teal-600" />,
-      color: "bg-teal-50 border-teal-200",
-      description: "Allows graduates to work full-time in Ireland while seeking employment or applying for a work permit."
-    }
+    // {
+    //   type: "Higher Diploma / Postgraduate Diploma",
+    //   duration: "1 year",
+    //   subtitle: "Level 8 or 9 qualification",
+    //   icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-purple-600" />,
+    //   color: "bg-purple-50 border-purple-200",
+    //   description: "Conversion courses or specialist qualifications. Ideal for career changes or upskilling."
+    // },
+    // {
+    //   type: "Work Placement / Internships",
+    //   duration: "Integrated into studies",
+    //   subtitle: "Part of many courses in Ireland",
+    //   icon: <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-orange-600" />,
+    //   color: "bg-orange-50 border-orange-200",
+    //   description: "Many degrees include a co-op or internship year, offering valuable work experience and industry links."
+    // },
+    // {
+    //   type: "Third Level Graduate Scheme",
+    //   duration: "1–2 years after graduation",
+    //   subtitle: "For non-EU/EEA students",
+    //   icon: <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-teal-600" />,
+    //   color: "bg-teal-50 border-teal-200",
+    //   description: "Allows graduates to work full-time in Ireland while seeking employment or applying for a work permit."
+    // }
   ];
 
   return (

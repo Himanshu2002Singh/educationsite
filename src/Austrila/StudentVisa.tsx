@@ -30,12 +30,12 @@ const DocumentsVisaSectionIreland = () => {
   ];
 
   const visaSteps = [
-    { step: 1, title: "Get your Letter of Admission", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Receive an official offer from an Irish institution" },
+    { step: 1, title: "Get your Letter of Admission", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Receive an official offer from an Australian Univerisities " },
     { step: 2, title: "Show Financial Proof", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "6 months old funds, no large recent deposits" },
-    { step: 3, title: "PCC & Medical Insurance", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Obtain Police Clearance Certificate and arrange health coverage" },
-    { step: 4, title: "Submit your Visa Application", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Apply online via the Irish Naturalisation and Immigration Service" },
-    { step: 5, title: "Attend Biometrics", icon: <User className="w-6 h-6 text-[#8DC63F]" />, description: "Provide fingerprints and photographs" },
-    { step: 6, title: "Get Decision", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Visa decision typically within 2–3 weeks" },
+    { step: 3, title: "Medical Insurance", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Obtain Police Clearance Certificate and arrange health coverage" },
+    { step: 4, title: "Submit your Visa Application", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Apply online visa through Australian Government Department of Home Affairs by creating immi account " },
+    { step: 5, title: "Attend ", icon: <User className="w-6 h-6 text-[#8DC63F]" />, description: "Provide fingerprints and photographs" },
+    { step: 6, title: "Get Decision", icon: <Award className="w-6 h-6 text-[#C1272D]" />, description: "Visa Processing Time is 4 to 6 weeks " },
   ];
 
   const fundsRequired = [
@@ -52,7 +52,7 @@ const DocumentsVisaSectionIreland = () => {
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl max-w-3xl mx-auto">
-            All required documentation for applying to Irish universities and securing your student visa.
+            All required documentation for applying to Australian universities and securing your student visa.
           </p>
         </div>
 
@@ -118,14 +118,14 @@ const DocumentsVisaSectionIreland = () => {
             </div>
 
             {/* Funds Required */}
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <h3 className="text-2xl font-bold mb-4">🧾 Funds Required</h3>
               <ul className="list-disc pl-5 space-y-2 text-[#555]">
                 {fundsRequired.map((fund, i) => (
                   <li key={i}>{fund}</li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         )}
 

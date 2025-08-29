@@ -20,7 +20,7 @@ const JobProspectsSectionUSA = () => {
         <ul className="mt-2 space-y-2 text-[#444] text-sm sm:text-base">
           <li>✅ <strong>On-Campus Jobs</strong> (20 hrs/week) – Teaching/Research Assistant, Library Staff</li>
           <li>✅ <strong>CPT (Curricular Practical Training)</strong> – Paid internships related to your field</li>
-          <li>✅ <strong>Pre-Completion OPT</strong> – Rarely used (reduces post-study OPT time)</li>
+          {/* <li>✅ <strong>Pre-Completion OPT</strong> – Rarely used (reduces post-study OPT time)</li> */}
         </ul>
 
         <p className="text-[#444] text-sm sm:text-base leading-relaxed mt-6 font-semibold">
@@ -55,7 +55,7 @@ const JobProspectsSectionUSA = () => {
                 <td className="px-2 py-3 sm:px-4">Specialty occupation</td>
                 <td className="px-2 py-3 sm:px-4">Yes (Lottery-based)</td>
               </tr>
-              <tr className="border-t">
+              {/* <tr className="border-t">
                 <td className="px-2 py-3 sm:px-4">L-1 Visa</td>
                 <td className="px-2 py-3 sm:px-4">5–7 years</td>
                 <td className="px-2 py-3 sm:px-4">Intracompany transfer</td>
@@ -66,7 +66,7 @@ const JobProspectsSectionUSA = () => {
                 <td className="px-2 py-3 sm:px-4">Permanent</td>
                 <td className="px-2 py-3 sm:px-4">Advanced degree/skilled workers</td>
                 <td className="px-2 py-3 sm:px-4">Yes (Lengthy process)</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>
@@ -101,7 +101,7 @@ const JobProspectsSectionUSA = () => {
         <ul className="mt-2 space-y-2 text-[#444] text-sm sm:text-base">
           <li>1️⃣ <strong>Before Graduation:</strong> Apply for OPT (takes 90+ days to process)</li>
           <li>2️⃣ <strong>During OPT:</strong> Find an H-1B sponsor (April lottery deadline)</li>
-          <li>3️⃣ <strong>After OPT:</strong> STEM extension or switch to other visas (O-1, L-1, etc.)</li>
+          <li>3️⃣ <strong>After OPT:</strong> STEM extension or switch to other visas </li>
         </ul>
       </div>
 

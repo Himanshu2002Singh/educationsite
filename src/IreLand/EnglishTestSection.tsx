@@ -18,7 +18,7 @@ const EnglishTestSection = () => {
         { test: 'TOEFL iBT', ug: '79 – 80', pg: '88 – 90', max: '120' },
         { test: 'PTE Academic', ug: '50 – 55', pg: '58 – 63', max: '90' },
         { test: 'Duolingo English Test (DET)', ug: '95 – 100', pg: '110 – 115', max: '160' },
-        { test: 'Cambridge English (CAE/C1 Advanced)', ug: '169', pg: '176', max: '210' }
+        // { test: 'Cambridge English (CAE/C1 Advanced)', ug: '169', pg: '176', max: '210' }
       ]
     }
   ];
@@ -28,7 +28,7 @@ const EnglishTestSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-          <span className="text-[#8cc63f]">English Language</span> Requirements Ireland
+          <span className="text-[#8cc63f]">English Language </span> Requirements Ireland
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -113,7 +113,7 @@ const EnglishTestSection = () => {
                 </p>
 
                 {/* Waiver Options */}
-                <div className="mt-6 text-center">
+                {/* <div className="mt-6 text-center">
                   <p className="font-semibold text-[#2C2C2C]">English Test Waiver Options:</p>
                   <ul className="list-disc pl-5 mt-2 text-sm inline-block text-left">
                     <li>Studied in an English-medium school for 3+ years</li>
@@ -121,7 +121,7 @@ const EnglishTestSection = () => {
                     <li>From a country on the English-proficient exemption list</li>
                     <li>Hold a prior UG or PG degree from an English-speaking country</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

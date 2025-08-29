@@ -44,7 +44,7 @@ const DegreeDurationSection = () => {
             >
               <div className="flex justify-center mb-3 sm:mb-4">{program.icon}</div>
               <div className="text-center">
-                <div className="bg-british-navy text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
+                <div className="bg-british-navy text-black px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-bold mb-2">
                   {program.type}
                 </div>
                 <div className="text-xl sm:text-2xl font-bold text-gray-800 mb-1">

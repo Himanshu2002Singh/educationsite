@@ -17,7 +17,7 @@ const CoursesUsaIntakeSection = () => {
     { icon: <Heart className="w-8 h-8 text-pink-500" />, title: "Health & Life Sciences", subjects: "Medicine, Nursing, Public Health" },
     { icon: <Microscope className="w-8 h-8 text-purple-600" />, title: "Biotechnology", subjects: "Genetics, Bioinformatics" },
     { icon: <BarChart className="w-8 h-8 text-amber-600" />, title: "Finance / Financial Analytics", subjects: "Investment Banking, Analytics" },
-    { icon: <Briefcase className="w-8 h-8 text-indigo-500" />, title: "Top MBA", subjects: "Executive MBA, MBA in Finance" },
+    // { icon: <Briefcase className="w-8 h-8 text-indigo-500" />, title: "Top MBA", subjects: "Executive MBA, MBA in Finance" },
   ];
 
   // 📅 Major Intakes in USA

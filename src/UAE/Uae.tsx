@@ -8,6 +8,7 @@ import ScholarshipsSectionUAE from './ScholorshiipSection'
 import DocumentsVisaSectionUAE from './StudentVisa'
 import JobProspectsSectionUAE from './JobPropects'
 import UAEAdmissionProcessSection from './AdmissionProcess'
+import UaeLifestyleFact from './UaeLifestyleFact'
 
 
 
@@ -25,6 +26,7 @@ function Uae() {
       <UAEAdmissionProcessSection />
       <DocumentsVisaSectionUAE/>
       <JobProspectsSectionUAE />
+      <UaeLifestyleFact/>
 
       {/* Add more sections as needed */}
       

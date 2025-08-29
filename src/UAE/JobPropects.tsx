@@ -4,7 +4,7 @@ import {  BarChart2, Activity, HeartPulse, Cpu, Globe2, PenTool } from 'lucide-r
 const JobProspectsSectionUAE = () => {
   return (
     <section className="px-4 sm:px-6 py-12 md:px-5  max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+        {/* <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
         Post-Study Work Options & Career Prospects <span className="text-[#8cc63f]">in Dubai</span>
       </h2>
       <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
@@ -22,7 +22,7 @@ const JobProspectsSectionUAE = () => {
           <li><strong>Company Sponsorship:</strong> After securing a job, your employer can sponsor your work/residence visa.</li>
           <li><strong>Golden Visa (10 Years):</strong> Offered to top-performing graduates and professionals in key sectors.</li>
         </ul>
-      </div>
+      </div> */}
 
       <div className="mb-12">
         <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6  text-center">

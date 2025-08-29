@@ -20,12 +20,12 @@ const points = [
     description:
       "German education provides top-tier learning at a fraction of the cost compared to other countries.",
   },
-  {
-    icon: <BookOpen className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Practical + Theoretical Knowledge",
-    description:
-      "Gain both strong academic foundations and hands-on practical skills.",
-  },
+  // {
+  //   icon: <BookOpen className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Practical + Theoretical Knowledge",
+  //   description:
+  //     "Gain both strong academic foundations and hands-on practical skills.",
+  // },
   {
     icon: <Briefcase className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Work While Studying",
@@ -61,12 +61,12 @@ const points = [
     description:
       "Non-EU students can stay up to 18 months after graduation to find work.",
   },
-  {
-    icon: <Plane className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Travel Friendly",
-    description:
-      "Easy connections to other European countries and cities.",
-  },
+  // {
+  //   icon: <Plane className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Travel Friendly",
+  //   description:
+  //     "Easy connections to other European countries and cities.",
+  // },
   {
     icon: <Landmark className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Permanent Residency Path",

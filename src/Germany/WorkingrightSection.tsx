@@ -3,41 +3,41 @@ import { Briefcase, Clock, FileText, ShieldCheck, Search } from "lucide-react";
 
 const timelineData = [
   {
-    title: "Types of Work",
-    icon: <Briefcase className="w-6 h-6 text-[#4C51BF]" />,
+    title: "Work Hours",
+    icon: <Clock className="w-6 h-6 text-[#4C51BF]" />,
     points: [
-      "Part-time jobs: Work up to 20 hours/week during semester, 40 hours/week in breaks.",
-      "Internships: Paid or unpaid internships related to your field of study.",
-      "Freelance work: Allowed with tax number & compliance with German tax laws.",
-      "Self-employment: Possible with special residence permit & compliance.",
+    <span><strong>During Semester:</strong> Work up to 20 hours per week.</span>,
+    <span><strong>Semester Breaks:</strong> Up to 40 hours per week (full-time allowed).</span>,
+    <span><strong>Annual Limit:</strong>  Max 120 full days or 240 half-days per year.</span>
     ],
     bgColor: "bg-[#E6F0FF]",
   },
   {
-    title: "Work Permit",
-    icon: <ShieldCheck className="w-6 h-6 text-[#4C51BF]" />,
+    title: "Types of Work Allowed",
+    icon: <Briefcase className="w-6 h-6 text-[#4C51BF]" />,
     points: [
-      "No separate work permit needed for non-EU international students.",
-      "Valid residence permit for study includes part-time work rights.",
+      <span><strong>Part-time Jobs:</strong> Common in retail, hospitality, campus jobs, etc.</span>,
+      <span><strong>Internships:</strong> Paid or unpaid; must follow work hour rules unless mandatory.</span>,
+      <span><strong>Freelancing & Self-employment:</strong> Only possible with special permits (case-by-case approval).</span>,
     ],
     bgColor: "bg-[#F3E8FF]",
   },
   {
-    title: "Restrictions",
-    icon: <Clock className="w-6 h-6 text-[#4C51BF]" />,
+    title: "Work Permit & Visa Rules",
+    icon: <ShieldCheck className="w-6 h-6 text-[#4C51BF]" />,
     points: [
-      "20-hour weekly limit during semester.",
-      "No self-employment without special permit.",
-      "Freelance restrictions in fields like medicine, law, architecture.",
+      "No separate work permit required – student residence permit allows part-time work.",
+      "Non-EU students must strictly follow the 120-day rule unless otherwise authorized.",
     ],
     bgColor: "bg-[#DFFFE6]",
   },
   {
-    title: "Taxes and Social Security",
+    title: "Important Points",
     icon: <FileText className="w-6 h-6 text-[#4C51BF]" />,
     points: [
-      "Tax obligations depend on your income.",
-      "Social security contributions may apply based on employment.",
+      "Working more than 20 hrs/week during semester can affect student status & health insurance.",
+      "Language skills (German/English) improve job opportunities.",
+      "Always ensure compliance with tax regulations (get a tax ID if earning above allowance).",
     ],
     bgColor: "bg-[#FFF9E6]",
   },
@@ -64,9 +64,9 @@ const WorkingRightsSection = () => {
 
       {/* Paragraph */}
       <p className="text-sm sm:text-lg text-[#2C2C2C] text-center mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-        International students in Germany have work rights designed to help
-        support themselves financially. Learn about work types, permits,
-        restrictions, taxes, and job search tips.
+        International students in Germany have specific work rights designed to
+        help them support themselves financially. Learn about work hours,
+        allowed job types, permits, rules, and job search tips.
       </p>
 
       {/* Grid layout */}
@@ -87,7 +87,7 @@ const WorkingRightsSection = () => {
             </h3>
 
             {/* Points */}
-            <ul className="list-disc list-inside text-[#334155] text-sm sm:text-base space-y-2 text-left">
+            <ul className="list-disc list-inside text-black text-sm sm:text-base space-y-2 text-left">
               {item.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}

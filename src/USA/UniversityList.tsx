@@ -110,7 +110,7 @@ const USAUniversitiesSection = () => {
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">{uni.name}</h3>
                 <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
-                <p className="text-xs sm:text-sm text-[#C1272D] font-medium text-center mt-1">{uni.perk}</p>
+                <p className="text-xs sm:text-sm text-black font-medium text-center mt-1">{uni.perk}</p>
               </div>
             </div>
           ))}

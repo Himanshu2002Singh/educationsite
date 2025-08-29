@@ -77,12 +77,12 @@ const EnglishTestSectionUSA = () => {
                       <td className="p-3 border">110 – 120</td>
                       <td className="p-3 border">160</td>
                     </tr>
-                    <tr className="bg-white border-t">
+                    {/* <tr className="bg-white border-t">
                       <td className="p-3 border">Cambridge English (CAE/C1 Advanced)</td>
                       <td className="p-3 border">169 – 175</td>
                       <td className="p-3 border">180+</td>
                       <td className="p-3 border">210</td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>
@@ -136,7 +136,7 @@ const EnglishTestSectionUSA = () => {
               </div>
             </div>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <p className="font-semibold text-[#2C2C2C]">English Test Waiver Options:</p>
               <ul className="list-disc pl-5 mt-2 text-sm">
                 <li>Studied in an English-medium school for 3+ years</li>
@@ -144,16 +144,16 @@ const EnglishTestSectionUSA = () => {
                 <li>From a country on the English-proficient exemption list</li>
                 <li>Hold a prior UG or PG degree from an English-speaking country</li>
               </ul>
-            </div>
+            </div> */}
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <p className="font-semibold text-[#2C2C2C]">Score Recommendations by Tier:</p>
               <ul className="list-disc pl-5 mt-2 text-sm">
                 <li>Top 50: IELTS 7.0–7.5 / TOEFL 100+ / Duolingo 120+</li>
                 <li>Mid-range (Top 100–200): IELTS 6.5 / TOEFL 85–100 / Duolingo 110–120</li>
                 <li>Pathway/Bridge: IELTS 5.5–6.0 / TOEFL 65–79 / Duolingo 95–105</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 

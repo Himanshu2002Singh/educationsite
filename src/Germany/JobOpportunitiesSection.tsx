@@ -1,35 +1,48 @@
 import React from 'react';
-import { Briefcase, CheckCircle, UserCheck } from 'lucide-react';
+import { UserCheck, Briefcase, CheckCircle, Globe } from 'lucide-react';
 
 const infoItems = [
   {
     icon: <UserCheck className="w-8 h-8 text-[#4C51BF]" />,
-    title: 'Eligibility Requirements',
+    title: '🎓 Stay Back Option',
     points: [
-      'Completion of a degree from a recognized German university',
-      'Valid national passport',
-      'Proof of graduation (degree certificate or confirmation)',
-      'Valid health insurance coverage',
-      'Proof of sufficient financial resources',
+      'After completing your degree, international students can apply for a Post-Study Work (PSW) visa.',
+      'This allows you to stay in Germany for 18 months to search for a full-time job related to your qualification.',
     ],
   },
   {
     icon: <Briefcase className="w-8 h-8 text-[#2563EB]" />,
-    title: 'Types of Post-Study Work Visas',
+    title: '💼 Job Opportunities',
     points: [
-      'Job-Seeker Visa: 18 months to find a job in your field.',
-      'Residence Permit for Employment: Linked to your job role.',
-      'EU Blue Card: For highly skilled professionals meeting salary criteria.',
+      'High-demand fields: Engineering, IT & Computer Science, Artificial Intelligence, Data Science, Business & Finance, Healthcare.',
+      'Germany has one of the lowest unemployment rates in Europe and a strong need for skilled professionals.',
+      'Many international graduates secure employment within their stay-back period.',
     ],
   },
   {
     icon: <CheckCircle className="w-8 h-8 text-[#10B981]" />,
-    title: 'Key Benefits',
+    title: '🛂 Work Permit / Residence Permit',
     points: [
-      'Stay in Germany up to 18 months post-study',
-      'Time to find relevant employment',
-      'Pathway to permanent residency via EU Blue Card',
-      'Work in any field while job hunting',
+      'Once you secure a job, you can apply for:',
+      'EU Blue Card (if your salary meets the threshold) – offers a path to Permanent Residency (PR).',
+      'Residence Permit for Employment – if salary is below Blue Card level but job is relevant.',
+    ],
+  },
+  {
+    icon: <Globe className="w-8 h-8 text-[#F59E0B]" />,
+    title: '🌍 Pathway to PR',
+    points: [
+      'With an EU Blue Card: Eligible for PR in 21–33 months (depending on German language skills).',
+      'With a standard work permit: PR is possible after 5 years of working in Germany.',
+    ],
+  },
+  {
+    icon: <CheckCircle className="w-8 h-8 text-[#8B5CF6]" />,
+    title: '💡 Key Advantages',
+    points: [
+      'Strong career growth in Europe’s largest economy.',
+      'Opportunity to settle long-term through PR.',
+      'International graduates are highly valued in the German labour market.',
     ],
   },
 ];

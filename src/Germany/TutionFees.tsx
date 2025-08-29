@@ -80,7 +80,7 @@ const TuitionFeesSection = () => {
                   </div>
                 </div>
 
-                <div className="bg-british-navy text-white px-4 py-1 rounded-full text-sm font-bold mb-2 inline-block">
+                <div className="bg-british-navy text-black px-4 py-1 rounded-full text-sm font-bold mb-2 inline-block">
                   {item.degree}
                 </div>
 

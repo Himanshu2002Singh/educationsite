@@ -89,7 +89,7 @@ const CostOfLivingSectionIreland = () => {
           </div>
 
           {/* How to Save Money */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-gray-200 mb-10">
+          {/* <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-gray-200 mb-10">
             <h4 className="text-lg sm:text-xl font-bold text-[#2C2C2C] mb-4 text-center">
               How to Save Money?
             </h4>
@@ -99,10 +99,10 @@ const CostOfLivingSectionIreland = () => {
               <li>✔ Cook meals at home and shop at budget supermarkets (Lidl, Aldi).</li>
               <li>✔ Use student discounts for travel, entertainment, and shopping.</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Why Choose EduKonnect */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-gray-200">
+          {/* <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-gray-200">
             <h4 className="text-lg sm:text-xl font-bold text-[#2C2C2C] mb-4 text-center">
               Why Choose EduKonnect?
             </h4>
@@ -126,7 +126,7 @@ const CostOfLivingSectionIreland = () => {
                 color="#2C2C2C"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* CTA */}
           <div className="text-center mt-10">

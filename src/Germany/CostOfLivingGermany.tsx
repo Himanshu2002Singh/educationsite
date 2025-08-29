@@ -66,7 +66,7 @@ const CostOfLivingGermany = () => {
           </div>
 
           {/* Description */}
-          <div className="max-w-3xl mx-auto text-gray-700 mb-10 bg-white/80 p-6 rounded-xl shadow-lg">
+          {/* <div className="max-w-3xl mx-auto text-gray-700 mb-10 bg-white/80 p-6 rounded-xl shadow-lg">
             <p className="mb-4">
               A blocked account in Germany, also known as a <strong>Sperrkonto</strong>, is a type of bank account required for international students applying for a German Student visa. The purpose of this account is to demonstrate financial stability, showing that you can support yourself while living in Germany.
             </p>
@@ -79,7 +79,7 @@ const CostOfLivingGermany = () => {
             <p>
               A blocked account ensures that you have sufficient funds to support yourself in Germany, and it's a requirement for obtaining a German visa. Some providers also offer additional services, such as health insurance and current account packages.
             </p>
-          </div>
+          </div> */}
 
           {/* Cost Card */}
           <div className="mb-10">
@@ -142,7 +142,7 @@ const CostOfLivingGermany = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <InsightItem
                 icon={<Calculator className="w-6 h-6 text-[#2B6CB0]" />}
-                title="€992/month"
+                title="€11904/month"
                 description="Required in blocked account"
                 color="#2B6CB0"
               />

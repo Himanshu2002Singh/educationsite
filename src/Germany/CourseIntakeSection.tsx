@@ -12,7 +12,7 @@ const CoursesIntakeSection = () => {
     { icon: <TrendingUp className="w-8 h-8 text-[#C1272D]" />, title: "Business & Economics", subjects: "Finance, MBA, Marketing, HR" },
     { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Natural Sciences", subjects: "Biology, Chemistry, Physics" },
     { icon: <BookOpen className="w-8 h-8 text-amber-600" />, title: "Computer Science & IT", subjects: "Software, AI, Cybersecurity" },
-    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Language & Cultural Studies", subjects: "German, Linguistics, Cultural Studies" },
+    // { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Language & Cultural Studies", subjects: "German, Linguistics, Cultural Studies" },
     { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Medicine & Health Sciences", subjects: "Medicine, Nursing, Public Health" }
   ];
 

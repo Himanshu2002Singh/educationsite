@@ -17,21 +17,22 @@ const AustraliaUniversitiesSection = () => {
   const universities = [
     { name: "University of Melbourne", logo: img1 },
     { name: "Australian National University (ANU)",logo: img3 },
-    { name: "University of Adelaide" },
+    // { name: "University of Adelaide" },
     { name: "University of Sydney",logo: img5 },
     { name: "University of New South Wales (UNSW Sydney)",logo: img6 },
     { name: "University of Queensland (UQ)",logo: img4 },
-    { name: "Monash University" },
+    // { name: "Monash University" },
     { name: "University of Western Australia (UWA)", logo:img7 },
-    { name: "Macquarie University" },
-    { name: "University of Technology Sydney (UTS)" },
-    { name: "RMIT University" },
-    { name: "Curtin University" },
-    { name: "Deakin University" },
+    // { name: "Macquarie University" },
+    // { name: "University of Technology Sydney (UTS)" },
+    // { name: "RMIT University" },
+    // { name: "Curtin University" },
+    // { name: "Deakin University" },
+    { name: "Ancora University",logo: img2 },
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 3,
@@ -62,7 +63,7 @@ const AustraliaUniversitiesSection = () => {
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
               <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-white flex items-center justify-center mb-3 sm:mb-4 overflow-hidden">
+                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-white flex items-center justify-center mb-3 sm:mb-4 overflow-hidden border-4 border-[#8cc63f]">
                   {uni.logo ? (
                     <img src={uni.logo} alt={uni.name} className="h-full w-full object-contain" />
                   ) : (

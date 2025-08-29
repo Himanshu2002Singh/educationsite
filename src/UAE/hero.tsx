@@ -89,7 +89,7 @@ const StudyUAKSection = () => {
           </div>
 
           <button className="mt-6 w-full sm:w-auto bg-[#8DC63F] hover:bg-[#7cb532] text-white font-semibold py-3 px-6 rounded-full transition">
-            Talk to a NZ Expert
+            Talk to an UAE Expert
           </button>
         </div>
 

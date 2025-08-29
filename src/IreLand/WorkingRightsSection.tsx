@@ -71,10 +71,10 @@ const WorkingRightsSectionIreland = () => {
                     </div>
                     <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
                       <div className="flex items-center">
-                        <Calendar className="w-6 h-6 text-[#C1272D] mr-3" />
+                        <Calendar className="w-6 h-6 text-[#8DC63F] mr-3" />
                         <span className="text-[#2C2C2C] font-medium">During Holidays</span>
                       </div>
-                      <span className="text-[#C1272D] font-bold text-lg">{item.holidayLimit}</span>
+                      <span className="text-[#2C2C2C] font-bold text-lg">{item.holidayLimit}</span>
                     </div>
                   </div>
                 </div>
@@ -104,13 +104,13 @@ const WorkingRightsSectionIreland = () => {
                 </div>
                 <div className="bg-[#F0FFF4] border border-[#CDEFD4] p-6 rounded-lg text-center">
                   <p className="text-3xl font-bold text-[#8DC63F] mb-2">Up to 2 Years</p>
-                  <p className="text-[#2C2C2C]">Stay Back Option (Third Level Graduate Programme)</p>
+                  <p className="text-[#2C2C2C]">Stay Back Option</p>
                 </div>
-                <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
+                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
                   <li>Work in any sector</li>
                   <li>Switch between employers</li>
                   <li>Gain valuable Irish work experience</li>
-                </ul>
+                </ul> */}
               </div>
 
               {/* Post-study PhD */}
@@ -125,11 +125,11 @@ const WorkingRightsSectionIreland = () => {
                   <p className="text-3xl font-bold text-[#726EFF] mb-2">Up to 2 Years</p>
                   <p className="text-[#2C2C2C]">Post-Study Work Visa</p>
                 </div>
-                <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
+                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
                   <li>Extended career opportunities</li>
                   <li>Research and academic roles</li>
                   <li>Industry leadership positions</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
 
@@ -139,7 +139,7 @@ const WorkingRightsSectionIreland = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   { icon: <Briefcase className="text-[#8DC63F]" />, title: "No Job Offer Required", desc: "Apply without securing a job offer" },
-                  { icon: <Clock className="text-[#C1272D]" />, title: "Full-Time Work Allowed", desc: "Work up to 40 hours per week" },
+                  { icon: <Clock className="text-[#C1272D]" />, title: "No limit of work hours ", desc: "Work up to 40 hours per week" },
                   { icon: <GraduationCap className="text-[#726EFF]" />, title: "Pathway to Residence", desc: "Can lead to work permit and long-term residency" },
                 ].map((item, idx) => (
                   <div key={idx} className="text-center">

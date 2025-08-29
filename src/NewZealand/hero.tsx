@@ -32,7 +32,7 @@ const points = [
     icon: <Briefcase className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Work Opportunities",
     description:
-      "20 hrs/week during study, full-time in breaks. Up to 3-year post-study work visa available.",
+      "25 hrs/week during study, full-time in breaks. Up to 3-year post-study work visa available.",
   },
   {
     icon: <MapPin className="w-6 h-6 text-[#2d6a4f]" />,

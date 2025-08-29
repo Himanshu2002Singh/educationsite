@@ -27,7 +27,7 @@ const AdmissionDocumentsSection = () => {
     "GRE/GMAT score card (if applicable)",
     "German Proficiency Certificate (if applicable)",
     "APS",
-    "TestAS (bachelor & if applicable)",
+    "TestAS (if applicable)",
   ];
 
   return (

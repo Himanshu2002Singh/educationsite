@@ -7,21 +7,21 @@ const TuitionFeesSectionUSA = () => {
       icon: <GraduationCap className="w-10 h-10 text-blue-600" />,
       degree: "Undergraduate (UG)",
       fee: "$20,000 – $65,000/year",
-      description: "Public: $20k–$40k | Private: $30k–$55k | Top-ranked: $50k–$65k",
+      // description: "Public: $20k–$40k | Private: $30k–$55k | Top-ranked: $50k–$65k",
       color: "bg-blue-50 border-blue-200"
     },
     {
       icon: <BookOpen className="w-10 h-10 text-purple-600" />,
       degree: "Postgraduate (PG)",
       fee: "$22,000 – $75,000/year",
-      description: "Public: $22k–$45k | Private: $35k–$60k | Top-ranked: $45k–$75k",
+      // description: "Public: $22k–$45k | Private: $35k–$60k | Top-ranked: $45k–$75k",
       color: "bg-purple-50 border-purple-200"
     },
     {
       icon: <Briefcase className="w-10 h-10 text-[#8cc63f]" />,
       degree: "MBA",
       fee: "$30,000 – $120,000/year",
-      description: "Public: $30k–$70k | Private: $60k–$100k | Top-ranked: $70k–$120k",
+      // description: "Public: $30k–$70k | Private: $60k–$100k | Top-ranked: $70k–$120k",
       color: "bg-green-50 border-green-200"
     }
   ];
@@ -55,7 +55,7 @@ const TuitionFeesSectionUSA = () => {
                     {item.icon}
                   </div>
                 </div>
-                <div className="bg-british-navy text-white px-4 py-1 rounded-full text-sm font-bold mb-1 inline-block">
+                <div className="bg-british-navy text-black px-4 py-1 rounded-full text-sm font-bold mb-1 inline-block">
                   {item.degree}
                 </div>
                 <div className="text-lg font-bold text-gray-800 mb-1">
@@ -78,6 +78,7 @@ const TuitionFeesSectionUSA = () => {
                 <li>Off-Campus (Shared): $8,000 – $12,000/year</li>
                 <li>Homestay: $9,000 – $14,000/year</li>
                 <li>Food & Transport: $5,000 – $8,000/year</li>
+                <li>Utilities & Internet: $1,200 – $2,400/year</li>
               </ul>
             </div>
 

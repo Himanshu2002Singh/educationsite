@@ -18,24 +18,24 @@ const points = [
     description:
       "The USA is home to 10 of the top 20 universities worldwide (QS 2025). Degrees are globally recognized and respected across industries and borders.",
   },
-  {
-    icon: <School className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Unmatched Variety of Institutions",
-    description:
-      "With 4,000+ universities and colleges — from Ivy League to research powerhouses — there's a perfect fit for every academic goal and learning style.",
-  },
+  // {
+  //   icon: <School className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Unmatched Variety of Institutions",
+  //   description:
+  //     "With 4,000+ universities and colleges — from Ivy League to research powerhouses — there's a perfect fit for every academic goal and learning style.",
+  // },
   {
     icon: <FlaskConical className="w-6 h-6 text-[#2d6a4f]" />,
     title: "World-Class Research & Innovation",
     description:
       "The U.S. ranks #1 in global R&D investment, offering hands-on experience through partnerships with industry leaders, labs, and start-ups.",
   },
-  {
-    icon: <Users className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "A Truly Global Community",
-    description:
-      "Study alongside students from over 180 countries, gaining a global mindset and lifelong international connections in a multicultural setting.",
-  },
+  // {
+  //   icon: <Users className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "A Truly Global Community",
+  //   description:
+  //     "Study alongside students from over 180 countries, gaining a global mindset and lifelong international connections in a multicultural setting.",
+  // },
   {
     icon: <Briefcase className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Strong Career Prospects",
@@ -48,18 +48,18 @@ const points = [
     description:
       "Design your own academic path — choose majors, combine disciplines, or pivot as your interests evolve.",
   },
-  {
-    icon: <LifeBuoy className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Comprehensive Student Support",
-    description:
-      "From visa guidance to language support, U.S. universities help international students adapt smoothly inside and outside the classroom.",
-  },
-  {
-    icon: <Globe className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Gateway to Global Opportunities",
-    description:
-      "A U.S. degree opens doors to international careers, leadership roles, and further studies worldwide.",
-  },
+  // {
+  //   icon: <LifeBuoy className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Comprehensive Student Support",
+  //   description:
+  //     "From visa guidance to language support, U.S. universities help international students adapt smoothly inside and outside the classroom.",
+  // },
+  // {
+  //   icon: <Globe className="w-6 h-6 text-[#2d6a4f]" />,
+  //   title: "Gateway to Global Opportunities",
+  //   description:
+  //     "A U.S. degree opens doors to international careers, leadership roles, and further studies worldwide.",
+  // },
 ];
 
 const StudyUSASection = () => {

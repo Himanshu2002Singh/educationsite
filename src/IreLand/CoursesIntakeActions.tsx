@@ -29,11 +29,11 @@ const CoursesIrelandIntakeSection = () => {
       title: "January Intake (Minor)",
       description: "Wide course availability across multiple fields."
     },
-    {
-      icon: <Snowflake className="w-8 h-8 text-blue-500" />,
-      title: "May Intake (Limited)",
-      description: "Available for select programs, mainly in business and tech."
-    }
+    // {
+    //   icon: <Snowflake className="w-8 h-8 text-blue-500" />,
+    //   title: "May Intake (Limited)",
+    //   description: "Available for select programs, mainly in business and tech."
+    // }
   ];
 
   const dynamicFacts = [
@@ -108,7 +108,7 @@ const CoursesIrelandIntakeSection = () => {
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 ">
             {intakes.map((intake, i) => (
               <div
                 key={i}

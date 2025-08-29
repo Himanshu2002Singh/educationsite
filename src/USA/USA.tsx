@@ -11,6 +11,7 @@ import ScholarshipsSectionUSA from './ScholorshiipSection'
 import DocumentsVisaSectionUSA from './StudentVisa'
 import JobProspectsSectionUSA from './JobPropects'
 import LifestyleFactsSectionUSA from './LifestyleFactsSectionUSA'
+import UsaVissaProcess from './UsaVissaProcess'
 
 
 function USA() {
@@ -22,13 +23,15 @@ function USA() {
       <DegreeDurationUsaSection/>
       <EnglishTestSectionUSA />
       <TuitionFeesSectionUSA />
-      <CostOfLivingSectionUSA />
+      {/* <CostOfLivingSectionUSA /> */}
       <ScholarshipsSectionUSA/>
       {/* <UAEAdmissionProcessSection /> */}
      
       <DocumentsVisaSectionUSA/>
-       <LifestyleFactsSectionUSA/>
+      <UsaVissaProcess/>
+      
       <JobProspectsSectionUSA />
+       <LifestyleFactsSectionUSA/>
 
       {/* Add more sections as needed */}
       

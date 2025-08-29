@@ -24,9 +24,10 @@ function Germany() {
      
       {/* Add more sections as needed */}
       <StudyGermanySection/>
+      <UniversitySection/>
       <UniversitiesGermany/>
       <BestCitiesGermany/>
-      <UniversitySection/>
+      
       <CoursesIntakeSection/>
       <DegreeDurationSection/>
       <EnglishTestSection/>
