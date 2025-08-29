@@ -34,7 +34,7 @@ export default function LeadCaptureForm() {
         {/* Left: Form */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="bg-[#92C848] rounded-2xl p-6 w-full max-w-md shadow-lg">
-            <form className="space-y-4">
+            <form className="space-y-4 ">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -50,12 +50,14 @@ export default function LeadCaptureForm() {
                 placeholder="Phone Number"
                 className="w-full px-4 py-3 rounded-full text-gray-700 placeholder-gray-600 focus:outline-none"
               />
+              <div className="flex justify-center">
               <button
                 type="submit"
                 className=" w-50 flex justify-center  bg-black text-[12px] text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-900 transition"
               >
                 CONNECT WITH US
               </button>
+              </div>
             </form>
           </div>
         </div>
