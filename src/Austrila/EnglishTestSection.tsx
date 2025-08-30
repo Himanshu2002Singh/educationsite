@@ -116,6 +116,7 @@ const EnglishTestSectionAustralia = () => {
                     <li>Provide a Medium of Instruction (MOI) certificate</li>
                     <li>From a country on the English-proficient exemption list</li>
                     <li>Hold a prior UG or PG degree from an English-speaking country</li>
+                    <li>No Test waiver for the student from India</li>
                   </ul>
                 </div>
               </div>

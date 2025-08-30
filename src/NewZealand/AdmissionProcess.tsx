@@ -14,7 +14,7 @@ const AdmissionProcessSection = () => {
       icon: <FileText className="w-8 h-8 text-purple-600" />,
       title: "Prepare Your Application",
       description:
-        "Gather transcripts, English test results, CV/portfolio, statement of purpose; complete application and pay fees if any.",
+        "Gather transcripts, English test results, CV/portfolio, statement of purpose; No Application fees in NZ for universities .",
       bg: "bg-purple-50",
     },
     {

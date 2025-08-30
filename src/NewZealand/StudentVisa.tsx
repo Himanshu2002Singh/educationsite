@@ -20,13 +20,13 @@ const VisaInfoSection = () => {
     {
       title: 'Gather Documents',
       description:
-        'Collect passport photos, valid passport, First Year Tuition Fee Receipt, bank statements, insurance proof, police certificate (if applicable).',
+        'Collect passport photos, valid passport, First Year Tuition Fee Receipt, bank statements, insurance proof, police clearence certificate .',
       bg: 'bg-violet-50',
     },
     {
       title: 'Apply Online',
       description:
-        'Register on Immigration NZ website, complete Form INZ 1012, upload documents, and pay NZD 295 visa fee.',
+        'Applicable for NZIER member only, complete Form INZ 1012, upload documents, and pay NZD 295 visa fee.',
       bg: 'bg-sky-50',
     },
     {

@@ -31,7 +31,7 @@ const DocumentsVisaSectionIreland = () => {
 
   const visaSteps = [
     { step: 1, title: "Get your Letter of Admission", icon: <CheckCircle className="w-6 h-6 text-[#8DC63F]" />, description: "Receive an official offer from an Australian Univerisities " },
-    { step: 2, title: "Show Financial Proof", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "6 months old funds, no large recent deposits" },
+    { step: 2, title: "Show Financial Proof", icon: <Globe className="w-6 h-6 text-[#C1272D]" />, description: "Fees paid for 1st Semester and 2 years Health Insurance, Medical Exam , Bank Statement for 6 months old , and other financial documents as per Australia High Commission requirement. " },
     { step: 3, title: "Medical Insurance", icon: <Stethoscope className="w-6 h-6 text-[#8DC63F]" />, description: "Obtain Police Clearance Certificate and arrange health coverage" },
     { step: 4, title: "Submit your Visa Application", icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, description: "Apply online visa through Australian Government Department of Home Affairs by creating immi account " },
     { step: 5, title: "Attend ", icon: <User className="w-6 h-6 text-[#8DC63F]" />, description: "Provide fingerprints and photographs" },
