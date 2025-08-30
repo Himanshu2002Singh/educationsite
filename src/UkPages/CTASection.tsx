@@ -33,9 +33,9 @@ const CTASection = () => {
             {" "}<span className="text-[#8cc63f]"> Connect</span> with Expert
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-          <p className="text-xl text-[#2C2C2C] mb-2">15k+ students have already made the first step</p>
+          <p className="text-xl text-[#2C2C2C] mb-2">12k+ students have already made the first step</p>
           <p className="text-lg text-[#2C2C2C] opacity-80">
-            Get personalized guidance for your UK study abroad journey
+            Get personalized guidance for your study abroad journey
           </p>
         </div>
 
@@ -59,11 +59,15 @@ const CTASection = () => {
                   },
                   {
                     title: "Visa Application Support",
-                    desc: "Complete guidance through the UK student visa process"
+                    desc: "Complete guidance through the student visa process"
                   },
                   {
                     title: "End-to-End Support",
                     desc: "From application to arrival - we're with you every step"
+                  },
+                      {
+                    title: "High Visa Success Rate",
+                    desc: "Right guidance leads to high visa success rate"
                   }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start">
@@ -79,8 +83,8 @@ const CTASection = () => {
               </div>
 
               <div className="bg-[#C5E3DC] rounded-xl p-6 mt-8 text-[#2C2C2C]">
-                <h4 className="font-bold mb-2">🎯Visa Success Rate</h4>
-                <p className="text-2xl font-bold mb-1">100%</p>
+                {/* <h4 className="font-bold mb-2">🎯Visa Success Rate</h4>
+                <p className="text-2xl font-bold mb-1">100%</p> */}
                 {/* <p className="text-sm opacity-80">of our students get their preferred university admission</p> */}
               </div>
             </div>
@@ -193,9 +197,9 @@ const CTASection = () => {
         {/* Bottom Stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           {[
-            { value: '15,000+', label: 'Students Guided' },
+            { value: '12,000+', label: 'Students Guided' },
             { value: '95%', label: 'Success Rate' },
-            { value: '150+', label: 'Partner Universities' },
+            { value: '850+', label: 'University Representation' },
             { value: '24+', label: 'Years of Experience' },
           ].map((item, index) => (
             <div key={index} className="bg-[#C5E3DC] rounded-xl p-6">

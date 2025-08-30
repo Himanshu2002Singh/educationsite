@@ -14,25 +14,25 @@ const VisaInfoSection = () => {
     {
       title: 'Check Eligibility',
       description:
-        'Ensure you have a valid 1st year Tuition fees payment receipt, proof of funds (20,000 NZD p.a.), health insurance, and meet character requirements (police clearance, medical certificate).',
+        'Ensure you have a valid 1st year Tuition fees payment receipt, Fullfill requirements of funds , health insurance, and meet character requirements (police clearance certificate) and medical examination.',
       bg: 'bg-green-50',
     },
     {
       title: 'Gather Documents',
       description:
-        'Collect passport photos, valid passport, First Year Tuition Fee Receipt, bank statements, insurance proof, police clearence certificate .',
+        'Valid passport, First Year Tuition Fee Receipt, bank statements, insurance proof, police clearence certificate.',
       bg: 'bg-violet-50',
     },
     {
       title: 'Apply Online',
       description:
-        'Applicable for NZIER member only, complete Form INZ 1012, upload documents, and pay NZD 295 visa fee.',
+        'Complete Form INZ 1012, upload documents, and pay NZD 295 visa fee.',
       bg: 'bg-sky-50',
     },
     {
       title: 'After Submission',
       description:
-        'Wait 4–8 weeks for processing; receive visa grant (e-visa confirmation).',
+        '4–8 weeks for processing; receive visa grant (e-visa confirmation).',
       bg: 'bg-yellow-50',
     },
     {

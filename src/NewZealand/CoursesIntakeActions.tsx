@@ -64,7 +64,7 @@ const CoursesIntakeSection = () => {
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Find your dream program across 1000s of specializations in the New Zealand 
+            Find your dream program across 1000s of specializations in New Zealand 
           </p>
         </div>
 

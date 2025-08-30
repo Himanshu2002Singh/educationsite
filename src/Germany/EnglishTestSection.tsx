@@ -16,8 +16,8 @@ const EnglishTestSection = () => {
   const acceptedTests = [
     { name: 'IELTS', note: 'Min. 6.0, 6.5, or 7.0 depending on institution/program', popular: true },
     { name: 'TOEFL (iBT)', note: 'Min. score 72–94', popular: true },
-    { name: 'Cambridge English', note: 'FCE, CAE, or CPE accepted', popular: false },
-    { name: 'Evidence of English Instruction', note: 'May waive test requirement', popular: false }
+    // { name: 'Cambridge English', note: 'FCE, CAE, or CPE accepted', popular: false },
+    // { name: 'Evidence of English Instruction', note: 'May waive test requirement', popular: false }
   ];
 
   const toggleSection = (section: string) => {
@@ -111,7 +111,7 @@ const EnglishTestSection = () => {
                   className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
                   <span className="font-semibold text-sm sm:text-base text-gray-800">
-                    🎓 English as Medium of Instruction
+                    🎓 English as Medium of Instruction*
                   </span>
                   {expandedSection === 'waiver' ? (
                     <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
@@ -127,7 +127,7 @@ const EnglishTestSection = () => {
               </div>
 
               {/* Pre-Sessional English */}
-              <div className="border border-gray-200 rounded-lg">
+              {/* <div className="border border-gray-200 rounded-lg">
                 <button
                   onClick={() => toggleSection('presessional')}
                   className="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
@@ -146,7 +146,7 @@ const EnglishTestSection = () => {
                     Universities may offer pre-sessional English programs for students who don’t meet minimum language requirements.
                   </div>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

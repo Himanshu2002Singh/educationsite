@@ -8,7 +8,7 @@ const WorkingRightsSectionAustralia = () => {
     {
       level: "Student Visa Holders (Subclass 500)",
       studyLimit: "Up to 48 hours per fortnight during study periods",
-      holidayLimit: "Unlimited hours during official university breaks/holidays",
+      holidayLimit: "Full-time during official university breaks/holidays",
       color: "from-[#F0FFF4] to-white border-[#CDEFD4]"
     }
   ];
@@ -87,7 +87,7 @@ const WorkingRightsSectionAustralia = () => {
                 <span className="font-semibold text-[#C1272D]">Important Note</span>
               </div>
               <p className="text-[#2C2C2C] text-sm">
-                Students can work part-time while studying up to 48 hours per fortnight and full-time during official university breaks. Ensure compliance with visa conditions to maintain legal status.
+               Ensure compliance with visa conditions to maintain legal status.
               </p>
             </div>
           </div>

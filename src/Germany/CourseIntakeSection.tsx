@@ -112,7 +112,7 @@ const CoursesIntakeSection = () => {
               <span className="font-bold text-[#8DC63F] transition-all duration-500">
                 {dynamicFacts[currentFactIndex]}
               </span>{" "}
-              and more...
+            
             </p>
           </div>
           <p className="text-sm text-gray-500 mt-4">

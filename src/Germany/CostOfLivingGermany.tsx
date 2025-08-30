@@ -142,7 +142,7 @@ const CostOfLivingGermany = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <InsightItem
                 icon={<Calculator className="w-6 h-6 text-[#2B6CB0]" />}
-                title="€11904/month"
+                title="€11904/year"
                 description="Required in blocked account"
                 color="#2B6CB0"
               />

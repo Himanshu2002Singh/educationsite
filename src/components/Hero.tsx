@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     const studentInterval = setInterval(() => {
-      setStudentCount((prev) => (prev >= 10000 ? 10000 : prev + 100));
+      setStudentCount((prev) => (prev >= 12000 ? 12000 : prev + 100));
     }, 10);
     return () => clearInterval(studentInterval);
   }, []);

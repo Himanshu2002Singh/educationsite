@@ -9,17 +9,17 @@ const CoursesIntakeSection = () => {
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
 
   const courses = [
-    { icon: <Database className="w-8 h-8 text-[#8DC63F]" />, title: "IT & Computer Science", subjects: "Programming, Systems, Networks" },
-    { icon: <Cog className="w-8 h-8 text-[#C1272D]" />, title: "Artificial Intelligence", subjects: "AI, ML, Deep Learning" },
-    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Civil Engineering", subjects: "Structural, Transportation, Geotechnical" },
-    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Bachelor of Information Technology", subjects: "IT Management, Databases" },
-    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Bachelor of Design (Digital)", subjects: "UI/UX, Digital Art" },
-    { icon: <TrendingUp className="w-8 h-8 text-[#8cc63f]" />, title: "Sport Management", subjects: "Sports Admin, Marketing" },
-    { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
-    { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
-    { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },
-    { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Master of Information Technology", subjects: "Advanced IT, Security" },
-    { icon: <TrendingUp className="w-8 h-8 text-amber-600" />, title: "Master of Business Administration (MBA)", subjects: "Leadership, Finance, HR" },
+    { icon: <Database className="w-8 h-8 text-[#8DC63F]" />, title: "Business", subjects: " Management, Finance, Marketing, International Business" },
+    { icon: <Cog className="w-8 h-8 text-[#C1272D]" />, title: "Data Science", subjects: " Big Data, AI, Analytics, Machine Learning" },
+    { icon: <Cog className="w-8 h-8 text-[#2C2C2C]" />, title: "Engineering", subjects: " Mechanical, Civil, Electrical, and Renewable Energy" },
+    { icon: <Database className="w-8 h-8 text-amber-600" />, title: "Law", subjects: " International Law, Corporate Law, Human Rights" },
+    { icon: <Palette className="w-8 h-8 text-pink-500" />, title: "Health Sciences", subjects: "Nursing, Public Health, Physiotherapy, Healthcare Management" },
+    { icon: <TrendingUp className="w-8 h-8 text-[#8cc63f]" />, title: "Design", subjects: " Interior Design, Product Design, UI/UX, Fashion Design" },
+    // { icon: <Heart className="w-8 h-8 text-red-500" />, title: "Hospitality & Hotel Management", subjects: "Tourism, Hospitality" },
+    // { icon: <Palette className="w-8 h-8 text-[#8DC63F]" />, title: "Animation and Web Design", subjects: "2D/3D, Web UX" },
+    // { icon: <Heart className="w-8 h-8 text-[#C1272D]" />, title: "Health care & Nursing", subjects: "Nursing, Patient Care" },
+    // { icon: <Database className="w-8 h-8 text-[#2C2C2C]" />, title: "Master of Information Technology", subjects: "Advanced IT, Security" },
+    // { icon: <TrendingUp className="w-8 h-8 text-amber-600" />, title: "Master of Business Administration (MBA)", subjects: "Leadership, Finance, HR" },
   ];
 
   const intakes = [

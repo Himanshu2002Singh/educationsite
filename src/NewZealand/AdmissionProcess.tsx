@@ -14,7 +14,7 @@ const AdmissionProcessSection = () => {
       icon: <FileText className="w-8 h-8 text-purple-600" />,
       title: "Prepare Your Application",
       description:
-        "Gather transcripts, English test results, CV/portfolio, statement of purpose; No Application fees in NZ for universities .",
+        "Gather Marksheets and transcripts, English test results, CV/portfolio, statement of purpose.",
       bg: "bg-purple-50",
     },
     {
@@ -28,7 +28,7 @@ const AdmissionProcessSection = () => {
       icon: <ClipboardCheck className="w-8 h-8 text-yellow-600" />,
       title: "Confirm Your Place",
       description:
-        "Sign and return the Offer Acceptance Form, pay first year and obtain your tuition fee payment confirmation receipt.",
+        "Sign and return the Offer Acceptance Form, pay first year tuition fee and obtain payment confirmation receipt.",
       bg: "bg-yellow-50",
     },
   ];

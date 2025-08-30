@@ -52,10 +52,6 @@ const AustraliaUniversitiesSection = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
             Top<span className="text-[#8cc63f]"> Australian </span>Universities You Should Know 🎓
           </h2>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
-            Australia is home to some of the top universities globally, including world-ranked institutions recognized for academic excellence, research, and innovation. 
-            Whether you’re studying in Melbourne, Sydney, Brisbane, or Perth, these universities offer world-class education and vibrant student life.
-          </p>
         </div>
 
         {/* Carousel */}

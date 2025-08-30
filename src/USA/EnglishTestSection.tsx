@@ -22,11 +22,12 @@ const EnglishTestSectionUSA = () => {
       <div className="absolute inset-0 bg-white/80 backdrop-blur-[1px]" />
       <div className="relative container mx-auto px-6 z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#2C2C2C] mb-4 font-serif">
-            English Language Requirements (USA)
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 ">
+            English Language <span className="text-[#8cc63f]">Requirements</span>
           </h2>
+            <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Understand accepted tests, score ranges, and waiver options for U.S. universities
+            Understand accepted tests and score ranges.
           </p>
         </div>
 

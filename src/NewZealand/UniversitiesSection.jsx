@@ -50,7 +50,7 @@ const UniversitiesSection = () => {
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-[#2C2C2C] mb-2">{city.name}</h4>
-                <p className="text-sm text-gray-700">{city.description}</p>
+              
               </div>
             ))}
           </div>
@@ -72,13 +72,9 @@ const UniversitiesSection = () => {
                     <GraduationCap className="w-6 h-6 text-[#8DC63F] mr-2" />
                     <h4 className="font-semibold text-[#2C2C2C]">{uni.university}</h4>
                   </div>
-                  <span className="bg-[#8DC63F]/10 text-[#8DC63F] text-xs font-semibold px-3 py-1 rounded-full">
-                    {uni.rank}
-                  </span>
+                  
                 </div>
-                <p className="text-sm text-gray-600">
-                  📍 {uni.location}
-                </p>
+              
               </div>
             ))}
           </div>

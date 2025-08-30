@@ -27,7 +27,7 @@ function Ukpage() {
       <WorkingRightsSection />
       <DocumentsVisaSection />
       <LifestyleFactsSection />
-      <CTASection />
+      
       
     </div>
   )

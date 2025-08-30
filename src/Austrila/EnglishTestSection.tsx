@@ -108,17 +108,7 @@ const EnglishTestSectionAustralia = () => {
                   Score ranges vary by university and program — always confirm with your chosen school.
                 </p>
 
-                {/* Waiver Options */}
-                <div className="mt-6 text-center">
-                  <p className="font-semibold text-[#2C2C2C]">English Test Waiver Options:</p>
-                  <ul className="list-disc pl-5 mt-2 text-sm inline-block text-left">
-                    <li>Studied in an English-medium school for 3+ years</li>
-                    <li>Provide a Medium of Instruction (MOI) certificate</li>
-                    <li>From a country on the English-proficient exemption list</li>
-                    <li>Hold a prior UG or PG degree from an English-speaking country</li>
-                    <li>No Test waiver for the student from India</li>
-                  </ul>
-                </div>
+              
               </div>
             ))}
           </div>

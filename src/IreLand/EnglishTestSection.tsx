@@ -32,7 +32,7 @@ const EnglishTestSection = () => {
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Understand accepted tests, score ranges, and waiver options for both countries.
+            Understand accepted tests and score ranges.
           </p>
         </div>
 

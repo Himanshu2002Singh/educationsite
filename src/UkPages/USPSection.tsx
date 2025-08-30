@@ -78,7 +78,7 @@ const StudyUKSection = () => {
               alt="UK Flag"
               className="w-8 h-5 mr-2"
             />
-            Study in the&nbsp;<span className="text-[#8cc63f]"> UK</span>&nbsp;?
+            Why Study in the&nbsp;<span className="text-[#8cc63f]"> UK</span>&nbsp;?
 
           </h2>
           {/* <div className="w-[55px] h-[3px] bg-[#8CC63F] ml-[260px] mt-5 mb-10"></div> */}

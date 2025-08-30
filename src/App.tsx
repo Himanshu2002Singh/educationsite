@@ -20,6 +20,7 @@ import ContactUs from './components/Contactus/Contactus';
 import TrendingBlog from './components/Blog/Blog';
 import Services from './Services/Services';
 import Test from './components/TesPRep/Test';
+import CTASection from './UkPages/CTASection';
 
 
 
@@ -73,7 +74,7 @@ function App() {
        <Route path='/services' element={<Services/>} />
       {/* Add other routes as needed */}
     </Routes>
-
+    <CTASection/>
     <Footer />
    
   </div>

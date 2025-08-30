@@ -21,7 +21,7 @@ const DocumentsVisaSectionUSA = () => {
     { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Academic Transcripts", tooltip: "Official records from high school/college – must be in English (certified translation if needed)" },
     { icon: <GraduationCap className="w-6 h-6 text-[#C1272D]" />, label: "Degree Certificates", tooltip: "Diploma/Degree proof – notarized copies for some universities" },
     { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport Copy", tooltip: "Bio page – valid for at least 6 months, ensure a clear scan" },
-    { icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, label: "Official English Language Test scores", tooltip: "TOEFL (80+) / IELTS (6.5+) – some waivers for English-medium graduates" },
+    { icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, label: "English Language Test scores", tooltip: "TOEFL (80+) / IELTS (6.5+) " },
     { icon: <Award className="w-6 h-6 text-[#8DC63F]" />, label: "Standardized Tests", tooltip: "SAT for UG / GRE or GMAT for PG – check if your program is test-optional" },
     { icon: <FileText className="w-6 h-6 text-[#C1272D]" />, label: "Statement of Purpose (SOP)", tooltip: "500–1000 words – tailor to each university" },
     { icon: <User className="w-6 h-6 text-[#8DC63F]" />, label: "Letters of Recommendation (LORs)", tooltip: "2–3 academic/professional – from professors who know you well" },

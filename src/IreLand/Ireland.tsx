@@ -25,11 +25,9 @@ function Ireland() {
       <CostOfLivingSectionIreland />
       <ScholarshipsSectionIreland/>
       <WorkingRightsSectionIreland/>
-      {/* <UAEAdmissionProcessSection /> */}
-     
-      <DocumentsVisaSectionIreland/>
-       <LifestyleFactsSectionIreland/>
+       <DocumentsVisaSectionIreland/>
       <JobProspectsSectionIreland />
+       <LifestyleFactsSectionIreland/>
 
       {/* Add more sections as needed */}
       

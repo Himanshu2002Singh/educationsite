@@ -48,7 +48,7 @@ const AustraliaAdmissionProcessSection = () => {
     {
       icon: <FileText className="w-8 h-8 text-red-600" />,
       title: "Pay Visa Fee",
-      description: "AUD 1,600 (as per July 2024 update).",
+      description: "AUD 2,000.",
       bg: "bg-red-50",
     },
     {

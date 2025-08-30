@@ -31,12 +31,6 @@ const points = [
       "Stay and work up to 5 years depending on qualification and location after graduation.",
   },
   {
-    icon: <Globe className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Multicultural & Safe Environment",
-    description:
-      "With students from 190+ countries, Australia offers inclusivity, safety, and respect.",
-  },
-  {
     icon: <LifeBuoy className="w-6 h-6 text-[#2d6a4f]" />,
     title: "Work While You Study",
     description:
@@ -54,12 +48,6 @@ const points = [
     description:
       "Clear migration routes for skilled fields like nursing, IT, engineering, and accounting.",
   },
-  {
-    icon: <Home className="w-6 h-6 text-[#2d6a4f]" />,
-    title: "Vibrant Student Cities",
-    description:
-      "Melbourne, Sydney, Brisbane, and Perth rank among the world’s most livable cities.",
-  },
 ];
 
 const StudyAustraliaSection = () => {
@@ -76,9 +64,7 @@ const StudyAustraliaSection = () => {
             />
             Why Study &nbsp;<span className="text-[#8cc63f]">in Australia</span>&nbsp;?
           </h2>
-          <p className="text-gray-700 text-sm">
-            Australia offers world-class education, generous work rights, and a vibrant multicultural environment, making it one of the top choices for students worldwide.
-          </p>
+      
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

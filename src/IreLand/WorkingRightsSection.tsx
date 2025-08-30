@@ -6,7 +6,7 @@ const WorkingRightsSectionIreland = () => {
 
   const studyWorkRights = [
     {
-      level: "Full-time Course Students",
+      level: "Full-time Students",
       studyLimit: "20 hrs/week",
       holidayLimit: "40 hrs/week",
       color: "from-[#F0FFF4] to-white border-[#CDEFD4]"
@@ -147,7 +147,7 @@ const WorkingRightsSectionIreland = () => {
                       {item.icon}
                     </div>
                     <h5 className="font-bold text-[#2C2C2C] mb-1">{item.title}</h5>
-                    <p className="text-sm text-[#2C2C2C]">{item.desc}</p>
+                    {/* <p className="text-sm text-[#2C2C2C]">{item.desc}</p> */}
                   </div>
                 ))}
               </div>

@@ -29,7 +29,7 @@ function Australia() {
       <WorkingRightsSectionAustralia/>
       {/* <UAEAdmissionProcessSection /> */}
      
-      <DocumentsVisaSectionIreland/>
+      {/* <DocumentsVisaSectionIreland/> */}
        {/* <LifestyleFactsSectionIreland/> */}
       <JobProspectsSectionAustralia />
 
