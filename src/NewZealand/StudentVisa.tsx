@@ -65,28 +65,30 @@ const VisaInfoSection = () => {
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 
           {/* Toggle Buttons - Same size as CoursesIntakeSection */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 px-12 max-w-md mx-auto shadow-md">
-            <button
-              onClick={() => setActiveTab('student')}
-              className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
-                activeTab === 'student'
-                  ? 'bg-[#8DC63F] text-white'
-                  : 'text-[#2C2C2C] hover:text-[#8DC63F]'
-              }`}
-            >
-              Student Visa Application
-            </button>
-            <button
-              onClick={() => setActiveTab('poststudy')}
-              className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
-                activeTab === 'poststudy'
-                  ? 'bg-[#C1272D] text-white'
-                  : 'text-[#2C2C2C] hover:text-[#C1272D]'
-              }`}
-            >
-              Post-Study Work Visas
-            </button>
-          </div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 px-12 max-w-xl mx-auto shadow-md ">
+  <button
+    onClick={() => setActiveTab('student')}
+    className={`w-full sm:w-auto px-10 py-2 rounded-full font-semibold whitespace-nowrap transition-all duration-300 ${
+      activeTab === 'student'
+        ? 'bg-[#8DC63F] text-white'
+        : 'text-[#2C2C2C] hover:text-[#8DC63F]'
+    }`}
+  >
+    Student Visa Application
+  </button>
+  <button
+    onClick={() => setActiveTab('poststudy')}
+    className={`w-full sm:w-auto px-10 py-2 rounded-full font-semibold whitespace-nowrap transition-all duration-300 ${
+      activeTab === 'poststudy'
+        ? 'bg-[#C1272D] text-white'
+        : 'text-[#2C2C2C] hover:text-[#C1272D]'
+    }`}
+  >
+    Post-Study Work Visas
+  </button>
+</div>
+
+
         </div>
 
         {activeTab === 'student' ? (
