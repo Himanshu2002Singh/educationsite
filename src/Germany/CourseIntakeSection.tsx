@@ -50,7 +50,7 @@ const CoursesIntakeSection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10 bg-white rounded-full p-2 max-w-md mx-auto shadow-md">
+        <div className="flex flex-wrap justify-center gap-2 mb-10 bg-white rounded-2xl px-4 p-2 max-w-md mx-auto shadow-md">
           <button
             onClick={() => setActiveTab('courses')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${

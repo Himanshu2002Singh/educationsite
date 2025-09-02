@@ -3,13 +3,6 @@ import React, { useState } from 'react';
 const VisaInfoSection = () => {
   const [activeTab, setActiveTab] = useState('student');
 
-  const tabClass = (tab: string) =>
-    `px-4 sm:px-6 py-2 rounded-full text-sm font-semibold cursor-pointer transition duration-300 border ${
-      activeTab === tab
-        ? 'bg-[#E0F5DC] text-[#1B1B1B] hover:bg-[#E0F5DC]'
-        : 'text-[#2C2C2C] hover:text-[#C1272D]'
-    }`;
-
   const studentVisaSteps = [
     {
       title: 'Check Eligibility',
@@ -70,16 +63,26 @@ const VisaInfoSection = () => {
             <span className="text-[#8cc63f]">Visa</span> Process
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
+
+          {/* Toggle Buttons - Same size as CoursesIntakeSection */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 px-12 max-w-md mx-auto shadow-md">
             <button
-              className={tabClass('student')}
               onClick={() => setActiveTab('student')}
+              className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                activeTab === 'student'
+                  ? 'bg-[#8DC63F] text-white'
+                  : 'text-[#2C2C2C] hover:text-[#8DC63F]'
+              }`}
             >
               Student Visa Application
             </button>
             <button
-              className={tabClass('poststudy')}
               onClick={() => setActiveTab('poststudy')}
+              className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                activeTab === 'poststudy'
+                  ? 'bg-[#C1272D] text-white'
+                  : 'text-[#2C2C2C] hover:text-[#C1272D]'
+              }`}
             >
               Post-Study Work Visas
             </button>
@@ -87,7 +90,7 @@ const VisaInfoSection = () => {
         </div>
 
         {activeTab === 'student' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {studentVisaSteps.map((step, index) => (
               <div
                 key={index}

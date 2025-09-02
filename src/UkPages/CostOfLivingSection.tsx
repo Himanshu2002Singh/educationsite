@@ -65,20 +65,25 @@ const CostOfLivingSection = () => {
           </div>
 
           {/* Toggle Buttons */}
-          <div className="flex justify-center mb-8 bg-[#F9F9F9]/80 backdrop-blur rounded-full p-2 max-w-md mx-auto shadow">
-            {['london', 'outside'].map((key) => (
-              <button
-                key={key}
-                onClick={() => setActiveTab(key)}
-                className={`flex items-center px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
-                  activeTab === key ? 'bg-[#8DC63F] text-white shadow' : 'text-[#2C2C2C]'
-                }`}
-              >
-                <MapPin className="w-5 h-5 mr-2" />
-                {key === 'london' ? 'London' : 'Outside London'}
-              </button>
-            ))}
-          </div>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 max-w-md mx-auto shadow-md">
+      {['london', 'outside'].map((key) => (
+        <button
+          key={key}
+          onClick={() => setActiveTab(key)}
+          className={`flex items-center px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+            activeTab === key
+              ? key === 'london'
+                ? 'bg-[#8DC63F] text-white shadow' // Green for London
+                : 'bg-[#C62828] text-white shadow' // Red for Outside London
+              : 'text-[#2C2C2C]'
+          }`}
+        >
+          <MapPin className="w-5 h-5 mr-2" />
+          {key === 'london' ? 'London' : 'Outside London'}
+        </button>
+      ))}
+    </div>
+
 
           {/* Cost Cards */}
           <div className="mb-10">

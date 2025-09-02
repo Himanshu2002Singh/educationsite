@@ -64,7 +64,7 @@ const DocumentsVisaSectionCanada = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-10 bg-[#DFF5E3] rounded-full p-2 max-w-md mx-auto">
+        <div className="flex justify-center mb-10 bg-[#DFF5E3] rounded-2xl p-2 max-w-md mx-auto">
           {['documents', 'visa'].map(tab => (
             <button
               key={tab}

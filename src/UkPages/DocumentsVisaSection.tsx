@@ -62,7 +62,7 @@ const DocumentsVisaSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-10 bg-[#DFF5E3] rounded-full p-2 max-w-md mx-auto">
+        <div className="flex justify-center mb-10  rounded-2xl p-2 max-w-md mx-auto bg-[#DFF5E3] w-fit mx-auto p-2 px-12">
           {['documents', 'visa'].map(tab => (
             <button
               key={tab}

@@ -76,8 +76,8 @@ const CoursesUsaIntakeSection = () => {
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'courses'
-                ? 'bg-[#8cc63f] text-white'
-                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
+                ? 'bg-[#8DC63F] text-white'
+                : 'text-[#2C2C2C] hover:text-[#8DC63F]'
             }`}
           >
             Courses in Demand
@@ -86,8 +86,8 @@ const CoursesUsaIntakeSection = () => {
             onClick={() => setActiveTab('intakes')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'intakes'
-                ? 'bg-green-600 text-white'
-                : 'text-[#2C2C2C] hover:text-[#8cc63f]'
+                ? 'bg-[#C1272D] text-white'
+                : 'text-[#2C2C2C] hover:text-[#C1272D]'
             }`}
           >
             <Calendar className="w-5 h-5 inline mr-2" />

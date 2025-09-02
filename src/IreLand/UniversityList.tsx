@@ -23,10 +23,10 @@ const IrelandUniversitiesSection = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -44,26 +44,40 @@ const IrelandUniversitiesSection = () => {
             Top Ireland <span className="text-[#8cc63f]">Universities</span> You Should Know 🎓
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+          {/* <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             Discover Ireland’s leading institutions known for academic excellence, research, and vibrant student life.
-          </p>
+          </p> */}
         </div>
 
         {/* Carousel */}
         <Slider {...settings}>
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
-              <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#5a9628] via-[#8cc63f] to-[#5a9628] flex items-center justify-center mb-3 sm:mb-4">
-                  <span className="text-white text-lg font-bold">IE</span>
+              <div className="bg-white backdrop-blur-lg border border-gray-200 shadow-sm p-6 sm:p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-48 sm:h-56 w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-xl">
+                {/* Logo container */}
+                <div className="h-36 w-36 sm:h-28 sm:w-28">
+                  <div className="bg-white h-full w-full flex items-center justify-center">
+                    <img
+                      src={uni.logo}
+                      alt={uni.name}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
                 </div>
-                <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">
+
+                {/* University name */}
+                <h3 className="mt-2 text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">
                   {uni.name}
                 </h3>
+
+                {/* Optional extra info */}
+                {/* <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
+                <p className="text-xs sm:text-sm text-[#C1272D] font-medium text-center mt-1">{uni.perk}</p> */}
               </div>
             </div>
           ))}
         </Slider>
+
 
         {/* CTA Button */}
         <div className="text-center mt-10 sm:mt-12">

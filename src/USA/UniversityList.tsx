@@ -68,10 +68,10 @@ const USAUniversitiesSection = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -98,13 +98,13 @@ const USAUniversitiesSection = () => {
         <Slider {...settings}>
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
-              <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#8cc63f] via-[#b0c4de] to-[#8cc63f] p-1 mb-3 sm:mb-4">
-                  <div className="bg-white rounded-full h-full w-full flex items-center justify-center">
+              <div className="bg-white backdrop-blur-lg border border-gray-200 shadow-sm p-6 sm:p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-48 sm:h-56 w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-xl">
+                <div className="h-36 w-36 sm:h-28 sm:w-28">
+                  <div className="bg-white h-full w-full flex items-center justify-center">
                     <img
                       src={uni.logo}
                       alt={uni.name}
-                      className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+                      className="h-full w-full object-contain"
                     />
                   </div>
                 </div>

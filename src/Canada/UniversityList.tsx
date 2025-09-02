@@ -30,7 +30,7 @@ const CanadaUniversitiesSection = () => {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -57,13 +57,12 @@ const CanadaUniversitiesSection = () => {
         <Slider {...settings}>
           {universities.map((uni, index) => (
             <div key={index} className="px-2 sm:px-4">
-              <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="bg-white backdrop-blur-lg border border-gray-200 shadow-sm p-6 sm:p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-48 sm:h-56 w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-xl">
                 
                 {/* Logo circle */}
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-4 border-[#8cc63f]
-                   flex items-center justify-center mb-3 sm:mb-4 overflow-hidden">
+                <div className="h-36 w-36 sm:h-28 sm:w-28">
                   {uni.logo ? (
-                    <img src={uni.logo} alt={uni.name} className="h-12 w-12 sm:h-14 sm:w-14 object-contain" />
+                    <img src={uni.logo} alt={uni.name} className="h-full w-full object-contain" />
                   ) : (
                     <span className="text-white text-lg font-bold">CA</span>
                   )}

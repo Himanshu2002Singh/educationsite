@@ -10,6 +10,7 @@ import img4 from '../../assets/logo_universities/UK/bangor.png';
 import img5 from '../../assets/logo_universities/UK/boltonj.png';
 
 
+
 const UniversitiesSection = () => {
   const [activeTab, setActiveTab] = useState('elite');
 
@@ -65,7 +66,7 @@ const UniversitiesSection = () => {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -115,24 +116,32 @@ const UniversitiesSection = () => {
         </p> */}
 
         {/* Carousel */}
-        <Slider {...settings}>
-          {getUniversities().map((uni, index) => (
-            <div key={index} className="px-2 sm:px-4">
-              <div className="rounded-xl bg-white/60 backdrop-blur-lg border border-gray-200 shadow-sm p-4 sm:p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-br from-[#8DC63F] via-[#c1f0c1] to-[#8DC63F] p-1 mb-3 sm:mb-4">
-                  <div className="bg-white rounded-full h-full w-full flex items-center justify-center">
-                    <img
-                      src={uni.logo}
-                      alt={uni.name}
-                      className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
-                    />
-                  </div>
-                </div>
-                <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">{uni.name}</h3>
-              </div>
-            </div>
-          ))}
-        </Slider>
+<Slider {...settings}>
+  {getUniversities().map((uni, index) => (
+    <div key={index} className="px-2 sm:px-4">
+      <div className="bg-white backdrop-blur-lg border border-gray-200 shadow-sm p-6 sm:p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-48 sm:h-56 w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-xl">
+        
+        {/* Logo container */}
+        <div className="h-36 w-36 sm:h-28 sm:w-28 ">
+          <div className="bg-white h-full w-full flex items-center justify-center ">
+            <img
+              src={uni.logo}
+              alt={uni.name}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </div>
+
+        {/* University name */}
+        <h3 className="mt-4 text-base sm:text-lg font-semibold text-[#2C2C2C] text-center">
+          {uni.name}
+        </h3>
+      </div>
+    </div>
+  ))}
+</Slider>
+
+
 
         {/* CTA Button */}
         <div className="text-center mt-10 sm:mt-12">

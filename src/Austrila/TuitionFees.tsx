@@ -70,13 +70,13 @@ const TuitionLivingAustraliaSection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex justify-center items-center gap-4 mb-12">
+        <div className="flex justify-center items-center gap-4 mb-12 bg-[#DFF5E3] w-fit mx-auto p-2 px-12 rounded-2xl">
           <button
             onClick={() => setActiveTab('tuition')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'tuition'
-                ? 'bg-[#8cc63f] text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-green-100'
+                ? 'bg-[#8DC63F] text-white'
+                : 'text-[#2C2C2C] hover:text-[#8DC63F]'
             }`}
           >
             Tuition Fees
@@ -85,8 +85,8 @@ const TuitionLivingAustraliaSection = () => {
             onClick={() => setActiveTab('living')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
               activeTab === 'living'
-                ? 'bg-[#8cc63f] text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-green-100'
+            ? 'bg-[#C1272D] text-white'
+                : 'text-[#2C2C2C] hover:text-[#C1272D]'
             }`}
           >
             Living Expenses

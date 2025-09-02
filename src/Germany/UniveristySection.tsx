@@ -82,15 +82,15 @@ const UniversitySection: React.FC = () => {
     <Slider {...sliderSettings}>
       {universities.map((uni) => (
         <div key={uni.name} className="p-3">
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center text-center p-6 border border-green-100 h-[250px] sm:h-[300px] md:h-[300px]">
-            <div className="flex items-center justify-center w-24 h-24 rounded-full bg-green-50 border border-green-300 overflow-hidden">
+          <div className="bg-white backdrop-blur-lg border border-gray-200 shadow-sm p-6 sm:p-8 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-48 sm:h-56 w-full max-w-[280px] sm:max-w-[320px] mx-auto rounded-xl">
+            <div className="h-36 w-36 sm:h-28 sm:w-28">
               <img
                 src={uni.logo}
                 alt={uni.name}
-                className="max-w-[80%] max-h-[80%] object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
-            <p className="mt-4 text-green-900 font-semibold text-sm sm:text-base">
+            <p className="mt-4 text-black font-semibold text-sm sm:text-base sm:mb-[20px]">
               {uni.name}
             </p>
           </div>
