@@ -11,12 +11,14 @@ import WorkingRightsSectionIreland from './WorkingRightsSection'
 import DocumentsVisaSectionIreland from './StudentVisa'
 import JobProspectsSectionIreland from './JobPropects'
 import LifestyleFactsSectionIreland from './LifestyleFactsSectionUSA'
+import BestCitiesIreland from './BestCitiesIreland'
 
 
 function Ireland() {
   return (
      <div className="min-h-screen bg-gray-50">
       <StudyIrelandSection/>
+      <BestCitiesIreland/>
       <IrelandUniversitiesSection/>
       <CoursesIrelandIntakeSection />
       <DegreeDurationIrelandSection/>

@@ -62,8 +62,8 @@ const CoursesUsaIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-            <span className="text-[#8cc63f]">Popular </span>Courses & Intakes – USA
-          </h2>
+            <span className="text-[#8cc63f]">Popular </span>Programs & Intake Timelines in USA
+          </h2> 
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Explore top courses and intake timelines for studying in the USA

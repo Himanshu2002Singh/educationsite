@@ -35,7 +35,7 @@ const UniversitiesSection = () => {
         {/* NZ Cities Section */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-            <span className="text-[#8cc63f]">Top Cities</span> in New Zealand for Education
+            <span className="text-[#8cc63f]">Best Cities</span> in New Zealand 
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -58,8 +58,8 @@ const UniversitiesSection = () => {
 
         {/* NZ Universities Section */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-[#2C2C2C] mb-8">
-            Top New Zealand Universities (QS 2025)
+          <h3 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
+             Top <span className="text-[#8cc63f]"> New Zealand </span>Institutions You Should Know (QS 2025)
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {nzUniversityList.map((uni, i) => (

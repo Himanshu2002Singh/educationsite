@@ -68,7 +68,7 @@ const StudyIrelandSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 items-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
               src="https://flagcdn.com/w40/ie.png"
               alt="Ireland Flag"
@@ -76,9 +76,6 @@ const StudyIrelandSection = () => {
             />
             Why Study&nbsp; <span className="text-[#8cc63f]">in Ireland</span>&nbsp;?
           </h2>
-          <p className="text-gray-700 text-sm">
-            Ireland offers safety, warmth, and academic excellence, making it a top choice for students from around the world.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

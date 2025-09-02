@@ -107,12 +107,12 @@ const UniversitySection: React.FC = () => {
       </h2>
       
       <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-      <p className="text-black-700 text-center mb-6 text-sm sm:text-base">
-        Click a button to explore public or private universities in Germany
-      </p>
+        {/* <p className="text-black-700 text-center mb-6 text-sm sm:text-base">
+          Click a button to explore public or private universities in Germany
+        </p> */}
 
       {/* Toggle Buttons */}
-      <div className="flex justify-center gap-3 mb-8 flex-wrap">
+      {/* <div className="flex justify-center gap-3 mb-8 flex-wrap">
         <button
           onClick={() => setView("public")}
           className={`px-5 py-2 rounded-lg font-semibold border transition-all ${
@@ -133,7 +133,7 @@ const UniversitySection: React.FC = () => {
         >
           Private Universities
         </button>
-      </div>
+      </div> */}
 
       {/* Carousel */}
       <div className="pb-8"> {/* extra space for dots */}

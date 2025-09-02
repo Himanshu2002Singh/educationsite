@@ -48,9 +48,9 @@ const CanadaUniversitiesSection = () => {
             Top {" "}<span className="text-[#8cc63f]"> Canadian Institutions </span>You Should Know 🎓
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3 "></div>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+          {/* <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             Canada is home to some of the world’s leading universities and colleges, known for academic excellence, innovative research, and vibrant campus life. 
-          </p>
+          </p> */}
         </div>
 
         {/* Carousel */}

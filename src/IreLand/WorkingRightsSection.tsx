@@ -53,8 +53,8 @@ const WorkingRightsSectionIreland = () => {
 
         {/* Tab Content */}
         {activeTab === 'studying' ? (
-          <div className="space-y-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col items-center space-y-10">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl">
               {studyWorkRights.map((item, index) => (
                 <div
                   key={index}
@@ -81,7 +81,7 @@ const WorkingRightsSectionIreland = () => {
               ))}
             </div>
 
-            <div className="bg-[#FFF8E1] border border-[#FFE082] rounded-xl p-5 text-center shadow-sm">
+            <div className="bg-[#FFF8E1] border border-[#FFE082] rounded-xl p-5 text-center shadow-sm max-w-2xl">
               <div className="flex justify-center items-center mb-3">
                 <Info className="w-5 h-5 text-[#C1272D] mr-2" />
                 <span className="font-semibold text-[#C1272D]">Important Note</span>
@@ -92,8 +92,8 @@ const WorkingRightsSectionIreland = () => {
             </div>
           </div>
         ) : (
-          <div className="space-y-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col items-center space-y-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
               {/* Post-study bachelor's & master's */}
               <div className="border-2 border-[#CDEFD4] bg-white rounded-xl p-6 shadow-lg hover:shadow-xl">
                 <div className="text-center mb-4">
@@ -106,11 +106,6 @@ const WorkingRightsSectionIreland = () => {
                   <p className="text-3xl font-bold text-[#8DC63F] mb-2">Up to 2 Years</p>
                   <p className="text-[#2C2C2C]">Stay Back Option</p>
                 </div>
-                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
-                  <li>Work in any sector</li>
-                  <li>Switch between employers</li>
-                  <li>Gain valuable Irish work experience</li>
-                </ul> */}
               </div>
 
               {/* Post-study PhD */}
@@ -125,29 +120,23 @@ const WorkingRightsSectionIreland = () => {
                   <p className="text-3xl font-bold text-[#726EFF] mb-2">Up to 2 Years</p>
                   <p className="text-[#2C2C2C]">Post-Study Work Visa</p>
                 </div>
-                {/* <ul className="mt-6 space-y-2 text-[#2C2C2C] text-sm">
-                  <li>Extended career opportunities</li>
-                  <li>Research and academic roles</li>
-                  <li>Industry leadership positions</li>
-                </ul> */}
               </div>
             </div>
 
             {/* Benefits */}
-            <div className="bg-gradient-to-r from-white to-[#F0FFF4] rounded-xl p-8 border border-gray-200">
+            <div className="bg-gradient-to-r from-white to-[#F0FFF4] rounded-xl p-8 border border-gray-200 max-w-4xl">
               <h4 className="text-xl font-bold text-[#2C2C2C] mb-6 text-center">Post-Study Work Benefits in Ireland</h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
-                  { icon: <Briefcase className="text-[#8DC63F]" />, title: "No Job Offer Required", desc: "Apply without securing a job offer" },
-                  { icon: <Clock className="text-[#C1272D]" />, title: "No limit of work hours ", desc: "Work up to 40 hours per week" },
-                  { icon: <GraduationCap className="text-[#726EFF]" />, title: "Pathway to Residence", desc: "Can lead to work permit and long-term residency" },
+                  { icon: <Briefcase className="w-6 h-6 text-[#8DC63F]" />, title: "No Job Offer Required", desc: "Apply without securing a job offer" },
+                  { icon: <Clock className="w-6 h-6 text-[#C1272D]" />, title: "No limit of work hours", desc: "Work up to 40 hours per week" },
+                  { icon: <GraduationCap className="w-6 h-6 text-[#726EFF]" />, title: "Pathway to Residence", desc: "Can lead to work permit and long-term residency" },
                 ].map((item, idx) => (
                   <div key={idx} className="text-center">
                     <div className="mx-auto mb-3 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
                       {item.icon}
                     </div>
                     <h5 className="font-bold text-[#2C2C2C] mb-1">{item.title}</h5>
-                    {/* <p className="text-sm text-[#2C2C2C]">{item.desc}</p> */}
                   </div>
                 ))}
               </div>

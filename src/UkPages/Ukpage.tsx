@@ -12,11 +12,13 @@ import DocumentsVisaSection from './DocumentsVisaSection'
 import LifestyleFactsSection from './LifestyleFactsSection'
 import CTASection from './CTASection'
 import UniversitiesSection from './UniversitiesSection'
+import BestCitiesUk from './TopCityUk'
 
 function Ukpage() {
   return (
      <div className="min-h-screen bg-gray-50">
       <USPSection />
+      <BestCitiesUk/>
       <UniversitiesSection />
       <CoursesIntakeSection />
       <DegreeDurationSection />
@@ -24,8 +26,9 @@ function Ukpage() {
       <TuitionFeesSection />
       <CostOfLivingSection />
       <ScholarshipsSection />
-      <WorkingRightsSection />
       <DocumentsVisaSection />
+      <WorkingRightsSection />
+      
       <LifestyleFactsSection />
       
       

@@ -110,9 +110,9 @@ const UniversitiesSection = () => {
           ))}
         </div> */}
 
-        <p className="text-center text-gray-700 mb-6 sm:mb-8 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base ">
+        {/* <p className="text-center text-gray-700 mb-6 sm:mb-8 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base ">
           {getDescription()}
-        </p>
+        </p> */}
 
         {/* Carousel */}
         <Slider {...settings}>

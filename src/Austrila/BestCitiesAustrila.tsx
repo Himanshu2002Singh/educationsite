@@ -6,36 +6,26 @@ import "slick-carousel/slick/slick-theme.css";
 
 const cities = [
   {
-    name: "Toronto",
-
+    name: "Sydney",
   },
   {
-    name: "Vancouver",
-  
+    name: "Melbourne",
   },
   {
-    name: "Montreal",
-    
+    name: "Brisbane",
   },
   {
-    name: "Ottawa",
-
+    name: "Perth",
   },
   {
-    name: "Calgary",
-    
-  },
-  {
-    name: "Winnipeg",
-    
-  },
-  {
-    name: "Regina",
-    
+    name: "Adelaide",
   }
 ];
 
-const BestCitiesCanada = () => {
+
+
+
+const BestCitiesAustrelia = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -61,7 +51,8 @@ const BestCitiesCanada = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
-            Best Cities {" "}<span className="text-[#8cc63f]">in Canada</span> 
+            Best Cities {" "}<span className="text-[#8cc63f]"> in Australia
+ </span> 
           </h2>
           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>
         </div>
@@ -78,7 +69,7 @@ const BestCitiesCanada = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {city.name}
                 </h3>
-                <p className="text-gray-600 text-sm">{city.description}</p>
+            
               </div>
             </div>
           ))}
@@ -88,4 +79,4 @@ const BestCitiesCanada = () => {
   );
 };
 
-export default BestCitiesCanada;
+export default BestCitiesAustrelia;

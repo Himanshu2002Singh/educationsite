@@ -144,7 +144,7 @@ const LifestyleFactsSection = () => {
     <section className="py-12 px-4 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4 text-center">
-          UK Student Life {" "}<span className="text-[#8cc63f]"> Fun Facts</span>
+          Lifestyle &  {" "}<span className="text-[#8cc63f]"> Fun Facts</span>
         </h2>
         <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 

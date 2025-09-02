@@ -56,7 +56,7 @@ const DocumentsVisaSection = () => {
     <section className="py-16 bg-white text-[#2C2C2C]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">{" "}<span className="text-[#8cc63f]"> Documents </span>& UK Student Visa Process</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">{" "}<span className="text-[#8cc63f]">Admission & Visa -  </span>Documents and Process for Studying in UK</h2>   
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl max-w-3xl mx-auto">Seamless support from application to arrival</p>
         </div>

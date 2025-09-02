@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import {
   MapPin,
@@ -44,7 +47,7 @@ const CostOfLivingSection = () => {
   };
 
   return (
-    <section
+  <section
       className="py-16 bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
@@ -143,13 +146,13 @@ const CostOfLivingSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <InsightItem
                 icon={<Calculator className="w-6 h-6 text-[#8DC63F]" />}
-                title="Save £3,123*/year"
+                title={<><span>Save £3,123</span><sup>*</sup><span>/year</span></>}
                 description="By choosing cities outside London"
                 color="#8DC63F"
               />
               <InsightItem
                 icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />}
-                title="Earn £8,000*/year"
+                title={<><span>Earn £8,000</span><sup>*</sup><span>/year</span></>}
                 description="Through part-time work (20hrs/week)"
                 color="#C1272D"
               />
@@ -176,7 +179,7 @@ const CostOfLivingSection = () => {
 
 const InsightItem = ({ icon, title, description, color }: any) => (
   <div className="text-center">
-    <div
+  <div
       className="rounded-full p-3 w-12 h-12 mx-auto mb-3 flex items-center justify-center"
       style={{ backgroundColor: `${color}20` }}
     >

@@ -14,6 +14,7 @@ import AdmissionDocumentsSection from './AdmissionDocumentsSection'
 import VisaInfoSection from './VisaInfoSection'
 import JobOpportunitiesSection from './JobOpportunitiesSection'
 import GermanyLifestyleFacts from './GermanylifeStyleFacts'
+import DocumentsVisaSectiongermany from './DocumentsVisaSectiongermany'
 
 
 
@@ -24,9 +25,10 @@ function Germany() {
      
       {/* Add more sections as needed */}
       <StudyGermanySection/>
-      <UniversitySection/>
-      <UniversitiesGermany/>
       <BestCitiesGermany/>
+      <UniversitySection/>
+      {/* <UniversitiesGermany/> */}
+    
       
       <CoursesIntakeSection/>
       <DegreeDurationSection/>
@@ -34,9 +36,12 @@ function Germany() {
       <TuitionFeesSection/>
       <CostOfLivingGermany/>
     <ScholarshipsSection/>
+    <DocumentsVisaSectiongermany/>
     <WorkingRightsSection/>
-    <AdmissionDocumentsSection/>
-      <VisaInfoSection/>
+    {/* <AdmissionDocumentsSection/>
+      <VisaInfoSection/> */}
+      
+
       <JobOpportunitiesSection/>
         <GermanyLifestyleFacts />
         

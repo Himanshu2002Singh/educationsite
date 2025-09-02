@@ -1,5 +1,27 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useInView } from "../hooks/useInView";
+
+// Simple useInView hook implementation
+const useInView = (ref, options = {}) => {
+  const [isInView, setIsInView] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInView(entry.isIntersecting);
+    }, options);
+    
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref, options]);
+  
+  return isInView;
+};
 
 interface StatItemProps {
   value: number;
@@ -18,7 +40,7 @@ const StatItem: React.FC<StatItemProps> = ({
 }) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.5 });
+  const isInView = useInView(ref, { once: true, threshold: 0.1 }); // Reduced threshold
 
   useEffect(() => {
     if (!isInView) return;
@@ -62,7 +84,7 @@ const Stats: React.FC = () => {
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-          <StatItem value={10000} label="Students" suffix="+" delay={0} />
+          <StatItem value={12000} label="Students" suffix="+" delay={0} />
           <StatItem
             value={24}
             label="Years of Experience"
@@ -84,7 +106,7 @@ const Stats: React.FC = () => {
             delay={800}
           />
           <StatItem
-            value={800}
+            value={850}
             label="University Representation"
             suffix="+"
             delay={1000}

@@ -12,12 +12,14 @@ import DocumentsVisaSectionUSA from './StudentVisa'
 import JobProspectsSectionUSA from './JobPropects'
 import LifestyleFactsSectionUSA from './LifestyleFactsSectionUSA'
 import UsaVissaProcess from './UsaVissaProcess'
+import BestCitysUsa from './BestCityUsa'
 
 
 function USA() {
   return (
      <div className="min-h-screen bg-gray-50">
       <StudyUSASection/>
+      <BestCitysUsa/>
       <USAUniversitiesSection/>
       <CoursesUsaIntakeSection />
       <DegreeDurationUsaSection/>

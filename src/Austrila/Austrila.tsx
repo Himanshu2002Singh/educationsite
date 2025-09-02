@@ -12,12 +12,14 @@ import ScholarshipsSectionAustralia from './ScholorshiipSection'
 import JobProspectsSectionAustralia from './JobPropects'
 import AustraliaAdmissionProcessSection from './AdmissionProcess'
 import WorkingRightsSectionAustralia from './WorkingRightsSection'
+import BestCitiesAustrelia from './BestCitiesAustrila'
 
 
 function Australia() {
   return (
      <div className="min-h-screen bg-gray-50">
       <StudyAustraliaSection/>
+      <BestCitiesAustrelia/>
       <AustraliaUniversitiesSection/>
       <CoursesAustraliaIntakeSection />
       {/* <DegreeDurationIrelandSection/> */}

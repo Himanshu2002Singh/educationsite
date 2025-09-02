@@ -24,7 +24,7 @@ const WorkingRightsSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">
-            Working Rights in the UK for {" "}<span className="text-[#8cc63f]"> International Students</span>
+            Working Rights in UK for {" "}<span className="text-[#8cc63f]"> International Students</span>
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl text-[#2C2C2C] max-w-3xl mx-auto">

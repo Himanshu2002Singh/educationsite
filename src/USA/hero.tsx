@@ -68,7 +68,7 @@ const StudyUSASection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 items-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center ">
             <img
               src="https://flagcdn.com/w40/us.png"
               alt="USA Flag"
@@ -76,9 +76,6 @@ const StudyUSASection = () => {
             />
             Why Study in &nbsp;<span className="text-[#8cc63f]">the USA</span>&nbsp;?
           </h2>
-          <p className="text-gray-700 text-sm">
-            Over 1 million international students choose the United States as their study destination every year.
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

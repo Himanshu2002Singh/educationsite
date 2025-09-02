@@ -74,12 +74,12 @@ const UAEUniversitiesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-5">
         <div className="text-center mb-6 sm:mb-10">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-            Top <span className="text-[#8cc63f]">Universities</span> in the UAE 🏫
+            Top <span className="text-[#8cc63f]">Institutions</span> You Should Know
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+          {/* <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             The UAE is home to several highly ranked institutions that attract students from around the globe.
-          </p>
+          </p> */}
         </div>
 
         {/* Carousel */}
@@ -97,8 +97,8 @@ const UAEUniversitiesSection = () => {
                   </div>
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">{uni.name}</h3>
-                <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
-                <p className="text-xs sm:text-sm text-[#C1272D] font-medium text-center mt-1">{uni.perk}</p>
+                {/* <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
+                <p className="text-xs sm:text-sm text-[#C1272D] font-medium text-center mt-1">{uni.perk}</p> */}
               </div>
             </div>
           ))}

@@ -89,9 +89,9 @@ const USAUniversitiesSection = () => {
             Top <span className="text-[#8cc63f]">US Universities</span> You Should Know 🎓
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
-          <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
+          {/* <p className="text-gray-600 max-w-xl sm:max-w-3xl mx-auto text-sm sm:text-base">
             Discover America’s top-ranked institutions shaping global leaders, innovators, and change-makers.
-          </p>
+          </p> */}
         </div>
 
         {/* Carousel */}
@@ -109,8 +109,8 @@ const USAUniversitiesSection = () => {
                   </div>
                 </div>
                 <h3 className="text-sm sm:text-base font-semibold text-[#2C2C2C] text-center">{uni.name}</h3>
-                <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
-                <p className="text-xs sm:text-sm text-black font-medium text-center mt-1">{uni.perk}</p>
+                {/* <p className="text-xs sm:text-sm text-gray-600 text-center mt-1">{uni.main}</p>
+                <p className="text-xs sm:text-sm text-black font-medium text-center mt-1">{uni.perk}</p> */}
               </div>
             </div>
           ))}
@@ -119,7 +119,7 @@ const USAUniversitiesSection = () => {
         {/* CTA Button */}
         <div className="text-center mt-10 sm:mt-12">
           <button className="bg-[#8cc63f] hover:bg-[#003580] text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-lg transition-all duration-300 shadow-md">
-            Find Your US University Match
+            Find Your USA University Match
           </button>
         </div>
       </div>

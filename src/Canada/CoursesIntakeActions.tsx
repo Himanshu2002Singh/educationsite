@@ -61,7 +61,7 @@ const CoursesCanadaIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
-          {" "}<span className="text-[#8cc63f]">   Popular Programs </span>& Intakes – Canada
+          {" "}Popular<span className="text-[#8cc63f]"> Programs & Intake </span>Timelines in Canada 
           </h2>
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">

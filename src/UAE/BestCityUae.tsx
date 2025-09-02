@@ -5,19 +5,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const BestCitiesGermany = () => {
-  const cities = [
-    { name: "Berlin", desc: "An academic powerhouse with 33 universities. It's a cultural melting pot with vibrant nightlife." },
-    { name: "Munich", desc: "Known for academic excellence, cultural richness, and high quality of life. Home to TUM & LMU Munich." },
-    { name: "Aachen", desc: "Rich history, high quality of life, and affordability. Home to RWTH Aachen University and more." },
-    { name: "Cologne", desc: "Dynamic city with 12 universities. Famous for Cologne Cathedral and rich cultural attractions." },
-    { name: "Bonn", desc: "Compact hub with 3 universities including the University of Bonn. Home to the UN Campus." },
-    { name: "Stuttgart", desc: "Known for technical programs, affordability, and green landscapes. Home to University of Stuttgart." },
-    { name: "Frankfurt", desc: "Finance capital, perfect for business studies. Home to Goethe University and Frankfurt School." },
-    { name: "Dresden", desc: "Affordable, high quality of life, and great healthcare. Home to TU Dresden." },
-    { name: "Leipzig", desc: "Rich musical heritage, creative scene, and affordability. Home to Leipzig University and HHL." },
-    { name: "Hamburg", desc: "Maritime heritage, cultural attractions, and vibrant nightlife. Home to University of Hamburg." },
-  ];
+const BestCitiyUae = () => {
+const cities = [
+  { name: "Dubai", desc: "A global hub with world-class universities, diverse culture, and excellent career opportunities." },
+  { name: "Abu Dhabi", desc: "The capital city offering premium education institutions and strong government support for students." },
+  { name: "Sharjah", desc: "Known as the cultural capital with affordable living costs and reputable universities." },
+  { name: "Ajman", desc: "Offers budget-friendly education options with proximity to major UAE cities." },
+  { name: "Al Ain", desc: "A green oasis city with a peaceful environment perfect for focused studies." },
+  { name: "Ras Al Khaimah", desc: "Emerging education hub with new universities and stunning natural landscapes." },
+  { name: "Fujairah", desc: "Coastal city offering unique marine and environmental science programs." },
+  { name: "Umm Al Quwain", desc: "Quiet study environment with growing educational infrastructure." }
+];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
@@ -80,4 +78,4 @@ const BestCitiesGermany = () => {
   );
 };
 
-export default BestCitiesGermany;
+export default BestCitiyUae;

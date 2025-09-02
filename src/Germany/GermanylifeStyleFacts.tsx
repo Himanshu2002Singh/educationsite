@@ -39,7 +39,7 @@ const GermanyLifestyleFacts = () => {
     <section className="py-12 px-16 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto md:mx-10">
         <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
-          Germany <span className="text-[#8cc63f]">Lifestyle </span> & Fun Facts
+          <span className="text-[#8cc63f]">Lifestyle </span> & Fun Facts
         </h2>
         <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 

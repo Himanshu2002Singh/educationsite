@@ -9,6 +9,7 @@ import DocumentsVisaSectionUAE from './StudentVisa'
 import JobProspectsSectionUAE from './JobPropects'
 import UAEAdmissionProcessSection from './AdmissionProcess'
 import UaeLifestyleFact from './UaeLifestyleFact'
+import BestCitiyUae from './BestCityUae'
 
 
 
@@ -17,6 +18,7 @@ function Uae() {
   return (
      <div className="min-h-screen bg-gray-50">
       <StudyUAKSection/>
+      <BestCitiyUae/>
       <UAEUniversitiesSection/>
       <CoursesUaeIntakeSection />
       {/* <EnglishTestSection /> */}

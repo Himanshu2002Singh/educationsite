@@ -9,6 +9,7 @@ import {
   Shield,
 } from "lucide-react";
 import nzGirl from "../../assets/UAE.png"; // Replace with actual image path
+import img1 from '../../assets/uae_flag.webp';
 
 const points = [
   {
@@ -64,7 +65,7 @@ const StudyUAKSection = () => {
         <div className="space-y-6">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
-              src="https://flagcdn.com/w40/nz.png"
+              src={img1}
               alt="New Zealand Flag"
               className="w-8 h-5 mr-2"
             />

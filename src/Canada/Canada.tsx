@@ -14,18 +14,20 @@ function Canada() {
   return (
      <div className="min-h-screen bg-gray-50">
       <StudyCanadaSection/>
+      <BestCitiesCanada/>
       <CanadaUniversitiesSection/>
       <CoursesCanadaIntakeSection />
       {/* <DegreeDurationIrelandSection/> */}
       <EnglishTestSectionCanada />
       <TuitionLivingCanadaSection />
-       <BestCitiesCanada/>
+       
       <ScholarshipsSectionCanada/>
+      <DocumentsVisaSectionCanada/>
       {/* <AustraliaAdmissionProcessSection/> */}
       <WorkingRightsSectionCanada/>
       {/* <UAEAdmissionProcessSection /> */}
      
-      <DocumentsVisaSectionCanada/>
+      
        {/* <LifestyleFactsSectionIreland/> */}
       <JobProspectsSectionCanada />
 

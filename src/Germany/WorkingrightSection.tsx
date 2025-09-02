@@ -11,6 +11,7 @@ const timelineData = [
     <span><strong>Annual Limit:</strong>  Max 120 full days or 240 half-days per year.</span>
     ],
     bgColor: "bg-[#E6F0FF]",
+    fullWidth: false,
   },
   {
     title: "Types of Work Allowed",
@@ -21,6 +22,7 @@ const timelineData = [
       <span><strong>Freelancing & Self-employment:</strong> Only possible with special permits (case-by-case approval).</span>,
     ],
     bgColor: "bg-[#F3E8FF]",
+    fullWidth: false,
   },
   {
     title: "Work Permit & Visa Rules",
@@ -30,6 +32,7 @@ const timelineData = [
       "Non-EU students must strictly follow the 120-day rule unless otherwise authorized.",
     ],
     bgColor: "bg-[#DFFFE6]",
+    fullWidth: false,
   },
   {
     title: "Important Points",
@@ -40,6 +43,7 @@ const timelineData = [
       "Always ensure compliance with tax regulations (get a tax ID if earning above allowance).",
     ],
     bgColor: "bg-[#FFF9E6]",
+    fullWidth: true,
   },
   {
     title: "Finding a Job",
@@ -50,6 +54,7 @@ const timelineData = [
       "Networking with professors, classmates, and professionals.",
     ],
     bgColor: "bg-[#E6F4FF]",
+    fullWidth: true,
   },
 ];
 
@@ -58,7 +63,7 @@ const WorkingRightsSection = () => {
     <section className="bg-white py-12 px-6 sm:px-10 md:px-5 max-w-7xl mx-auto font-sans">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 text-center">
-        Working <span className="text-[#8cc63f]">Rights</span> in Germany
+        Working <span className="text-[#8cc63f]">Rights</span> in Germany for International Students
       </h2>
       <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
 
@@ -70,28 +75,60 @@ const WorkingRightsSection = () => {
       </p>
 
       {/* Grid layout */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {timelineData.map((item, idx) => (
+      <div className="flex flex-col gap-6">
+        {/* First row - 3 regular cards */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {timelineData.slice(0, 3).map((item, idx) => (
+            <div
+              key={idx}
+              className={`${item.bgColor} border border-[#CBD5E1] p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col`}
+            >
+              {/* Icon */}
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-4 border-[#4C51BF] shadow-md mb-4 mx-auto">
+                {item.icon}
+              </div>
+
+              {/* Title */}
+              <h3 className="text-lg sm:text-xl font-semibold text-[#1E293B] text-center mb-3">
+                {item.title}
+              </h3>
+
+              {/* Points */}
+              <ul className="list-disc list-inside text-black text-sm sm:text-base space-y-2 text-left">
+                {item.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        
+        {/* Full-width cards */}
+        {timelineData.slice(3).map((item, idx) => (
           <div
-            key={idx}
+            key={idx + 3}
             className={`${item.bgColor} border border-[#CBD5E1] p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col`}
           >
-            {/* Icon */}
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-4 border-[#4C51BF] shadow-md mb-4 mx-auto">
-              {item.icon}
+            <div className="flex flex-col md:flex-row md:items-start">
+              {/* Icon */}
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border-4 border-[#4C51BF] shadow-md mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0">
+                {item.icon}
+              </div>
+
+              <div className="flex-1">
+                {/* Title */}
+                <h3 className="text-lg sm:text-xl font-semibold text-[#1E293B] text-center md:text-left mb-3">
+                  {item.title}
+                </h3>
+
+                {/* Points */}
+                <ul className="list-disc list-inside text-black text-sm sm:text-base space-y-2 text-left">
+                  {item.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-
-            {/* Title */}
-            <h3 className="text-lg sm:text-xl font-semibold text-[#1E293B] text-center mb-3">
-              {item.title}
-            </h3>
-
-            {/* Points */}
-            <ul className="list-disc list-inside text-black text-sm sm:text-base space-y-2 text-left">
-              {item.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
           </div>
         ))}
       </div>
