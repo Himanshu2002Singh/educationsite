@@ -36,7 +36,7 @@ const CoursesUaeIntakeSection = () => {
     },
     {
       icon: <Snowflake className="w-8 h-8 text-[#C1272D]" />,
-      title: "Summer Intake (Limited)",
+      title: "Summer Intake",
       subtitle: "May / June",
       description: "Available at select universities (Amity, DMU, Middlesex) for specific programs. Application Period: February – April."
     }

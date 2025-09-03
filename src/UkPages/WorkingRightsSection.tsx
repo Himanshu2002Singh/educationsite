@@ -154,7 +154,7 @@ const WorkingRightsSection = () => {
                 {[
                   { icon: <Briefcase className="text-[#8DC63F]" />, title: "No Job Offer Required", desc: "Apply without a job offer in hand" },
                   { icon: <Clock className="text-[#C1272D]" />, title: "Flexible Working", desc: "Work full-time or part-time" },
-                  { icon: <GraduationCap className="text-[#726EFF]" />, title: "Path to Settlement", desc: "Can lead to permanent residency" },
+                  { icon: <GraduationCap className="text-[#726EFF]" />, title: "Improved Employability", desc: "Gaining valuable work experience boosts graduates' job prospects " },
                 ].map((item, idx) => (
                   <div key={idx} className="text-center">
                     <div className="mx-auto mb-3 w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">

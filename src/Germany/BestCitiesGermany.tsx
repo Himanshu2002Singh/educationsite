@@ -1,32 +1,31 @@
 import React from "react";
-import { MapPin } from "lucide-react";
-import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import aachenImg from '../../assets/topcity/Germany top cities/Aachen.png';
+import berlinImg from '../../assets/topcity/Germany top cities/Berlin.png';
+import bonnImg from '../../assets/topcity/Germany top cities/Bonn.png';
+import dresdenImg from '../../assets/topcity/Germany top cities/Dresden.png';
+import frankfurtImg from '../../assets/topcity/Germany top cities/Frankfurt.png';
+import hamburgImg from '../../assets/topcity/Germany top cities/Hamburg.png';
+import leipzigImg from '../../assets/topcity/Germany top cities/Leipzig.png';
+import munichImg from '../../assets/topcity/Germany top cities/Munich.png';
+import stuttgartImg from '../../assets/topcity/Germany top cities/Stuttgart.png';
+import cologneImg from '../../assets/topcity/Germany top cities/cologne.png';
 
 const BestCitiesGermany = () => {
-  const cities = [
-    { name: "Berlin", desc: "An academic powerhouse with 33 universities. It's a cultural melting pot with vibrant nightlife." },
-    { name: "Munich", desc: "Known for academic excellence, cultural richness, and high quality of life. Home to TUM & LMU Munich." },
-    { name: "Aachen", desc: "Rich history, high quality of life, and affordability. Home to RWTH Aachen University and more." },
-    { name: "Cologne", desc: "Dynamic city with 12 universities. Famous for Cologne Cathedral and rich cultural attractions." },
-    { name: "Bonn", desc: "Compact hub with 3 universities including the University of Bonn. Home to the UN Campus." },
-    { name: "Stuttgart", desc: "Known for technical programs, affordability, and green landscapes. Home to University of Stuttgart." },
-    { name: "Frankfurt", desc: "Finance capital, perfect for business studies. Home to Goethe University and Frankfurt School." },
-    { name: "Dresden", desc: "Affordable, high quality of life, and great healthcare. Home to TU Dresden." },
-    { name: "Leipzig", desc: "Rich musical heritage, creative scene, and affordability. Home to Leipzig University and HHL." },
-    { name: "Hamburg", desc: "Maritime heritage, cultural attractions, and vibrant nightlife. Home to University of Hamburg." },
-  ];
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
+const cities = [
+  { name: "Aachen", img: aachenImg },
+  { name: "Berlin", img: berlinImg },
+  { name: "Bonn", img: bonnImg },
+  { name: "Dresden", img: dresdenImg },
+  { name: "Frankfurt", img: frankfurtImg },
+  { name: "Hamburg", img: hamburgImg },
+  { name: "Leipzig", img: leipzigImg },
+  { name: "Munich", img: munichImg },
+  { name: "Stuttgart", img: stuttgartImg },
+  { name: "Cologne", img: cologneImg },
+];
 
   const settings = {
     dots: false,
@@ -49,28 +48,31 @@ const BestCitiesGermany = () => {
   };
 
   return (
-  <section className="py-16 bg-white">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
-            {" "}<span className="text-[#8cc63f]"> Best Cities</span> in Germany
+            <span className="text-[#8cc63f]">Best Cities</span> in Germany
           </h2>
           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>
         </div>
 
         <Slider {...settings}>
-          {cities.map((cities, index) => (
+          {cities.map((city, index) => (
             <div key={index} className="px-4">
-              <div className="bg-red-50 border-2 border-red-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <div className="bg-red-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="p-2 bg-white rounded-full shadow-md">
-                    <MapPin className="w-8 h-8 text-red-600" />
+                  <div className="rounded-full shadow-md">
+                    <img
+                      src={city.img}
+                      alt={city.name}
+                      className="w-28 h-28 object-cover rounded-full"
+                    />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {cities.name}
+                  {city.name}
                 </h3>
-              
               </div>
             </div>
           ))}

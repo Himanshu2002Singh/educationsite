@@ -22,7 +22,7 @@ function Newzealand() {
       <CoursesIntakeSection />
       <EnglishTestSection />
       <TuitionFeesSection />
-      <CostOfLivingSection />
+      {/* <CostOfLivingSection /> */}
       <ScholarshipsSection />
       <AdmissionProcessSection />
       <VisaInfoSection />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, GraduationCap } from 'lucide-react';
-
+import img1 from '../../assets/topcity/New Zealand top cities'
 const UniversitiesSection = () => {
   const nzCities = [
     {

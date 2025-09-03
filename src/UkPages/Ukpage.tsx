@@ -13,6 +13,7 @@ import LifestyleFactsSection from './LifestyleFactsSection'
 import CTASection from './CTASection'
 import UniversitiesSection from './UniversitiesSection'
 import BestCitiesUk from './TopCityUk'
+import CareerProspects from './CarrerPospectuk'
 
 function Ukpage() {
   return (
@@ -28,7 +29,7 @@ function Ukpage() {
       <ScholarshipsSection />
       <DocumentsVisaSection />
       <WorkingRightsSection />
-      
+      <CareerProspects/>
       <LifestyleFactsSection />
       
       

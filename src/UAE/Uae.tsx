@@ -10,6 +10,7 @@ import JobProspectsSectionUAE from './JobPropects'
 import UAEAdmissionProcessSection from './AdmissionProcess'
 import UaeLifestyleFact from './UaeLifestyleFact'
 import BestCitiyUae from './BestCityUae'
+import WorkingRight from './WorkingRight'
 
 
 
@@ -23,10 +24,12 @@ function Uae() {
       <CoursesUaeIntakeSection />
       {/* <EnglishTestSection /> */}
       <TuitionFeesSectionUAE />
-      <CostOfLivingSectionUAE />
+      {/* <CostOfLivingSectionUAE /> */}
       <ScholarshipsSectionUAE />
       <UAEAdmissionProcessSection />
+      
       <DocumentsVisaSectionUAE/>
+      <WorkingRight/>
       <JobProspectsSectionUAE />
       <UaeLifestyleFact/>
 

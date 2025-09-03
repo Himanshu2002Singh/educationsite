@@ -1,36 +1,48 @@
 import React from "react";
 import Slider from "react-slick";
-import { MapPin } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const cities = [
-  {
-    name: "New York",
-  },
-  {
-    name: "Los Angeles",
-  },
-  {
-    name: "Chicago",
-  },
-  {
-    name: "Houston",
-  },
-  {
-    name: "Phoenix",
-  },
-  {
-    name: "Philadelphia",
-  },
-  {
-    name: "San Francisco",
-  }
-];
-
-
+// Import city images
+import hCustomImg from '../../assets/topcity/USA top cities/Huuston.png';
+import chicagoImg from '../../assets/topcity/USA top cities/chicago.png';
+import losAngelesImg from '../../assets/topcity/USA top cities/chicago.png';
+import newYorkImg from '../../assets/topcity/USA top cities/new york.png';
+import philadelphiaImg from '../../assets/topcity/USA top cities/philadelphia.png';
+import phoenixImg from '../../assets/topcity/USA top cities/phoenix.png';
+import sanFranciscoImg from '../../assets/topcity/USA top cities/san francisco.png';
 
 const BestCitysUsa = () => {
+  const cities = [
+    {
+      name: "New York",
+      img: newYorkImg
+    },
+    {
+      name: "Los Angeles",
+      img: losAngelesImg
+    },
+    {
+      name: "Chicago",
+      img: chicagoImg
+    },
+    {
+      name: "Phoenix",
+      img: phoenixImg
+    },
+    {
+      name: "Philadelphia",
+      img: philadelphiaImg
+    },
+    {
+      name: "San Francisco",
+      img: sanFranciscoImg
+    },
+    {
+      name: "Houston",
+      img: hCustomImg
+    }
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -66,14 +78,17 @@ const BestCitysUsa = () => {
             <div key={index} className="px-4">
               <div className="bg-red-50 border-2 border-red-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="p-2 bg-white rounded-full shadow-md">
-                    <MapPin className="w-8 h-8 text-red-600" />
+                  <div className="rounded-full shadow-md">
+                    <img
+                      src={city.img}
+                      alt={city.name}
+                      className="w-28 h-28 object-cover rounded-full"
+                    />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {city.name}
                 </h3>
-            
               </div>
             </div>
           ))}

@@ -34,10 +34,10 @@ function Germany() {
       <DegreeDurationSection/>
       <EnglishTestSection/>
       <TuitionFeesSection/>
-      <CostOfLivingGermany/>
+      {/* <CostOfLivingGermany/> */}
     <ScholarshipsSection/>
     <DocumentsVisaSectiongermany/>
-    <WorkingRightsSection/>
+    {/* <WorkingRightsSection/> */}
     {/* <AdmissionDocumentsSection/>
       <VisaInfoSection/> */}
       
