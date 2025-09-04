@@ -72,7 +72,7 @@ const WorkingRightsSectionAustralia = () => {
                     <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
                       <div className="flex items-center">
                         <Calendar className="w-6 h-6 text-[#C1272D] mr-3" />
-                        <span className="text-[#2C2C2C] font-medium">During Holidays/Breaks</span>
+                        <span className="text-[#2C2C2C] font-medium">During Holidays/<br/>Breaks</span>
                       </div>
                       <span className="text-[#C1272D] font-bold text-lg">{item.holidayLimit}</span>
                     </div>

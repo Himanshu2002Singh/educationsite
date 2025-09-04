@@ -28,7 +28,13 @@ const ContactUs = () => {
               <strong>Address:</strong> Borivali (W) : 9th Floor, Express Tower, L.T. Rd, Mumbai, 400092
             </li>
             <li>
-              <strong>Phone:</strong> +91 98765 43210
+              <strong>Phone:</strong> ++91 9321173184
+            </li>
+              <li>
+              <strong>Address:</strong> Andheri (W): 202, DLH Plaza, S.V. Rd, Mumbai, 400058
+            </li>
+            <li>
+              <strong>Phone:</strong> +91 73044 76878
             </li>
             <li>
               <strong>Email:</strong> info@edukonnect.com

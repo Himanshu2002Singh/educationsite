@@ -70,7 +70,6 @@ function App() {
        <Route path="/contact" element={<ContactUs />} />  
        <Route path='/blogs' element={<TrendingBlog/>}/>
        <Route path='/test-preparation' element={<Test/>} />
-       
        <Route path='/services' element={<Services/>} />
       {/* Add other routes as needed */}
     </Routes>
