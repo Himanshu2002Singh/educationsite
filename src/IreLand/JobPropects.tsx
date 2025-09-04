@@ -70,7 +70,7 @@ const JobProspectsSectionIreland = () => {
       {/* Top Industries */}
       <div className="mb-12">
         <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-center">
-          📌 Top Industries Hiring in Ireland
+          📌Career Prospects in Key Sectors 
         </h3>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {[

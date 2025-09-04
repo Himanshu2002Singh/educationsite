@@ -1,39 +1,49 @@
 export default function CompareTable() {
   const comparisons = [
     {
-      aspect: "Counselling",
-      edu: "Truly personalised, 1:1 deep-dive sessions tailored to student goals",
-      other: "Often generic, template-based, one-size-fits-all",
+      aspect: "Guidance",
+      edu: "Personalized counseling designed around your academic goals and career aspirations",
+      other: "Generic, one-size-fits-all advice",
     },
     {
-      aspect: "Test Prep",
-      edu: "In-house IELTS, GRE experts & custom prep plans",
-      other: "Outsourced coaching or limited test prep offerings",
+      aspect: "Application Support",
+      edu: "Step-by-step guidance with documentation, essays, and university applications",
+      other: "Limited to filling basic forms",
     },
     {
-      aspect: "University Shortlisting",
-      edu: "Balanced on admission feasibility + career outcomes",
-      other: "Often rank-driven or based on tie-ups only",
+      aspect: "Test Preparation",
+      edu: "Support for IELTS, TOEFL, GRE, GMAT, and more with proven strategies",
+      other: "Rarely offered or outsourced at extra cost",
     },
     {
-      aspect: "Application Help",
-      edu: "End-to-end support: SOP/essay editing, submission, follow-up",
-      other: "Limited to basic form filling or third-party editors",
+      aspect: "University Options",
+      edu: "Wide global network of reputed universities and programs",
+      other: "Restricted to a handful of tied-up institutions",
     },
     {
-      aspect: "Visa Assistance",
-      edu: "Includes mock interviews, financial document reviews",
-      other: "Surface-level guidance without real practice",
+      aspect: "Focus",
+      edu: "Career-oriented approach ensuring long-term success",
+      other: "Admission-centered, short-term focus",
     },
     {
-      aspect: "Pre/Post Arrival",
-      edu: "Buddy connect, forex, SIM, travel insurance, housing help",
-      other: "Ends at visa stage—limited post-arrival support",
+      aspect: "Visa Guidance",
+      edu: "Dedicated assistance with documentation, interviews, and approvals",
+      other: "Minimal help, often leaving students on their own",
     },
     {
-      aspect: "Support System",
-      edu: "Real-time WhatsApp updates, dashboard tracking, regular nudges",
-      other: "Hard to reach, inconsistent communication",
+      aspect: "Post-Arrival Support",
+      edu: "Assistance with accommodation, orientation, and settling abroad",
+      other: "No support once you leave your home country",
+    },
+    {
+      aspect: "Values & Ethics",
+      edu: "Honest, transparent, and student-first recommendations",
+      other: "Driven by commissions and institutional partnerships",
+    },
+    {
+      aspect: "Experience",
+      edu: "Experienced mentors with a proven success record",
+      other: "Often handled by junior or untrained staff",
     },
   ];
 
@@ -50,7 +60,10 @@ export default function CompareTable() {
           services, but real outcomes.
         </p>
 
-        <div className="overflow-x-scroll bg-gray-200 w-full custom-scroll" style={{ scrollbarGutter: "stable" }}>
+        <div
+          className="overflow-x-scroll bg-gray-200 w-full custom-scroll"
+          style={{ scrollbarGutter: "stable" }}
+        >
           <table className="w-full border-collapse">
             <thead>
               <tr>
@@ -58,10 +71,10 @@ export default function CompareTable() {
                   Aspect
                 </th>
                 <th className="bg-[#8cc63f] text-white font-bold p-4 text-left w-3/8">
-                  EduKonnect
+                Our Approach 
                 </th>
                 <th className="bg-[#be1e2d] text-white font-bold p-4 text-left w-3/8">
-                  Other Consultants
+                  Typical Agents 
                 </th>
               </tr>
             </thead>

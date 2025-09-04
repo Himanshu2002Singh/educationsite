@@ -93,7 +93,7 @@ const TuitionLivingUAESection = () => {
           {/* Title */}
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-              Cost of <span className="text-[#8cc63f]">Studying & Living</span> in the UAE
+              Cost of <span className="text-[#8cc63f]">Studying & Living</span> in UAE
             </h2>
             <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -103,7 +103,7 @@ const TuitionLivingUAESection = () => {
           </div>
 
           {/* Toggle Buttons */}
-          <div className="flex justify-center items-center gap-4 mb-12 bg-[#DFF5E3] w-fit mx-auto p-2 px-12 rounded-2xl">
+          <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-[#DFF5E3] w-full px-4 sm:px-12 py-2 gap-2">
             <button
               onClick={() => setActiveTab("tuition")}
               className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${

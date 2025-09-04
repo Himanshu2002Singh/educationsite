@@ -27,7 +27,7 @@ const WorkingRightsSectionAustralia = () => {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-10 bg-white rounded-2xl px-12 p-2 shadow-lg w-fit mx-auto border border-gray-200">
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-white w-full px-4 sm:px-12 py-2 gap-2">
           {['studying', 'postStudy'].map((tab) => (
             <button
               key={tab}

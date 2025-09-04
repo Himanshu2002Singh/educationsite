@@ -26,8 +26,9 @@ function Ireland() {
       <TuitionFeesSectionIreland />
      
       <ScholarshipsSectionIreland/>
+         <DocumentsVisaSectionIreland/>
       <WorkingRightsSectionIreland/>
-       <DocumentsVisaSectionIreland/>
+    
       <JobProspectsSectionIreland />
        <LifestyleFactsSectionIreland/>
 

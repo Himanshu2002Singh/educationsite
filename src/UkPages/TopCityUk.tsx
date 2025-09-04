@@ -59,7 +59,7 @@ const BestCitiesUk = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-4xl font-bold text-[#0D0D0D] sm:mb-3">
-            Best Cities <span className="text-[#8cc63f]">in UK</span>
+            Best Cities <span className="text-[#8cc63f]">in the UK</span>
           </h2>
           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-3"></div>
         </div>

@@ -11,6 +11,7 @@ import UAEAdmissionProcessSection from './AdmissionProcess'
 import UaeLifestyleFact from './UaeLifestyleFact'
 import BestCitiyUae from './BestCityUae'
 import WorkingRight from './WorkingRight'
+import EnglishLanguage from './EnglishLanguage'
 
 
 
@@ -22,6 +23,7 @@ function Uae() {
       <BestCitiyUae/>
       <UAEUniversitiesSection/>
       <CoursesUaeIntakeSection />
+      <EnglishLanguage/>
       {/* <EnglishTestSection /> */}
       <TuitionFeesSectionUAE />
       {/* <CostOfLivingSectionUAE /> */}

@@ -5,7 +5,7 @@ const coreValues = [
   {
     id: 1,
     icon: <FaUserGraduate className="text-blue-600 text-3xl" />,
-    title: 'Student First',
+    title: 'Student centric approach',
     description: 'We prioritize the needs, goals, and well-being of every student in all that we do.',
   },
   {

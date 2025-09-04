@@ -21,6 +21,10 @@ const extras = [
     title: "24/7 Counsellor Support",
     desc: "Got doubts? Your counsellor is just a message away — no limits, no time slots.",
   },
+    {
+    title: "Pre-Departure Assistance",
+    desc: "From travel tips to cultural orientation, we make sure you feel at home before you even leave.",
+  },
 ];
 
 export default function ExtraMile() {

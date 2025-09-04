@@ -19,46 +19,19 @@ const UsaF1VisaProcess = () => {
 
   // A. Documents Required
   const documents = [
-    {
-      section: "Mandatory Documents",
-      items: [
-        "Valid Passport (must be valid for at least 6 months beyond intended stay)",
-        "Form I-20 (issued by the US university, signed by you and the university official)",
-        "SEVIS Fee payment receipt",
-        "DS-160 confirmation page",
-        "Visa appointment confirmation",
-        "Visa application fee receipt",
-      ],
-    },
-    {
-      section: "Academic Documents",
-      items: [
-        "Original admission/acceptance letter",
-        "Transcripts & mark sheets (10th, 12th, bachelor’s/master’s if applicable)",
-        "Standardized test scores (TOEFL, IELTS, GRE, GMAT, SAT, etc.)",
-        "Resume/CV",
-        "Statement of Purpose (SOP) & Letters of Recommendation (if available)",
-      ],
-    },
-    {
-      section: "Financial Documents",
-      items: [
-        "Bank statements/ Balance Certificate",
-        "Affidavit of Support (Form I-134, if applicable)",
-        "Proof of funding (loan sanction letter, fixed deposits, scholarships, assistantship letters, etc.)",
-        "Income proof of parents/sponsors (ITR, Form 16, salary slips, business documents)",
-      ],
-    },
-    {
-      section: "Other Supporting Documents",
-      items: [
-        "Recent passport-size photographs (per US visa specifications)",
-        "Scholarship/assistantship letters (if any)",
-        "Proof of ties to home country (property, family, employment documents – to show intent to return after studies)",
-      ],
-    },
+    { icon: <FileText className="w-6 h-6 text-[#8DC63F]" />, label: "Academic Transcripts", tooltip: "Official records from high school/college – must be in English (certified translation if needed)" },
+    { icon: <GraduationCap className="w-6 h-6 text-[#C1272D]" />, label: "Degree Certificates", tooltip: "Diploma/Degree proof – notarized copies for some universities" },
+    { icon: <BiIdCard className="w-6 h-6 text-[#8DC63F]" />, label: "Passport Copy", tooltip: "Bio page – valid for at least 6 months, ensure a clear scan" },
+    { icon: <FileCheck className="w-6 h-6 text-[#C1272D]" />, label: "English Language Test scores", tooltip: "TOEFL (80+) / IELTS (6.5+) " },
+    { icon: <Award className="w-6 h-6 text-[#8DC63F]" />, label: "Standardized Tests", tooltip: "SAT for UG / GRE or GMAT for PG – check if your program is test-optional" },
+    { icon: <FileText className="w-6 h-6 text-[#C1272D]" />, label: "Statement of Purpose (SOP)", tooltip: "500–1000 words – tailor to each university" },
+    { icon: <User className="w-6 h-6 text-[#8DC63F]" />, label: "Letters of Recommendation (LORs)", tooltip: "2–3 academic/professional – from professors who know you well" },
+    { icon: <Briefcase className="w-6 h-6 text-[#C1272D]" />, label: "Resume/CV", tooltip: "Academic & work highlights – max 2 pages for UG, detailed for PG" },
+    { icon: <Image className="w-6 h-6 text-[#8DC63F]" />, label: "Portfolio", tooltip: "For Art, Design, or Architecture programs" },
+    { icon: <FileText className="w-6 h-6 text-[#C1272D]" />, label: "Writing Samples", tooltip: "For Humanities or Research fields" },
+    { icon: <Globe className="w-6 h-6 text-[#8DC63F]" />, label: "Proof of Funds", tooltip: "Bank statements/sponsor letters – $50,000+ for I-20 issuance" },
+    { icon: <Stethoscope className="w-6 h-6 text-[#C1272D]" />, label: "Health Records", tooltip: "Vaccination proof (required in some states)" },
   ];
-
   // B. Steps to Apply for USA F1 Student Visa
   const visaSteps = [
     { 
@@ -154,17 +127,18 @@ const UsaF1VisaProcess = () => {
             </button>
           ))}
         </div>
-
-        {activeTab === 'documents' && (
-          <div className="space-y-8">
-            {documents.map((docSection, idx) => (
-              <div key={idx} className="bg-white border-2 border-[#D0D0D0] rounded-xl p-6 shadow-md">
-                <h3 className="text-xl font-bold text-[#8DC63F] mb-4">{docSection.section}</h3>
-                <ul className="list-disc pl-5 space-y-2 text-[#555]">
-                  {docSection.items.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
+      {activeTab === 'documents' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {documents.map((doc, idx) => (
+              <div
+                key={idx}
+                className="bg-white border-2 border-[#D0D0D0] rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-2"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="p-3 rounded-full mr-4 bg-[#F2F2F2]">{doc.icon}</div>
+                  <h4 className="text-lg font-bold">{doc.label}</h4>
+                </div>
+                <p className="text-sm text-[#555]">{doc.tooltip}</p>
               </div>
             ))}
           </div>

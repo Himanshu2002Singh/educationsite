@@ -1,5 +1,5 @@
 import { useState } from "react";
-import step1 from "../../assets/sptp1.png";
+import step1 from "../../assets/Profile Evaluation in about us our Step-by-Step.png";
 import step2 from "../../assets/step2.png";
 import step3 from "../../assets/step3.png";
 import step4 from "../../assets/step4.png";

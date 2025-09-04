@@ -47,12 +47,12 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Paper Plane */}
-        <motion.div
+        {/* <motion.div
           className="absolute top-[150px] right-[20px] md:top-[190px] md:right-[400px]"
           animate={rotateAnimation}
         >
           <img src={Send} className="w-14 h-14 md:w-24 md:h-auto" />
-        </motion.div>
+        </motion.div> */}
 
         {/* Globe */}
         <motion.div

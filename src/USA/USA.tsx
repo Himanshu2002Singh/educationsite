@@ -29,7 +29,7 @@ function USA() {
       <ScholarshipsSectionUSA/>
       {/* <UAEAdmissionProcessSection /> */}
      
-      <DocumentsVisaSectionUSA/>
+      {/* <DocumentsVisaSectionUSA/> */}
       <UsaVissaProcess/>
       
       <JobProspectsSectionUSA />

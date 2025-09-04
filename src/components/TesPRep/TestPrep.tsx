@@ -2,33 +2,34 @@ import React from "react";
 import { Clock, FileText, Users, ClipboardList, TrendingUp } from "lucide-react";
 
 const TestPrepJourney = () => {
-  const steps = [
-    {
-      icon: <Clock className="w-6 h-6 text-white" />,
-      title: "Take a Free Diagnostic",
-      desc: "Know your current level in 10 mins.",
-    },
-    {
-      icon: <FileText className="w-6 h-6 text-white" />,
-      title: "Get Your Study Plan",
-      desc: "Personalized strategy based on your score, timeline & target country.",
-    },
-    {
-      icon: <Users className="w-6 h-6 text-white" />,
-      title: "Join Live Classes - Online or Offline",
-      desc: "Attend weekday or weekend batches — flexible & interactive.",
-    },
-    {
-      icon: <ClipboardList className="w-6 h-6 text-white" />,
-      title: "Practice with Real Mocks",
-      desc: "Timed tests with instant feedback and scoring.",
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6 text-white" />,
-      title: "Track, Improve & Apply",
-      desc: "Watch your scores rise + Get help applying.",
-    },
-  ];
+const steps = [
+  {
+    icon: <Clock className="w-6 h-6 text-white" />,
+    title: "Diagnostic Test",
+    desc: "Identify your starting point and skill gaps.",
+  },
+  {
+    icon: <FileText className="w-6 h-6 text-white" />,
+    title: "Personalized Study Plan",
+    desc: "Focused training designed to match your university and career goals.",
+  },
+  {
+    icon: <Users className="w-6 h-6 text-white" />,
+    title: "Join Coaching Online or Offline",
+    desc: "Attend weekday or weekend batches with flexible timings.",
+  },
+  {
+    icon: <ClipboardList className="w-6 h-6 text-white" />,
+    title: "Mock Tests & Practice",
+    desc: "Time-tested mock test, real exam feel, instant score, and feedback.",
+  },
+  {
+    icon: <TrendingUp className="w-6 h-6 text-white" />,
+    title: "Feedback to Success",
+    desc: "Track progress, check readiness, and ace your exam.",
+  },
+];
+
 
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 sm:px-6 lg:px-8">

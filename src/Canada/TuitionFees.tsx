@@ -5,13 +5,9 @@ import {
   Utensils,
   Car,
   Wifi,
-  Calculator,
-  Briefcase,
   GraduationCap,
   BookOpen,
-  Heart,
-  Tv,
-  Zap,
+  Briefcase,
 } from 'lucide-react';
 
 const TuitionLivingCanadaSection = () => {
@@ -39,52 +35,6 @@ const TuitionLivingCanadaSection = () => {
     }
   ];
 
-  // Living Expenses for Canada (from the provided table)
-  const livingExpenses = [
-    {
-      icon: <Home className="w-5 h-5" />,
-      category: "Accommodation (shared apartments)",
-      costCAD: "400 - 900",
-      costINR: "24,500 - 37,000"
-    },
-    {
-      icon: <Car className="w-5 h-5" />,
-      category: "Travel",
-      costCAD: "100 - 120",
-      costINR: "6,100 - 7,500"
-    },
-    {
-      icon: <Utensils className="w-5 h-5" />,
-      category: "Food",
-      costCAD: "300 - 400",
-      costINR: "18,000 - 24,500"
-    },
-    {
-      icon: <Tv className="w-5 h-5" />,
-      category: "Entertainment",
-      costCAD: "150 - 200",
-      costINR: "9,000 - 12,300"
-    },
-    {
-      icon: <Heart className="w-5 h-5" />,
-      category: "Health Insurance",
-      costCAD: "70 - 80",
-      costINR: "4,200 - 5,000"
-    },
-    {
-      icon: <Wifi className="w-5 h-5" />,
-      category: "Internet",
-      costCAD: "80 - 90",
-      costINR: "4,800 - 5,600"
-    },
-    {
-      icon: <Zap className="w-5 h-5" />,
-      category: "Utilities (Electricity, Heating, Water, Garbage)",
-      costCAD: "100 - 200",
-      costINR: "6,347 - 12,694"
-    }
-  ];
-
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-6">
@@ -100,7 +50,7 @@ const TuitionLivingCanadaSection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-[#DFF5E3] rounded-2xl p-2 max-w-md mx-auto shadow-md">
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-[#DFF5E3] w-full px-4 sm:px-12 py-2 gap-2">
           <button
             onClick={() => setActiveTab('tuition')}
             className={`flex items-center px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
@@ -149,77 +99,53 @@ const TuitionLivingCanadaSection = () => {
           </div>
         ) : (
           <div className="mb-10">
-            <div className="max-w-4xl mx-auto bg-[#F9F9F9] rounded-xl p-8 border-2 border-[#8DC63F] shadow-xl">
-              <div className="text-center mb-6">
-                <div className="flex items-center justify-center mb-4">
-                  <MapPin className="w-8 h-8 mr-2 text-[#8DC63F]" />
-                  <span className="text-lg font-bold text-[#2C2C2C]">Average Monthly Living Costs in Canada</span>
+            <div className="max-w-lg mx-auto bg-white rounded-2xl p-8 border border-[#8DC63F] shadow-lg">
+              {/* Total Cost */}
+              <div className="flex flex-col items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-[#8DC63F] mb-2" />
+                <div className="bg-[#F0FAF2] text-[#2C2C2C] text-3xl font-bold px-6 py-3 rounded-xl shadow-sm">
+                  CAD 22,895 / year
                 </div>
               </div>
 
-              {/* Expenses Table */}
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left text-gray-700">
-                  <thead className="text-xs text-gray-700 uppercase bg-gray-100">
-                    <tr>
-                      <th className="px-4 py-3">Expenses</th>
-                      <th className="px-4 py-3">Average Monthly Cost (Approx. CAD)</th>
-                      <th className="px-4 py-3">Average Monthly Cost (Approx. INR)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {livingExpenses.map((item, index) => (
-                      <tr key={index} className="border-b hover:bg-gray-50">
-                        <td className="px-4 py-3 font-medium">
-                          <div className="flex items-center">
-                            <div className="text-gray-600 mr-3">{item.icon}</div>
-                            {item.category}
-                          </div>
-                        </td>
-                        <td className="px-4 py-3">CAD {item.costCAD}</td>
-                        <td className="px-4 py-3">₹{item.costINR}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              {/* Expense Breakdown */}
+              <div className="space-y-4">
+                <ExpenseItem
+                  icon={<Home className="w-5 h-5 text-gray-600" />}
+                  title="Accommodation (shared)"
+                  monthly="$400 – $900/month"
+                  annually="$4,800 – $10,800/year"
+                />
+                <ExpenseItem
+                  icon={<Utensils className="w-5 h-5 text-gray-600" />}
+                  title="Food & Groceries"
+                  monthly="$300 – $500/month"
+                  annually="$3,600 – $6,000/year"
+                />
+                <ExpenseItem
+                  icon={<Car className="w-5 h-5 text-gray-600" />}
+                  title="Transport"
+                  monthly="$100 – $150/month"
+                  annually="$1,200 – $1,800/year"
+                />
+                <ExpenseItem
+                  icon={<Wifi className="w-5 h-5 text-gray-600" />}
+                  title="Utilities & Internet"
+                  monthly="$180 – $290/month"
+                  annually="$2,160 – $3,480/year"
+                />
               </div>
 
-              <div className="mt-6 border-t pt-4">
-                <div className="flex justify-between items-center mb-2 text-sm text-[#2C2C2C]">
-                  <span>Part-time work offset (approx.):</span>
-                  <span className="font-bold text-[#8DC63F]">-CAD 1,000/month</span>
-                </div>
-                <div className="bg-[#8DC63F] bg-opacity-10 border border-[#8DC63F] rounded-lg p-3 text-center">
-                  <p className="text-lg font-bold text-[#8DC63F]">Estimated Net Cost: CAD 800-1,200/month</p>
+              {/* Part-time offset */}
+              <div className="mt-6  pt-4">
+            
+                <div className="bg-[#F0FAF2] border border-[#8DC63F] rounded-lg p-3 text-center">
+                  <p className="text-lg font-bold text-[#8DC63F]">
+                    Net Cost: CAD 22,895 / year<br />
+                    
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-        )}
-
-        {/* Key Insights */}
-        {activeTab === 'living' && (
-          <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 mb-10">
-            <h4 className="text-xl font-bold text-[#2C2C2C] mb-4 text-center">Key Insights</h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <InsightItem
-                icon={<Calculator className="w-6 h-6 text-[#8DC63F]" />}
-                title="Save with Shared Housing"
-                description="Shared accommodation can reduce costs by 30-40%"
-                color="#8DC63F"
-              />
-              <InsightItem
-                icon={<Briefcase className="w-6 h-6 text-[#C1272D]" />}
-                title="Earn CAD 1,000/month"
-                description="Through part-time work (20hrs/week)"
-                color="#C1272D"
-              />
-              <InsightItem
-                icon={<Home className="w-6 h-6 text-[#2C2C2C]" />}
-                title="Quality Education"
-                description="World-class institutions across Canada"
-                color="#2C2C2C"
-              />
             </div>
           </div>
         )}
@@ -235,16 +161,16 @@ const TuitionLivingCanadaSection = () => {
   );
 };
 
-const InsightItem = ({ icon, title, description, color }: any) => (
-  <div className="text-center">
-    <div
-      className="rounded-full p-3 w-12 h-12 mx-auto mb-3 flex items-center justify-center"
-      style={{ backgroundColor: `${color}20` }}
-    >
-      {icon}
+const ExpenseItem = ({ icon, title, monthly, annually }: any) => (
+  <div className="flex flex-col border-b pb-3">
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-2">
+        {icon}
+        <span>{title}</span>
+      </div>
+      <span className="text-gray-700 font-medium">{monthly}</span>
     </div>
-    <h5 className="font-bold text-[#2C2C2C] mb-2">{title}</h5>
-    <p className="text-sm text-gray-600">{description}</p>
+    <div className="text-sm text-gray-500 ml-7 mt-1 text-end">{annually}</div>
   </div>
 );
 

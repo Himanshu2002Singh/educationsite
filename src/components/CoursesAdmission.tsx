@@ -1,13 +1,13 @@
 import React from "react";
-import ugImage from "../../assets/ttt.png";
-import pgImage from "../../assets/ttt2.png";
-import mbaImage from "../../assets/ttt3.png";
+import ugImage from "../../assets/Admissions Open image with name/Undergraduate Admissions.png";
+import pgImage from "../../assets/Admissions Open image with name/Postgraduate Admissions.png";
+import mbaImage from "../../assets/Admissions Open image with name/MBA Admissions.png";
 
 const AdmissionsSection = () => {
   const cards = [
     {
       title: "Undergraduate Admissions",
-      subtitle: "Start strong with world-class bachelor’s programs abroad.",
+      subtitle: "Start strong with world-class Bachelor’s programs abroad.",
       image: ugImage,
     },
     {

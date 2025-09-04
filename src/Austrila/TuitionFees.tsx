@@ -5,13 +5,13 @@ const TuitionLivingAustraliaSection = () => {
   const [activeTab, setActiveTab] = useState('tuition');
     const costBreakdown = {
     newzealand: {
-      totalRange: 'NZD $15,000 – $20,000',
-      visaRequirement: 'NZD $20,000/year',
+      totalRange: 'AUD $29,710/year',
+      // visaRequirement: 'NZD $20,000/year',
       items: [
-        { icon: <Home className="w-5 h-5" />, category: 'Accommodation (shared)', cost: '$800 – $1,200/month', annual: '$10,000 – $14,000' },
-        { icon: <UtensilsIcon className="w-5 h-5" />, category: 'Food & Groceries', cost: '$300 – $500/month', annual: '$3,600 – $6,000' },
-        { icon: <Car className="w-5 h-5" />, category: 'Transport', cost: '$100 – $150/month', annual: '$1,200 – $1,800' },
-        { icon: <Phone className="w-5 h-5" />, category: 'Misc. (phone, internet)', cost: '$50 – $100/month', annual: '$600 – $1,200' },
+        { icon: <Home className="w-5 h-5" />, category: 'Accommodation (shared)', cost: '$380 – $860/month', annual: '$4,560 – $10,320 annually' },
+        { icon: <UtensilsIcon className="w-5 h-5" />, category: 'Food & Groceries', cost: '$300 – $500/month', annual: '$3,600 – $6,000 annually' },
+        { icon: <Car className="w-5 h-5" />, category: 'Transport', cost: '$100 – $250/month', annual: '	$1,200 – $3,000 annually' },
+        { icon: <Phone className="w-5 h-5" />, category: 'Utilities & Internet', cost: '$90 – $150/month', annual: '$1,080 – $1,800 annually' },
       ],
     },
   };
@@ -70,7 +70,7 @@ const TuitionLivingAustraliaSection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex justify-center items-center gap-4 mb-12 bg-[#DFF5E3] w-fit mx-auto p-2 px-12 rounded-2xl">
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-[#DFF5E3] w-full px-4 sm:px-12 py-2 gap-2">
           <button
             onClick={() => setActiveTab('tuition')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
@@ -135,9 +135,9 @@ const TuitionLivingAustraliaSection = () => {
                   <p className="text-2xl sm:text-3xl font-bold mb-1" style={{ color: accentColor }}>
                     {data.totalRange}
                   </p>
-                  <p className="text-sm sm:text-lg text-gray-700 break-words">
+                  {/* <p className="text-sm sm:text-lg text-gray-700 break-words">
                     Minimum Proof for Visa: {data.visaRequirement}
-                  </p>
+                  </p> */}
                 </div>
               </div>
 

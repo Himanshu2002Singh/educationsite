@@ -56,27 +56,28 @@ const DocumentsVisaSection = () => {
     <section className="py-16 bg-white text-[#2C2C2C]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">{" "}<span className="text-[#8cc63f]">Admission & Visa -  </span>Documents and Process for Studying in UK</h2>   
+          <h2 className="text-2xl sm:text-4xl font-bold text-[#2C2C2C] sm:mb-4">{" "}<span className="text-[#8cc63f]">Admission & Visa -  </span>Documents and Process for Studying in the UK</h2>   
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-xl max-w-3xl mx-auto">Seamless support from application to arrival</p>
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-10  rounded-2xl p-2 max-w-md mx-auto bg-[#DFF5E3] w-fit mx-auto p-2 px-12">
-          {['documents', 'visa'].map(tab => (
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-[#DFF5E3] w-full px-4 sm:px-12 py-2 gap-2">
+          {['documents', 'visa'].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 mx-1 ${
+              className={`flex-1 sm:flex-none px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                 activeTab === tab
-                  ? 'bg-[#8DC63F] text-white'
-                  : 'text-[#2C2C2C] hover:text-white hover:bg-[#C1272D]'
+                  ? "bg-[#8DC63F] text-white"
+                  : "text-[#2C2C2C] hover:text-white hover:bg-[#C1272D]"
               }`}
             >
-              {tab === 'documents' ? 'Documents' : 'Visa Process'}
+              {tab === "documents" ? "Documents" : "Visa Process"}
             </button>
           ))}
         </div>
+
 
         {activeTab === 'documents' && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

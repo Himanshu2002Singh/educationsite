@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../../assets/testprep Mobile Image.png";
-import img2 from "../../../assets/testprep laptop.png";
+import img1 from "../../../assets/test/Mobile Image Test.png";
+import img2 from "../../../assets/test/Desktop Image Test.png";
 
 const PuzzleApproach: React.FC = () => {
   return (

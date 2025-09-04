@@ -15,6 +15,8 @@ import VisaInfoSection from './VisaInfoSection'
 import JobOpportunitiesSection from './JobOpportunitiesSection'
 import GermanyLifestyleFacts from './GermanylifeStyleFacts'
 import DocumentsVisaSectiongermany from './DocumentsVisaSectiongermany'
+import CareerProspects from './CarrerPospect'
+import CareerProspectsGermany from './CarrerPospect'
 
 
 
@@ -43,6 +45,7 @@ function Germany() {
       
 
       <JobOpportunitiesSection/>
+      <CareerProspectsGermany/>
         <GermanyLifestyleFacts />
         
         {/* Add more sections as needed */}

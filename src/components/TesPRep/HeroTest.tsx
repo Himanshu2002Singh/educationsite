@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "../../../assets/UK.png";
+import img3 from "../../../assets/Imaesg with name/Test Preparation.png";
 
 export default function DreamScoreHero() {
   return (
@@ -23,8 +23,10 @@ export default function DreamScoreHero() {
           <p className="mt-4 text-gray-700 text-base md:text-lg">
             Master <span className="font-semibold">IELTS, TOEFL, GRE, GMAT,</span> 
             or <span className="font-semibold">SAT</span> with expert-led classes, 
-            adaptive mock tests & guaranteed improvement.
-          </p>
+             smart mock tests, and guaranteed score improvement.
+          </p><br/>
+          <p>Strong scores boost your admission chances, unlock scholarships, and make your study 
+abroad journey smoother — training with us gives you the edge to achieve your dream results.</p>
 
           {/* CTA Button */}
           <button className="mt-6 px-6 py-3 bg-[#8cc63f] text-white rounded-lg shadow-md hover:bg-emerald-700 transition">

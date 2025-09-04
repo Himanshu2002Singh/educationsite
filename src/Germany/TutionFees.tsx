@@ -71,7 +71,7 @@ const TuitionLivingGermanySection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex justify-center items-center gap-4 mb-12 bg-[#DFF5E3] w-fit mx-auto p-2 px-12 rounded-2xl">
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-[#DFF5E3] w-full px-4 sm:px-12 py-2 gap-2">
           <button
             onClick={() => setActiveTab('tuition')}
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${

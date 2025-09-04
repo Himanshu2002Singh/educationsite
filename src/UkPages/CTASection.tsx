@@ -55,7 +55,7 @@ const CTASection = () => {
                   },
                   {
                     title: "Scholarship Guidance",
-                    desc: "Maximize your chances of securing scholarships up to 50%"
+                    desc: "Maximize your chances of securing scholarships up to 50%*"
                   },
                   {
                     title: "Visa Application Support",
@@ -82,11 +82,11 @@ const CTASection = () => {
                 ))}
               </div>
 
-              <div className="bg-[#C5E3DC] rounded-xl p-6 mt-8 text-[#2C2C2C]">
+              {/* <div className="bg-[#C5E3DC] rounded-xl p-6 mt-8 text-[#2C2C2C]"> */}
                 {/* <h4 className="font-bold mb-2">🎯Visa Success Rate</h4>
                 <p className="text-2xl font-bold mb-1">100%</p> */}
                 {/* <p className="text-sm opacity-80">of our students get their preferred university admission</p> */}
-              </div>
+              {/* </div> */}
             </div>
 
             {/* Right: Contact Form */}
@@ -161,13 +161,14 @@ const CTASection = () => {
                   </div>
 
                   {/* Submit */}
-                  <button
+                <button
                     type="submit"
-                    className="w-full bg-[#8DC63F] hover:bg-[#C1272D] text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+                    className="w-full bg-[#8DC63F] hover:bg-[#C1272D] text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center whitespace-nowrap"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Connect with Expert Now
                   </button>
+
 
                   <p className="text-xs text-center text-[#2C2C2C] opacity-60">
                     By submitting this form, you agree to our Terms & Conditions and Privacy Policy

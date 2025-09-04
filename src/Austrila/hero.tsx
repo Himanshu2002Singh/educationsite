@@ -9,7 +9,7 @@ import {
   MapPin,
   Building2,
 } from "lucide-react";
-import australiaStudent from "../../assets/Australia.png"; // Replace with actual Australia student image
+import australiaStudent from "../../assets/Imaesg with name/Australia.png"; // Replace with actual Australia student image
 
 const points = [
   {
@@ -56,15 +56,15 @@ const StudyAustraliaSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center">
-            <img
-              src="https://flagcdn.com/w40/au.png"
-              alt="Australia Flag"
-              className="w-8 h-5 mr-2"
-            />
-            Why Study &nbsp;<span className="text-[#8cc63f]">in Australia</span>&nbsp;?
-          </h2>
-      
+          <h2 className="text-[17px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
+  <img
+    src="https://flagcdn.com/w40/au.png"
+    alt="Australia Flag"
+    className="w-5 h-3 sm:w-6 sm:h-4 mr-2 flex-shrink-0"
+  />
+  Why Study&nbsp;<span className="text-[#8cc63f]">in Australia</span>?
+</h2>
+
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {points.map((item, i) => (

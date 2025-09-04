@@ -4,10 +4,9 @@ const countries = [
   { name: "USA", code: "us" },
   { name: "UK", code: "gb" },
   { name: "UAE", code: "ae" },
-  { name: "Singapore", code: "sg" },
+  { name: "Germany", code: "de" },
   { name: "New Zealand", code: "nz" },
-  { name: "Italy", code: "it" },
-  { name: "France", code: "fr" },
+  { name: "Ireland", code: "ie" },
   { name: "Canada", code: "ca" },
   { name: "Australia", code: "au" },
 ];

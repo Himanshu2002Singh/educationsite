@@ -8,6 +8,7 @@ import perthImg from '../../assets/topcity/Australia top cities/Perth.png';
 import perth2Img from '../../assets/topcity/Australia top cities/Perth (2).png';
 import sydneyImg from '../../assets/topcity/Australia top cities/Sydney.png';
 import melbourneImg from '../../assets/topcity/Australia top cities/melbourne.png';
+import canberraImg from '../../assets/topcity/Australia top cities/Canberra.png';
 
 const BestCitiesAustrelia = () => {
   const cities = [
@@ -27,6 +28,10 @@ const BestCitiesAustrelia = () => {
       name: "Perth",
       img: perthImg
     },
+      {
+      name: "Canberra",
+      img: canberraImg
+    },
     {
       name: "Adelaide",
       // Using Perth (2) as Adelaide image since Adelaide is not in the list
@@ -35,7 +40,7 @@ const BestCitiesAustrelia = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,

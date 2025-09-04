@@ -65,7 +65,7 @@ const CostOfLivingSection = () => {
           </div>
 
           {/* Toggle Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 max-w-md mx-auto shadow-md">
+          <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-white w-full px-4 sm:px-12 py-2 gap-2">
       {['london', 'outside'].map((key) => (
         <button
           key={key}

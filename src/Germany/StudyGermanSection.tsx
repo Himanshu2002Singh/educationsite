@@ -11,7 +11,7 @@ import {
   Clock,
   Landmark,
 } from "lucide-react";
-import germanyStudent from "../../assets/Germany.png"; // Replace with your Germany image
+import germanyStudent from "../../assets/Imaesg with name/Germany.png"; // Replace with your Germany image
 
 const points = [
   {
@@ -82,7 +82,7 @@ const StudyGermanySection = () => {
         
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-black mb-3 flex items-center">
+          <h2 className="text-[20px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
               src="https://flagcdn.com/w40/de.png"
               alt="Germany Flag"

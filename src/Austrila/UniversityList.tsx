@@ -28,7 +28,7 @@ const AustraliaUniversitiesSection = () => {
     // { name: "RMIT University" },
     // { name: "Curtin University" },
     // { name: "Deakin University" },
-    { name: "Ancora University",logo: img2 },
+    // { name: "Ancora University",logo: img2 },
   ];
 
   const settings = {

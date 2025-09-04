@@ -62,7 +62,7 @@ const CoursesUsaIntakeSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
-            <span className="text-[#8cc63f]">Popular </span>Programs & Intake Timelines in USA
+            <span className="text-[#8cc63f]">Popular </span>Programs & Intake Timelines in the USA
           </h2> 
           <div className="w-16 h-[3px] bg-[#8cc63f] mx-auto mb-3"></div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ const CoursesUsaIntakeSection = () => {
         </div>
 
         {/* Tab Switch */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 mb-10 bg-white rounded-2xl p-2 max-w-md mx-auto shadow-md">
+        <div className="flex flex-nowrap justify-center mb-10 rounded-2xl max-w-md mx-auto bg-white w-full px-4 sm:px-12 py-2 gap-2">
           <button
             onClick={() => setActiveTab('courses')}
             className={`w-full sm:w-auto px-6 py-2 rounded-full font-semibold transition-all duration-300 ${

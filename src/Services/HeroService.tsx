@@ -1,5 +1,5 @@
 import React from "react";
-import hero from '../../assets/Australia.png'
+import hero from '../../assets/Imaesg with name/Service Page.png'
 
 export default function HeroCounselling() {
   return (
@@ -10,7 +10,7 @@ export default function HeroCounselling() {
         <div className="text-center md:text-left space-y-4 md:ml-[100px] ">
           {/* Main Heading */}
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            From Counselling to Campus <p className="text-[#14532d]">We're With You</p>
+          We're with You at Every Step
           </h1>
           {/* Optional heading variants (comment/uncomment as needed) */}
           {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">Your Global Journey Starts Here</h1> */}
@@ -19,7 +19,7 @@ export default function HeroCounselling() {
 
           {/* Subheading */}
           <p className="text-black text-sm md:text-base">
-            Helping 10,000+ Students Succeed Abroad <p>Here’s How We Do It</p>
+        Helping 12000+ students achieve their Study Abroad Dreams
           </p>
           {/* Optional subheading variants */}
           {/* <p className="text-gray-600 text-sm md:text-base">10,000+ Students Made It. Here’s What Helped Them.</p> */}

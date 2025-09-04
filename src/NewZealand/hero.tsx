@@ -7,7 +7,7 @@ import {
   MapPin,
   Users,
 } from "lucide-react";
-import nzGirl from "../../assets/New Zealand.png"; // Replace with actual image path
+import nzGirl from "../../assets/Imaesg with name/New Zaland.png"; // Replace with actual image path
 
 const points = [
   {
@@ -54,7 +54,7 @@ const StudyNZSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-black flex items-center">
+          <h2 className="text-[15px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
               src="https://flagcdn.com/w40/nz.png"
               alt="New Zealand Flag"

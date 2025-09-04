@@ -124,6 +124,30 @@ const Footer: React.FC = () => {
                 <MapPin className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
                 <span className="ml-3 text-gray-200 text-lg">Borivali (W) : 9th Floor, Express Tower, L.T. Rd, Mumbai, 400092</span>
               </motion.li>
+                <motion.li 
+                className="flex items-start"
+                whileHover={{ x: 5 }}
+              >
+                <Phone className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
+                <span className="ml-3 text-gray-200 text-lg">+91 9321173184</span>
+              </motion.li>
+
+                <motion.li 
+                className="flex items-start"
+                whileHover={{ x: 5 }}
+              >
+                <MapPin className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
+                <span className="ml-3 text-gray-200 text-lg">Andheri (W): 202, DLH Plaza, S.V. Rd, Mumbai, 400058 </span>
+              </motion.li>
+                <motion.li 
+                className="flex items-start"
+                whileHover={{ x: 5 }}
+              >
+                <Phone className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
+                <span className="ml-3 text-gray-200 text-lg">+91 73044 76878</span>
+              </motion.li>
+              
+              
               <motion.li 
                 className="flex items-start"
                 whileHover={{ x: 5 }}
@@ -131,13 +155,13 @@ const Footer: React.FC = () => {
                 <Mail className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
                 <span className="ml-3 text-gray-200 text-lg">info@edukonnect.com</span>
               </motion.li>
-              <motion.li 
+              {/* <motion.li 
                 className="flex items-start"
                 whileHover={{ x: 5 }}
               >
                 <Phone className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
                 <span className="ml-3 text-gray-200 text-lg">+91 98765 43210</span>
-              </motion.li>
+              </motion.li> */}
             </ul>
           </div>
         </motion.div>

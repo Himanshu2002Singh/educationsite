@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const steps = [
   {
     id: 1,
-    title: "Personalised Counselling & Course Selection",
+    title: "Our experienced counselors",
     text: "Our counselors are trained to help you understand your academic profile, interests, and goals.",
     hidden: [
       "✔️ 1:1 profile-based career mapping",
@@ -17,7 +17,7 @@ const steps = [
   {
     id: 2,
     title: "Application & Admission Support",
-    text: "We help you prepare and submit high-quality applications.",
+    text: "We simplify applications and guide you in presenting a strong profile for top universities",
     hidden: [
       "✔️ Shortlisting universities based on your profile & preferences",
       "✔️ Guidance on SOPs, LORs, CVs, and essays",
@@ -30,7 +30,7 @@ const steps = [
   {
     id: 3,
     title: "Test Preparation (IELTS, TOEFL, SAT, GRE, GMAT, etc)",
-    text: "We offer expert-led coaching for major standardised tests.",
+    text: "Expert trainers give you proven strategies and support to achieve your target scores.",
     hidden: [
       "✔️ IELTS, PTE, TOEFL, Duolingo – for English proficiency",
       "✔️ GRE, GMAT – for Master’s & MBA admissions",
@@ -42,20 +42,20 @@ const steps = [
   {
     id: 4,
     title: "Visa Guidance",
-    text: "With a track record of 95% visa success rate, we help you to secure your visas as well.",
+    text: "With a 95% success rate, our visa guidance ensures smooth approvals.",
     hidden: [
-      "✔️ Country-specific visa documentation & financial prep",
-      "✔️ Visa interview prep with mock Q&A sessions",
-      "✔️ Filing & follow-ups",
-      "✔️ Reapplication support in case of rejections",
-      "✔️ Solutions for gaps, low finances, and backlogs",
+      "Our team is trained in the latest visa rules and policy changes.",
+      "✔️ Country-specific documentation and financial preparation support ",
+      "✔️ Visa interview practice with mock Q&A sessions ",
+      "✔️ Complete filing with regular follow-ups ",
+      "✔️ Reapplication guidance in case of rejection ",
     ],
     cta: "Start your journey now",
   },
   {
     id: 5,
     title: "Loan Assistance",
-    text: "We simplify education loans & help you plan your journey without financial stress.",
+    text: "Finances should never hold you back — We simplify education loans & help you plan your journey without financial stress.",
     hidden: [
       "✔️ Guidance for collateral & non-collateral education loans",
       "✔️ Tie-ups with NBFCs and national banks for smooth processing",
@@ -69,7 +69,7 @@ const steps = [
     text: "Studying abroad can be a big investment — but we make it easier. Our expert team helps you discover and apply to the right scholarships.",
     hidden: [
       "✔️ List of applicable scholarships in different countries",
-      "✔️ Drafting scholarship essays",
+      "✔️ Help in Drafting scholarship essays",
       "✔️ Scholarship documentation",
     ],
     cta: "Apply now",
@@ -77,13 +77,13 @@ const steps = [
   {
     id: 7,
     title: "Pre-Departure Services & Post Arrival support",
-    text: "Your journey doesn’t end with an admit letter — ours doesn’t either. Our pre-departure support ensures you’re fully prepared to settle smoothly in a new country.",
+    text: "Your journey doesn’t stop at the admit letter — and neither does our support.",
     hidden: [
       "✔️ Flight & accommodation guidance",
       "✔️ Travel checklist & baggage planning",
       "✔️ Forex, international SIM cards, and health insurance",
       "✔️ Community connect: student groups & alumni networks",
-      "✔️ On-ground support during emergencies",
+    
     ],
     cta: "Plan your journey now",
   },
@@ -100,11 +100,12 @@ export default function ServicesSteps() {
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
+        <p className="text-center">Here's how we do it</p>
         <h2 className="text-2xl md:text-4xl text-center font-bold text-gray-800">
           Our 7-Step Services —{" "}
           <span className="text-[#8cc63f]">With You at Every Stage</span>
         </h2>
-        <div className="w-1 h-[3px] bg-[#8CC63F] mx-auto mt-2 mb-10"></div>
+      <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">

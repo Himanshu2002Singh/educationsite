@@ -91,7 +91,7 @@ const Stats: React.FC = () => {
             suffix="+"
             delay={200}
           />
-          <StatItem value={25} label="Countries" suffix="+" delay={400} />
+          <StatItem value={15} label="Countries" suffix="+" delay={400} />
           <StatItem
             value={4.8}
             label="Rating"
