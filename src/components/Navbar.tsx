@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         { name: 'Australia', href: '/australia' },
       ],
     },
-    { id: 4, name: 'Latest Blogs', href: '/blogs' },
+    // { id: 4, name: 'Latest Blogs', href: '/blogs' },
     { id: 5, name: 'Contact Us', href: '/contact' },
   ];
 
