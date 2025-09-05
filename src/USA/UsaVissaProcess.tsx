@@ -44,7 +44,7 @@ const UsaF1VisaProcess = () => {
     },
     { 
       step: 2, 
-      title: "Pay SEVIS Fee", 
+      title: "  Pay SEVIS Fee", 
       description: [
         "Pay the SEVIS I-901 fee (about $350).",
         "Keep the payment confirmation for your visa interview."
@@ -61,7 +61,7 @@ const UsaF1VisaProcess = () => {
     },
     { 
       step: 4, 
-      title: "Pay Visa Application Fee (MRV Fee)", 
+      title: "   Pay Visa Application Fee (MRV Fee)", 
       description: [
         "Pay the non-refundable visa fee (about $185).",
         "Keep the receipt."
@@ -144,34 +144,39 @@ const UsaF1VisaProcess = () => {
           </div>
         )}
 
-        {activeTab === 'visa' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {visaSteps.map((step, idx) => (
-              <div key={idx} className="border-2 border-[#E0E0E0] rounded-xl overflow-hidden">
-                <button
-                  className="w-full flex justify-between items-center p-4 bg-white hover:bg-[#F7F7F7]"
-                  onClick={() => setExpandedStep(expandedStep === idx ? null : idx)}
-                >
-                  <div className="flex items-center">
-                    <div className="bg-[#8DC63F] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
+{activeTab === 'visa' && (
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {visaSteps.map((step, idx) => (
+      <div
+        key={idx}
+        className="border-2 border-[#E0E0E0] rounded-xl overflow-hidden"
+      >
+        <button
+          className="w-full flex justify-between items-center p-4 bg-white hover:bg-[#F7F7F7]"
+          onClick={() =>
+            setExpandedStep(expandedStep === idx ? null : idx)
+          }
+        >
+          <div className="flex items-center text-left">
+            <div className="flex-none flex items-center justify-center w-10 h-10 min-w-[40px] min-h-[40px] mr-4 rounded-full bg-[#8DC63F] text-white font-bold text-base">
                       {step.step}
-                    </div>
-                    <h4 className="text-lg font-bold">{step.title}</h4>
-                  </div>
-                </button>
-                {expandedStep === idx && (
-                  <div className="p-4 bg-[#F9F9F9] text-[#444]">
-                    <ul className="list-disc pl-5 space-y-2">
-                      {step.description.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </div>
-            ))}
+            <h4 className="text-lg font-bold text-left">{step.title}</h4>
+          </div>
+        </button>
+        {expandedStep === idx && (
+          <div className="p-4 bg-[#F9F9F9] text-[#444] text-left">
+            <ul className="list-disc pl-5 space-y-2">
+              {step.description.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
           </div>
         )}
+      </div>
+    ))}
+  </div>
+)}
 
         <div className="text-center mt-12">
           <button className="px-8 py-4 rounded-full font-bold text-lg bg-[#8DC63F] hover:bg-[#C1272D] text-white transition-all duration-300 shadow-md hover:shadow-xl">

@@ -2,24 +2,30 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img1 from '../../assets/logo_universities/Ireland/ait (1).png';
+import img2 from '../../assets/logo_universities/Ireland/carlow.png';
+import img3 from '../../assets/logo_universities/Ireland/cork.png';
+import img4 from '../../assets/logo_universities/Ireland/dublin.png';
 
 const IrelandUniversitiesSection = () => {
   const universities = [
-    { name: "Trinity College Dublin" },
-    { name: "University College Dublin" },
-    { name: "University College Cork" },
-    { name: "University of Galway" },
-    { name: "University of Limerick" },
-    { name: "Dublin City University" },
-    { name: "Maynooth University" },
-    { name: "Technological University Dublin" },
-    { name: "National College of Ireland" },
-    { name: "TUS: Midlands Midwest" },
-    { name: "Munster Technological University" },
-    { name: "Atlantic Technological University" },
-    { name: "Dublin Business School" },
-    { name: "Griffith College" },
-    { name: "IBAT College Dublin" },
+    { name: "Athlone Institute of Technology", img: img1 },
+    { name: "Institute of Technology Carlow", img: img2 },
+    { name: "University College Cork", img: img3 },
+    { name: "Technological University Dublin", img: img4 },
+    // { name: "Trinity College Dublin", img: null },
+    // { name: "University College Dublin", img: null },
+    // { name: "University of Galway", img: null },
+    // { name: "University of Limerick", img: null },
+    // { name: "Dublin City University", img: null },
+    // { name: "Maynooth University", img: null },
+    // { name: "National College of Ireland", img: null },
+    // { name: "TUS: Midlands Midwest", img: null },
+    // { name: "Munster Technological University", img: null },
+    // { name: "Atlantic Technological University", img: null },
+    // { name: "Dublin Business School", img: null },
+    // { name: "Griffith College", img: null },
+    // { name: "IBAT College Dublin", img: null },
   ];
 
   const settings = {
@@ -58,7 +64,7 @@ const IrelandUniversitiesSection = () => {
                 <div className="h-36 w-36 sm:h-28 sm:w-28">
                   <div className="bg-white h-full w-full flex items-center justify-center">
                     <img
-                      src={uni.logo}
+                      src={uni.img}
                       alt={uni.name}
                       className="h-full w-full object-contain"
                     />

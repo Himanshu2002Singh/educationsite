@@ -63,7 +63,7 @@ const StudyUAKSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-[20px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
+          <h2 className="text-[15px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
             <img
               src={img1}
               alt="New Zealand Flag"

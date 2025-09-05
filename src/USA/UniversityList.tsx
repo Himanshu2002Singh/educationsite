@@ -2,68 +2,33 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img1 from '../../assets/logo_universities/USA/arizona_state (1).png'
+import img2 from '../../assets/logo_universities/USA/berkrlry (1).png';
+import img3 from '../../assets/logo_universities/USA/boston (1).png';
+import img4 from '../../assets/logo_universities/USA/brown (1).png';
+import img5 from '../../assets/logo_universities/USA/carnegie mellon (1).png';
 
 const USAUniversitiesSection = () => {
-  const universities = [
+   const universities = [
     {
-      name: "Massachusetts Institute of Technology (MIT)",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg",
-      main: "QS Ranking - #1 | Global leader in innovation, tech & science",
-      perk: "Top Programs: Computer Science, Engineering, Architecture, Economics"
-    },
-    {
-      name: "Harvard University",
-      logo: "https://upload.wikimedia.org/wikipedia/en/2/29/Harvard_shield_wreath.svg",
-      main: "QS Ranking - #4 | Oldest & most prestigious Ivy League",
-      perk: "Top Programs: MBA, Law, Medicine, Economics, Government"
-    },
-    {
-      name: "Stanford University",
-      logo: "https://upload.wikimedia.org/wikipedia/en/b/b7/Stanford_University_seal_2003.svg",
-      main: "QS Ranking - #5 | Powerhouse in entrepreneurship & research",
-      perk: "Top Programs: Computer Science, Engineering, Entrepreneurship, Psychology"
+      name: "Arizona State University",
+      img: img1, 
     },
     {
       name: "University of California, Berkeley (UCB)",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/UC_Berkeley_seal.svg",
-      main: "QS Ranking - #10 | Public Ivy & leader in activism & innovation",
-      perk: "Top Programs: EECS, Environmental Science, Business, Public Health"
+      img: img2, 
     },
     {
-      name: "University of Chicago",
-      logo: "https://upload.wikimedia.org/wikipedia/en/6/68/University_of_Chicago_shield.svg",
-      main: "QS Ranking - #11 | Producing Nobel laureates & economists",
-      perk: "Top Programs: Economics, Business Analytics, Law, Data Science"
+      name: "Boston University",
+      img: img3, 
     },
     {
-      name: "California Institute of Technology (Caltech)",
-      logo: "https://upload.wikimedia.org/wikipedia/en/8/8a/Caltech_logo.svg",
-      main: "QS Ranking - #16 | Elite STEM & NASA JPL partner",
-      perk: "Top Programs: Physics, Engineering, Computer Science, Chemistry"
+      name: "Brown University",
+      img: img4, 
     },
     {
-      name: "University of Pennsylvania (UPenn)",
-      logo: "https://upload.wikimedia.org/wikipedia/en/6/6e/University_of_Pennsylvania_shield.svg",
-      main: "QS Ranking - #17 | Ivy League with practical business focus",
-      perk: "Top Programs: Wharton Business, Finance, Law, Health Sciences"
-    },
-    {
-      name: "Yale University",
-      logo: "https://upload.wikimedia.org/wikipedia/en/4/4d/Yale_University_Shield_1.svg",
-      main: "QS Ranking - #18 | Leader in law, humanities & diplomacy",
-      perk: "Top Programs: Law, Global Affairs, History, Psychology"
-    },
-    {
-      name: "Columbia University",
-      logo: "https://upload.wikimedia.org/wikipedia/en/e/e1/Columbia_University_shield.svg",
-      main: "QS Ranking - #23 | NYC-based with media & corporate access",
-      perk: "Top Programs: Journalism, International Relations, Data Science, Business"
-    },
-    {
-      name: "Princeton University",
-      logo: "https://upload.wikimedia.org/wikipedia/en/7/71/Princeton_shield.svg",
-      main: "QS Ranking - #24 | Academic rigor & small class sizes",
-      perk: "Top Programs: Mathematics, Public Policy, History, Computer Science"
+      name: "Carnegie Mellon University",
+      img: img5, 
     },
   ];
 
@@ -102,7 +67,7 @@ const USAUniversitiesSection = () => {
                 <div className="h-36 w-36 sm:h-28 sm:w-28">
                   <div className="bg-white h-full w-full flex items-center justify-center">
                     <img
-                      src={uni.logo}
+                      src={uni.img}
                       alt={uni.name}
                       className="h-full w-full object-contain"
                     />

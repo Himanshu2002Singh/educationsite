@@ -23,19 +23,21 @@ const ContactUs = () => {
           <h2 className="text-2xl font-semibold text-gray-800 mb-6 relative z-10">
             Get in Touch
           </h2>
-          <ul className="space-y-4 text-gray-700 relative z-10">
+          <ul className=" text-gray-700 relative z-10">
             <li>
               <strong>Address:</strong> Borivali (W) : 9th Floor, Express Tower, L.T. Rd, Mumbai, 400092
             </li>
             <li>
-              <strong>Phone:</strong> ++91 9321173184
+              <strong>Phone:</strong> +91 93211 73184
             </li>
+            <br/>
               <li>
               <strong>Address:</strong> Andheri (W): 202, DLH Plaza, S.V. Rd, Mumbai, 400058
             </li>
             <li>
               <strong>Phone:</strong> +91 73044 76878
             </li>
+            <br/>
             <li>
               <strong>Email:</strong> info@edukonnect.com
             </li>

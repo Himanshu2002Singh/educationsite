@@ -68,13 +68,15 @@ const StudyIrelandSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div className="space-y-6">
-          <h2 className="text-[17px] sm:text-xs md:text-4xl font-bold text-black mb-3 flex items-center">
+          <h2 className="text-base sm:text-xl md:text-2xl lg:text-4xl font-bold text-black mb-3 flex flex-wrap items-center">
             <img
               src="https://flagcdn.com/w40/ie.png"
               alt="Ireland Flag"
-              className="w-8 h-5 mr-2"
+              className="w-6 h-4 sm:w-8 sm:h-5 mr-2 mb-1 sm:mb-0"
             />
-            Why Study&nbsp; <span className="text-[#8cc63f]">in Ireland</span>&nbsp;?
+            Why Study&nbsp;
+            <span className="text-[#8cc63f] whitespace-nowrap">in Ireland</span>
+            ?
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -46,6 +46,7 @@ const DocumentsVisaSectionIreland = () => {
   return (
     <section className="py-16 bg-white text-[#2C2C2C]">
       <div className="container mx-auto px-6">
+        {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-3">
             <span className="text-[#8cc63f]">Admission & Visa -</span> Documents and Process for Studying in Ireland
@@ -73,6 +74,7 @@ const DocumentsVisaSectionIreland = () => {
           ))}
         </div>
 
+        {/* Documents Section */}
         {activeTab === 'documents' && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {documents.map((doc, idx) => (
@@ -82,17 +84,17 @@ const DocumentsVisaSectionIreland = () => {
               >
                 <div className="flex items-center mb-4">
                   <div className="p-3 rounded-full mr-4 bg-[#F2F2F2]">{doc.icon}</div>
-                  <h4 className="text-lg font-bold">{doc.label}</h4>
+                  <h4 className="text-lg font-bold text-left">{doc.label}</h4>
                 </div>
-                <p className="text-sm text-[#555]">{doc.tooltip}</p>
+                <p className="text-sm text-[#555] text-left">{doc.tooltip}</p>
               </div>
             ))}
           </div>
         )}
 
+        {/* Visa Steps Section */}
         {activeTab === 'visa' && (
           <div>
-            {/* Visa Steps */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
               {visaSteps.map((step, idx) => (
                 <div key={idx} className="border-2 border-[#E0E0E0] rounded-xl overflow-hidden">
@@ -100,18 +102,27 @@ const DocumentsVisaSectionIreland = () => {
                     className="w-full flex justify-between items-center p-4 bg-white hover:bg-[#F7F7F7]"
                     onClick={() => setExpandedStep(expandedStep === idx ? null : idx)}
                   >
-                    <div className="flex items-center">
-                      <div className="bg-[#8DC63F] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
-                        {step.step}
-                      </div>
+                    <div className="flex items-center text-left">
+                      {/* ✅ Fixed Circle */}
+                    <div className="flex-none flex items-center justify-center w-10 h-10 min-w-[40px] min-h-[40px] mr-4 rounded-full bg-[#8DC63F] text-white font-bold text-base">
+                      {step.step}
+                    </div>
+
+                      {/* ✅ Icon */}
                       <div className="mr-4">{step.icon}</div>
-                      <div>
+
+                      {/* ✅ Title always left aligned */}
+                      <div className="text-left">
                         <h4 className="text-lg font-bold">{step.title}</h4>
                       </div>
                     </div>
                   </button>
+
+                  {/* ✅ Description also left aligned */}
                   {expandedStep === idx && (
-                    <div className="p-4 bg-[#F9F9F9] text-[#444]">{step.description}</div>
+                    <div className="p-4 bg-[#F9F9F9] text-[#444] text-left">
+                      {step.description}
+                    </div>
                   )}
                 </div>
               ))}
@@ -120,7 +131,7 @@ const DocumentsVisaSectionIreland = () => {
             {/* Funds Required */}
             <div className="mt-10">
               <h3 className="text-2xl font-bold mb-4">🧾 Funds Required</h3>
-              <ul className="list-disc pl-5 space-y-2 text-[#555]">
+              <ul className="list-disc pl-5 space-y-2 text-[#555] text-left">
                 {fundsRequired.map((fund, i) => (
                   <li key={i}>{fund}</li>
                 ))}
@@ -129,6 +140,7 @@ const DocumentsVisaSectionIreland = () => {
           </div>
         )}
 
+        {/* CTA Button */}
         <div className="text-center mt-12">
           <button className="px-8 py-4 rounded-full font-bold text-lg bg-[#8DC63F] hover:bg-[#C1272D] text-white transition-all duration-300 shadow-md hover:shadow-xl">
             {activeTab === 'documents' ? 'Talk to an Expert Advisor' : 'Get Visa Guidance Now'}

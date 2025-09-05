@@ -107,15 +107,15 @@ const DocumentsVisaSectionCanada = () => {
                     onClick={() => setExpandedStep(expandedStep === idx ? null : idx)}
                   >
                     <div className="flex items-center">
-                      <div className="bg-[#8DC63F] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
-                        {step.step}
-                      </div>
+                        <div className="flex-none flex items-center justify-center w-10 h-10 min-w-[40px] min-h-[40px] mr-4 rounded-full bg-[#8DC63F] text-white font-bold text-base">
+                      {step.step}
+                    </div>
                       <div className="mr-4">{step.icon}</div>
-                      <h4 className="text-lg font-bold">{step.title}</h4>
+                      <h4 className="text-lg font-bold text-left">{step.title}</h4>
                     </div>
                   </button>
                   {expandedStep === idx && (
-                    <div className="p-4 bg-[#F9F9F9] text-[#444]">{step.description}</div>
+                    <div className="p-4 bg-[#F9F9F9] text-[#444] text-left">{step.description}</div>
                   )}
                 </div>
               ))}

@@ -105,7 +105,7 @@ const DocumentsVisaSection = () => {
                   onClick={() => setExpandedStep(expandedStep === idx ? null : idx)}
                 >
                   <div className="flex items-center text-left">
-                    <div className="bg-[#8DC63F] text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
+                      <div className="flex-none flex items-center justify-center w-10 h-10 min-w-[40px] min-h-[40px] mr-4 rounded-full bg-[#8DC63F] text-white font-bold text-base">
                       {step.step}
                     </div>
                     <div className="mr-4">{step.icon}</div>

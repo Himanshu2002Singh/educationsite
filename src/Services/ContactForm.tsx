@@ -1,19 +1,18 @@
 export default function FirstStepSection() {
   return (
     <section className="py-12 bg-white">
-          <div className="flex justify-center items-center">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center">
-            Take your <span className="text-[#8cc63f]"> first step </span>
-            </h2>
-          </div>
+      <div className="flex justify-center items-center px-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center">
+          Take your <span className="text-[#8cc63f]"> first step </span>
+        </h2>
+      </div>
 
-           <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div className="w-16 h-[3px] bg-[#8DC63F] mx-auto mt-2 mb-10"></div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
         {/* Left Content */}
         <div>
-          
-
           <div className="space-y-3 text-gray-700">
             <h3 className="text-black">Whether you’re a:</h3>
             <ul className="space-y-2">
@@ -34,25 +33,18 @@ export default function FirstStepSection() {
         </div>
 
         {/* Right Form */}
-        <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+        <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 w-full">
           <form className="space-y-4">
             <input type="text" placeholder="Full Name" className="w-full p-3 border rounded-lg" />
             <input type="email" placeholder="Email" className="w-full p-3 border rounded-lg" />
-            <div className="flex gap-2">
-              <select className="p-3 border rounded-lg">
+            <div className="flex flex-col sm:flex-row gap-2">
+              <select className="p-3 border rounded-lg w-full sm:w-auto">
                 <option value="+91">+91</option>
               </select>
-              <input type="text" placeholder="Phone  Number" className="flex-1 p-3 border rounded-lg" />
+              <input type="text" placeholder="Phone Number" className="flex-1 p-3 border rounded-lg w-full" />
             </div>
-            {/* <select className="w-full p-3 border rounded-lg">
-              <option>Country Destination</option>
-            </select>
-          
-            {/* <select className="w-full p-3 border rounded-lg">
-              <option>Preferred Intake</option>
-            </select> */}
               
-              <input type="text" placeholder="Country Destination" className="w-full p-3 border rounded-lg" />
+            <input type="text" placeholder="Country Destination" className="w-full p-3 border rounded-lg" />
             <input type="email" placeholder="Preferred Intake" className="w-full p-3 border rounded-lg" />
 
             <p className="text-xs text-gray-500">

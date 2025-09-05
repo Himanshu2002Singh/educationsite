@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Contact Info</h3>
-            <ul className="space-y-4">
+            <ul className="">
               <motion.li 
                 className="flex items-start"
                 whileHover={{ x: 5 }}
@@ -129,9 +129,9 @@ const Footer: React.FC = () => {
                 whileHover={{ x: 5 }}
               >
                 <Phone className="flex-shrink-0 h-6 w-6 mt-1 text-[#e76f51]" />
-                <span className="ml-3 text-gray-200 text-lg">+91 9321173184</span>
+                <span className="ml-3 text-gray-200 text-lg">+91 93211 73184</span>
               </motion.li>
-
+                <br/>
                 <motion.li 
                 className="flex items-start"
                 whileHover={{ x: 5 }}
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
                 <span className="ml-3 text-gray-200 text-lg">+91 73044 76878</span>
               </motion.li>
               
-              
+              <br/>
               <motion.li 
                 className="flex items-start"
                 whileHover={{ x: 5 }}
