@@ -6,26 +6,47 @@ import img1 from '../../assets/logo_universities/Ireland/ait (1).png';
 import img2 from '../../assets/logo_universities/Ireland/carlow.png';
 import img3 from '../../assets/logo_universities/Ireland/cork.png';
 import img4 from '../../assets/logo_universities/Ireland/dublin.png';
+import img5 from '../../assets/logo_universities/Ireland/dundalk.jpg';
+import img6 from '../../assets/logo_universities/Ireland/gmit.png';
+import img7 from '../../assets/logo_universities/Ireland/iadt.png';
+import img8 from '../../assets/logo_universities/Ireland/itsligo.png';
+import img9 from '../../assets/logo_universities/Ireland/limerick.png';
+import img10 from '../../assets/logo_universities/Ireland/lit.png';
+import img11 from '../../assets/logo_universities/Ireland/lyit.jpg';
+import img12 from '../../assets/logo_universities/Ireland/maynooth.png';
+import img13 from '../../assets/logo_universities/Ireland/mic.png';
+import img14 from '../../assets/logo_universities/Ireland/ncad.png';
+import img15 from '../../assets/logo_universities/Ireland/nui.png';
+import img16 from '../../assets/logo_universities/Ireland/st.angelas.jpg';
+import img17 from '../../assets/logo_universities/Ireland/tralee.jpg';
+import img18 from '../../assets/logo_universities/Ireland/trinty.png';
+import img19 from '../../assets/logo_universities/Ireland/ucc.png';
+import img20 from '../../assets/logo_universities/Ireland/ucd.jpg';
+import img21 from '../../assets/logo_universities/Ireland/waterford.jpg';
 
 const IrelandUniversitiesSection = () => {
   const universities = [
-    { name: "Athlone Institute of Technology", img: img1 },
+    { name: "Athlone Institute of Technology (AIT)", img: img1 },
     { name: "Institute of Technology Carlow", img: img2 },
-    { name: "University College Cork", img: img3 },
+    { name: "University College Cork (UCC)", img: img3 },
     { name: "Technological University Dublin", img: img4 },
-    // { name: "Trinity College Dublin", img: null },
-    // { name: "University College Dublin", img: null },
-    // { name: "University of Galway", img: null },
-    // { name: "University of Limerick", img: null },
-    // { name: "Dublin City University", img: null },
-    // { name: "Maynooth University", img: null },
-    // { name: "National College of Ireland", img: null },
-    // { name: "TUS: Midlands Midwest", img: null },
-    // { name: "Munster Technological University", img: null },
-    // { name: "Atlantic Technological University", img: null },
-    // { name: "Dublin Business School", img: null },
-    // { name: "Griffith College", img: null },
-    // { name: "IBAT College Dublin", img: null },
+    { name: "Dundalk Institute of Technology", img: img5 },
+    { name: "Galway-Mayo Institute of Technology (GMIT)", img: img6 },
+    { name: "Institute of Art, Design and Technology (IADT)", img: img7 },
+    { name: "Institute of Technology Sligo", img: img8 },
+    { name: "University of Limerick", img: img9 },
+    { name: "Limerick Institute of Technology (LIT)", img: img10 },
+    { name: "Letterkenny Institute of Technology (LYIT)", img: img11 },
+    { name: "Maynooth University", img: img12 },
+    { name: "Mary Immaculate College (MIC)", img: img13 },
+    { name: "National College of Art and Design (NCAD)", img: img14 },
+    { name: "National University of Ireland (NUI)", img: img15 },
+    { name: "St. Angela’s College Sligo", img: img16 },
+    { name: "Institute of Technology Tralee", img: img17 },
+    { name: "Trinity College Dublin", img: img18 },
+    { name: "University College Cork", img: img19 },
+    { name: "University College Dublin (UCD)", img: img20 },
+    { name: "Waterford Institute of Technology (WIT)", img: img21 },
   ];
 
   const settings = {

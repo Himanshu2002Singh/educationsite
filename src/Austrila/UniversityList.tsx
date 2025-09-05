@@ -13,6 +13,7 @@ import img7 from '../../assets/logo_universities/Australia/western_australia.png
 
 
 
+
 const AustraliaUniversitiesSection = () => {
   const universities = [
     { name: "University of Melbourne", logo: img1 },

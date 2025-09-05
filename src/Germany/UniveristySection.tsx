@@ -2,51 +2,55 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../../assets/logo_universities/Germany/bonn.png';
-import img2 from '../../assets/logo_universities/Germany/heidelberg.png';
-import img3 from '../../assets/logo_universities/Germany/lmu.png';
-import img4 from '../../assets/logo_universities/Germany/medizinische.png';
-import img5 from '../../assets/logo_universities/Germany/tubingen.png';
+
+import img1 from "../../assets/logo_universities/Germany/bonn.png";
+import img2 from "../../assets/logo_universities/Germany/heidelberg.png";
+import img3 from "../../assets/logo_universities/Germany/lmu.png";
+import img4 from "../../assets/logo_universities/Germany/medizinische.png";
+import img5 from "../../assets/logo_universities/Germany/tubingen.png";
+import img6 from "../../assets/logo_universities/Germany/uni.jpg";
+import img7 from "../../assets/logo_universities/Germany/wurzburg.png";
 
 const UniversitySection: React.FC = () => {
   const [view, setView] = useState<"public" | "private">("public");
 
   const publicUniversities = [
-    // { name: "Technical University of Munich", logo: "../../assets/Technical University of Munich.png" },
-    // { name: "Ludwig Maximilian University of Munich", logo: "/images/lmu.png" },
-    // { name: "University of Heidelberg", logo: "/images/heidelberg.png" },
-    // { name: "University of Berlin", logo: "/images/berlin.png" },
-    // { name: "Karlsruhe Institute of Technology", logo: "/images/kit.png" },
-    // { name: "University of Göttingen", logo: "../../assets/goettingen.png" },
-    // { name: "University of Freiburg", logo: "/images/freiburg.png" },
-    // { name: "RWTH Aachen University", logo: "/images/rwth.png" },
-    // { name: "University of Hamburg", logo: "/images/hamburg.png" },
-    // { name: "University of Cologne", logo: "/images/cologne.png" },
-        {
-      name: "Universitat Bonn",
+    {
+      name: "Universität Bonn",
       logo: img1,
-      courses: "Engineering, Science, Law, Medicine, Social Sciences, Business Management"
+      courses:
+        "Engineering, Science, Law, Medicine, Social Sciences, Business Management",
     },
     {
-      name: "Universitat Heidelberg",
+      name: "Universität Heidelberg",
       logo: img2,
-      courses: "Engineering, Education, Science, Law"
+      courses: "Engineering, Education, Science, Law",
     },
     {
-      name: "LMU",
+      name: "Ludwig Maximilian University of Munich (LMU)",
       logo: img3,
-      courses: "Engineering, Business, Medicine, Social Sciences"
-    }
-    ,  {
-      name: "Medizinische Hochschule Hannoer",
-      logo: img4,
-      courses: "Engineering, Business, Medicine, Social Sciences"
+      courses: "Engineering, Business, Medicine, Social Sciences",
     },
-      {
-      name: "Universitat Tubingen",
+    {
+      name: "Medizinische Hochschule Hannover",
+      logo: img4,
+      courses: "Medicine, Science, Health Studies",
+    },
+    {
+      name: "Universität Tübingen",
       logo: img5,
-      courses: "Engineering, Business, Medicine, Social Sciences"
-    }
+      courses: "Engineering, Business, Medicine, Social Sciences",
+    },
+    {
+      name: "University of Mannheim",
+      logo: img6,
+      courses: "Business, Economics, Social Sciences",
+    },
+    {
+      name: "University of Würzburg",
+      logo: img7,
+      courses: "Science, Medicine, Law, Humanities",
+    },
   ];
 
   const privateUniversities = [

@@ -74,7 +74,7 @@ const WorkingRightsSectionCanada = () => {
                       <Calendar className="w-6 h-6 text-[#8DC63F] mr-3" />
                       <span className="text-[#2C2C2C] font-medium">During Scheduled Breaks</span>
                     </div>
-                    <span className="text-black-700 font-bold text-lg ml-[30px]">{item.holidayLimit}</span>
+                    <span className="text-black-700 font-bold text-lg">{item.holidayLimit}</span>
                   </div>
                 </div>
               </div>

@@ -2,57 +2,49 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img1 from "../../assets/logo_universities/UAE/alberta.png";
+import img2 from "../../assets/logo_universities/UAE/amity.png";
+import img3 from "../../assets/logo_universities/UAE/aud.png";
+import img4 from "../../assets/logo_universities/UAE/british.png";
+import img5 from "../../assets/logo_universities/UAE/british_columbia.png";
+import img6 from "../../assets/logo_universities/UAE/canadian.png";
+import img7 from "../../assets/logo_universities/UAE/de_montreal.png";
+import img8 from "../../assets/logo_universities/UAE/dubai.png";
+import img9 from "../../assets/logo_universities/UAE/heriot.png";
+import img10 from "../../assets/logo_universities/UAE/manipal.png";
+import img11 from "../../assets/logo_universities/UAE/manitoba.jpg";
+import img12 from "../../assets/logo_universities/UAE/mc_gill.png";
+import img13 from "../../assets/logo_universities/UAE/mc_master.png";
+import img14 from "../../assets/logo_universities/UAE/middlesex.png";
+import img15 from "../../assets/logo_universities/UAE/murdoch.png";
+import img16 from "../../assets/logo_universities/UAE/queens.png";
+import img17 from "../../assets/logo_universities/UAE/toronoto.png";
+import img18 from "../../assets/logo_universities/UAE/uottawa.png";
+import img19 from "../../assets/logo_universities/UAE/wollongong.png";
+import img20 from "../../assets/logo_universities/UAE/york.png";
 
-const UAEUniversitiesSection = () => {
+const UAEUniversitiesSection: React.FC = () => {
   const universities = [
-    {
-      name: "University of Birmingham Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/University_of_Birmingham_coat_of_arms.svg/512px-University_of_Birmingham_coat_of_arms.svg.png",
-      main: "Russell Group UK quality | Top for AI & Business",
-      perk: "Exclusive industry tours at DIFC banks"
-    },
-    {
-      name: "Heriot-Watt University Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Heriot-Watt_University_coat_of_arms.svg/512px-Heriot-Watt_University_coat_of_arms.svg.png",
-      main: "#1 in Engineering | NASA-collaborated robotics lab",
-      perk: "50% scholarships for women in STEM"
-    },
-    {
-      name: "Middlesex University Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Middlesex_University_logo.svg/512px-Middlesex_University_logo.svg.png",
-      main: "London-degree at 40% lower cost | Media City internships",
-      perk: "Free Adobe Creative Cloud access"
-    },
-    {
-      name: "Murdoch University Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Murdoch_University_Logo.svg/512px-Murdoch_University_Logo.svg.png",
-      main: "Australian cybersecurity degrees | PwC/Deloitte recruitment pipeline",
-      perk: "Free CISSP certification voucher"
-    },
-    {
-      name: "SP Jain School of Global Management",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/SP_Jain_School_of_Global_Management_Logo.svg/512px-SP_Jain_School_of_Global_Management_Logo.svg.png",
-      main: "Triple-accredited MBA | Avg. graduate salary: AED 25K/month",
-      perk: "VIP access: Meet Dubai Chamber of Commerce executives"
-    },
-    {
-      name: "Manipal Academy Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Manipal_Academy_of_Higher_Education_logo.svg/512px-Manipal_Academy_of_Higher_Education_logo.svg.png",
-      main: "NAAC A++ Indian curriculum | Direct hospital placements",
-      perk: "Free Arabic medical terminology course"
-    },
-    {
-      name: "University of Wollongong Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/University_of_Wollongong_logo.svg/512px-University_of_Wollongong_logo.svg.png",
-      main: "QS-ranked Australian degrees | Architecture studio at Dubai Design District",
-      perk: "3D printing lab access"
-    },
-    {
-      name: "Amity University Dubai",
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Amity_University_logo.svg/512px-Amity_University_logo.svg.png",
-      main: "Most affordable Indian degrees | Aviation simulators on campus",
-      perk: "Drone pilot license included"
-    },
+    { name: "University of Alberta (Dubai Campus)", img: img1 },
+    { name: "Amity University Dubai", img: img2 },
+    { name: "American University in Dubai (AUD)", img: img3 },
+    { name: "British University in Dubai", img: img4 },
+    { name: "University of British Columbia (Dubai)", img: img5 },
+    { name: "Canadian University Dubai", img: img6 },
+    { name: "Université de Montréal (Dubai Campus)", img: img7 },
+    { name: "University of Dubai", img: img8 },
+    { name: "Heriot-Watt University Dubai", img: img9 },
+    { name: "Manipal University Dubai", img: img10 },
+    { name: "University of Manitoba (Dubai Campus)", img: img11 },
+    { name: "McGill University (Dubai)", img: img12 },
+    { name: "McMaster University (Dubai)", img: img13 },
+    { name: "Middlesex University Dubai", img: img14 },
+    { name: "Murdoch University Dubai", img: img15 },
+    { name: "Queen’s University (Dubai)", img: img16 },
+    { name: "University of Toronto (Dubai)", img: img17 },
+    { name: "University of Ottawa (Dubai)", img: img18 },
+    { name: "University of Wollongong Dubai", img: img19 },
+    { name: "York University (Dubai)", img: img20 },
   ];
 
   const settings = {
@@ -90,7 +82,7 @@ const UAEUniversitiesSection = () => {
                 <div className="h-36 w-36 sm:h-28 sm:w-28">
                   <div className="bg-white h-full w-full flex items-center justify-center">
                     <img
-                      src={uni.logo}
+                      src={uni.img}
                       alt={uni.name}
                       className="h-full w-full object-contain"
                     />

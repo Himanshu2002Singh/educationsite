@@ -3,13 +3,12 @@ import { motion } from "framer-motion";
 
 import img1 from "../../assets/CommunityStudentsIamge.webp";
 import GraduationCap from "../../assets/cap.png";
-import Send from "../../assets/arrow.png";
 import globa from "../../assets/globe.png";
-import HomePop from "../Popform/HomePop";
+import FirstStepPop from "../Popform/FirstStepPop";
 
 const Hero: React.FC = () => {
   const [studentCount, setStudentCount] = useState(0);
-  const [showPopup, setShowPopup] = useState(false); // 🔹 popup state
+  const [showPopup, setShowPopup] = useState(false); // popup state
 
   useEffect(() => {
     const studentInterval = setInterval(() => {
@@ -23,18 +22,12 @@ const Hero: React.FC = () => {
     transition: { duration: 3, repeat: Infinity, ease: "easeInOut" },
   };
 
-  const rotateAnimation = {
-    rotate: [0, 5, -5, 0],
-    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-  };
-
   return (
     <section
       id="hero"
       className="relative pb-20 py-5 bg-[#e6f5e1] overflow-hidden"
     >
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        
         {/* Floating Graduation Cap */}
         <motion.div
           className="absolute top-4 right-2 md:top-14 md:right-16"
@@ -45,14 +38,6 @@ const Hero: React.FC = () => {
             className="w-10 h-10 md:w-14 md:h-14 drop-shadow-lg"
           />
         </motion.div>
-
-        {/* Paper Plane */}
-        {/* <motion.div
-          className="absolute top-[150px] right-[20px] md:top-[190px] md:right-[400px]"
-          animate={rotateAnimation}
-        >
-          <img src={Send} className="w-14 h-14 md:w-24 md:h-auto" />
-        </motion.div> */}
 
         {/* Globe */}
         <motion.div
@@ -137,8 +122,8 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* ✅ Show Popup when button clicked */}
-      {showPopup && <HomePop onClose={() => setShowPopup(false)} />}
+      {/* ✅ Popup render */}
+      {showPopup && <FirstStepPop onClose={() => setShowPopup(false)} />}
 
       {/* Background Wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden">

@@ -2,34 +2,67 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../../assets/logo_universities/USA/arizona_state (1).png'
-import img2 from '../../assets/logo_universities/USA/berkrlry (1).png';
-import img3 from '../../assets/logo_universities/USA/boston (1).png';
-import img4 from '../../assets/logo_universities/USA/brown (1).png';
-import img5 from '../../assets/logo_universities/USA/carnegie mellon (1).png';
+import img1 from "../../assets/logo_universities/USA/arizona_state (1).png";
+import img2 from "../../assets/logo_universities/USA/berkrlry (1).png";
+import img3 from "../../assets/logo_universities/USA/boston (1).png";
+import img4 from "../../assets/logo_universities/USA/brown (1).png";
+import img5 from "../../assets/logo_universities/USA/carnegie mellon (1).png";
+import img6 from "../../assets/logo_universities/USA/central_florida.png";
+import img7 from "../../assets/logo_universities/USA/chicago.png";
+import img8 from "../../assets/logo_universities/USA/cornell.png";
+import img9 from "../../assets/logo_universities/USA/duke.png";
+import img10 from "../../assets/logo_universities/USA/florida.png";
+import img11 from "../../assets/logo_universities/USA/georgia.png";
+import img12 from "../../assets/logo_universities/USA/harvard.png";
+import img13 from "../../assets/logo_universities/USA/howard.png";
+import img14 from "../../assets/logo_universities/USA/illinois.jpg";
+import img15 from "../../assets/logo_universities/USA/indiana.png";
+import img16 from "../../assets/logo_universities/USA/johns_hopkins.png";
+import img17 from "../../assets/logo_universities/USA/kentucky.jpg";
+import img18 from "../../assets/logo_universities/USA/lowa_state.png";
+import img19 from "../../assets/logo_universities/USA/michigan.png";
+import img20 from "../../assets/logo_universities/USA/michigan_state.png";
+import img21 from "../../assets/logo_universities/USA/north_dame.jpg";
+import img22 from "../../assets/logo_universities/USA/nyu.png";
+import img23 from "../../assets/logo_universities/USA/ohio_state.png";
+import img24 from "../../assets/logo_universities/USA/pennstate.png";
+import img25 from "../../assets/logo_universities/USA/pittsburgh.png";
+import img26 from "../../assets/logo_universities/USA/princeton.png";
+import img27 from "../../assets/logo_universities/USA/purdue.png";
+import img28 from "../../assets/logo_universities/USA/san_carlos.png";
+import img29 from "../../assets/logo_universities/USA/santa_clara.png";
 
-const USAUniversitiesSection = () => {
-   const universities = [
-    {
-      name: "Arizona State University",
-      img: img1, 
-    },
-    {
-      name: "University of California, Berkeley (UCB)",
-      img: img2, 
-    },
-    {
-      name: "Boston University",
-      img: img3, 
-    },
-    {
-      name: "Brown University",
-      img: img4, 
-    },
-    {
-      name: "Carnegie Mellon University",
-      img: img5, 
-    },
+const USAUniversitiesSection: React.FC = () => {
+  const universities = [
+    { name: "Arizona State University", img: img1 },
+    { name: "University of California, Berkeley (UCB)", img: img2 },
+    { name: "Boston University", img: img3 },
+    { name: "Brown University", img: img4 },
+    { name: "Carnegie Mellon University", img: img5 },
+    { name: "University of Central Florida", img: img6 },
+    { name: "University of Chicago", img: img7 },
+    { name: "Cornell University", img: img8 },
+    { name: "Duke University", img: img9 },
+    { name: "University of Florida", img: img10 },
+    { name: "Georgia Institute of Technology", img: img11 },
+    { name: "Harvard University", img: img12 },
+    { name: "Howard University", img: img13 },
+    { name: "University of Illinois Urbana-Champaign", img: img14 },
+    { name: "Indiana University Bloomington", img: img15 },
+    { name: "Johns Hopkins University", img: img16 },
+    { name: "University of Kentucky", img: img17 },
+    { name: "Iowa State University", img: img18 },
+    { name: "University of Michigan", img: img19 },
+    { name: "Michigan State University", img: img20 },
+    { name: "University of Notre Dame", img: img21 },
+    { name: "New York University (NYU)", img: img22 },
+    { name: "Ohio State University", img: img23 },
+    { name: "Pennsylvania State University", img: img24 },
+    { name: "University of Pittsburgh", img: img25 },
+    { name: "Princeton University", img: img26 },
+    { name: "Purdue University", img: img27 },
+    { name: "San Carlos University", img: img28 },
+    { name: "Santa Clara University", img: img29 },
   ];
 
   const settings = {

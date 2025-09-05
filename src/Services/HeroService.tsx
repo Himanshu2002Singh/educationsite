@@ -1,5 +1,6 @@
 import React from "react";
-import hero from '../../assets/Imaesg with name/Service Page.png'
+import hero from '../../assets/Imaesg with name/Service Page.png';
+import ServicePop from "./ServicePop"; // import your popup
 
 export default function HeroCounselling() {
   return (
@@ -10,29 +11,30 @@ export default function HeroCounselling() {
         <div className="text-center md:text-left space-y-4 md:ml-[100px] ">
           {/* Main Heading */}
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-          We're with You at Every Step
+            We're with You at Every Step
           </h1>
-          {/* Optional heading variants (comment/uncomment as needed) */}
-          {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">Your Global Journey Starts Here</h1> */}
-          {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">From First Step to Final Offer—We’ve Got You</h1> */}
-          {/* <h1 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight">Our Comprehensive Services</h1> */}
 
           {/* Subheading */}
           <p className="text-black text-sm md:text-base">
-        Helping 12000+ students achieve their Study Abroad Dreams
+            Helping 12000+ students achieve their Study Abroad Dreams
           </p>
-          {/* Optional subheading variants */}
-          {/* <p className="text-gray-600 text-sm md:text-base">10,000+ Students Made It. Here’s What Helped Them.</p> */}
-          {/* <p className="text-gray-600 text-sm md:text-base">These Are the Services That Got 10,000+ Students Overseas</p> */}
 
           {/* CTA */}
           <div className="pt-2">
-            <a
-              href="#"
-              className="inline-block text-sm md:text-lg rounded-md bg-[#8cc63f]  px-5 py-3 text-white font-medium shadow hover:bg-green-700 transition"
-            >
-               Book Your Free Counselling Session
-            </a>
+            <ServicePop
+              trigger={(openModal) => (
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault(); // prevent page jump
+                    openModal();        // open the popup
+                  }}
+                  className="inline-block text-sm md:text-lg rounded-md bg-[#8cc63f] px-5 py-3 text-white font-medium shadow hover:bg-green-700 transition"
+                >
+                  Book Your Free Counselling Session
+                </a>
+              )}
+            />
           </div>
         </div>
 

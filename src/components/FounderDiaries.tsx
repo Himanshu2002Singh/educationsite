@@ -5,7 +5,7 @@ const FounderDiaries: React.FC = () => {
     <section className="py-10 bg-gray-50">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-center text-black mb-8">
-        Meet our <span className="text-[#8cc63f]">Founders</span>
+         <span className="text-[#8cc63f]">About</span> Us
         <div className="w-14 h-1 bg-[#8cc63f] mx-auto mt-1"></div>
       </h2>
 
@@ -13,7 +13,7 @@ const FounderDiaries: React.FC = () => {
       <div className="max-w-4xl mx-auto relative p-6">
         <div className="flex flex-col md:flex-row items-center gap-5 bg-[#EAF7E8] border border-gray-200 rounded-md p-5 shadow-sm">
           <div className="text-center md:text-left">
-            <h4 className="font-bold text-gray-900 mb-2 text-center">About Us</h4>
+        
             <p className="text-gray-800 text-sm md:text-base leading-relaxed mb-4">
               At Edukonnect, we believe that every dream deserves the right
               launch pad. Founded by experts with over 24 years of experience in

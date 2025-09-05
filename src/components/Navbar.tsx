@@ -4,6 +4,7 @@ import logo from '../../assets/1.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import HomePop from '../Popform/HomePop'; // apna popup import karo
+import FirstStepPop from '../Popform/FirstStepPop';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -198,7 +199,7 @@ const Navbar: React.FC = () => {
       </motion.nav>
 
       {/* HomePop Modal */}
-      {isOpen && <HomePop onClose={() => setIsOpen(false)} />}
+      {isOpen && <FirstStepPop onClose={() => setIsOpen(false)} />}
     </>
   );
 };

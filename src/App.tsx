@@ -21,6 +21,7 @@ import TrendingBlog from './components/Blog/Blog';
 import Services from './Services/Services';
 import Test from './components/TesPRep/Test';
 import CTASection from './UkPages/CTASection';
+import ServicePop from './Services/ServicePop';
 
 
 
@@ -71,6 +72,7 @@ function App() {
        <Route path='/blogs' element={<TrendingBlog/>}/>
        <Route path='/test-preparation' element={<Test/>} />
        <Route path='/services' element={<Services/>} />
+      
       {/* Add other routes as needed */}
     </Routes>
     <CTASection/>

@@ -2,10 +2,16 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../../assets/logo_universities/Canada/alberta.png'
+import img1 from '../../assets/logo_universities/Canada/alberta.png';
 import img2 from '../../assets/logo_universities/Canada/british_columbia.png';
 import img3 from '../../assets/logo_universities/Canada/de_montreal.png';
 import img4 from '../../assets/logo_universities/Canada/mc_gill.png';
+import img5 from '../../assets/logo_universities/Canada/manitoba.jpg';
+import img6 from '../../assets/logo_universities/Canada/mc_master.png';
+import img7 from '../../assets/logo_universities/Canada/queens.png';
+import img8 from '../../assets/logo_universities/Canada/toronto.png';
+import img9 from '../../assets/logo_universities/Canada/uottawa.png';
+import img10 from '../../assets/logo_universities/Canada/york.png';
 
 const CanadaUniversitiesSection = () => {
   const universities = [
@@ -13,17 +19,12 @@ const CanadaUniversitiesSection = () => {
     { name: "University of British Columbia (UBC)", logo: img2 },
     { name: "Université de Montréal", logo: img3 },
     { name: "McGill University", logo: img4 },
-    // { name: "University of Toronto" },
-    // { name: "University of Waterloo" },
-    // { name: "York University" },
-    // { name: "Sheridan College" },
-    // { name: "George Brown College" },
-    // { name: "Seneca College" },
-    // { name: "Humber College" },
-    // { name: "Centennial College" },
-    // { name: "Fanshawe College" },
-    // { name: "Conestoga College" },
-    // { name: "Langara College" },
+    { name: "University of Manitoba", logo: img5 },
+    { name: "McMaster University", logo: img6 },
+    { name: "Queen’s University", logo: img7 },
+    { name: "University of Toronto", logo: img8 },
+    { name: "University of Ottawa", logo: img9 },
+    { name: "York University", logo: img10 },
   ];
 
   const settings = {

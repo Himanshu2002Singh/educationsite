@@ -8,23 +8,50 @@ import img2 from '../../assets/logo_universities/UK/abertay.png';
 import img3 from '../../assets/logo_universities/UK/aberystwyth.png';
 import img4 from '../../assets/logo_universities/UK/bangor.png';
 import img5 from '../../assets/logo_universities/UK/boltonj.png';
-
-
+import img6 from '../../assets/logo_universities/UK/cambridge.png';
+import img7 from '../../assets/logo_universities/UK/chester.jpg';
+import img8 from '../../assets/logo_universities/UK/edinburgh.png';
+import img9 from '../../assets/logo_universities/UK/lancaster.png';
+import img10 from '../../assets/logo_universities/UK/landon.png';
+import img11 from '../../assets/logo_universities/UK/liverpool.jpg';
+import img12 from '../../assets/logo_universities/UK/liverpool_hope.jpg';
+import img13 from '../../assets/logo_universities/UK/newcastle.png';
+import img14 from '../../assets/logo_universities/UK/plymouth.png';
+import img15 from '../../assets/logo_universities/UK/prifysgol.png';
+import img16 from '../../assets/logo_universities/UK/reading.png';
+import img17 from '../../assets/logo_universities/UK/salford.png';
+import img18 from '../../assets/logo_universities/UK/sheffield.png';
+import img19 from '../../assets/logo_universities/UK/st_andrews.png';
+import img20 from '../../assets/logo_universities/UK/strathclyde.png';
+import img21 from '../../assets/logo_universities/UK/uofg.png';
 
 const UniversitiesSection = () => {
   const [activeTab, setActiveTab] = useState('elite');
 
   const eliteUniversities = [
-    // { name: "Imperial College London", rank: 2,logo: img5, courses: "Engineering, Medicine, Business" },
-    // { name: "University of Oxford", rank: 4, logo:img1, courses: "Law, Philosophy, Medicine" },
-    // { name: "University of Cambridge", rank: 6, logo:img2, courses: "Natural Sciences, Engineering, Law" },
-    // { name: "UCL", rank: 9, logo:img3, courses: "Medicine, Engineering, Arts" },
-    // { name: "King’s College London", rank: 31, logo: img4, courses: "Medicine, Law, Business" },
-      { name: "University of Bolton", rank: 2,logo: img5, courses: "Engineering, Medicine, Business" },
-    { name: "University of Aberdeen", rank: 4, logo:img1, courses: "Law, Philosophy, Medicine" },
-    { name: "Abertay University", rank: 6, logo:img2, courses: "Natural Sciences, Engineering, Law" },
-    { name: "Prifysgol Aberystwyth University", rank: 9, logo:img3, courses: "Medicine, Engineering, Arts" },
+    { name: "University of Aberdeen", logo: img1 },
+    { name: "Abertay University", logo: img2 },
+    { name: "Aberystwyth University", logo: img3 },
+    { name: "Bangor University", logo: img4 },
+    { name: "University of Bolton", logo: img5 },
+    { name: "University of Cambridge", logo: img6 },
+    { name: "University of Chester", logo: img7 },
+    { name: "University of Edinburgh", logo: img8 },
+    { name: "Lancaster University", logo: img9 },
+    { name: "University of London", logo: img10 },
+    { name: "University of Liverpool", logo: img11 },
+    { name: "Liverpool Hope University", logo: img12 },
+    { name: "Newcastle University", logo: img13 },
+    { name: "University of Plymouth", logo: img14 },
+    { name: "Prifysgol University", logo: img15 },
+    { name: "University of Reading", logo: img16 },
+    { name: "University of Salford", logo: img17 },
+    { name: "University of Sheffield", logo: img18 },
+    { name: "University of St Andrews", logo: img19 },
+    { name: "University of Strathclyde", logo: img20 },
+    { name: "University of Glasgow", logo: img21 },
   ];
+
 
   const risingUniversities = [
     { name: "University of Bath", rank: 148, logo: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/University_of_Bath_logo.svg/512px-University_of_Bath_logo.svg.png", courses: "Engineering, Business, Architecture" },
