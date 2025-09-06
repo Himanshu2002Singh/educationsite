@@ -16,36 +16,85 @@ interface Student {
 
 const students: Student[] = [
   {
-    name: "Bhavya Shah",
-    score: "339/340",
-    exam: "GRE",
-    image: girl, // 👈 apni image ka path
-  },
-  {
-    name: "Aditya Patil",
-    score: "337/340",
-    exam: "GRE",
+    name: "Aryan Alaudeen",
+    score: "7/9",
+    exam: "IELTS",
     image: boy,
   },
   {
-    name: "Anuj Dharap",
-    score: "336/340",
-    exam: "GRE",
+    name: "Sayali Jogale",
+    score: "7/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Yash Manish Shah",
+    score: "7.5/9",
+    exam: "IELTS",
     image: boy,
   },
   {
-    name: "Rishi Mody",
-    score: "336/340",
-    exam: "GRE",
+    name: "Harikesh Amol Dalal",
+    score: "7/9",
+    exam: "IELTS",
     image: boy,
   },
   {
-    name: "Aniruddh Ayendgar",
-    score: "340/340",
-    exam: "GRE",
+    name: "Jay Anil Thakkar",
+    score: "7.5/9",
+    exam: "IELTS",
     image: boy,
+  },
+  {
+    name: "Neeti Kapoor",
+    score: "8/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Liya Mary Jacob",
+    score: "7.5/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Priyal Haresh Sheta",
+    score: "8/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Rhea Sunil Hiranandani",
+    score: "7.5/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Rushi Ketan Pandya",
+    score: "8/9",
+    exam: "IELTS",
+    image: boy,
+  },
+  {
+    name: "Vaidehi Praful Rathi",
+    score: "8/9",
+    exam: "IELTS",
+    image: girl,
+  },
+  {
+    name: "Varun Nagendra Jha",
+    score: "7.5/9",
+    exam: "IELTS",
+    image: boy,
+  },
+  {
+    name: "Srushti Yogesh Patel",
+    score: "8/9",
+    exam: "IELTS",
+    image: girl,
   },
 ];
+
 
 export default function ResultShowcase() {
   return (
